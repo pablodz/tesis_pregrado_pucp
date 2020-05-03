@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: apacite.bst
+A level-1 auxiliary file: general/cover.aux
+A level-1 auxiliary file: general/summary.aux
+A level-1 auxiliary file: general/introduction.aux
+A level-1 auxiliary file: general/gratitude.aux
+A level-1 auxiliary file: general/table-of-content.aux
+A level-1 auxiliary file: chapters/chapter1.aux
+A level-1 auxiliary file: general/bibliography.aux
+Illegal, another \bibstyle command---line 40 of file general/bibliography.aux
+ : \bibstyle
+ :          {apalike}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: general/annexes.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: general/library.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in Martinez2003
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Martinez2003
+while executing---line 5079 of file apacite.bst
+Warning--No school in Vega2013
+You've used 18 entries,
+            6951 wiz_defined-function locations,
+            1401 strings with 14961 characters,
+and the built_in function-call counts, 32271 in all, are:
+= -- 3906
+> -- 253
+< -- 1575
++ -- 1535
+- -- 66
+* -- 2038
+:= -- 6001
+add.period$ -- 72
+call.type$ -- 18
+change.case$ -- 310
+chr.to.int$ -- 0
+cite$ -- 38
+duplicate$ -- 803
+empty$ -- 1340
+format.name$ -- 425
+if$ -- 6115
+int.to.chr$ -- 0
+int.to.str$ -- 54
+missing$ -- 0
+newline$ -- 445
+num.names$ -- 144
+pop$ -- 795
+preamble$ -- 1
+purify$ -- 76
+quote$ -- 0
+skip$ -- 1956
+stack$ -- 0
+substring$ -- 1638
+swap$ -- 435
+text.length$ -- 54
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 1504
+warning$ -- 2
+while$ -- 150
+width$ -- 0
+write$ -- 521
+(There were 2 error messages)

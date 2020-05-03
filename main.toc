@@ -1,0 +1,26 @@
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{Resumen}{\es@scroman {i}}%
+\contentsline {chapter}{Introduction}{\es@scroman {i}}%
+\contentsline {chapter}{Agradecimientos}{\es@scroman {ii}}%
+\contentsline {chapter}{\'{I}ndice general}{\es@scroman {iii}}%
+\contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iv}}%
+\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {v}}%
+\contentsline {chapter}{\numberline {I}Marco problemático}{1}%
+\contentsline {section}{\numberline {1.1}Definición de la problemática}{1}%
+\contentsline {subsection}{\numberline {1.1.1}Justificación}{2}%
+\contentsline {subsection}{\numberline {1.1.2}Alcance}{2}%
+\contentsline {subsection}{\numberline {1.1.3}Objetivos}{3}%
+\contentsline {subsubsection}{Objetivo general}{3}%
+\contentsline {subsubsection}{Objetivos específicos}{3}%
+\contentsline {subsection}{\numberline {1.1.4}Metodología}{3}%
+\contentsline {section}{\numberline {1.2}Estado del arte}{4}%
+\contentsline {subsection}{\numberline {1.2.1}Crianza de truchas}{4}%
+\contentsline {subsubsection}{Nacional}{4}%
+\contentsline {subsubsection}{Internacional}{5}%
+\contentsline {subsection}{\numberline {1.2.2}Sistema de clasificación de peces}{6}%
+\contentsline {subsubsection}{Clasificación manual}{8}%
+\contentsline {subsubsection}{Clasificación mecánica}{10}%
+\contentsline {subsubsection}{Clasificación mediante visión por computadora}{11}%
+\contentsline {subsubsection}{Clasificación usando técnicas de inteligencia artificial}{13}%
+\contentsline {chapter}{Referencias}{14}%

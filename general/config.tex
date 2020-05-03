@@ -1,0 +1,84 @@
+\documentclass[12pt,a4paper,oneside]{report} % Formato tesis
+\usepackage[english,spanish]{babel} % Asignar idioma por defecto
+\selectlanguage{spanish} % Idioma por defecto x2
+\usepackage[T1]{fontenc} % Aceptar caracteres con tíldes en el pdf generado
+\usepackage[UTF8]{ctex}
+\usepackage{times} %
+\usepackage[utf8]{inputenc} % Aceptar caracteres con tíldes en Latex
+\usepackage{amsmath} % Para mostrar de forma adecuada las ecuaciones
+\usepackage{graphicx} % Para incluir imágenes 
+\usepackage{array} % Para incluir imagenes en tablas https://bit.ly/2KXhIlu
+\usepackage{float} % Para posicionar imágenes y tablas
+\usepackage{longtable} % Para tablas que abarcan más de dos páginas
+\usepackage{multicol} % Para poder partir en columnas 
+\usepackage[refpages]{gloss} % Para enumerar páginas
+\usepackage{anysize} % OBSOLETO, NECESITA SER CAMBIADO
+\usepackage{bigstrut} % Para automatizar ingresado de datos en tabla
+\usepackage{appendix} % Formato para títulos de los apéndices
+\usepackage{lscape} % Modifica margenes y rota la página pero no el enumerado
+\usepackage{pdflscape} % Cambiar orientación en el pdf
+\usepackage{multirow} % Fácil manejo de filas
+\usepackage{listings} % Sirve para que se compile el Latex
+\usepackage{color} % Colores de fondo, texto y otros
+\usepackage{setspace} % Espacio entre lineas
+\usepackage{enumerate} % Estilo del contador de páginas
+\usepackage{ragged2e} % Formato de parrafos, justiticar y demás
+\usepackage{comment} % Hacer comentarios en latex
+\usepackage{pslatex} % Tipo de fuente
+\usepackage{apacite} % Citación en APA
+\usepackage{fixltx2e} % Corrige bugs de Latex 3
+\usepackage{caption} % Objetos flotantes en el documento
+\usepackage[width=150mm,top=25mm,bottom=25mm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{blindtext}
+\usepackage[table,xcdraw]{xcolor}
+
+\fancyhead{}  % Clears all page headers and footers
+
+\setlength{\headheight}{15pt}
+\pagestyle{fancy}
+%\fancyhead[r]{\thepage}
+%\fancyhead[l]{\fancyplain{\fancy}{\slshape\leftmark}}
+%\fancyfoot[c]{center of the footer!}
+\fancypagestyle{plain}{%
+	\fancyhf{} % clear all header and footer fields
+	\fancyhead[r]{\leftmark}
+	\fancyfoot[c]{PUCP}
+	\fancyfoot[r]{Pág. \thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\chaptermark}[1]{\markboth{\itshape\chaptername~\thechapter}{}}
+%\usepackage{fontspec}
+%\setmainfont{ebgaramond}
+
+
+\graphicspath{{images/}}
+\captionsetup[table]{skip=10pt}
+\bibliographystyle{apacite}
+\renewcommand{\BOthers}[1]{et al.\hbox{}}
+\renewcommand\bibname{Bibliografía}
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION
+%----------------------------------------------------------------------------------------
+%\marginsize{2.5cm}{2.5cm}{2.5cm}{2.5cm}
+\renewcommand*{\contentsname}{Tabla de contenidos}
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand*{\listfigurename}{Índice de figuras}
+\renewcommand{\baselinestretch}{1.0}
+\renewcommand{\appendixname}{Anexos}
+\renewcommand{\appendixtocname}{Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
+\renewcommand*{\tablename}{Tabla}
+\renewcommand*{\chaptername}{Capítulo}
+\renewcommand*{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
+\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
+\newcommand*\rot{\rotatebox{90}}
+
+\captionsetup{justification=centering}
