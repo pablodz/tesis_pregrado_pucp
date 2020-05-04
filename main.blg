@@ -36,24 +36,24 @@ while executing---line 5079 of file apacite.bst
 Warning--No school in Vega2013
 You've used 21 entries,
             6951 wiz_defined-function locations,
-            1424 strings with 15550 characters,
-and the built_in function-call counts, 36749 in all, are:
-= -- 4463
+            1424 strings with 15552 characters,
+and the built_in function-call counts, 36713 in all, are:
+= -- 4456
 > -- 287
-< -- 1758
-+ -- 1702
-- -- 76
-* -- 2292
-:= -- 6770
-add.period$ -- 85
+< -- 1757
++ -- 1695
+- -- 78
+* -- 2289
+:= -- 6766
+add.period$ -- 84
 call.type$ -- 21
 change.case$ -- 361
 chr.to.int$ -- 0
 cite$ -- 44
-duplicate$ -- 921
+duplicate$ -- 918
 empty$ -- 1555
 format.name$ -- 477
-if$ -- 7025
+if$ -- 7017
 int.to.chr$ -- 0
 int.to.str$ -- 63
 missing$ -- 0
@@ -63,16 +63,16 @@ pop$ -- 960
 preamble$ -- 1
 purify$ -- 88
 quote$ -- 0
-skip$ -- 2222
+skip$ -- 2223
 stack$ -- 0
-substring$ -- 1824
-swap$ -- 492
-text.length$ -- 62
+substring$ -- 1820
+swap$ -- 491
+text.length$ -- 63
 text.prefix$ -- 0
 top$ -- 1
 type$ -- 1744
 warning$ -- 2
 while$ -- 167
 width$ -- 0
-write$ -- 602
+write$ -- 601
 (There were 2 error messages)

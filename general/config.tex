@@ -39,19 +39,17 @@
 \usepackage{blindtext}
 \usepackage[table,xcdraw]{xcolor} % Para tablas generadas en https://www.tablesgenerator.com/
 \usepackage{pdfpages} % Cargar imagenes en pdf
+\usepackage{datetime} % Fecha
 
-
-
-\usepackage[hyphen]{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
-\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+\usepackage{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+%\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
 
 \fancyhead{}  % Clears all page headers and footers
-
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
-%\fancyhead[r]{\thepage}
-%\fancyhead[l]{\fancyplain{\fancy}{\slshape\leftmark}}
-%\fancyfoot[c]{center of the footer!}
+%\fancyhead[r]{\leftmark}
+%\fancyfoot[c]{PUCP}
+%\fancyfoot[r]{\thepage}
 \fancypagestyle{plain}{%
 	\fancyhf{} % clear all header and footer fields
 	\fancyhead[r]{\leftmark}
@@ -61,22 +59,22 @@
 	\renewcommand{\footrulewidth}{0.4pt}}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
-
 \renewcommand{\chaptermark}[1]{\markboth{\itshape\chaptername~\thechapter}{}}
-%\usepackage{fontspec}
-%\setmainfont{ebgaramond}
-
 
 \graphicspath{{images/}}
 
 \captionsetup[table]{skip=10pt}
 \captionsetup[figure]{skip=10pt}
+\captionsetup{justification=centering}
 
 \bibliographystyle{apacite}
 \renewcommand\bibname{Bibliografía}
 
 \renewcommand{\BOthers}[1]{et al.\hbox{}}%       et al
 \renewcommand{\BOthersPeriod}[1]{et al.\hbox{}}%  et al.
+
+
+
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION
 %----------------------------------------------------------------------------------------
@@ -97,4 +95,3 @@
 \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 \newcommand*\rot{\rotatebox{90}}
 
-\captionsetup{justification=centering}
