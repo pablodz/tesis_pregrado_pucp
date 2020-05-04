@@ -120,7 +120,7 @@ La clasificación por tamaño permite identificar en qué etapa de producción s
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[]
+\begin{table}[H]
 	\centering	
 	\caption{Clasificación de truchas por etapas de producción.}
 	\label{tbl:clasificacion de truchas por etapas de produccion}
@@ -131,8 +131,7 @@ La clasificación por tamaño permite identificar en qué etapa de producción s
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Hasta \textit{(mm)}}} & 34 & 50 & 80 & 120 & 140 & 170 & 200 & 260 & - \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{De \textit{(g)}}} & - & 2.81 & 6.91 & 11 & 51 & 110 & 153 & 200 & 251 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Hasta \textit{(g)}}} & 2.80 & 6.90 & 10 & 50 & 109 & 152 & 199 & 250 & 290 \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Este trabajo \textit{(mm)}}} & \multicolumn{3}{c|}{} & \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}100 a 200} & \multicolumn{2}{c|}{} 
-		\\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{9B9B9B}\textbf{Este trabajo \textit{(mm)}}} & \multicolumn{3}{c|}{} & \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}100 a 200} & \multicolumn{2}{c|}{} \\ \hline
 	\end{tabular}
 	\\Fuente: FONDEPES.
 \end{table}
@@ -218,28 +217,229 @@ En la Figura \ref{fig:medicion de peces dentro de estanques con camaras ortogona
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Clasificación usando técnicas de inteligencia artificial}
 
-Esta tecnología es robusta, es decir, funciona aceptablemente con ruido, cambios en condiciones ambientales, cambios en la adquisición de datos, entre otros cambios. La técnica se basa en redes neuronales , con las que se logra una gran precisión para detectar y segmentar objetos en muchas diferentes condiciones (en este caso peces).
+Esta tecnología es robusta, es decir, funciona aceptablemente con ruido, cambios en condiciones ambientales, cambios en la adquisición de datos, entre otros cambios. La técnica se basa en redes neuronales\footnote{Las redes neuronales son usadas para modelar libremente la forma en que un cerebro biológico parame-triza datos.}, con las que se logra una gran precisión para detectar y segmentar objetos en muchas diferentes condiciones (en este caso peces).\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{chapter1/pez identificado por una red neuronal.png}
+	\caption{Pez identificado por una red neuronal.}
+	Fuente: \cite{Varalakshmi2019}.
+	\label{fig:pez identificado por una red neuronal}
+\end{figure}
+
+Este tipo de técnicas dependen de muchas variables y factores, en la Tabla \ref{tbl:comparacion de diferentes funciones de activacion} se muestra los principales, con los cuales se logra una mejor precisión de clasificación. \\
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering	
+	\caption{Comparación de diferentes funciones de activación.}
+	\label{tbl:comparacion de diferentes funciones de activacion}
+	\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{A6A6A6} 
+		{\color[HTML]{000000} \textbf{N°}} & {\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Capa\\ convolucional\end{tabular}}} & {\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Capa\\ reductora\end{tabular}}} & {\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Capa \\ completamente\\ conectada\end{tabular}}} & {\color[HTML]{000000} \textbf{Epoch}} & {\color[HTML]{000000} \textbf{Precisión}} & {\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Funciones\\ de\\ activación\end{tabular}}} \\ \hline
+		{\color[HTML]{000000} 1} & {\color[HTML]{000000} 2} & {\color[HTML]{000000} 2} & {\color[HTML]{000000} 2} & {\color[HTML]{000000} 50} & {\color[HTML]{000000} 95\%} & {\color[HTML]{000000} ReLu,   Sigmoid} \\ \hline
+		{\color[HTML]{000000} 2} & {\color[HTML]{000000} 2} & {\color[HTML]{000000} 2} & {\color[HTML]{000000} 2} & {\color[HTML]{000000} 50} & {\color[HTML]{000000} 50\%} & {\color[HTML]{000000} ReLu,   Softmax} \\ \hline
+		{\color[HTML]{000000} 3} & {\color[HTML]{000000} 4} & {\color[HTML]{000000} 4} & {\color[HTML]{000000} 4} & {\color[HTML]{000000} 50} & {\color[HTML]{000000} 48\%} & {\color[HTML]{000000} ReLu,   Sigmoid} \\ \hline
+	\end{tabular}
+	\\ Fuente: \cite{Varalakshmi2019}.
+\end{table}
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Comparación}
+
+La Tabla \ref{tbl:comparacion entre metodos de clasificacion} desarrolla una comparación tanto cuantitativa como cualitativa de los métodos de clasificación de peces. \textbf{La cantidad de peces por hora} se refiere a la máxima cantidad que se puede clasificar en una hora según el método. \textbf{El mantenimiento} es la frecuencia en la cual la máquina pasa una inspección para verificar su correcto funcionamiento. El \textbf{costo de implementación} se refiere al costo de diseñar e implementar el método. El \textbf{costo de funcionamiento} se refiere al consumo energético en general del empleo del método. La \textbf{precisión} se refiere a la cantidad de peces bien clasificados en el proceso. La calificación “bajo, medio, alto” son juicios del autor, basándose en su experiencia.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering
+	\caption{Comparación entre los métodos de clasificación.}
+	\label{tbl:comparacion entre metodos de clasificacion}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{A6A6A6} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio\textbackslash{}Método}}} & {\color[HTML]{000000} \textbf{Manual}} & {\color[HTML]{000000} \textbf{Mecánico}} & {\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Visión por\\  computadora\end{tabular}}} & {\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Inteligencia \\ Artificial\end{tabular}}} \\ \hline
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Cantidad de peces \\ por hora\end{tabular}} & {\color[HTML]{000000} 120    (por   operario)} & {\color[HTML]{000000} 18000} & {\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Según capacidad \\ de cómputo\end{tabular}} & {\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Según capacidad\\ de cómputo\end{tabular}} \\ \hline
+		{\color[HTML]{000000} Mantenimiento} & {\color[HTML]{000000} -} & {\color[HTML]{000000} Semestral} & {\color[HTML]{000000} Anual} & {\color[HTML]{000000} Anual} \\ \hline
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Costo de \\ implementación\end{tabular}} & {\color[HTML]{000000} Bajo} & {\color[HTML]{000000} Medio} & {\color[HTML]{000000} Medio} & {\color[HTML]{000000} Medio} \\ \hline
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Costo de \\ funcionamiento\end{tabular}} & {\color[HTML]{000000} Bajo} & {\color[HTML]{000000} Bajo} & {\color[HTML]{000000} Medio} & {\color[HTML]{000000} Alto} \\ \hline
+		{\color[HTML]{000000} Precisión} & {\color[HTML]{000000} Media} & {\color[HTML]{000000} Alta} & {\color[HTML]{000000} Alta} & {\color[HTML]{000000} Muy alta} \\ \hline
+	\end{tabular}
+	\\ Fuente: Elaboración Propia.
+\end{table}
+
+%% NUEVO SUBSECCION X.X.X
+\subsection{Sistema de conteo de peces}
+
+El proceso se realiza como método para calcular la \textbf{biomasa}\footnote{La masa total de peces en un volumen determinado, se usa para determinar la cantidad de alimentación.}, verificar la \textbf{mortandad} y con propósitos de venta. Se realiza un conteo del pez\footnote{Animal acuático vivo.} directa o indirectamente. 
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Conteo manual}
+
+Debido a que realizar de forma separada y manual los procesos de clasificación, conteo o curado\footnote{Proceso de aplicar sal marina a los peces con la finalidad de sanar de enfermedades como saprolegniosis o exoftalmia.}  de truchas requeriría de excesivo tiempo y operarios, se suele realizar los tres procesos de manera como si de un solo proceso se tratase como se muestra en la Figura \ref{fig:clasificacion conteo curado y calculo de biomasa en la laguna de canrash}. El proceso resultante contempla los tres subprocesos de manera secuencial: extracción de la trucha de los estanques o jaulas flotantes, curado, clasificación, conteo y cálculo de biomasa en un determinado recipiente.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/clasificacion conteo curado y calculo de biomasa en la laguna de canrash.pdf}
+	\caption{Clasificación, conteo, curado y cálculo de biomasa en la laguna de Canrash, Ancash, Perú.}
+	Fuente: Elaboración propia.
+	\label{fig:clasificacion conteo curado y calculo de biomasa en la laguna de canrash}
+\end{figure}
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Conteo por sensores}
+
+Este tipo de conteo se basa en el uso de sensores en general (láseres, ultrasonidos, presencia, capacitivos, entre otros).  El contador que se muestra en la Figura \ref{fig:contador peces basado en luz infrarroja faivre} realiza un conteo mediante el uso de láseres infrarrojos que forman una \textit{cortina}\footnote{Llamada también barrera.}. El pez en tránsito impide que el láser llegue al lado opuesto en el cual se recibe la luz en un sensor receptivo, generando así un control lógico sobre la presencia del pez. Con la finalidad de evitar mal conteo por superposición de los peces se suele tener un sistema que canaliza un pez a la vez que pase por el sistema contador.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/contador peces basado en luz infrarroja faivre.png}
+	\caption{Contador de peces basado en luz infrarroja.}
+	Fuente: \cite{FAIVRE2013}.
+	\label{fig:contador peces basado en luz infrarroja faivre}
+\end{figure}
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Conteo mediante visión por computadora}
+
+El proceso de conteo mediante visión por computadora se realiza a partir de una imagen capturada desde un plano específico como se muestra en la  Figura \ref{fig:planos comunes de posicionamiento para camaras de inspeccion}. Dicha imagen se procesa para poder realizar una segmentación adecuada de la trucha y así poder contabilizarlas. El número de cámaras y las posiciones varían dependiendo de qué se bus-ca.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{chapter1/planos comunes de posicionamiento para camaras de inspeccion.pdf}
+	\caption{Planos comunes de posicionamiento para cámaras de inspección.}
+	Fuente: Elaboración propia.
+	\label{fig:planos comunes de posicionamiento para camaras de inspeccion}
+\end{figure}
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Conteo mixto}
+
+El conteo mixto\footnote{Método que emplea sensores y visión por computadora.} se realiza usando imágenes, electrónica y software para aumentar la precisión del conteo. El fabricante afirma tener una alta precisión, sistema fácil de usar, sistema fácil de movilizar y en un tiempo corto. \cite{AquaScan2015}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/contador de peces mediante escaneres.png}
+	\caption{Contador de peces mediante escáneres.}
+	Fuente: Elaboración propia.
+	\label{fig:contador de peces mediante escaneres}
+\end{figure}
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Comparación}
+
+En la Tabla \ref{tbl:comparacion entre metodos de conteo de peces} desarrolla una comparación tanto cuantitativa como cualitativa de los métodos de conteo de peces. \textbf{La cantidad de peces por hora} se refiere a la cantidad de peces que puede contar en una hora. El \textbf{mantenimiento} se refiere a la frecuencia con la cual se inspecciona el funcionamiento correcto del método. El \textbf{costo de implementación} y \textbf{de funcionamiento} se refieren a los costos de diseño, implementación y de marcha. La \textbf{precisión} se refiere a la cantidad de peces correctamente contados en comparación con los que no fueron contados. La calificación “\textit{bajo, medio, alto}” son juicios del autor, basándose en su experiencia.
 
 
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	
+	\centering
+	\caption{Comparación entre los métodos de conteo de peces.}
+	\label{tbl:comparacion entre metodos de conteo de peces}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{D9D9D9}}l |c|c|c|c|}
+		\hline
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio\textbackslash{}Método}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Manual}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Sensores}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}Visión por \\ computadora\end{tabular}}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Mixto}} \\ \hline
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Cantidad de peces\\ por hora\end{tabular}} &
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}120\\ (por operario)\end{tabular}} &
+		{\color[HTML]{000000} 95000} &
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Según capacidad \\ de cómputo\end{tabular}} &
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Según capacidad \\ de cómputo\end{tabular}} \\ \hline
+		{\color[HTML]{000000} Mantenimiento} &
+		{\color[HTML]{000000} -} &
+		{\color[HTML]{000000} Semestral} &
+		{\color[HTML]{000000} Anual} &
+		{\color[HTML]{000000} Anual} \\ \hline
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Costo de \\ implementación\end{tabular}} &
+		{\color[HTML]{000000} Bajo} &
+		{\color[HTML]{000000} Bajo} &
+		{\color[HTML]{000000} Medio} &
+		{\color[HTML]{000000} Medio} \\ \hline
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Costo de\\ funcionamiento\end{tabular}} &
+		{\color[HTML]{000000} Bajo} &
+		{\color[HTML]{000000} Bajo} &
+		{\color[HTML]{000000} Alto} &
+		{\color[HTML]{000000} Alto} \\ \hline
+		{\color[HTML]{000000} Precisión} &
+		{\color[HTML]{000000} Media} &
+		{\color[HTML]{000000} Alta} &
+		{\color[HTML]{000000} Alta} &
+		{\color[HTML]{000000} Muy alta} \\ \hline
+	\end{tabular}
+\\ Fuente: Elaboración propia.
+\end{table}
 
 
+%% NUEVO SUBSECCION X.X.X
+\subsection{Extracción de características de peces}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Extracción mediante inspección visual}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Extracción de características mediante visión por computadora}
 
+%% NUEVO SUBSECCION X.X.X
+\subsection{Sistema de traslado de peces}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Traslado manual}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Traslado automático}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Comparación}
 
+%% NUEVO SUBSECCION X.X.X
+\subsection{Productos comerciales y patentes}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Dispositivo de clasificación de peces y método de clasificación de pe-ces \textit{(Patente JP5563164B2)}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Clasificador completamente automático de pescado \textit{(Patente CN205180233U)}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Clasificador y contador automático de peces \textit{(Patente CN203884438U)}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Seleccionadora completamente automática \textit{AGK}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Clasificador automático para peces Helios}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Clasificador automático de peces y contador automático \textit{Pentair V-100 00140}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Clasificador de peces \textit{Apollo}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Clasificador de peces \textit{Apollo}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Contador de peces \textit{Pescavision}}
 
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Contador de peces \textit{Calitri}}
+
+%% NUEVA SUB-SUB-SECCION X.X.X.X
+\subsubsection{Comparación}
 
 
 

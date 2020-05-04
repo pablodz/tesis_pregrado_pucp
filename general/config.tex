@@ -1,9 +1,8 @@
-\documentclass[12pt,a4paper,oneside]{report} % Formato tesis
+\documentclass[12pt,a4paper,oneside]{report} % Formato tesis, 12 tamaño de letra
 \usepackage[english,spanish]{babel} % Asignar idioma por defecto
 \selectlanguage{spanish} % Idioma por defecto x2
 \usepackage[T1]{fontenc} % Aceptar caracteres con tíldes en el pdf generado
 \usepackage[UTF8]{ctex}
-\usepackage{times} %
 \usepackage[utf8]{inputenc} % Aceptar caracteres con tíldes en Latex
 \usepackage{amsmath} % Para mostrar de forma adecuada las ecuaciones
 \usepackage{graphicx} % Para incluir imágenes 
@@ -28,10 +27,23 @@
 \usepackage{apacite} % Citación en APA
 \usepackage{fixltx2e} % Corrige bugs de Latex 3
 \usepackage{caption} % Objetos flotantes en el documento
-\usepackage[width=150mm,top=25mm,bottom=25mm]{geometry}
-\usepackage{fancyhdr}
+\usepackage[top=2.54cm,
+			bottom=2.54cm,
+			left=2.54cm,
+			right=2.54cm,
+			headheight=17pt, % as per the warning by fancyhdr
+			includehead,includefoot,
+			heightrounded, % to avoid spurious underfull messages
+			]{geometry} % Márgenes para contenido y líneas de pie y cabecera de página
+\usepackage{fancyhdr} % Cabeza y pie de página 
 \usepackage{blindtext}
-\usepackage[table,xcdraw]{xcolor}
+\usepackage[table,xcdraw]{xcolor} % Para tablas generadas en https://www.tablesgenerator.com/
+\usepackage{pdfpages} % Cargar imagenes en pdf
+
+
+
+\usepackage[hyphen]{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
 
 \fancyhead{}  % Clears all page headers and footers
 
@@ -44,7 +56,7 @@
 	\fancyhf{} % clear all header and footer fields
 	\fancyhead[r]{\leftmark}
 	\fancyfoot[c]{PUCP}
-	\fancyfoot[r]{Pág. \thepage}
+	\fancyfoot[r]{\thepage}
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -56,16 +68,20 @@
 
 
 \graphicspath{{images/}}
+
 \captionsetup[table]{skip=10pt}
+\captionsetup[figure]{skip=10pt}
+
 \bibliographystyle{apacite}
-\renewcommand{\BOthers}[1]{et al.\hbox{}}
 \renewcommand\bibname{Bibliografía}
+
+\renewcommand{\BOthers}[1]{et al.\hbox{}}%       et al
+\renewcommand{\BOthersPeriod}[1]{et al.\hbox{}}%  et al.
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION
 %----------------------------------------------------------------------------------------
-%\marginsize{2.5cm}{2.5cm}{2.5cm}{2.5cm}
 \renewcommand*{\contentsname}{Tabla de contenidos}
-\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand*{\listtablename}{Índice de tablas}
 \renewcommand*{\listfigurename}{Índice de figuras}
 \renewcommand{\baselinestretch}{1.0}
 \renewcommand{\appendixname}{Anexos}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  2 MAY 2020 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  4 MAY 2020 16:20
 entering extended mode
 **./main.tex
 (main.tex
@@ -301,9 +301,6 @@ and DVIPDFMx (CTEX)
 {C:/Users/PabloGod/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}{UGBK.sfd}
 {Unicode.sfd})))) ("C:\Program Files\MiKTeX 2.9\tex/latex/ctex/config\ctex.cfg"
 File: ctex.cfg 2019/05/29 v2.4.16 Configuration file (CTEX)
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\times.sty"
-Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2020/01/20 v2.17e AMS math features
@@ -791,6 +788,177 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pdfpages.sty"
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count328
+\calc@Bcount=\count329
+\calc@Adimen=\dimen192
+\calc@Bdimen=\dimen193
+\calc@Askip=\skip96
+\calc@Bskip=\skip97
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count330
+\calc@Cskip=\skip98
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.sty"
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/atbegshi\atbegshi.sty"
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/infwarerr\infwarerr.sty"
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ltxcmds\ltxcmds.sty"
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)))
+\AM@pagewidth=\dimen194
+\AM@pageheight=\dimen195
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pppdftex.def"
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box111
+\AM@global@opts=\toks33
+\AM@pagecnt=\count331
+\AM@toc@title=\toks34
+\c@AM@survey=\count332
+\AM@templatesizebox=\box112
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+
+
+! LaTeX Error: Unknown option `hyphen' for package `url'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.235 }
+       
+The option `hyphen' was not declared in package `url', perhaps you
+misspelled its name. Try typing  <return>  to proceed.
+
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdftexcmds\pdftexcmds.sty"
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/kvsetkeys\kvsetkeys.sty"
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/kvdefinekeys\kvdefinekeys.sty"
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/pdfescape\pdfescape.sty"
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/hycolor\hycolor.sty"
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/letltxmacro\letltxmacro.sty"
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/auxhook\auxhook.sty"
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/kvoptions\kvoptions.sty"
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+\@linkdim=\dimen196
+\Hy@linkcounter=\count333
+\Hy@pagecounter=\count334
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/intcalc\intcalc.sty"
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/etexcmds\etexcmds.sty"
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count335
+Package hyperref Info: Option `unicode' set `true' on input line 4421.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\puenc.def"
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count336
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen197
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/bitset\bitset.sty"
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/bigintcalc\bigintcalc.sty"
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count337
+\Field@Width=\dimen198
+\Fld@charsize=\dimen199
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+\Hy@abspage=\count338
+\c@Item=\count339
+\c@Hfootnote=\count340
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/atveryend\atveryend.sty"
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+)
+\Fld@listcount=\count341
+\c@bookmark@seq@number=\count342
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/rerunfilecheck\rerunfilecheck.sty"
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/uniquecounter\uniquecounter.sty"
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip99
 ))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/cjk/UTF8\UTF8.bdg"
 File: UTF8.bdg 2015/04/18 4.8.4
@@ -802,13 +970,14 @@ File: UTF8.enc 2015/04/18 4.8.4
 File: UTF8.chr 2015/04/18 4.8.4
 ) (main.aux
 (general/cover.aux
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
 )
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
  (general/summary.aux) (general/introduction.aux)
 (general/gratitude.aux) (general/table-of-content.aux) (chapters/chapter1.aux)
+(chapters/chapter2.aux) (chapters/chapter3.aux) (chapters/chapter4.aux)
 (general/bibliography.aux) (general/annexes.aux))
 \openout1 = `main.aux'.
 
@@ -896,6 +1065,10 @@ LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
 LaTeX Info: Redefining \. on input line 4.
 LaTeX Info: Redefining \% on input line 4.
 
@@ -904,24 +1077,24 @@ LaTeX Info: Redefining \selectfont on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count328
-\scratchdimen=\dimen192
-\scratchbox=\box111
-\nofMPsegments=\count329
-\nofMParguments=\count330
-\everyMPshowfont=\toks33
-\MPscratchCnt=\count331
-\MPscratchDim=\dimen193
-\MPnumerator=\count332
-\makeMPintoPDFobject=\count333
-\everyMPtoPDFconversion=\toks34
+\scratchcounter=\count343
+\scratchdimen=\dimen256
+\scratchbox=\box113
+\nofMPsegments=\count344
+\nofMParguments=\count345
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count346
+\MPscratchDim=\dimen257
+\MPnumerator=\count347
+\makeMPintoPDFobject=\count348
+\everyMPtoPDFconversion=\toks36
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count334
-\c@maskedRefs=\count335
+\c@lstlisting=\count349
+\c@maskedRefs=\count350
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/apacite\spanish.apc"
 File: spanish.apc 2013/07/21 v6.03 apacite language file
@@ -929,6 +1102,7 @@ LaTeX Info: Redefining \BPBI on input line 138.
 LaTeX Info: Redefining \BHBI on input line 139.
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -938,16 +1112,16 @@ Package caption Info: End \AtBeginDocument code.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 426.79134pt, 85.35828pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* modes: includehead includefoot heightrounded 
+* h-part:(L,W,R)=(72.2698pt, 452.96826pt, 72.2698pt)
+* v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79134pt
-* \textheight=702.78308pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-38.1381pt
+* \textwidth=452.96826pt
+* \textheight=634.05121pt
+* \oddsidemargin=-0.00018pt
+* \evensidemargin=-0.00018pt
+* \topmargin=-0.00018pt
 * \headheight=15.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -965,20 +1139,45 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+\AtBeginShipoutBox=\box114
+Package hyperref Info: Link coloring OFF on input line 4.
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/refcount\refcount.sty"
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/gettitlestring\gettitlestring.sty"
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count351
+)
+LaTeX Info: Redefining \ref on input line 4.
+LaTeX Info: Redefining \pageref on input line 4.
+LaTeX Info: Redefining \nameref on input line 4.
+
+(main.out) (main.out)
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
 \openout2 = `general/cover.aux'.
 
-(general/cover.tex
-<images/logopucp.png, id=1, 529.0164pt x 155.6214pt>
+ (general/cover.tex
+<images/logopucp.png, id=150, 529.0164pt x 155.6214pt>
 File: images/logopucp.png Graphic file (type png)
 <use images/logopucp.png>
 Package pdftex.def Info: images/logopucp.png  used on input line 13.
 (pdftex.def)             Requested size: 369.88582pt x 108.81075pt.
- [1
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/ctex\zhwindowsfonts.tex"
+File: zhwindowsfonts.tex 2019/05/29 v2.4.16 Windows font map loader for pdfTeX 
+and DVIPDFMx (CTEX)
+) [1
 
 
 
 
- <./images/logopucp.png>])
+ <./images/logopucp.png>] [2])
 \openout2 = `general/summary.aux'.
 
  (general/summary.tex)
@@ -1026,18 +1225,304 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-<images/introduction/produccion agricola mundial.png, id=14, 423.08063pt x 197.
-98969pt>
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ...ternacionalmente desde 2017. \cite{FAO2017}
+                                                   La producción de truchas...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ...ternacionalmente desde 2017. \cite{FAO2017}
+                                                   La producción de truchas...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ...ternacionalmente desde 2017. \cite{FAO2017}
+                                                   La producción de truchas...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ...ternacionalmente desde 2017. \cite{FAO2017}
+                                                   La producción de truchas...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ...ternacionalmente desde 2017. \cite{FAO2017}
+                                                   La producción de truchas...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ...ternacionalmente desde 2017. \cite{FAO2017}
+                                                   La producción de truchas...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ...  \cite{SeafoodTradeIntelligencePortal2018}
+                                                   Sin embargo, según FONDE...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ...  \cite{SeafoodTradeIntelligencePortal2018}
+                                                   Sin embargo, según FONDE...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ...  \cite{SeafoodTradeIntelligencePortal2018}
+                                                   Sin embargo, según FONDE...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ...  \cite{SeafoodTradeIntelligencePortal2018}
+                                                   Sin embargo, según FONDE...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ...  \cite{SeafoodTradeIntelligencePortal2018}
+                                                   Sin embargo, según FONDE...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ...  \cite{SeafoodTradeIntelligencePortal2018}
+                                                   Sin embargo, según FONDE...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ... más de 18000 TM/Año. \cite{FONDEPES2014}
+                                                   Perú ha incrementado 348...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ... más de 18000 TM/Año. \cite{FONDEPES2014}
+                                                   Perú ha incrementado 348...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ... más de 18000 TM/Año. \cite{FONDEPES2014}
+                                                   Perú ha incrementado 348...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ... más de 18000 TM/Año. \cite{FONDEPES2014}
+                                                   Perú ha incrementado 348...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ... más de 18000 TM/Año. \cite{FONDEPES2014}
+                                                   Perú ha incrementado 348...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ... más de 18000 TM/Año. \cite{FONDEPES2014}
+                                                   Perú ha incrementado 348...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ... \cite{MinisteriodelaProducciondelPeru2018}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ... \cite{MinisteriodelaProducciondelPeru2018}
+                                                  }
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ... \cite{MinisteriodelaProducciondelPeru2018}
+                                                  }
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.9 ... \cite{MinisteriodelaProducciondelPeru2018}
+                                                  }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.9 ... \cite{MinisteriodelaProducciondelPeru2018}
+                                                  }
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.9 ... \cite{MinisteriodelaProducciondelPeru2018}
+                                                  }
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<images/introduction/produccion agricola mundial.png, id=184, 423.08063pt x 197
+.98969pt>
 File: images/introduction/produccion agricola mundial.png Graphic file (type pn
 g)
 <use images/introduction/produccion agricola mundial.png>
 Package pdftex.def Info: images/introduction/produccion agricola mundial.png  u
-sed on input line 14.
-(pdftex.def)             Requested size: 426.79134pt x 199.73235pt.
+sed on input line 15.
+(pdftex.def)             Requested size: 452.96826pt x 211.9828pt.
 )
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [1
+pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.7 \include{general/introduction}
+                                   [1
 
 
 
@@ -1063,12 +1548,8 @@ LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
-)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
-LaTeX Info: Redefining \. on input line 3.
-LaTeX Info: Redefining \% on input line 3.
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
 
 
 Package Fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1081,18 +1562,22 @@ This may cause the page layout to be inconsistent, however.
 
 
 
-] (main.lof
+])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [4] (main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lof=\write5
-\openout5 = `main.lof'.
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
- [4
+ [5
 
 ] (main.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1100,16 +1585,16 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
-\tf@lot=\write6
-\openout6 = `main.lot'.
+\tf@lot=\write7
+\openout7 = `main.lot'.
 
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
- [5
+ [6
 
 ]
-\glsf@default=\write7
-\openout7 = `main.gls.aux'.
+\glsf@default=\write8
+\openout8 = `main.gls.aux'.
 
 Package gloss Info: Writing gloss file main.gls.aux on input line 8.
 )
@@ -1129,7 +1614,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
-[1
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 
+      [1
 
 
 
@@ -1148,7 +1638,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[2]
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 
+      [2]
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
@@ -1159,6 +1654,217 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
  []
 
 [3]
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.55 ...�n de aprendizaje.\cite{GuevaraPatino2016}
+                                                   \textbf{El aspecto técni...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.55 ...�n de aprendizaje.\cite{GuevaraPatino2016}
+                                                   \textbf{El aspecto técni...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.55 ...�n de aprendizaje.\cite{GuevaraPatino2016}
+                                                   \textbf{El aspecto técni...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.55 ...�n de aprendizaje.\cite{GuevaraPatino2016}
+                                                   \textbf{El aspecto técni...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.55 ...�n de aprendizaje.\cite{GuevaraPatino2016}
+                                                   \textbf{El aspecto técni...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.55 ...�n de aprendizaje.\cite{GuevaraPatino2016}
+                                                   \textbf{El aspecto técni...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.55 ...enómenos y procesos.. \cite{Martinez2003}
+                                                   Además, las técnicas de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.55 ...enómenos y procesos.. \cite{Martinez2003}
+                                                   Además, las técnicas de...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.55 ...enómenos y procesos.. \cite{Martinez2003}
+                                                   Además, las técnicas de...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.55 ...enómenos y procesos.. \cite{Martinez2003}
+                                                   Además, las técnicas de...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.55 ...enómenos y procesos.. \cite{Martinez2003}
+                                                   Además, las técnicas de...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.55 ...enómenos y procesos.. \cite{Martinez2003}
+                                                   Además, las técnicas de...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.55 ...s y específicos. \cite{GuevaraPatino2016}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.55 ...s y específicos. \cite{GuevaraPatino2016}
+                                                  \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.55 ...s y específicos. \cite{GuevaraPatino2016}
+                                                  \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.55 ...s y específicos. \cite{GuevaraPatino2016}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.55 ...s y específicos. \cite{GuevaraPatino2016}
+                                                  \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.55 ...s y específicos. \cite{GuevaraPatino2016}
+                                                  \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -1168,45 +1874,608 @@ Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.64 ...ma directa o indirecta.\cite{MINAGRI2011}}
+                                                   y climas. \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.64 ...ma directa o indirecta.\cite{MINAGRI2011}}
+                                                   y climas. \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.64 ...ma directa o indirecta.\cite{MINAGRI2011}}
+                                                   y climas. \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.64 ...ma directa o indirecta.\cite{MINAGRI2011}}
+                                                   y climas. \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.64 ...ma directa o indirecta.\cite{MINAGRI2011}}
+                                                   y climas. \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.64 ...ma directa o indirecta.\cite{MINAGRI2011}}
+                                                   y climas. \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
+
+[4]
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.66 ...mejorar infraestructura. \cite{Andina2019}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.66 ...mejorar infraestructura. \cite{Andina2019}
+                                                  \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.66 ...mejorar infraestructura. \cite{Andina2019}
+                                                  \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.66 ...mejorar infraestructura. \cite{Andina2019}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.66 ...mejorar infraestructura. \cite{Andina2019}
+                                                  \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.66 ...mejorar infraestructura. \cite{Andina2019}
+                                                  \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[4]
-<images/chapter1/extraccion trucha toneladas anuales.png, id=44, 582.67688pt x 
-362.10281pt>
+<images/chapter1/extraccion trucha toneladas anuales.png, id=334, 582.67688pt x
+ 362.10281pt>
 File: images/chapter1/extraccion trucha toneladas anuales.png Graphic file (typ
 e png)
 <use images/chapter1/extraccion trucha toneladas anuales.png>
 Package pdftex.def Info: images/chapter1/extraccion trucha toneladas anuales.pn
 g  used on input line 70.
-(pdftex.def)             Requested size: 426.79134pt x 265.23346pt.
+(pdftex.def)             Requested size: 452.96826pt x 281.49976pt.
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.72 ...\cite{MinisteriodelaProducciondelPeru2018}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.72 ...\cite{MinisteriodelaProducciondelPeru2018}
+                                                  \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.72 ...\cite{MinisteriodelaProducciondelPeru2018}
+                                                  \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.72 ...\cite{MinisteriodelaProducciondelPeru2018}
+                                                  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.72 ...\cite{MinisteriodelaProducciondelPeru2018}
+                                                  \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.72 ...\cite{MinisteriodelaProducciondelPeru2018}
+                                                  \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[5]
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.80 ... la acuicultura mundial.\cite{Powell2003}}
+                                                  , principal país exportad...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.80 ... la acuicultura mundial.\cite{Powell2003}}
+                                                  , principal país exportad...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.80 ... la acuicultura mundial.\cite{Powell2003}}
+                                                  , principal país exportad...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.80 ... la acuicultura mundial.\cite{Powell2003}}
+                                                  , principal país exportad...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.80 ... la acuicultura mundial.\cite{Powell2003}}
+                                                  , principal país exportad...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.80 ... la acuicultura mundial.\cite{Powell2003}}
+                                                  , principal país exportad...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.80 ...millones de dólares \cite[p.~44]{FAO2017}
+                                                  , se usa métodos de crian...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.80 ...millones de dólares \cite[p.~44]{FAO2017}
+                                                  , se usa métodos de crian...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.80 ...millones de dólares \cite[p.~44]{FAO2017}
+                                                  , se usa métodos de crian...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.80 ...millones de dólares \cite[p.~44]{FAO2017}
+                                                  , se usa métodos de crian...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.80 ...millones de dólares \cite[p.~44]{FAO2017}
+                                                  , se usa métodos de crian...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.80 ...millones de dólares \cite[p.~44]{FAO2017}
+                                                  , se usa métodos de crian...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.80 ...a de crecimiento, etc. \cite[p.~1-6]{2017}
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.80 ...a de crecimiento, etc. \cite[p.~1-6]{2017}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.80 ...a de crecimiento, etc. \cite[p.~1-6]{2017}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 LaTeX Font Info:    Trying to load font information for C70+rm on input line 80
 .
- ("C:\Program Files\MiKTeX 2.9\tex/latex/ctex/fd\c70rm.fd"
+("C:\Program Files\MiKTeX 2.9\tex/latex/ctex/fd\c70rm.fd"
 File: c70rm.fd 2019/05/29 v2.4.16 Chinese font definition (CTEX)
 )
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.80 ...a de crecimiento, etc. \cite[p.~1-6]{2017}
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.80 ...a de crecimiento, etc. \cite[p.~1-6]{2017}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.80 ...a de crecimiento, etc. \cite[p.~1-6]{2017}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 80--81
 
  []
 
-[5 <./images/chapter1/extraccion trucha toneladas anuales.png>]
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.82 ...eros a nivel mundial \cite[p.~44]{FAO2017}
+                                                  , produce alrededor de 500...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.82 ...eros a nivel mundial \cite[p.~44]{FAO2017}
+                                                  , produce alrededor de 500...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.82 ...eros a nivel mundial \cite[p.~44]{FAO2017}
+                                                  , produce alrededor de 500...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.82 ...eros a nivel mundial \cite[p.~44]{FAO2017}
+                                                  , produce alrededor de 500...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.82 ...eros a nivel mundial \cite[p.~44]{FAO2017}
+                                                  , produce alrededor de 500...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.82 ...eros a nivel mundial \cite[p.~44]{FAO2017}
+                                                  , produce alrededor de 500...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.82 ...mente industrializada. \cite[p.~1-5]{2005}
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.82 ...mente industrializada. \cite[p.~1-5]{2005}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.82 ...mente industrializada. \cite[p.~1-5]{2005}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\hyper@@link ->\let \Hy@reserved@a 
+                                   \relax \@ifnextchar [{\hyper@link@ }{\hyp...
+l.82 ...mente industrializada. \cite[p.~1-5]{2005}
+                                                   \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.82 ...mente industrializada. \cite[p.~1-5]{2005}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.82 ...mente industrializada. \cite[p.~1-5]{2005}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
+[6 <./images/chapter1/extraccion trucha toneladas anuales.png>]
 
-LaTeX Warning: Reference `Productos comerciales y patentes' on page 6 undefined
+LaTeX Warning: Reference `Productos comerciales y patentes' on page 7 undefined
  on input line 84.
 
 <images/chapter1/comercio internacional de productos pesqueros por principales 
-importadores y exportadores en dolares.png, id=55, 618.81187pt x 209.28188pt>
+importadores y exportadores en dolares.png, id=382, 618.81187pt x 209.28188pt>
 File: images/chapter1/comercio internacional de productos pesqueros por princip
 ales importadores y exportadores en dolares.png Graphic file (type png)
 <use images/chapter1/comercio internacional de productos pesqueros por principa
@@ -1214,7 +2483,7 @@ les importadores y exportadores en dolares.png>
 Package pdftex.def Info: images/chapter1/comercio internacional de productos pe
 squeros por principales importadores y exportadores en dolares.png  used on inp
 ut line 93.
-(pdftex.def)             Requested size: 426.79134pt x 144.34715pt.
+(pdftex.def)             Requested size: 452.96826pt x 153.1992pt.
 
 Overfull \hbox (12.79999pt too wide) in paragraph at lines 90--97
  [][] 
@@ -1225,373 +2494,981 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-[6 <./images/chapter1/comercio internacional de productos pesqueros por princip
-ales importadores y exportadores en dolares.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
+
+[7 <./images/chapter1/comercio internacional de productos pesqueros por princip
+ales importadores y exportadores en dolares.png>]
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.106 ...nto de los peces.\cite[p.~16]{Flores2010}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.106 ...nto de los peces.\cite[p.~16]{Flores2010}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.106 ...nto de los peces.\cite[p.~16]{Flores2010}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.106 ...nto de los peces.\cite[p.~16]{Flores2010}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-<images/chapter1/anatomia de la trucha arcoiris.png, id=67, 1510.64375pt x 623.
-32875pt>
+<images/chapter1/anatomia de la trucha arcoiris.png, id=399, 1510.64375pt x 623
+.32875pt>
 File: images/chapter1/anatomia de la trucha arcoiris.png Graphic file (type png
 )
 <use images/chapter1/anatomia de la trucha arcoiris.png>
 Package pdftex.def Info: images/chapter1/anatomia de la trucha arcoiris.png  us
 ed on input line 110.
-(pdftex.def)             Requested size: 426.79134pt x 176.1002pt.
+(pdftex.def)             Requested size: 452.96826pt x 186.90495pt.
+[8 <./images/chapter1/anatomia de la trucha arcoiris.png>]
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.142 ...a las 1000 truchas}.\cite[p.~25]{FAO2014}
+                                                   Las cajas clasificadoras ...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 123.
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.142 ...a las 1000 truchas}.\cite[p.~25]{FAO2014}
+                                                   Las cajas clasificadoras ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.142 ...a las 1000 truchas}.\cite[p.~25]{FAO2014}
+                                                   Las cajas clasificadoras ...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.142 ...a las 1000 truchas}.\cite[p.~25]{FAO2014}
+                                                   Las cajas clasificadoras ...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.142 ...a clasificación por forma.\cite{FAO2005}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.142 ...a clasificación por forma.\cite{FAO2005}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.142 ...a clasificación por forma.\cite{FAO2005}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.142 ...a clasificación por forma.\cite{FAO2005}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
 
  []
 
-[7 <./images/chapter1/anatomia de la trucha arcoiris.png>]
 <images/chapter1/clasificadora de anchura fija rejillas de clasificacion y clas
-ificadora ajustable.png, id=71, 496.10344pt x 258.9675pt>
+ificadora ajustable.png, id=417, 496.10344pt x 258.9675pt>
 File: images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
  clasificadora ajustable.png Graphic file (type png)
 <use images/chapter1/clasificadora de anchura fija rejillas de clasificacion y 
 clasificadora ajustable.png>
 Package pdftex.def Info: images/chapter1/clasificadora de anchura fija rejillas
- de clasificacion y clasificadora ajustable.png  used on input line 147.
-(pdftex.def)             Requested size: 426.79134pt x 222.78671pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+ de clasificacion y clasificadora ajustable.png  used on input line 146.
+(pdftex.def)             Requested size: 452.96826pt x 236.45107pt.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[8 <./images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
- clasificadora ajustable.png>]
-<images/chapter1/clasificacion y medicion manual de truchas.png, id=75, 1445.4p
-t x 813.0375pt>
+<images/chapter1/clasificacion y medicion manual de truchas.png, id=427, 1445.4
+pt x 813.0375pt>
 File: images/chapter1/clasificacion y medicion manual de truchas.png Graphic fi
 le (type png)
 <use images/chapter1/clasificacion y medicion manual de truchas.png>
 Package pdftex.def Info: images/chapter1/clasificacion y medicion manual de tru
-chas.png  used on input line 157.
-(pdftex.def)             Requested size: 426.79134pt x 240.06729pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 163--164
+chas.png  used on input line 156.
+(pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
+[10 <./images/chapter1/clasificadora de anchura fija rejillas de clasificacion 
+y clasificadora ajustable.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
-<images/chapter1/herramienta de medicion manual para peces.png, id=76, 816.8015
-6pt x 472.01344pt>
+<images/chapter1/herramienta de medicion manual para peces.png, id=436, 816.801
+56pt x 472.01344pt>
 File: images/chapter1/herramienta de medicion manual para peces.png Graphic fil
 e (type png)
 <use images/chapter1/herramienta de medicion manual para peces.png>
 Package pdftex.def Info: images/chapter1/herramienta de medicion manual para pe
-ces.png  used on input line 167.
-(pdftex.def)             Requested size: 426.79134pt x 246.63678pt.
-[9 <./images/chapter1/clasificacion y medicion manual de truchas.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+ces.png  used on input line 166.
+(pdftex.def)             Requested size: 452.96826pt x 261.76169pt.
+[11 <./images/chapter1/clasificacion y medicion manual de truchas.png>]
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.175 ...áquina: 200 kg.\cite[p.~2,105]{Vega2013}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.175 ...áquina: 200 kg.\cite[p.~2,105]{Vega2013}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.175 ...áquina: 200 kg.\cite[p.~2,105]{Vega2013}
+                                                   \\
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.175 ...áquina: 200 kg.\cite[p.~2,105]{Vega2013}
+                                                   \\
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-<images/chapter1/maquina seleccionadora de truchas agv.png, id=80, 777.65532pt 
-x 529.98pt>
+<images/chapter1/maquina seleccionadora de truchas agv.png, id=446, 777.65532pt
+ x 529.98pt>
 File: images/chapter1/maquina seleccionadora de truchas agv.png Graphic file (t
 ype png)
 <use images/chapter1/maquina seleccionadora de truchas agv.png>
 Package pdftex.def Info: images/chapter1/maquina seleccionadora de truchas agv.
-png  used on input line 180.
-(pdftex.def)             Requested size: 426.79134pt x 290.8672pt.
+png  used on input line 179.
+(pdftex.def)             Requested size: 452.96826pt x 308.70676pt.
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
-quanjiao) on input line 182.
-[10 <./images/chapter1/herramienta de medicion manual para peces.png>]
+quanjiao) on input line 181.
+[12 <./images/chapter1/herramienta de medicion manual para peces.png>]
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.188 ...tores principales. \cite[p.~2-3]{Niu2018}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.188 ...tores principales. \cite[p.~2-3]{Niu2018}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.188 ...tores principales. \cite[p.~2-3]{Niu2018}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.188 ...tores principales. \cite[p.~2-3]{Niu2018}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 <images/chapter1/medicion automatizada de especies y tallas de peces por vision
- artificial.png, id=86, 641.39626pt x 158.09062pt>
+ artificial.png, id=458, 641.39626pt x 158.09062pt>
 File: images/chapter1/medicion automatizada de especies y tallas de peces por v
 ision artificial.png Graphic file (type png)
 <use images/chapter1/medicion automatizada de especies y tallas de peces por vi
 sion artificial.png>
 Package pdftex.def Info: images/chapter1/medicion automatizada de especies y ta
-llas de peces por vision artificial.png  used on input line 193.
-(pdftex.def)             Requested size: 426.79134pt x 105.19647pt.
+llas de peces por vision artificial.png  used on input line 192.
+(pdftex.def)             Requested size: 452.96826pt x 111.64928pt.
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.195 	Fuente: \cite[p.~4]{White2006}
+                                     .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.195 	Fuente: \cite[p.~4]{White2006}
+                                     .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.195 	Fuente: \cite[p.~4]{White2006}
+                                     .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.195 	Fuente: \cite[p.~4]{White2006}
+                                     .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[13 <./images/chapter1/maquina seleccionadora de truchas agv.png>]
 <images/chapter1/medicion de peces dentro de estanques con camaras ortogonales.
-png, id=87, 819.06pt x 537.50812pt>
+png, id=470, 819.06pt x 537.50812pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras ortogon
 ales.png Graphic file (type png)
 <use images/chapter1/medicion de peces dentro de estanques con camaras ortogona
 les.png>
 Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques 
-con camaras ortogonales.png  used on input line 202.
-(pdftex.def)             Requested size: 320.09349pt x 210.06201pt.
- [11 <./images/chapter1/maquina seleccionadora de truchas agv.png> <./images/ch
-apter1/medicion automatizada de especies y tallas de peces por vision artificia
-l.png>]
+con camaras ortogonales.png  used on input line 201.
+(pdftex.def)             Requested size: 339.7262pt x 222.94688pt.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.203 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.203 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.203 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.203 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 <images/chapter1/medicion de peces dentro de estanques con camaras estereo.png,
- id=93, 776.9025pt x 439.6425pt>
+ id=474, 776.9025pt x 439.6425pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras estereo
 .png Graphic file (type png)
 <use images/chapter1/medicion de peces dentro de estanques con camaras estereo.
 png>
 Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques 
-con camaras estereo.png  used on input line 210.
-(pdftex.def)             Requested size: 320.09349pt x 181.14009pt.
+con camaras estereo.png  used on input line 209.
+(pdftex.def)             Requested size: 339.7262pt x 192.24919pt.
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.211 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
-[12 <./images/chapter1/medicion de peces dentro de estanques con camaras ortogo
-nales.png> <./images/chapter1/medicion de peces dentro de estanques con camaras
- estereo.png>]) [13]
-\openout2 = `general/bibliography.aux'.
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.211 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
- (general/bibliography.tex (main.bbl
-Overfull \hbox (117.28697pt too wide) in paragraph at lines 14--34
-\T1/pcr/m/n/12 https://patents.google.com/patent/CN107258625A/en?q=trout&q=farm
-ing&oq=trout+farming
- []
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.211 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
 
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.211 	Fuente: \cite{Al-Jubouri2017}
+                                    .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--34
-
- []
-
-
-Overfull \hbox (111.16699pt too wide) in paragraph at lines 46--61
-\T1/pcr/m/n/12 https://patents.google.com/patent/JP4468278B2/en?q=trout&q=farmi
-ng&oq=trout+farming
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--61
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--120
-[]\T1/ptm/m/n/12 Andina.  (2019).  \T1/ptm/m/it/12 Sec-tor acu�-co-la pe-ruano 
-con-quis-ta-r� nue-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--120
-\T1/ptm/m/it/12 vos mer-ca-dos de ex-por-ta-ci�n.  \T1/ptm/m/n/12 Des-car-ga-do
- 2019-09-20, de
- []
-
-
-Overfull \hbox (270.28647pt too wide) in paragraph at lines 106--120
-\T1/pcr/m/n/12 https://andina.pe/agencia/noticia-sector-acuicola-peruano-conqui
-stara-nuevos-mercados-exportacion-759533.aspx
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--120
-
- []
-
-
-Underfull \hbox (badness 3039) in paragraph at lines 132--145
-[]\T1/ptm/m/n/12 FAO.  (2005).  \T1/ptm/m/it/12 Cla-si-fi-ca-cion Por Ta-ma-�o 
-De Los Pe-ces.  \T1/ptm/m/n/12 Des-car-ga-do de
- []
-
-
-Overfull \hbox (160.12683pt too wide) in paragraph at lines 132--145
-\T1/pcr/m/n/12 http://www.fao.org/fishery/static/FAO_Training/FAO_Training/Gene
-ral/x6709s/x6709s12.htm#top
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 132--145
+[14 <./images/chapter1/medicion automatizada de especies y tallas de peces por 
+vision artificial.png> <./images/chapter1/medicion de peces dentro de estanques
+ con camaras ortogonales.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
-LaTeX Info: Redefining \. on input line 203.
-LaTeX Info: Redefining \% on input line 203.
-[14
+<images/chapter1/pez identificado por una red neuronal.png, id=487, 292.09125pt
+ x 285.31593pt>
+File: images/chapter1/pez identificado por una red neuronal.png Graphic file (t
+ype png)
+<use images/chapter1/pez identificado por una red neuronal.png>
+Package pdftex.def Info: images/chapter1/pez identificado por una red neuronal.
+png  used on input line 224.
+(pdftex.def)             Requested size: 226.48413pt x 221.23946pt.
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.226 	Fuente: \cite{Varalakshmi2019}
+                                     .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.226 	Fuente: \cite{Varalakshmi2019}
+                                     .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.226 	Fuente: \cite{Varalakshmi2019}
+                                     .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.226 	Fuente: \cite{Varalakshmi2019}
+                                     .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[15 <./images/chapter1/medicion de peces dentro de estanques con camaras estere
+o.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+45.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.250 	\\ Fuente: \cite{Varalakshmi2019}
+                                        .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.250 	\\ Fuente: \cite{Varalakshmi2019}
+                                        .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.250 	\\ Fuente: \cite{Varalakshmi2019}
+                                        .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.250 	\\ Fuente: \cite{Varalakshmi2019}
+                                        .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+[16 <./images/chapter1/pez identificado por una red neuronal.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+
+ []
+
+[17]
+<images/chapter1/clasificacion conteo curado y calculo de biomasa en la laguna 
+de canrash.pdf, id=522, 722.7pt x 542.025pt>
+File: images/chapter1/clasificacion conteo curado y calculo de biomasa en la la
+guna de canrash.pdf Graphic file (type pdf)
+<use images/chapter1/clasificacion conteo curado y calculo de biomasa en la lag
+una de canrash.pdf>
+Package pdftex.def Info: images/chapter1/clasificacion conteo curado y calculo 
+de biomasa en la laguna de canrash.pdf  used on input line 290.
+(pdftex.def)             Requested size: 452.96826pt x 339.72418pt.
+ [18 <./images/chapter1/clasificacion conteo curado y calculo de biomasa en la 
+laguna de canrash.pdf>]
+<images/chapter1/contador peces basado en luz infrarroja faivre.png, id=552, 42
+6.09187pt x 121.20282pt>
+File: images/chapter1/contador peces basado en luz infrarroja faivre.png Graphi
+c file (type png)
+<use images/chapter1/contador peces basado en luz infrarroja faivre.png>
+Package pdftex.def Info: images/chapter1/contador peces basado en luz infrarroj
+a faivre.png  used on input line 303.
+(pdftex.def)             Requested size: 452.96826pt x 128.85535pt.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.305 	Fuente: \cite{FAIVRE2013}
+                                .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.305 	Fuente: \cite{FAIVRE2013}
+                                .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.305 	Fuente: \cite{FAIVRE2013}
+                                .
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.305 	Fuente: \cite{FAIVRE2013}
+                                .
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<images/chapter1/planos comunes de posicionamiento para camaras de inspeccion.p
+df, id=557, 722.7pt x 542.025pt>
+File: images/chapter1/planos comunes de posicionamiento para camaras de inspecc
+ion.pdf Graphic file (type pdf)
+<use images/chapter1/planos comunes de posicionamiento para camaras de inspecci
+on.pdf>
+Package pdftex.def Info: images/chapter1/planos comunes de posicionamiento para
+ camaras de inspeccion.pdf  used on input line 316.
+(pdftex.def)             Requested size: 362.37598pt x 271.78099pt.
+[19 <./images/chapter1/contador peces basado en luz infrarroja faivre.png>]
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.325 ...y en un tiempo corto. \cite{AquaScan2015}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.325 ...y en un tiempo corto. \cite{AquaScan2015}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@@cite has an extra }.
+<inserted text> 
+                \par 
+l.325 ...y en un tiempo corto. \cite{AquaScan2015}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+>{\hyper@link@ }\def \reserved@b {\hyper@link@ [link]}\futurelet \@let@token \E
+TC.
+! Paragraph ended before \@@cite was complete.
+<to be read again> 
+                   \par 
+l.325 ...y en un tiempo corto. \cite{AquaScan2015}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+<images/chapter1/contador de peces mediante escaneres.png, id=568, 598.48593pt 
+x 222.07968pt>
+File: images/chapter1/contador de peces mediante escaneres.png Graphic file (ty
+pe png)
+<use images/chapter1/contador de peces mediante escaneres.png>
+Package pdftex.def Info: images/chapter1/contador de peces mediante escaneres.p
+ng  used on input line 329.
+(pdftex.def)             Requested size: 452.96826pt x 168.08424pt.
+[20 <./images/chapter1/planos comunes de posicionamiento para camaras de inspec
+cion.pdf>]
+Overfull \hbox (19.6473pt too wide) in paragraph at lines 412--412
+[][]\T1/ptm/b/n/12 Dispositivo de cla-si-fi-ca-ci�n de pe-ces y m�-to-do de cla
+-si-fi-ca-ci�n de pe-ces \T1/ptm/b/it/12 (Pa-ten-te JP5563164B2) 
+ []
+
+) [21 <./images/chapter1/contador de peces mediante escaneres.png>] [22]
+\openout2 = `chapters/chapter2.aux'.
+
+
+(chapters/chapter2.tex
+Cap\'{\i }tulo II.
+)
+LaTeX Info: Redefining \. on input line 11.
+LaTeX Info: Redefining \% on input line 11.
+ [23
 
 
 
 ]
-Overfull \hbox (172.36679pt too wide) in paragraph at lines 207--231
-\T1/pcr/m/n/12 http://www.labor.org.pe/descargas/modulo_buenas_practicas_produc
-cion_truchicola_puno_2010.pdf
+\openout2 = `chapters/chapter3.aux'.
+
+ (chapters/chapter3.tex
+Cap\'{\i }tulo III.
+)
+LaTeX Info: Redefining \. on input line 12.
+LaTeX Info: Redefining \% on input line 12.
+ [24
+
+
+
+]
+Overfull \vbox (222.2832pt too high) has occurred while \output is active []
+
+
+[25]
+\openout2 = `chapters/chapter4.aux'.
+
+ (chapters/chapter4.tex
+Cap\'{\i }tulo IV.
+)
+LaTeX Info: Redefining \. on input line 13.
+LaTeX Info: Redefining \% on input line 13.
+ [26
+
+
+
+]
+\openout2 = `general/bibliography.aux'.
+
+ (general/bibliography.tex (main.bbl
+Underfull \hbox (badness 1303) in paragraph at lines 14--34
+[]\C70/rm/m/n/12/7a � \C70/rm/m/n/12/66  \T1/ptm/m/n/12 , . ., \C70/rm/m/n/12
+/5b Y \C70/rm/m/n/12/5f � \C70/rm/m/n/12/79 e\T1/ptm/m/n/12 , \C70/rm/m/n/12/67
+ N \C70/rm/m/n/12/6b c \C70/rm/m/n/12/83 c\T1/ptm/m/n/12 , \C70/rm/m/n/12/8b � 
+\C70/rm/m/n/12/4e  \C70/rm/m/n/12/5b �\T1/ptm/m/n/12 , \C70/rm/m/n/12/4f � \C7
+0/rm/m/n/12/72 1 \C70/rm/m/n/12/84 \T1/ptm/m/n/12 , \C70/rm/m/n/12/54 h \C70/r
+m/m/n/12/6d 5\T1/ptm/m/n/12 ,  \C70/rm/m/n/12/82 � \C70/rm/m/n/12/91 � \C70/rm/
+m/n/12/51 u\T1/ptm/m/n/12 .  (2017).  \T1/ptm/m/it/12 M�-to-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--231
-
+Underfull \hbox (badness 1584) in paragraph at lines 46--61
+\T1/ptm/m/n/12 ga-do de []$\T1/pcr/m/n/12 https :// patents [] .google [] .com 
+/ patent / JP4468278B2 / en [] ?q = trout{&}q =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--256
-[]\T1/ptm/m/n/12 FONDEPES.  (2014).  \T1/ptm/m/it/12 Ma-nual de crian-za de tru
--
+Underfull \hbox (badness 10000) in paragraph at lines 156--170
+\T1/pcr/m/n/12 index [] .php / en / products / fish [] -counters / en [] -pesca
+vision [] -counter / 19 [] -en []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--256
-\T1/ptm/m/it/12 cha en am-bien-tes con-ven-cio-na-les\T1/ptm/m/n/12 .  Des-car-
-ga-do de
+Underfull \hbox (badness 1178) in paragraph at lines 182--195
+[]\T1/ptm/m/n/12 FAO.  (2005).  \T1/ptm/m/it/12 Cla-si-fi-ca-cion Por Ta-ma-�o 
+De Los Pe-ces.  \T1/ptm/m/n/12 Des-car-ga-do de []$\T1/pcr/m/n/12 http ://
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--309
-[]\T1/ptm/m/n/12 Martinez, J.  (2003).  Re-fe-ren-cias Do-cu-men-ta-les Ba-
+Underfull \hbox (badness 10000) in paragraph at lines 182--195
+\T1/pcr/m/n/12 www [] .fao [] .org / fishery / static / FAO{[][]}Training / FAO
+{[][]}Training / General /
+ []
+
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+[27
+
+
+
+]
+Underfull \hbox (badness 2343) in paragraph at lines 257--281
+[]\T1/ptm/m/n/12 Flores, J. M. M., Quis-pe, M. �. Y., Flo-res, A. Q., Arias, L.
+ G., Quis-pe, W. P.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--309
-\T1/ptm/m/n/12 jo El Sis-te-ma  |\C70/rm/m/n/12/20 | \T1/ptm/m/n/12 Har-vard |
-\C70/rm/m/n/12/20 | \T1/ptm/m/n/12 .  Des-car-ga-do de
+Underfull \hbox (badness 3884) in paragraph at lines 257--281
+\T1/ptm/m/n/12 Sai-ri-tu-pa, J. C. C., ... Con-do-ri, E. M.  (2010).  Me-jo-ran
+-do la ren-ta-bi-
  []
 
 
-Overfull \hbox (25.48727pt too wide) in paragraph at lines 296--309
-\T1/pcr/m/n/12 http://www.tesispsico.unlugar.com/mat_catedra/investig_documenta
-l.pdf
+Underfull \hbox (badness 5022) in paragraph at lines 257--281
+\T1/ptm/m/n/12 li-dad de la tru-chi-cul-tu-ra en el la-go ti-tica-ca con vi-sio
+n em-pre-sa-rial y res-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--309
-
+Underfull \hbox (badness 4144) in paragraph at lines 257--281
+\T1/ptm/m/n/12 pon-sa-bi-li-dad so-cial am-bien-tal.  \T1/ptm/m/it/12 M�-du-lo 
+de bue-nas pr�c-ti-cas en la pro-duc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--333
-[]\T1/ptm/m/n/12 MINAGRI.  (2011).  \T1/ptm/m/it/12 Hi-dro-bio-l�-gi-co.  \T1/p
-tm/m/n/12 Des-car-ga-do 2019-09-20, de
+Underfull \hbox (badness 3168) in paragraph at lines 257--281
+\T1/ptm/m/it/12 ci�n de tru-cha\T1/ptm/m/n/12 , 39.  Des-car-ga-do de []$\T1/pc
+r/m/n/12 http :// www [] .labor [] .org [] .pe / descargas /
  []
 
 
-Overfull \hbox (141.76689pt too wide) in paragraph at lines 321--333
-\T1/pcr/m/n/12 https://www.minagri.gob.pe/portal/41-sectoragrario/recursos-natu
-rales/320-hidrobiologico
+Underfull \hbox (badness 10000) in paragraph at lines 257--281
+\T1/pcr/m/n/12 modulo{[][]}buenas{[][]}practicas{[][]}produccion{[][]}truchicol
+a{[][]}puno{[][]}2010 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 321--333
-
+Underfull \hbox (badness 4013) in paragraph at lines 346--359
+[]\T1/ptm/m/n/12 Martinez, J.  (2003).  Re-fe-ren-cias Do-cu-men-ta-les Ba-jo E
+l Sis-te-ma  |\C70/rm/m/n/12/20 | \T1/ptm/m/n/12 Har-vard
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--360
-[]\T1/ptm/m/n/12 Ministerio de la Pro-duc-ci�n del Pe-r�.  (2018).  \T1/ptm/m/i
-t/12 Anua-rio Es-ta-d�s-ti-
+Underfull \hbox (badness 4024) in paragraph at lines 346--359
+|\C70/rm/m/n/12/20 | \T1/ptm/m/n/12 .  Des-car-ga-do de []$\T1/pcr/m/n/12 http
+ :// www [] .tesispsico [] .unlugar [] .com / mat{[][]}catedra /
  []
 
 
-Underfull \hbox (badness 6016) in paragraph at lines 345--360
-\T1/ptm/m/it/12 co Pes-que-ro y Acui-co-la 2017 \T1/ptm/m/n/12 (Inf. T�c.[]).  
-Li-ma.  Des-car-ga-do de
+Underfull \hbox (badness 10000) in paragraph at lines 395--410
+\T1/pcr/m/n/12 shortcode / oee [] -documentos [] -publicaciones / publicaciones
+ [] -anuales / item /
  []
 
-
-Overfull \hbox (539.56558pt too wide) in paragraph at lines 345--360
-\T1/pcr/m/n/12 http://ogeiee.produce.gob.pe/index.php/shortcode/oee-documentos-
-publicaciones/publicaciones-anuales/item/825-anuario-estadistico-pesquero-y-acu
-icola-2017
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--360
-
- []
-
-
-Underfull \hbox (badness 8038) in paragraph at lines 403--418
+[28]
+Underfull \hbox (badness 1577) in paragraph at lines 453--468
 []\T1/ptm/m/n/12 Powell, K.  (2003, nov).  Eat your veg.  \T1/ptm/m/it/12 Na-tu
--re\T1/ptm/m/n/12 , \T1/ptm/m/it/12 426\T1/ptm/m/n/12 (6965), 378--
+-re\T1/ptm/m/n/12 , \T1/ptm/m/it/12 426\T1/ptm/m/n/12 (6965), 378--379.  Des-ca
+r-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--418
-\T1/ptm/m/n/12 379.  Des-car-ga-do de \T1/pcr/m/n/12 https://www.nature.com/art
-icles/426378a
+Underfull \hbox (badness 1584) in paragraph at lines 453--468
+\T1/ptm/m/n/12 ga-do de []$\T1/pcr/m/n/12 https :// www [] .nature [] .com / ar
+ticles / 426378ahttp :// www [] .nature [] .com /
  []
 
-[15]
-Overfull \hbox (13.24731pt too wide) in paragraph at lines 430--442
-\T1/pcr/m/n/12 https://seafood-tip.com/sourcing-intelligence/countries/peru/tro
-ut/
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 430--442
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--499
-[]\T1/ptm/m/n/12 White, D., Sve-llin-gen, C., y Stra-chan, N.  (2006, sep).  Au
--to-ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--499
-\T1/ptm/m/n/12 ted mea-su-re-ment of spe-cies and length of fish by com-pu-ter 
-vi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--499
-\T1/ptm/m/n/12 sion.  \T1/ptm/m/it/12 Fishe-ries Re-search\T1/ptm/m/n/12 , \T1/
-ptm/m/it/12 80\T1/ptm/m/n/12 (2-3), 203--210.  Des-car-ga-do de
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 479--499
-\T1/pcr/m/n/12 https://linkinghub.elsevier.com/retrieve/pii/S0165783606001512
- []
-
-)) [16]
+)) [29]
 \openout2 = `general/annexes.aux'.
 
  (general/annexes.tex)
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
- [17
+LaTeX Info: Redefining \. on input line 15.
+LaTeX Info: Redefining \% on input line 15.
+ [30
 
 
 
-] (main.aux (general/cover.aux
-LaTeX Info: Redefining \. on input line 2.
-LaTeX Info: Redefining \% on input line 2.
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
+ (main.aux (general/cover.aux
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
 )
-LaTeX Info: Redefining \. on input line 9.
-LaTeX Info: Redefining \% on input line 9.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 
 (general/summary.aux) (general/introduction.aux) (general/gratitude.aux)
-(general/table-of-content.aux) (chapters/chapter1.aux)
-(general/bibliography.aux) (general/annexes.aux))
+(general/table-of-content.aux) (chapters/chapter1.aux) (chapters/chapter2.aux)
+(chapters/chapter3.aux) (chapters/chapter4.aux) (general/bibliography.aux)
+(general/annexes.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 16.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: EAB56F606E4ACFB09469C1D37BB4FEAF;5961.
+
 
 LaTeX Warning: There were undefined references.
 
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16.
  ) 
 Here is how much of TeX's memory you used:
- 12318 strings out of 480930
- 201078 string characters out of 2909538
- 483080 words of memory out of 3000000
- 27720 multiletter control sequences out of 15000+200000
- 605902 words of font info for 120 fonts, out of 3000000 for 9000
+ 20251 strings out of 480930
+ 320191 string characters out of 2909538
+ 612568 words of memory out of 3000000
+ 35327 multiletter control sequences out of 15000+200000
+ 606841 words of font info for 123 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,15n,56p,989b,583s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/WINDOWS/Fonts/si
-msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
-Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.
-ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts
-/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDO
-WS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><
-C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/sims
+ 51i,16n,56p,1020b,870s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.11} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/WINDOWS/Fonts/sims
 un.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fo
-nts/simsun.ttc><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on main.pdf (24 pages, 5566136 bytes).
+nts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WI
+NDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.tt
+c><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
+imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
+/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:
+/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun
+.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Font
+s/simsun.ttc><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on main.pdf (39 pages, 6825608 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 153 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 862 PDF objects out of 1000 (max. 8388607)
+ 175 named destinations out of 1000 (max. 500000)
+ 474 words of extra memory for PDF output out of 10000 (max. 10000000)
 

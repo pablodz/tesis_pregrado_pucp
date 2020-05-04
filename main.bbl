@@ -119,6 +119,56 @@ Andina.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+AquaScan%
+}{%
+AquaScan%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+AquaScan2015}
+\APACinsertmetastar {%
+AquaScan2015}%
+\begin{APACrefauthors}%
+AquaScan.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{AquaScan Registration Unit CSF1600}.} {{AquaScan Registration
+  Unit CSF1600}.}
+\newblock
+\begin{APACrefURL} \url{http://www.aquascan.com/event/dolink/famid/347548}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+FAIVRE%
+}{%
+FAIVRE%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+FAIVRE2013}
+\APACinsertmetastar {%
+FAIVRE2013}%
+\begin{APACrefauthors}%
+FAIVRE.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {{Fish counter Pescavision}.} {{Fish counter Pescavision}.}
+\newblock
+\APACaddressPublisherEqAuth{}{FAIVRE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.faivre.fr/index.php/en/products/fish-counters/en-pescavision-counter/19-en-produits/109-en-counter-p30}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 FAO%
 }{%
 FAO%
@@ -438,6 +488,34 @@ SeafoodTradeIntelligencePortal2018}%
 \begin{APACrefURL}
   [{2019-09-05}]\url{https://seafood-tip.com/sourcing-intelligence/countries/peru/trout/}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Varalakshmi%
+\ \BBA {} J%
+}{%
+Varalakshmi%
+\ \BBA {} J%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+Varalakshmi2019}
+\APACinsertmetastar {%
+Varalakshmi2019}%
+\begin{APACrefauthors}%
+Varalakshmi, P.%
+\BCBT {}\ \BBA {} J, J\BPBI L\BPBI R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Recognition Of Fish Categories Using Deep Learning
+  Technique}} {{Recognition Of Fish Categories Using Deep Learning
+  Technique}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{2019 3rd International Conference on Computing and
+  Communications Technologies (ICCCT)}{}{}{168--172}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
