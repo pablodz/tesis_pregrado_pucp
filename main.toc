@@ -46,33 +46,33 @@
 \contentsline {subsubsection}{Clasificador automático de peces y contador automático \textit {Pentair V-100 00140}}{31}%
 \contentsline {subsubsection}{Clasificador de peces \textit {Apollo}}{32}%
 \contentsline {subsubsection}{Contador de peces \textit {Pescavision}}{33}%
-\contentsline {subsubsection}{Contador de peces \textit {Calitri}}{33}%
-\contentsline {subsubsection}{Comparación}{33}%
-\contentsline {chapter}{\numberline {II}Fundamentos teóricos}{34}%
-\contentsline {section}{\numberline {2.1}Canales RGB y HSV}{34}%
-\contentsline {section}{\numberline {2.2}Segmentación de imágenes}{34}%
-\contentsline {section}{\numberline {2.3}Redes neuronales}{34}%
-\contentsline {section}{\numberline {2.4}Identificador mediante redes neuronales}{34}%
-\contentsline {chapter}{\numberline {III}Diseño Mecatrónico}{35}%
-\contentsline {section}{\numberline {3.1}Desarrollo de proyecto conceptual}{36}%
-\contentsline {subsection}{\numberline {3.1.1}Lista de requerimientos}{36}%
-\contentsline {subsection}{\numberline {3.1.2}Caja negra}{36}%
-\contentsline {subsubsection}{Función principal}{36}%
-\contentsline {subsubsection}{Entradas}{36}%
-\contentsline {subsubsection}{Salidas}{36}%
-\contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{36}%
-\contentsline {subsubsection}{Lista de funciones por subsistema}{36}%
-\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{36}%
-\contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{36}%
-\contentsline {subsubsection}{Concepto de solución N° 1}{36}%
-\contentsline {subsubsection}{Concepto de solución N° 2}{36}%
-\contentsline {subsubsection}{Concepto de solución N° 3}{36}%
-\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{36}%
-\contentsline {subsubsection}{Criterios técnicos}{36}%
-\contentsline {subsubsection}{Criterios económicos}{36}%
-\contentsline {subsubsection}{Elección de concepto óptimo}{36}%
-\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{36}%
-\contentsline {chapter}{\numberline {IV}Costos}{37}%
-\contentsline {section}{\numberline {4.1}Manufactura}{37}%
-\contentsline {section}{\numberline {4.2}Precio unitario}{37}%
-\contentsline {chapter}{Referencias}{38}%
+\contentsline {subsubsection}{Contador de peces \textit {Calitri}}{34}%
+\contentsline {subsubsection}{Comparación}{35}%
+\contentsline {chapter}{\numberline {II}Fundamentos teóricos}{37}%
+\contentsline {section}{\numberline {2.1}Canales RGB y HSV}{37}%
+\contentsline {section}{\numberline {2.2}Segmentación de imágenes}{37}%
+\contentsline {section}{\numberline {2.3}Redes neuronales}{37}%
+\contentsline {section}{\numberline {2.4}Identificador mediante redes neuronales}{37}%
+\contentsline {chapter}{\numberline {III}Diseño Mecatrónico}{38}%
+\contentsline {section}{\numberline {3.1}Desarrollo de proyecto conceptual}{39}%
+\contentsline {subsection}{\numberline {3.1.1}Lista de requerimientos}{39}%
+\contentsline {subsection}{\numberline {3.1.2}Caja negra}{39}%
+\contentsline {subsubsection}{Función principal}{39}%
+\contentsline {subsubsection}{Entradas}{39}%
+\contentsline {subsubsection}{Salidas}{39}%
+\contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{39}%
+\contentsline {subsubsection}{Lista de funciones por subsistema}{39}%
+\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{39}%
+\contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{39}%
+\contentsline {subsubsection}{Concepto de solución N° 1}{39}%
+\contentsline {subsubsection}{Concepto de solución N° 2}{39}%
+\contentsline {subsubsection}{Concepto de solución N° 3}{39}%
+\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{39}%
+\contentsline {subsubsection}{Criterios técnicos}{39}%
+\contentsline {subsubsection}{Criterios económicos}{39}%
+\contentsline {subsubsection}{Elección de concepto óptimo}{39}%
+\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{39}%
+\contentsline {chapter}{\numberline {IV}Costos}{40}%
+\contentsline {section}{\numberline {4.1}Manufactura}{40}%
+\contentsline {section}{\numberline {4.2}Precio unitario}{40}%
+\contentsline {chapter}{Referencias}{41}%

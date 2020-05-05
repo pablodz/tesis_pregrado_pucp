@@ -238,6 +238,31 @@ Biosort.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Calitri%
+}{%
+Calitri%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Calitri2018}
+\APACinsertmetastar {%
+Calitri2018}%
+\begin{APACrefauthors}%
+Calitri.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{Calitri Technology Fish Counters}.} {{Calitri Technology Fish
+  Counters}.}
+\newblock
+\begin{APACrefURL}
+  [{2019-09-25}]\url{https://pentairaes.com/calitri-fish-counters.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Daley%
 }{%
 Daley%
