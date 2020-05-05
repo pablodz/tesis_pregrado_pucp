@@ -33,47 +33,46 @@
 \contentsline {subsection}{\numberline {1.2.4}Extracción de características de peces}{21}%
 \contentsline {subsubsection}{Extracción mediante inspección visual}{21}%
 \contentsline {subsubsection}{Extracción de características mediante visión por computadora}{21}%
-\contentsline {subsection}{\numberline {1.2.5}Sistema de traslado de peces}{21}%
-\contentsline {subsubsection}{Traslado manual}{21}%
-\contentsline {subsubsection}{Traslado automático}{21}%
-\contentsline {subsubsection}{Comparación}{21}%
-\contentsline {subsection}{\numberline {1.2.6}Productos comerciales y patentes}{21}%
-\contentsline {subsubsection}{Dispositivo de clasificación de peces y método de clasificación de peces \textit {(Patente JP5563164B2)}}{21}%
-\contentsline {subsubsection}{Clasificador completamente automático de pescado \textit {(Patente CN205180233U)}}{21}%
-\contentsline {subsubsection}{Clasificador y contador automático de peces \textit {(Patente CN203884438U)}}{21}%
-\contentsline {subsubsection}{Seleccionadora completamente automática \textit {AGK}}{21}%
-\contentsline {subsubsection}{Clasificador automático para peces Helios}{21}%
-\contentsline {subsubsection}{Clasificador automático de peces y contador automático \textit {Pentair V-100 00140}}{21}%
-\contentsline {subsubsection}{Clasificador de peces \textit {Apollo}}{21}%
-\contentsline {subsubsection}{Clasificador de peces \textit {Apollo}}{21}%
-\contentsline {subsubsection}{Contador de peces \textit {Pescavision}}{21}%
-\contentsline {subsubsection}{Contador de peces \textit {Calitri}}{21}%
-\contentsline {subsubsection}{Comparación}{21}%
-\contentsline {chapter}{\numberline {II}Fundamentos teóricos}{22}%
-\contentsline {section}{\numberline {2.1}Canales RGB y HSV}{22}%
-\contentsline {section}{\numberline {2.2}Segmentación de imágenes}{22}%
-\contentsline {section}{\numberline {2.3}Redes neuronales}{22}%
-\contentsline {section}{\numberline {2.4}Identificador mediante redes neuronales}{22}%
-\contentsline {chapter}{\numberline {III}Diseño Mecatrónico}{23}%
-\contentsline {section}{\numberline {3.1}Desarrollo de proyecto conceptual}{24}%
-\contentsline {subsection}{\numberline {3.1.1}Lista de requerimientos}{24}%
-\contentsline {subsection}{\numberline {3.1.2}Caja negra}{24}%
-\contentsline {subsubsection}{Función principal}{24}%
-\contentsline {subsubsection}{Entradas}{24}%
-\contentsline {subsubsection}{Salidas}{24}%
-\contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{24}%
-\contentsline {subsubsection}{Lista de funciones por subsistema}{24}%
-\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{24}%
-\contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{24}%
-\contentsline {subsubsection}{Concepto de solución N° 1}{24}%
-\contentsline {subsubsection}{Concepto de solución N° 2}{24}%
-\contentsline {subsubsection}{Concepto de solución N° 3}{24}%
-\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{24}%
-\contentsline {subsubsection}{Criterios técnicos}{24}%
-\contentsline {subsubsection}{Criterios económicos}{24}%
-\contentsline {subsubsection}{Elección de concepto óptimo}{24}%
-\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{24}%
-\contentsline {chapter}{\numberline {IV}Costos}{25}%
-\contentsline {section}{\numberline {4.1}Manufactura}{25}%
-\contentsline {section}{\numberline {4.2}Precio unitario}{25}%
-\contentsline {chapter}{Referencias}{26}%
+\contentsline {subsection}{\numberline {1.2.5}Sistema de traslado de peces}{23}%
+\contentsline {subsubsection}{Traslado manual}{23}%
+\contentsline {subsubsection}{Traslado automático}{24}%
+\contentsline {subsubsection}{Comparación}{25}%
+\contentsline {subsection}{\numberline {1.2.6}Productos comerciales y patentes}{25}%
+\contentsline {subsubsection}{Dispositivo de clasificación de peces y método de clasificación de peces \textit {(Patente JP5563164B2)}}{25}%
+\contentsline {subsubsection}{Clasificador completamente automático de pescado \textit {(Patente CN205180233U)}}{26}%
+\contentsline {subsubsection}{Clasificador y contador automático de peces \textit {(Patente CN203884438U)}}{27}%
+\contentsline {subsubsection}{Seleccionadora completamente automática \textit {AGK}}{28}%
+\contentsline {subsubsection}{Clasificador automático para peces Helios}{29}%
+\contentsline {subsubsection}{Clasificador automático de peces y contador automático \textit {Pentair V-100 00140}}{31}%
+\contentsline {subsubsection}{Clasificador de peces \textit {Apollo}}{32}%
+\contentsline {subsubsection}{Contador de peces \textit {Pescavision}}{33}%
+\contentsline {subsubsection}{Contador de peces \textit {Calitri}}{33}%
+\contentsline {subsubsection}{Comparación}{33}%
+\contentsline {chapter}{\numberline {II}Fundamentos teóricos}{34}%
+\contentsline {section}{\numberline {2.1}Canales RGB y HSV}{34}%
+\contentsline {section}{\numberline {2.2}Segmentación de imágenes}{34}%
+\contentsline {section}{\numberline {2.3}Redes neuronales}{34}%
+\contentsline {section}{\numberline {2.4}Identificador mediante redes neuronales}{34}%
+\contentsline {chapter}{\numberline {III}Diseño Mecatrónico}{35}%
+\contentsline {section}{\numberline {3.1}Desarrollo de proyecto conceptual}{36}%
+\contentsline {subsection}{\numberline {3.1.1}Lista de requerimientos}{36}%
+\contentsline {subsection}{\numberline {3.1.2}Caja negra}{36}%
+\contentsline {subsubsection}{Función principal}{36}%
+\contentsline {subsubsection}{Entradas}{36}%
+\contentsline {subsubsection}{Salidas}{36}%
+\contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{36}%
+\contentsline {subsubsection}{Lista de funciones por subsistema}{36}%
+\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{36}%
+\contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{36}%
+\contentsline {subsubsection}{Concepto de solución N° 1}{36}%
+\contentsline {subsubsection}{Concepto de solución N° 2}{36}%
+\contentsline {subsubsection}{Concepto de solución N° 3}{36}%
+\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{36}%
+\contentsline {subsubsection}{Criterios técnicos}{36}%
+\contentsline {subsubsection}{Criterios económicos}{36}%
+\contentsline {subsubsection}{Elección de concepto óptimo}{36}%
+\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{36}%
+\contentsline {chapter}{\numberline {IV}Costos}{37}%
+\contentsline {section}{\numberline {4.1}Manufactura}{37}%
+\contentsline {section}{\numberline {4.2}Precio unitario}{37}%
+\contentsline {chapter}{Referencias}{38}%

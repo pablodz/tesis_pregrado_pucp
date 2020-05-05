@@ -60,6 +60,56 @@
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+スフェン・キュネン%
+}{%
+スフェン・キュネン%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+2010}
+\APACinsertmetastar {%
+2010}%
+\begin{APACrefauthors}%
+スフェン・キュネン.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle {{Fish classification device and fish classification method}.}
+  {{Fish classification device and fish classification method}.}
+\newblock
+\begin{APACrefURL}
+  \url{https://patents.google.com/patent/JP5563164B2/en?oq=JP5563164B2}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{AGK Aquakultur - Teich}%
+}{%
+{AGK Aquakultur - Teich}%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+AGKAquakultur-Teich2010}
+\APACinsertmetastar {%
+AGKAquakultur-Teich2010}%
+\begin{APACrefauthors}%
+{AGK Aquakultur - Teich}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Vollautomatische Sortiermaschine}} {{Vollautomatische
+  Sortiermaschine}}.{\BBCQ}
+\newblock
+\begin{APACrefURL}
+  \url{https://www.agk-kronawitter.de/shop/Aquakultur-Teich/Sortiergeraete/Sortiermaschine/Vollautomatische-Sortiermaschine.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Al-Jubouri%
 , Al-Nuaimy%
 , Al-Taee%
@@ -119,6 +169,26 @@ Andina.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Apollo%
+}{%
+Apollo%
+}{%
+{\protect \APACyear {2013}}%
+}]{%
+Apollo2013}
+\APACinsertmetastar {%
+Apollo2013}%
+\begin{APACrefauthors}%
+Apollo.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+\APACrefbtitle {{Apollo – Fish grader}.} {{Apollo – Fish grader}.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 AquaScan%
 }{%
 AquaScan%
@@ -139,6 +209,57 @@ AquaScan.%
   Unit CSF1600}.}
 \newblock
 \begin{APACrefURL} \url{http://www.aquascan.com/event/dolink/famid/347548}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Biosort%
+}{%
+Biosort%
+}{%
+{\protect \APACyear {2016}}%
+}]{%
+Biosort2016}
+\APACinsertmetastar {%
+Biosort2016}%
+\begin{APACrefauthors}%
+Biosort.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+\APACrefbtitle {{iFarm - Individualized aquaculture}.} {{iFarm - Individualized
+  aquaculture}.}
+\newblock
+\begin{APACrefURL}
+  [{2019-09-21}]\url{https://www.youtube.com/watch?v=JsGPwjEIeio}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Daley%
+}{%
+Daley%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Daley2018}
+\APACinsertmetastar {%
+Daley2018}%
+\begin{APACrefauthors}%
+Daley, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{How Fish Farms Can Use Facial Recognition to Survey Sick
+  Salmon}.} {{How Fish Farms Can Use Facial Recognition to Survey Sick
+  Salmon}.}
+\newblock
+\begin{APACrefURL}
+  [{2019-09-23}]\url{https://www.smithsonianmag.com/smart-news/facial-recognition-will-be-used-monitor-fish-faces-180970493/}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -165,6 +286,88 @@ FAIVRE.%
 \newblock
 \begin{APACrefURL}
   \url{http://www.faivre.fr/index.php/en/products/fish-counters/en-pescavision-counter/19-en-produits/109-en-counter-p30}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+FAIVRE%
+}{%
+FAIVRE%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+FAIVRE2018}
+\APACinsertmetastar {%
+FAIVRE2018}%
+\begin{APACrefauthors}%
+FAIVRE.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+\APACrefbtitle {{Principle of the SPS technology}.} {{Principle of the SPS
+  technology}.}
+\newblock
+\begin{APACrefURL}
+  [{2019-09-23}]\url{http://www.faivre.fr/index.php/en/products/fish-graders/19-en-produits/183-en-fish-grader-sps}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+FAIVRE%
+}{%
+FAIVRE%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+FAIVRE2019a}
+\APACinsertmetastar {%
+FAIVRE2019a}%
+\begin{APACrefauthors}%
+FAIVRE.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+\APACrefbtitle {{Seleccionadores autom{\'{a}}ticos}.} {{Seleccionadores
+  autom{\'{a}}ticos}.}
+\newblock
+\APACaddressPublisherEqAuth{}{FAIVRE}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.faivre.fr/index.php/en/products/fish-graders/fish-grader-helios-25}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fang%
+\ \protect \BOthers {.}}{%
+Fang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Fang2015}
+\APACinsertmetastar {%
+Fang2015}%
+\begin{APACrefauthors}%
+Fang, J.%
+, Zhu, J.%
+, Meng, L.%
+, Zhao, B.%
+, Liang, Y.%
+\BCBL {}\ \BBA {} Shao, L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{}{}.
+\newblock
+\APACrefbtitle {{Full -automatic fish grader}.} {{Full -automatic fish
+  grader}.}
+\newblock
+\begin{APACrefURL}
+  \url{https://patents.google.com/patent/CN205180233U/en?oq=CN205180233U}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -330,6 +533,64 @@ GuevaraPatino2016}%
 \APACjournalVolNumPages{Folios}{1}{44}{165--179}.
 \newblock
 \begin{APACrefDOI} \doi{10.17227/01234870.44folios165.179} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hao%
+, Yu%
+\BCBL {}\ \BBA {} Li%
+}{%
+Hao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+Hao2016}
+\APACinsertmetastar {%
+Hao2016}%
+\begin{APACrefauthors}%
+Hao, M.%
+, Yu, H.%
+\BCBL {}\ \BBA {} Li, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{The Measurement of Fish Size by Machine Vision - A
+  Review}} {{The Measurement of Fish Size by Machine Vision - A
+  Review}}.{\BBCQ}
+\newblock
+\BIn{} (\BPGS\ 15--32).
+\newblock
+\begin{APACrefURL}
+  \url{http://link.springer.com/10.1007/978-3-319-48354-2{\_}2}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-3-319-48354-2_2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jingwen%
+}{%
+Jingwen%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Jingwen2014}
+\APACinsertmetastar {%
+Jingwen2014}%
+\begin{APACrefauthors}%
+Jingwen, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {{Automatic fish grader}.} {{Automatic fish grader}.}
+\newblock
+\begin{APACrefURL}
+  \url{https://patents.google.com/patent/CN203884438U/en?oq=CN203884438U}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

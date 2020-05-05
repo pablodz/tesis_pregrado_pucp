@@ -12,7 +12,7 @@ A level-1 auxiliary file: chapters/chapter2.aux
 A level-1 auxiliary file: chapters/chapter3.aux
 A level-1 auxiliary file: chapters/chapter4.aux
 A level-1 auxiliary file: general/bibliography.aux
-Illegal, another \bibstyle command---line 46 of file general/bibliography.aux
+Illegal, another \bibstyle command---line 66 of file general/bibliography.aux
  : \bibstyle
  :          {apalike}
 I'm skipping whatever remains of this command
@@ -28,51 +28,56 @@ Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: general/library.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in AGKAquakultur-Teich2010
+ptr=1, stack=
+
+---the literal stack isn't empty for entry AGKAquakultur-Teich2010
+while executing---line 5079 of file apacite.bst
 Warning--No journal in Martinez2003
 ptr=1, stack=
 
 ---the literal stack isn't empty for entry Martinez2003
 while executing---line 5079 of file apacite.bst
 Warning--No school in Vega2013
-You've used 21 entries,
+You've used 31 entries,
             6951 wiz_defined-function locations,
-            1424 strings with 15552 characters,
-and the built_in function-call counts, 36713 in all, are:
-= -- 4456
-> -- 287
-< -- 1757
-+ -- 1695
-- -- 78
-* -- 2289
-:= -- 6766
-add.period$ -- 84
-call.type$ -- 21
-change.case$ -- 361
+            1478 strings with 17139 characters,
+and the built_in function-call counts, 51613 in all, are:
+= -- 6307
+> -- 417
+< -- 2355
++ -- 2210
+- -- 110
+* -- 3114
+:= -- 9230
+add.period$ -- 127
+call.type$ -- 31
+change.case$ -- 531
 chr.to.int$ -- 0
-cite$ -- 44
-duplicate$ -- 918
-empty$ -- 1555
-format.name$ -- 477
-if$ -- 7017
+cite$ -- 65
+duplicate$ -- 1308
+empty$ -- 2276
+format.name$ -- 675
+if$ -- 10075
 int.to.chr$ -- 0
-int.to.str$ -- 63
+int.to.str$ -- 93
 missing$ -- 0
-newline$ -- 516
-num.names$ -- 168
-pop$ -- 960
+newline$ -- 749
+num.names$ -- 248
+pop$ -- 1563
 preamble$ -- 1
-purify$ -- 88
+purify$ -- 128
 quote$ -- 0
-skip$ -- 2223
+skip$ -- 3116
 stack$ -- 0
-substring$ -- 1820
-swap$ -- 491
-text.length$ -- 63
+substring$ -- 2389
+swap$ -- 683
+text.length$ -- 94
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1744
-warning$ -- 2
-while$ -- 167
+type$ -- 2608
+warning$ -- 3
+while$ -- 237
 width$ -- 0
-write$ -- 601
-(There were 2 error messages)
+write$ -- 869
+(There were 3 error messages)

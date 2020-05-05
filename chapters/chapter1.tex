@@ -374,57 +374,250 @@ En la Tabla \ref{tbl:comparacion entre metodos de conteo de peces} desarrolla un
 \\ Fuente: Elaboración propia.
 \end{table}
 
-
 %% NUEVO SUBSECCION X.X.X
 \subsection{Extracción de características de peces}
+
+“La evaluación del comportamiento o fisiología de los peces cultivados siempre ha sido difícil debido al tiempo de muestreo, las diferencias entre las condiciones experimentales y el sesgo metodológico inherente. Sin embargo, los recientes avances en la tecnología de visión artificial\footnote{Elsevier afirma que la tecnología de visión por computadora se considera existente desde 1973 hasta la fecha.} han abierto posibilidades para observar mejor el comportamiento de los peces. Tal tecnología permite herramientas de inspección no destructivas, rápidas, económicas, consistentes y objetivas, mientras que proporcionando técnicas de evaluación basadas en el análisis y procesamiento de imágenes en una amplia variedad de aplicaciones”.\cite[p.~1]{Niu2018} El presente trabajo de investigación se enfoca en las dimensiones de los peces.  
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Extracción mediante inspección visual}
 
+En el subíndice REF se explica sobre el uso de herramientas para poder medir al pez. Mientras se toma la medida un profesional o técnico acuícola realiza una inspección visual para detectar enfermedades víricas, bacterianas o fúngicas visibles.
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Extracción de características mediante visión por computadora}
+
+La empresa acuícola noruega \textit{Cermaq Group AS} está planeando la implementación de un sistema de reconocimiento facial como parte de un proyecto de última tecnología llamada iFarm.\cite{Daley2018} Este tipo de técnicas se recomienda para medianas y grandes empresas debido al alto costo de implementación y mantenimiento. Las principales ventajas, a diferencia de métodos tradicionales, son la personalización y seguimiento de cada pez analizado, es decir, se puede tener un reporte de vida de cada trucha. Esta innovación brinda una precisión muy alta ya que suele ser apoyada por algoritmos de inteligencia artificial que brindan robustez al sistema. Gracias al análisis personalizado se puede identificar los principales problemas que aquejan a los peces, a diferencia del análisis general que se realiza comúnmente. Según la empresa, este método disminuye la mortandad de 50\% a 25\% en todo el proceso de cultivo. En la Figura REF se ejemplifica el reporte.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/extraccion de caracteristicas mediante vision por computadora.pdf}
+	\caption{Extracción de características mediante visión por computadora.}
+	Fuente: \cite{Biosort2016}
+	\label{fig:extraccion de caracteristicas mediante vision por computadora}
+\end{figure}
+
+Hao M. diseño un sistema de visión artificial que puede medir con precisión la longitud de los peces, tiene dos tipos de funcionamiento del sistema. El primer tipo solo usa una imagen y posee una referencia para poder estimar la longitud del pez a través de la transformación de Hough (Figura REF). El segundo tipo usa más imágenes para realizar un modelo 3d, la investigación indica que el sistema funciona con precisión. \cite[p.~4-5]{Niu2018}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{chapter1/usando relacion entre a y b para calcular longitud del pez.pdf}
+	\caption{Usando la relación  entre A y B para calcular la longitud del pez.}
+	Fuente: \cite{Hao2016}
+	\label{fig:usando relacion entre a y b para calcular longitud del pez}
+\end{figure}
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Sistema de traslado de peces}
 
+El proceso de llevar un pez de un estanque o jaula flotante a un lugar específico se denomina traslado. Dicho traslado es necesario al momento de clasificar, contar y procesar en general al pez. Durante el cultivo de trucha esta práctica se repite con frecuencia, y en caso no fuera empleada de manera correcta el pez puede morir.
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Traslado manual}
+
+Los operarios usan redes en un cabezal metálico en forma circular apoyados por un palo metálico o de madera para trasladar a las truchas\footnote{También son llamadas sacaderas telescópicas.}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/sacadera telescipica de malla fina para peces.png}
+	\caption{Usando la relación  entre A y B para calcular la longitud del pez.}
+	Fuente: Seomusen vía Amazon.
+	\label{fig:sacadera telescipica de malla fina para peces}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Traslado automático}
 
+En la Figura 18 se muestra cómo se recepciona los peces en tránsito que están den-tro de una tubería que son impulsadas por una corriente de agua, generada posiblemente por una bomba para peces\footnote{También llamada bomba "\textit{pin pin}", realiza una función similar a una bomba centrífuga, pero con peces en lugar de solo agua.}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/recepcion automatica por bombeo de peces mediante tuberia.pdf}
+	\caption{Recepción automática por bombeo de peces mediante tubería.}
+	Fuente: Videos recopilados de FAIVRE
+	\label{fig:recepcion automatica por bombeo de peces mediante tuberia}
+\end{figure}
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Comparación}
+
+En la Tabla REF desarrolla una comparación tanto cuantitativa como cualitativa de los métodos de conteo de peces. La \textbf{cantidad de peces por hora} se refiere a la cantidad de peces que puede transportar en una hora. El \textbf{mantenimiento} se refiere a la frecuencia con la cual se inspecciona el funcionamiento correcto del método. El \textbf{costo de implementación} y de \textbf{funcionamiento} se refieren a los costos de diseño, implementación y de marcha. La precisión se refiere a la cantidad de peces trasladados que no mueren. La calificación “\textit{bajo, medio, alto}” son juicios del autor, basándose en su experiencia.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]	
+	\centering
+	\caption{Comparación entre los métodos de traslado de peces.}
+	\label{tbl:comparacion entre los metodos de traslado de peces}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{D9D9D9}}l |c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio\textbackslash{}Método}}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Manual}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Automático}} \\ \hline
+		{\color[HTML]{000000} Cantidad de peces por hora} &
+		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}360 aproximadamente\\ (por operario)\end{tabular}} &
+		{\color[HTML]{000000} 20000} \\ \hline
+		{\color[HTML]{000000} Mantenimiento}           & {\color[HTML]{000000} -}    & {\color[HTML]{000000} Semestral} \\ \hline
+		{\color[HTML]{000000} Costo de implementación} & {\color[HTML]{000000} Bajo} & {\color[HTML]{000000} Alto}      \\ \hline
+		{\color[HTML]{000000} Costo de funcionamiento} & {\color[HTML]{000000} Bajo} & {\color[HTML]{000000} Alto}      \\ \hline
+		{\color[HTML]{000000} Precisión}               & {\color[HTML]{000000} Bajo} & {\color[HTML]{000000} Medio}     \\ \hline
+	\end{tabular}
+	\\ Fuente: Elaboración propia.
+\end{table}
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Productos comerciales y patentes}
 
+En el mercado internacional se distribuyen máquinas que realizan la clasificación, conteo o ambos de manera semiautomática y completamente automática. 
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Dispositivo de clasificación de peces y método de clasificación de peces \textit{(Patente JP5563164B2)}}
+
+El control de la clasificación de los peces se realiza por límites de peso, es decir, se asigna dos límites en gramos y este dispositivo logra separar la entrada de peces en tres rangos. La máquina trabaja con peces vivos y permite, según los inventores, una clasificación rápida y precisa de un modo eficiente. La recepción de peces puede darse solo para un pez vivo a la vez. El compartimiento de clasificación mide 0.5 metros, llamado compartimento de pesaje. El ingreso de datos mediante una unidad de control que posee una interfaz de usuario y un dispositivo de memoria electrónica para ingresar y recepcionar datos. La invención, según los desarrolladores, es observar la diferencia de crecimiento comparando con anteriores clasificaciones para distribuirlos mejor en futuros estanques y controlar de una mejor manera la alimentación.\cite{2010}
+
+\begin{figure}[H]
+	\centering
+	\rot{\rot{\rot{\includegraphics[width=0.70\textwidth]{chapter1/clasificadora automatica de peces de origen japones.png}}}}
+	\caption{Clasificadora automática de peces de origen japonés.}
+	Fuente: Patente JP5563164B2.
+	\label{fig:clasificadora automatica de peces de origen japones}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Clasificador completamente automático de pescado \textit{(Patente CN205180233U)}}
 
+Este clasificador completamente automático incluye tres máquinas, la primera máquina elevadora, la segunda máquina elevadora y la tercera la niveladora. La salida de la primera máquina se encuentra en la parte superior de la entrada de la segunda máquina, la salida de la segunda máquina se encuentra en la parte superior de la entrada de la niveladora, conectado de forma fija con la bomba de agua en la segunda máquina de elevación. La ducha se fija en el marco de la primera salida de la máquina de elevación. Esto rectifica y mejora perfectamente al clasificador de peces debido a la rotación del cilindro de surtido.\cite{Fang2015} \\
+El fabricante usa tambores de rotación, configuraciones de elevación de peces pa-ra enfriar por pulverizado al pescado, reducir la viscosidad con el objetivo de evitar lesio-nes por uso y desgaste. Además, usa rodillos giratorios para evitar la mala clasificación de los pescados. No se especifica cantidades o porcentaje de error del uso.
+
+\begin{figure}[H]
+	\centering
+	\rot{\rot{\rot{\includegraphics[width=0.45\textwidth]{chapter1/clasificadora automatica de peces de origen chino.png}}}}
+	\caption{Clasificadora automática de peces de origen chino.}
+	Fuente: Patente CN205180233U.
+	\label{fig:clasificadora automatica de peces de origen chino}
+\end{figure}
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Clasificador y contador automático de peces \textit{(Patente CN203884438U)}}
+
+Esta máquina comprende una máquina clasificadora automática y al menos una máquina contadora automática. La máquina de clasificación comprende un marco, las tuberías de salida de peces, cada máquina de conteo automático comprende un tanque de peces de conteo, un tubo de entrada de peces está dispuesto en un extremo de cada tanque de peces de conteo y cada tubo de cada salida de peces se comunica con la tubería de entrada de pescado correspondiente. El clasificador automático de peces tiene las ventajas de que los tamaños y las cantidades de peces se pueden distinguir con ayuda de las máquinas, por lo tanto, el tiempo de trabajo se puede reducir, la eficiencia de trabajo se puede mejorar en gran medida, se puede garantizar la precisión de los daos y se puede evitar lesiones y aumentar la tasa de supervivencia de los peces al pasar por este proceso.\cite{Jingwen2014} El inventor \textbf{no precisa} materiales de fabricación, cuantificación de la cantidad máxima de producción, porcentajes de error u otros puntos específicos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/clasificador y contador de peces de origen chino.png}
+	\caption{Clasificadora automática de peces de origen chino.}
+	Fuente: Patente CN203884438U.
+	\label{fig:clasificador y contador de peces de origen chino}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Seleccionadora completamente automática \textit{AGK}}
 
+Según el fabricante, las ventajas de este sistema son la suavidad y principios de ajuste simples, construcción ligera, freno automático, suministro de agua simple, buena estabilidad, embudo de llenado extraíble. En cuanto a la clasificación: puede ser usada en truchas de 8 a 10, 10 a 20 y de 20 a 30 centímetros como rangos para clasificación. Las dimensiones de la seleccionadora son de 3500x1000x1180 milímetros. El peso de la máquina es de 150 kilogramos y tiene una potencia de 0.15 kW ya que hace uso cintas transportadoras y admite un suministro eléctrico de 220 y 380 VAC. Los materiales usados en la clasificadora son de acero galvanizado, acero inoxidable, aluminio y plástico.\cite{AGKAquakultur-Teich2010} Sin embargo, el fabricante menciona que la venta es solo para medianas y grandes empresas, según la normativa alemana.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/clasificadora de peces de origen aleman.png}
+	\caption{Clasificadora de peces de origen alemán.}
+	Fuente: AGK – Aquakultur-Teich.
+	\label{fig:clasificadora de peces de origen aleman}
+\end{figure}
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Clasificador automático para peces Helios}
+
+La empresa FAIVRE comercializa la máquina clasificadora Helios 25 para truchas de 5 a 350 gramos (Figura REF) con capacidad para clasificar en 3 tamaños con 2 rieles de clasificación. La máquina está hecha de acero inoxidable AISI 304L o 316L de alta calidad \cite{FAIVRE2019a}. El funcionamiento se divide en tres etapas: primero el sistema de recepción y canalización recibe los peces mediante la conexión a una bomba de peces en funcionamiento y los envía al siguiente sistema de manera que no ingresen dos peces al mismo tiempo; segundo, los peces pasan por canales (Figura REF) impulsados por cadenas transportadoras en los laterales que poseen tiras de goma para trasladar hasta que se clasifique mecánicamente; tercero, luego de estar en la sección respectiva la trucha sale de la máquina mediante tuberías.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/clasificadoras automaticas para peces de origen frances.png}
+	\caption{Clasificadoras automáticas para peces de origen francés.}
+	Fuente: Empresa acuícola FAIVRE.
+	\label{fig:clasificadoras automaticas para peces de origen frances}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/sistema de canalizacion de peces.png}
+	\caption{Clasificadoras automáticas para peces de origen francés.}
+	1. Configuración - 2. Panel lateral - 3. Panel ajustable - 4. Panel fijo \\
+	5. Riego - 6. Cadena transportadora - 7. Tiras de goma\\
+	Fuente: \cite{FAIVRE2018}.
+	\label{fig:sistema de canalizacion de peces}
+\end{figure}
+
+La empresa francesa cuenta con máquinas que pueden clasificar y posteriormente contar para saber la cantidad de peces que se están redistribuyendo como se visualiza en la Figura REF. En esta versión además incluye una interfaz de control más avanzada con más funciones.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/seleccionador con contador integrado y sus partes.png}
+	\caption{Seleccionador con contador integrado y sus partes.}
+	Fuente: FAIVRE.
+	\label{fig:seleccionador con contador integrado y sus partes}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Clasificador automático de peces y contador automático \textit{Pentair V-100 00140}}
 
-%% NUEVA SUB-SUB-SECCION X.X.X.X
-\subsubsection{Clasificador de peces \textit{Apollo}}
+Pentair se dedica al diseño y venta de máquinas acuícolas a pedido. La cotización de una clasificadora (\textit{Pentair V-100 00140}) y contadora (\textit{Pentair V-10007}) muestra precios elevados como se muestra en la Figura REF. El diseñador y fabricante asegura tener una cercana a 97\%. La cotización implicó brindar datos: el estándar de suministro eléctrico peruano, el tipo de pez a contar (\textit{trucha}), el rango de gramajes y la dirección de destino. Además, Pentair especificó que las máquinas cotizadas funcionan como un sistema unido y que, si se empleaba otras marcas en ese sistema, la marca no se responsabilizaba por mal funcionamiento.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering
+	\caption{Extracto de cotización de máquinas clasificadora y contadora para peces.}
+	\label{tbl:extracto de cotizacion de maquinas clasificadora y contadora para peces}
+	\begin{tabular}{|l|l|l|r|r|l|r|r|}
+		\hline
+		\rowcolor[HTML]{A6A6A6} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{N°}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Ítem}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\rot{Detalles}}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\rot{Cantidad}}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\rot{Acordado}}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\rot{UM}}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\rot{Precio unitario}}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\rot{Precio total (\$)}}}} \\ \hline
+		2 &
+		\begin{tabular}[c]{@{}l@{}}V-10007\\ MACRO COUNTER,\\ THREE/FOUR CHANNEL\\ Vaki Macro 4 channel counter \\ for fish from 0.2g up to 400g.\\ Counts graded fish in up to\\ 4 channels simultaneously.\end{tabular} &
+		- &
+		1.0 &
+		1.0 &
+		EA &
+		64 027.00 &
+		64 027.00 \\ \hline
+		3 &
+		\begin{tabular}[c]{@{}l@{}}V-100 00140\\ GRADER 140CM DIAMETER\\ Vaki 140cm rotary fish grader. \\ Grades fish from 0.5g up to \\ 200g in up to grades. Includes \\ dewatering system and spray bar.\end{tabular} &
+		- &
+		1.0 &
+		1.0 &
+		EA &
+		53 567.00 &
+		53 567.00 \\ \hline
+	\end{tabular}
+\\ Fuente: Pentair.
+\end{table}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Clasificador de peces \textit{Apollo}}
+
+Este tipo de clasificador suele ser destinado al uso industrial. El fabricante tiene diferentes máquinas con diferentes gramajes para clasificar (\textit{1 a 650 g y 5 a 750 g}). Tiene cuatro de tres a cuatro salidas. Usa el suministro eléctrico estándar noruego (\textit{230/400 VAC 50Hz.}). Realiza el conteo de hasta cuatro toneladas por hora cuando clasifica salmones de un rango específico (\textit{300 a 400 g}). El sistema clasifica de forma similar al representado en la Figura REF. \cite{Apollo2013}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter1/clasificadora de peces de origen danes.png}
+	\caption{Clasificadora de peces de origen danés.}
+	Fuente: FAIVRE.
+	\label{fig:clasificadora de peces de origen danes}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Contador de peces \textit{Pescavision}}
+
+Los contadores de peces mostrados en la Figura 28 funcionan bajo el mismo principio que sus clasificadores mostrados en el índice 1.2.6.5, es decir, mediante el uso de barreras de luz infrarroja. El fabricante asegura que los modelos Pescavision50 y Pescavision300 pueden llegar a tener una precisión total (100\%) y conforme aumenta sus capacidades de conteo aumenta también las dimensiones de la máquina y el gramaje mínimo que puede contar. A diferencia de otros sistemas estas máquinas sí son compatibles con el estándar de electricidad que se emplea en Perú.
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Contador de peces \textit{Calitri}}
