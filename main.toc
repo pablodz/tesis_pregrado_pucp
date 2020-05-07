@@ -55,24 +55,24 @@
 \contentsline {section}{\numberline {2.4}Identificador mediante redes neuronales}{38}%
 \contentsline {chapter}{\numberline {III}Diseño Mecatrónico}{39}%
 \contentsline {section}{\numberline {3.1}Desarrollo de proyecto conceptual}{39}%
-\contentsline {subsection}{\numberline {3.1.1}Lista de requerimientos}{40}%
-\contentsline {subsection}{\numberline {3.1.2}Caja negra}{40}%
-\contentsline {subsubsection}{Función principal}{40}%
-\contentsline {subsubsection}{Entradas}{40}%
-\contentsline {subsubsection}{Salidas}{40}%
-\contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{40}%
-\contentsline {subsubsection}{Lista de funciones por subsistema}{40}%
-\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{40}%
-\contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{40}%
-\contentsline {subsubsection}{Concepto de solución N° 1}{40}%
-\contentsline {subsubsection}{Concepto de solución N° 2}{40}%
-\contentsline {subsubsection}{Concepto de solución N° 3}{40}%
-\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{40}%
-\contentsline {subsubsection}{Criterios técnicos}{40}%
-\contentsline {subsubsection}{Criterios económicos}{40}%
-\contentsline {subsubsection}{Elección de concepto óptimo}{40}%
-\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{40}%
-\contentsline {chapter}{\numberline {IV}Costos}{41}%
-\contentsline {section}{\numberline {4.1}Manufactura}{41}%
-\contentsline {section}{\numberline {4.2}Precio unitario}{41}%
-\contentsline {chapter}{Referencias}{42}%
+\contentsline {subsection}{\numberline {3.1.1}Lista de requerimientos}{39}%
+\contentsline {subsection}{\numberline {3.1.2}Caja negra}{41}%
+\contentsline {subsubsection}{Función principal}{41}%
+\contentsline {subsubsection}{Entradas}{42}%
+\contentsline {subsubsection}{Salidas}{42}%
+\contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{42}%
+\contentsline {subsubsection}{Lista de funciones por subsistema}{43}%
+\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{43}%
+\contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{43}%
+\contentsline {subsubsection}{Concepto de solución N° 1}{43}%
+\contentsline {subsubsection}{Concepto de solución N° 2}{43}%
+\contentsline {subsubsection}{Concepto de solución N° 3}{43}%
+\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{43}%
+\contentsline {subsubsection}{Criterios técnicos}{43}%
+\contentsline {subsubsection}{Criterios económicos}{43}%
+\contentsline {subsubsection}{Elección de concepto óptimo}{43}%
+\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{43}%
+\contentsline {chapter}{\numberline {IV}Costos}{44}%
+\contentsline {section}{\numberline {4.1}Manufactura}{44}%
+\contentsline {section}{\numberline {4.2}Precio unitario}{44}%
+\contentsline {chapter}{Referencias}{45}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  7 MAY 2020 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  7 MAY 2020 16:39
 entering extended mode
 **./main.tex
 (main.tex
@@ -402,43 +402,74 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box58
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip58
+\multirow@cntb=\count276
+\multirow@dima=\skip59
+\bigstrutjot=\dimen158
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\longtable.sty"
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip58
-\LTright=\skip59
-\LTpre=\skip60
-\LTpost=\skip61
-\LTchunksize=\count276
-\LTcapwidth=\dimen158
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count277
+\LTcapwidth=\dimen159
 \LT@head=\box59
 \LT@firsthead=\box60
 \LT@foot=\box61
 \LT@lastfoot=\box62
-\LT@cols=\count277
-\LT@rows=\count278
-\c@LT@tables=\count279
-\c@LT@chunks=\count280
+\LT@cols=\count278
+\LT@rows=\count279
+\c@LT@tables=\count280
+\c@LT@chunks=\count281
 \LT@p@ftn=\toks28
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/colortbl\colortbl.sty"
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks29
+\minrowclearance=\skip64
+)
+\rownum=\count282
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\multicol.sty"
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count281
+\c@tracingmulticols=\count283
 \mult@box=\box63
-\multicol@leftmargin=\dimen159
-\c@unbalance=\count282
-\c@collectmore=\count283
-\doublecol@number=\count284
-\multicoltolerance=\count285
-\multicolpretolerance=\count286
-\full@width=\dimen160
-\page@free=\dimen161
-\premulticols=\dimen162
-\postmulticols=\dimen163
-\multicolsep=\skip62
-\multicolbaselineskip=\skip63
+\multicol@leftmargin=\dimen160
+\c@unbalance=\count284
+\c@collectmore=\count285
+\doublecol@number=\count286
+\multicoltolerance=\count287
+\multicolpretolerance=\count288
+\full@width=\dimen161
+\page@free=\dimen162
+\premulticols=\dimen163
+\postmulticols=\dimen164
+\multicolsep=\skip65
+\multicolbaselineskip=\skip66
 \partial@page=\box64
 \last@line=\box65
-\maxbalancingoverflow=\dimen164
+\maxbalancingoverflow=\dimen165
 \mult@rightbox=\box66
 \mult@grightbox=\box67
 \mult@gfirstbox=\box68
@@ -480,19 +511,19 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box104
 \@tempa=\box105
 \@tempa=\box106
-\c@minrows=\count287
-\c@columnbadness=\count288
-\c@finalcolumnbadness=\count289
-\last@try=\dimen165
-\multicolovershoot=\dimen166
-\multicolundershoot=\dimen167
+\c@minrows=\count289
+\c@columnbadness=\count290
+\c@finalcolumnbadness=\count291
+\last@try=\dimen166
+\multicolovershoot=\dimen167
+\multicolundershoot=\dimen168
 \mult@nat@firstbox=\box107
 \colbreak@box=\box108
-\mc@col@check@num=\count290
+\mc@col@check@num=\count292
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/gloss\gloss.sty"
 Package: gloss 2002/07/26 1.5.2 Gloss package
-\glosshang=\skip64
+\glosshang=\skip67
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/anysize\anysize.sty"
 Package: anysize 1994/08/13 setting margin sizes
@@ -500,19 +531,18 @@ Package: anysize 1994/08/13 setting margin sizes
 document style option `anysize' loaded
 Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
 Version 1.0, Aug 13, 1994
-\@Leftmargin=\dimen168
-\@Rightmargin=\dimen169
-\@Topmargin=\dimen170
-\@Bottommargin=\dimen171
+\@Leftmargin=\dimen169
+\@Rightmargin=\dimen170
+\@Topmargin=\dimen171
+\@Bottommargin=\dimen172
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\bigstrut.sty"
 Package: bigstrut 2019/05/31 v2.5 Provide larger struts in tabulars
-\bigstrutjot=\dimen172
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/appendix\appendix.sty"
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count291
-\c@@ppsavesec=\count292
-\c@@ppsaveapp=\count293
+\c@@pps=\count293
+\c@@ppsavesec=\count294
+\c@@ppsaveapp=\count295
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
@@ -521,30 +551,24 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-("C:\Program Files\MiKTeX 2.9\tex/latex/multirow\multirow.sty"
-Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
-\multirow@colwidth=\skip65
-\multirow@cntb=\count294
-\multirow@dima=\skip66
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.sty"
-\lst@mode=\count295
+\lst@mode=\count296
 \lst@gtempboxa=\box109
-\lst@token=\toks29
-\lst@length=\count296
+\lst@token=\toks30
+\lst@length=\count297
 \lst@currlwidth=\dimen173
-\lst@column=\count297
-\lst@pos=\count298
+\lst@column=\count298
+\lst@pos=\count299
 \lst@lostspace=\dimen174
 \lst@width=\dimen175
-\lst@newlines=\count299
-\lst@lineno=\count300
+\lst@newlines=\count300
+\lst@lineno=\count301
 \lst@maxwidth=\dimen176
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\lstmisc.sty"
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count301
-\lst@skipnumbers=\count302
+\c@lstnumber=\count302
+\lst@skipnumbers=\count303
 \lst@framebox=\box110
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/listings\listings.cfg"
@@ -552,37 +576,29 @@ File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
-Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\enumerate.sty"
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks30
+\@enLab=\toks31
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ragged2e\ragged2e.sty"
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
-\CenteringLeftskip=\skip67
-\RaggedLeftLeftskip=\skip68
-\RaggedRightLeftskip=\skip69
-\CenteringRightskip=\skip70
-\RaggedLeftRightskip=\skip71
-\RaggedRightRightskip=\skip72
-\CenteringParfillskip=\skip73
-\RaggedLeftParfillskip=\skip74
-\RaggedRightParfillskip=\skip75
-\JustifyingParfillskip=\skip76
-\CenteringParindent=\skip77
-\RaggedLeftParindent=\skip78
-\RaggedRightParindent=\skip79
-\JustifyingParindent=\skip80
+\CenteringLeftskip=\skip68
+\RaggedLeftLeftskip=\skip69
+\RaggedRightLeftskip=\skip70
+\CenteringRightskip=\skip71
+\RaggedLeftRightskip=\skip72
+\RaggedRightRightskip=\skip73
+\CenteringParfillskip=\skip74
+\RaggedLeftParfillskip=\skip75
+\RaggedRightParfillskip=\skip76
+\JustifyingParfillskip=\skip77
+\CenteringParindent=\skip78
+\RaggedLeftParindent=\skip79
+\RaggedRightParindent=\skip80
+\JustifyingParindent=\skip81
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/comment\comment.sty"
 \CommentStream=\write3
@@ -665,12 +681,12 @@ LaTeX Warning: Font shape declaration has incorrect series value `mc'.
 
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/apacite\apacite.sty"
 Package: apacite 2013/07/21 v6.03 APA citation
-\c@BibCnt=\count303
-\bibleftmargin=\skip81
-\bibindent=\skip82
-\bibparsep=\skip83
-\bibitemsep=\skip84
-\biblabelsep=\skip85
+\c@BibCnt=\count304
+\bibleftmargin=\skip82
+\bibindent=\skip83
+\bibparsep=\skip84
+\bibitemsep=\skip85
+\biblabelsep=\skip86
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\fixltx2e.sty"
 Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
@@ -697,8 +713,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen183
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count304
-\c@continuedfloat=\count305
+\c@caption@flags=\count305
+\c@continuedfloat=\count306
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -712,9 +728,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 ("C:\Program Files\MiKTeX 2.9\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count306
-\Gm@cntv=\count307
-\c@Gm@tempcnt=\count308
+\Gm@cnth=\count307
+\Gm@cntv=\count308
+\c@Gm@tempcnt=\count309
 \Gm@bindingoffset=\dimen184
 \Gm@wd@mp=\dimen185
 \Gm@odd@mp=\dimen186
@@ -723,21 +739,21 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutheight=\dimen189
 \Gm@layouthoffset=\dimen190
 \Gm@layoutvoffset=\dimen191
-\Gm@dimlist=\toks31
+\Gm@dimlist=\toks32
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyhdr\fancyhdr.sty"
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip86
-\f@nch@O@elh=\skip87
-\f@nch@O@erh=\skip88
-\f@nch@O@olh=\skip89
-\f@nch@O@orh=\skip90
-\f@nch@O@elf=\skip91
-\f@nch@O@erf=\skip92
-\f@nch@O@olf=\skip93
-\f@nch@O@orf=\skip94
+\f@nch@headwidth=\skip87
+\f@nch@O@elh=\skip88
+\f@nch@O@erh=\skip89
+\f@nch@O@olh=\skip90
+\f@nch@O@orh=\skip91
+\f@nch@O@elf=\skip92
+\f@nch@O@erf=\skip93
+\f@nch@O@olf=\skip94
+\f@nch@O@orf=\skip95
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/blindtext\blindtext.sty"
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
@@ -745,49 +761,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files\MiKTeX 2.9\tex/latex/tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count309
-\c@Blindtext=\count310
-\c@blind@countparstart=\count311
-\blind@countxx=\count312
-\blindtext@numBlindtext=\count313
-\blind@countyy=\count314
-\c@blindlist=\count315
-\c@blindlistlevel=\count316
-\c@blindlist@level=\count317
-\blind@listitem=\count318
-\c@blind@listcount=\count319
-\c@blind@levelcount=\count320
-\blind@mathformula=\count321
-\blind@Mathformula=\count322
-\c@blind@randomcount=\count323
-\c@blind@randommax=\count324
-\c@blind@pangramcount=\count325
-\c@blind@pangrammax=\count326
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/colortbl\colortbl.sty"
-Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks32
-\minrowclearance=\skip95
-)
-LaTeX Info: Redefining \color on input line 709.
-\rownum=\count327
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+\c@blindtext=\count310
+\c@Blindtext=\count311
+\c@blind@countparstart=\count312
+\blind@countxx=\count313
+\blindtext@numBlindtext=\count314
+\blind@countyy=\count315
+\c@blindlist=\count316
+\c@blindlistlevel=\count317
+\c@blindlist@level=\count318
+\blind@listitem=\count319
+\c@blind@listcount=\count320
+\c@blind@levelcount=\count321
+\blind@mathformula=\count322
+\blind@Mathformula=\count323
+\c@blind@randomcount=\count324
+\c@blind@randommax=\count325
+\c@blind@pangramcount=\count326
+\c@blind@pangrammax=\count327
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pdfpages.sty"
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
@@ -1352,14 +1343,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-<images/chapter1/clasificacion y medicion manual de truchas.png, id=78, 1445.4p
-t x 813.0375pt>
+<images/chapter1/clasificacion y medicion manual de truchas.png, id=78, 1061.46
+562pt x 791.95876pt>
 File: images/chapter1/clasificacion y medicion manual de truchas.png Graphic fi
 le (type png)
 <use images/chapter1/clasificacion y medicion manual de truchas.png>
 Package pdftex.def Info: images/chapter1/clasificacion y medicion manual de tru
 chas.png  used on input line 147.
-(pdftex.def)             Requested size: 452.96826pt x 254.79314pt.
+(pdftex.def)             Requested size: 452.96826pt x 337.96167pt.
 [9 <./images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
  clasificadora ajustable.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
@@ -1379,7 +1370,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-<images/chapter1/maquina seleccionadora de truchas agv.png, id=86, 777.65532pt 
+<images/chapter1/maquina seleccionadora de truchas agv.png, id=87, 777.65532pt 
 x 529.98pt>
 File: images/chapter1/maquina seleccionadora de truchas agv.png Graphic file (t
 ype png)
@@ -1391,7 +1382,7 @@ Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
 quanjiao) on input line 172.
 [11 <./images/chapter1/herramienta de medicion manual para peces.png>]
 <images/chapter1/medicion automatizada de especies y tallas de peces por vision
- artificial.png, id=93, 641.39626pt x 158.09062pt>
+ artificial.png, id=94, 641.39626pt x 158.09062pt>
 File: images/chapter1/medicion automatizada de especies y tallas de peces por v
 ision artificial.png Graphic file (type png)
 <use images/chapter1/medicion automatizada de especies y tallas de peces por vi
@@ -1401,7 +1392,7 @@ llas de peces por vision artificial.png  used on input line 183.
 (pdftex.def)             Requested size: 452.96826pt x 111.64928pt.
  [12 <./images/chapter1/maquina seleccionadora de truchas agv.png>]
 <images/chapter1/medicion de peces dentro de estanques con camaras ortogonales.
-png, id=99, 819.06pt x 537.50812pt>
+png, id=100, 819.06pt x 537.50812pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras ortogon
 ales.png Graphic file (type png)
 <use images/chapter1/medicion de peces dentro de estanques con camaras ortogona
@@ -1410,7 +1401,7 @@ Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques
 con camaras ortogonales.png  used on input line 192.
 (pdftex.def)             Requested size: 339.7262pt x 222.94688pt.
 <images/chapter1/medicion de peces dentro de estanques con camaras estereo.png,
- id=100, 776.9025pt x 439.6425pt>
+ id=101, 776.9025pt x 439.6425pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras estereo
 .png Graphic file (type png)
 <use images/chapter1/medicion de peces dentro de estanques con camaras estereo.
@@ -1425,7 +1416,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--212
 
  []
 
-<images/chapter1/pez identificado por una red neuronal.png, id=104, 292.09125pt
+<images/chapter1/pez identificado por una red neuronal.png, id=105, 292.09125pt
  x 285.31593pt>
 File: images/chapter1/pez identificado por una red neuronal.png Graphic file (t
 ype png)
@@ -1450,7 +1441,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
 [16]
 <images/chapter1/clasificacion conteo curado y calculo de biomasa en la laguna 
-de canrash.pdf, id=115, 690.58pt x 513.92pt>
+de canrash.pdf, id=116, 690.58pt x 513.92pt>
 File: images/chapter1/clasificacion conteo curado y calculo de biomasa en la la
 guna de canrash.pdf Graphic file (type pdf)
 <use images/chapter1/clasificacion conteo curado y calculo de biomasa en la lag
@@ -1460,7 +1451,7 @@ de biomasa en la laguna de canrash.pdf  used on input line 281.
 (pdftex.def)             Requested size: 452.96826pt x 337.09448pt.
  [17 <./images/chapter1/clasificacion conteo curado y calculo de biomasa en la 
 laguna de canrash.pdf>]
-<images/chapter1/contador peces basado en luz infrarroja faivre.png, id=141, 42
+<images/chapter1/contador peces basado en luz infrarroja faivre.png, id=142, 42
 6.09187pt x 121.20282pt>
 File: images/chapter1/contador peces basado en luz infrarroja faivre.png Graphi
 c file (type png)
@@ -1469,7 +1460,7 @@ Package pdftex.def Info: images/chapter1/contador peces basado en luz infrarroj
 a faivre.png  used on input line 294.
 (pdftex.def)             Requested size: 452.96826pt x 128.85535pt.
 <images/chapter1/planos comunes de posicionamiento para camaras de inspeccion.p
-df, id=142, 689.57625pt x 503.8825pt>
+df, id=143, 689.57625pt x 503.8825pt>
 File: images/chapter1/planos comunes de posicionamiento para camaras de inspecc
 ion.pdf Graphic file (type pdf)
 <use images/chapter1/planos comunes de posicionamiento para camaras de inspecci
@@ -1478,7 +1469,7 @@ Package pdftex.def Info: images/chapter1/planos comunes de posicionamiento para
  camaras de inspeccion.pdf  used on input line 307.
 (pdftex.def)             Requested size: 362.37598pt x 264.79599pt.
  [18 <./images/chapter1/contador peces basado en luz infrarroja faivre.png>]
-<images/chapter1/contador de peces mediante escaneres.png, id=146, 598.48593pt 
+<images/chapter1/contador de peces mediante escaneres.png, id=147, 598.48593pt 
 x 222.07968pt>
 File: images/chapter1/contador de peces mediante escaneres.png Graphic file (ty
 pe png)
@@ -1490,7 +1481,7 @@ ng  used on input line 320.
 ccion.pdf>] [20 <./images/chapter1/contador de peces mediante escaneres.png>] [
 21]
 <images/chapter1/extraccion de caracteristicas mediante vision por computadora.
-pdf, id=177, 695.59875pt x 392.46625pt>
+pdf, id=178, 695.59875pt x 392.46625pt>
 File: images/chapter1/extraccion de caracteristicas mediante vision por computa
 dora.pdf Graphic file (type pdf)
 <use images/chapter1/extraccion de caracteristicas mediante vision por computad
@@ -1499,7 +1490,7 @@ Package pdftex.def Info: images/chapter1/extraccion de caracteristicas mediante
  vision por computadora.pdf  used on input line 394.
 (pdftex.def)             Requested size: 452.96826pt x 255.56712pt.
 <images/chapter1/usando relacion entre a y b para calcular longitud del pez.pdf
-, id=178, 784.9325pt x 436.63126pt>
+, id=179, 784.9325pt x 436.63126pt>
 File: images/chapter1/usando relacion entre a y b para calcular longitud del pe
 z.pdf Graphic file (type pdf)
 <use images/chapter1/usando relacion entre a y b para calcular longitud del pez
@@ -1509,7 +1500,7 @@ lar longitud del pez.pdf  used on input line 404.
 (pdftex.def)             Requested size: 385.02577pt x 214.1777pt.
  [22 <./images/chapter1/extraccion de caracteristicas mediante vision por compu
 tadora.pdf>]
-<images/chapter1/sacadera telescipica de malla fina para peces.png, id=201, 536
+<images/chapter1/sacadera telescipica de malla fina para peces.png, id=202, 536
 .0025pt x 231.86626pt>
 File: images/chapter1/sacadera telescipica de malla fina para peces.png Graphic
  file (type png)
@@ -1520,7 +1511,7 @@ a peces.png  used on input line 422.
  [23 <./images/chapter1/usando relacion entre a y b para calcular longitud del 
 pez.pdf>]
 <images/chapter1/recepcion automatica por bombeo de peces mediante tuberia.pdf,
- id=225, 611.28375pt x 262.9825pt>
+ id=226, 611.28375pt x 262.9825pt>
 File: images/chapter1/recepcion automatica por bombeo de peces mediante tuberia
 .pdf Graphic file (type pdf)
 <use images/chapter1/recepcion automatica por bombeo de peces mediante tuberia.
@@ -1537,7 +1528,7 @@ i-fi-ca-ción de pe-ces \T1/ptm/b/it/12 (Pa-ten-te JP5563164B2)
 
 [25]
 <images/chapter1/clasificadora automatica de peces de origen japones.png, id=25
-2, 426.09187pt x 639.13782pt>
+3, 426.09187pt x 639.13782pt>
 File: images/chapter1/clasificadora automatica de peces de origen japones.png G
 raphic file (type png)
 <use images/chapter1/clasificadora automatica de peces de origen japones.png>
@@ -1551,7 +1542,7 @@ Overfull \hbox (22.66824pt too wide) in paragraph at lines 482--483
 
 [26 <./images/chapter1/clasificadora automatica de peces de origen japones.png>
 ]
-<images/chapter1/clasificadora automatica de peces de origen chino.png, id=257,
+<images/chapter1/clasificadora automatica de peces de origen chino.png, id=258,
  293.59688pt x 633.86812pt>
 File: images/chapter1/clasificadora automatica de peces de origen chino.png Gra
 phic file (type png)
@@ -1560,7 +1551,7 @@ Package pdftex.def Info: images/chapter1/clasificadora automatica de peces de o
 rigen chino.png  used on input line 496.
 (pdftex.def)             Requested size: 203.83434pt x 440.06798pt.
  [27 <./images/chapter1/clasificadora automatica de peces de origen chino.png>]
-<images/chapter1/clasificador y contador de peces de origen chino.png, id=262, 
+<images/chapter1/clasificador y contador de peces de origen chino.png, id=263, 
 307.1475pt x 239.805pt>
 File: images/chapter1/clasificador y contador de peces de origen chino.png Grap
 hic file (type png)
@@ -1569,7 +1560,7 @@ Package pdftex.def Info: images/chapter1/clasificador y contador de peces de or
 igen chino.png  used on input line 509.
 (pdftex.def)             Requested size: 452.96826pt x 353.67635pt.
  [28 <./images/chapter1/clasificador y contador de peces de origen chino.png>]
-<images/chapter1/clasificadora de peces de origen aleman.png, id=267, 438.8897p
+<images/chapter1/clasificadora de peces de origen aleman.png, id=268, 438.8897p
 t x 149.8097pt>
 File: images/chapter1/clasificadora de peces de origen aleman.png Graphic file 
 (type png)
@@ -1578,7 +1569,7 @@ Package pdftex.def Info: images/chapter1/clasificadora de peces de origen alema
 n.png  used on input line 522.
 (pdftex.def)             Requested size: 452.96826pt x 154.61885pt.
 <images/chapter1/clasificadoras automaticas para peces de origen frances.png, i
-d=268, 447.92343pt x 233.37187pt>
+d=269, 447.92343pt x 233.37187pt>
 File: images/chapter1/clasificadoras automaticas para peces de origen frances.p
 ng Graphic file (type png)
 <use images/chapter1/clasificadoras automaticas para peces de origen frances.pn
@@ -1587,7 +1578,7 @@ Package pdftex.def Info: images/chapter1/clasificadoras automaticas para peces
 de origen frances.png  used on input line 535.
 (pdftex.def)             Requested size: 452.96826pt x 236.0064pt.
 [29 <./images/chapter1/clasificadora de peces de origen aleman.png>]
-<images/chapter1/sistema de canalizacion de peces.png, id=273, 702.625pt x 395.
+<images/chapter1/sistema de canalizacion de peces.png, id=274, 702.625pt x 395.
 4775pt>
 File: images/chapter1/sistema de canalizacion de peces.png Graphic file (type p
 ng)
@@ -1597,7 +1588,7 @@ used on input line 543.
 (pdftex.def)             Requested size: 452.96826pt x 254.96335pt.
  [30 <./images/chapter1/clasificadoras automaticas para peces de origen frances
 .png> <./images/chapter1/sistema de canalizacion de peces.png>]
-<images/chapter1/seleccionador con contador integrado y sus partes.png, id=277,
+<images/chapter1/seleccionador con contador integrado y sus partes.png, id=278,
  628.59843pt x 500.62032pt>
 File: images/chapter1/seleccionador con contador integrado y sus partes.png Gra
 phic file (type png)
@@ -1606,7 +1597,7 @@ Package pdftex.def Info: images/chapter1/seleccionador con contador integrado y
  sus partes.png  used on input line 555.
 (pdftex.def)             Requested size: 452.96826pt x 360.74426pt.
  [31 <./images/chapter1/seleccionador con contador integrado y sus partes.png>]
-<images/chapter1/clasificadora de peces de origen danes.png, id=281, 447.92343p
+<images/chapter1/clasificadora de peces de origen danes.png, id=282, 447.92343p
 t x 159.59625pt>
 File: images/chapter1/clasificadora de peces de origen danes.png Graphic file (
 type png)
@@ -1615,7 +1606,7 @@ Package pdftex.def Info: images/chapter1/clasificadora de peces de origen danes
 .png  used on input line 611.
 (pdftex.def)             Requested size: 452.96826pt x 161.3979pt.
  [32]
-<images/chapter1/contador pescavision 100 300 10x4.pdf, id=285, 543.02875pt x 5
+<images/chapter1/contador pescavision 100 300 10x4.pdf, id=286, 543.02875pt x 5
 18.93875pt>
 File: images/chapter1/contador pescavision 100 300 10x4.pdf Graphic file (type 
 pdf)
@@ -1625,7 +1616,7 @@ Package pdftex.def Info: images/chapter1/contador pescavision 100 300 10x4.pdf
 (pdftex.def)             Requested size: 452.96826pt x 432.88869pt.
  [33 <./images/chapter1/clasificadora de peces de origen danes.png>] [34 <./ima
 ges/chapter1/contador pescavision 100 300 10x4.pdf>]
-<images/chapter1/contador de peces de origen belga.png, id=304, 825.0825pt x 26
+<images/chapter1/contador de peces de origen belga.png, id=305, 825.0825pt x 26
 4.99pt>
 File: images/chapter1/contador de peces de origen belga.png Graphic file (type 
 png)
@@ -1660,14 +1651,29 @@ LaTeX Info: Redefining \% on input line 11.
 
  (chapters/chapter3.tex
 Cap\'{\i }tulo III.
-)
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
- [39
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+[39
 
 
 
 ] [40]
+<images/chapter3/caja negra del sistema.png, id=327, 843.3909pt x 620.5584pt>
+File: images/chapter3/caja negra del sistema.png Graphic file (type png)
+<use images/chapter3/caja negra del sistema.png>
+Package pdftex.def Info: images/chapter3/caja negra del sistema.png  used on in
+put line 101.
+(pdftex.def)             Requested size: 452.96826pt x 333.28798pt.
+ [41 <./images/chapter3/caja negra del sistema.png
+
+pdfTeX warning: pdflatex.exe (file ./images/chapter3/caja negra del sistema.png
+): large interlaced PNG might cause out of memory (use non-interlaced PNG to fi
+x this)
+>]) [42] [43]
 \openout2 = `chapters/chapter4.aux'.
 
  (chapters/chapter4.tex
@@ -1675,7 +1681,7 @@ Cap\'{\i }tulo IV.
 )
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [41
+ [44
 
 
 
@@ -1713,7 +1719,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
-[42
+[45
 
 
 
@@ -1747,7 +1753,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--423
 FAO{\ [] []}Training / General /
  []
 
-[43]
+[46]
 Underfull \hbox (badness 2343) in paragraph at lines 485--509
 []\T1/ptm/m/n/12 Flores, J. M. M., Quis-pe, M. Á. Y., Flo-res, A. Q., Arias, L.
  G., Quis-pe, W. P.,
@@ -1765,7 +1771,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 681--696
  [] -anuales / item /
  []
 
-[44]
+[47]
 Underfull \hbox (badness 1577) in paragraph at lines 773--788
 []\T1/ptm/m/n/12 Powell, K.  (2003, nov).  Eat your veg.  \T1/ptm/m/it/12 Na-tu
 -re\T1/ptm/m/n/12 , \T1/ptm/m/it/12 426\T1/ptm/m/n/12 (6965), 378--379.  Des-ca
@@ -1778,13 +1784,13 @@ Underfull \hbox (badness 1584) in paragraph at lines 773--788
 cles / 426378ahttp :// www [] .nature [] .com /
  []
 
-)) [45]
+)) [48]
 \openout2 = `general/annexes.aux'.
 
  (general/annexes.tex)
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- [46
+ [49
 
 
 
@@ -1804,13 +1810,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14825 strings out of 480930
- 246428 string characters out of 2909538
- 554507 words of memory out of 3000000
- 30102 multiletter control sequences out of 15000+200000
- 611547 words of font info for 132 fonts, out of 3000000 for 9000
+ 14850 strings out of 480930
+ 246764 string characters out of 2909538
+ 558518 words of memory out of 3000000
+ 30121 multiletter control sequences out of 15000+200000
+ 627281 words of font info for 154 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,24n,81p,1239b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,24n,91p,1239b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/WINDOWS/Fonts/si
 msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
 Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
@@ -1830,9 +1836,9 @@ KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (54 pages, 9873762 bytes).
+Output written on main.pdf (57 pages, 9965257 bytes).
 PDF statistics:
- 469 PDF objects out of 1000 (max. 8388607)
+ 482 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 248 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 words of extra memory for PDF output out of 10000 (max. 10000000)
 
