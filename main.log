@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  4 MAY 2020 21:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  7 MAY 2020 13:25
 entering extended mode
 **./main.tex
 (main.tex
@@ -904,6 +904,11 @@ LaTeX Info: Redefining \datespanish on input line 85.
 \dt@a=\toks37
 \dt@b=\toks38
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/mdwtools\footnote.sty"
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box113
+\fn@width=\dimen196
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -1022,13 +1027,13 @@ LaTeX Info: Redefining \selectfont on input line 4.
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count360
-\scratchdimen=\dimen196
-\scratchbox=\box113
+\scratchdimen=\dimen197
+\scratchbox=\box114
 \nofMPsegments=\count361
 \nofMParguments=\count362
 \everyMPshowfont=\toks39
 \MPscratchCnt=\count363
-\MPscratchDim=\dimen197
+\MPscratchDim=\dimen198
 \MPnumerator=\count364
 \makeMPintoPDFobject=\count365
 \everyMPtoPDFconversion=\toks40
@@ -1082,7 +1087,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box114
+\AtBeginShipoutBox=\box115
 \openout2 = `general/cover.aux'.
 
 (general/cover.tex
@@ -1629,20 +1634,24 @@ Package pdftex.def Info: images/chapter1/contador de peces de origen belga.png
  used on input line 637.
 (pdftex.def)             Requested size: 452.96826pt x 145.47807pt.
 
-Overfull \hbox (31.13196pt too wide) in paragraph at lines 655--734
+Overfull \hbox (16.32268pt too wide) in paragraph at lines 656--735
  [][] 
  []
 
-[35 <./images/chapter1/contador de peces de origen belga.png>]) [36]
+[35 <./images/chapter1/contador de peces de origen belga.png>]
+Overfull \hbox (8.3769pt too wide) in paragraph at lines 749--814
+ [][] 
+ []
+
+[36]) [37]
 \openout2 = `chapters/chapter2.aux'.
 
-
-(chapters/chapter2.tex
+ (chapters/chapter2.tex
 Cap\'{\i }tulo II.
 )
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
- [37
+ [38
 
 
 
@@ -1654,15 +1663,11 @@ Cap\'{\i }tulo III.
 )
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- [38
+ [39
 
 
 
-]
-Overfull \vbox (222.2832pt too high) has occurred while \output is active []
-
-
-[39]
+] [40]
 \openout2 = `chapters/chapter4.aux'.
 
  (chapters/chapter4.tex
@@ -1670,7 +1675,7 @@ Cap\'{\i }tulo IV.
 )
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [40
+ [41
 
 
 
@@ -1708,7 +1713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
-[41
+[42
 
 
 
@@ -1742,7 +1747,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--423
 FAO{\ [] []}Training / General /
  []
 
-[42]
+[43]
 Underfull \hbox (badness 2343) in paragraph at lines 485--509
 []\T1/ptm/m/n/12 Flores, J. M. M., Quis-pe, M. Á. Y., Flo-res, A. Q., Arias, L.
  G., Quis-pe, W. P.,
@@ -1760,26 +1765,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 681--696
  [] -anuales / item /
  []
 
-[43]
-Underfull \hbox (badness 1577) in paragraph at lines 739--754
+[44]
+Underfull \hbox (badness 1577) in paragraph at lines 773--788
 []\T1/ptm/m/n/12 Powell, K.  (2003, nov).  Eat your veg.  \T1/ptm/m/it/12 Na-tu
 -re\T1/ptm/m/n/12 , \T1/ptm/m/it/12 426\T1/ptm/m/n/12 (6965), 378--379.  Des-ca
 r-
  []
 
 
-Underfull \hbox (badness 1584) in paragraph at lines 739--754
+Underfull \hbox (badness 1584) in paragraph at lines 773--788
 \T1/ptm/m/n/12 ga-do de $\T1/pcr/m/n/12 https :// www [] .nature [] .com / arti
 cles / 426378ahttp :// www [] .nature [] .com /
  []
 
-)) [44]
+)) [45]
 \openout2 = `general/annexes.aux'.
 
  (general/annexes.tex)
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- [45
+ [46
 
 
 
@@ -1799,13 +1804,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14757 strings out of 480930
- 245480 string characters out of 2909538
- 545780 words of memory out of 3000000
- 30045 multiletter control sequences out of 15000+200000
- 608485 words of font info for 124 fonts, out of 3000000 for 9000
+ 14825 strings out of 480930
+ 246428 string characters out of 2909538
+ 554507 words of memory out of 3000000
+ 30102 multiletter control sequences out of 15000+200000
+ 611547 words of font info for 132 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,16n,81p,1239b,751s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,24n,81p,1239b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/WINDOWS/Fonts/si
 msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
 Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
@@ -1819,13 +1824,15 @@ g30: wrong mapping: character 251 --> 0x30FB --> .notdef
 ><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/si
 msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
 Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
-tmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (53 pages, 9854265 bytes).
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
+tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (54 pages, 9873762 bytes).
 PDF statistics:
- 458 PDF objects out of 1000 (max. 8388607)
+ 469 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  248 words of extra memory for PDF output out of 10000 (max. 10000000)
 

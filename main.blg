@@ -12,7 +12,7 @@ A level-1 auxiliary file: chapters/chapter2.aux
 A level-1 auxiliary file: chapters/chapter3.aux
 A level-1 auxiliary file: chapters/chapter4.aux
 A level-1 auxiliary file: general/bibliography.aux
-Illegal, another \bibstyle command---line 68 of file general/bibliography.aux
+Illegal, another \bibstyle command---line 70 of file general/bibliography.aux
  : \bibstyle
  :          {apalike}
 I'm skipping whatever remains of this command
@@ -39,45 +39,45 @@ ptr=1, stack=
 ---the literal stack isn't empty for entry Martinez2003
 while executing---line 5079 of file apacite.bst
 Warning--No school in Vega2013
-You've used 32 entries,
+You've used 33 entries,
             6951 wiz_defined-function locations,
-            1484 strings with 17261 characters,
-and the built_in function-call counts, 52944 in all, are:
-= -- 6473
-> -- 427
-< -- 2410
-+ -- 2249
-- -- 114
-* -- 3186
-:= -- 9451
-add.period$ -- 131
-call.type$ -- 32
-change.case$ -- 548
+            1494 strings with 17484 characters,
+and the built_in function-call counts, 54705 in all, are:
+= -- 6680
+> -- 450
+< -- 2469
++ -- 2314
+- -- 116
+* -- 3296
+:= -- 9702
+add.period$ -- 135
+call.type$ -- 33
+change.case$ -- 565
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 1339
-empty$ -- 2344
-format.name$ -- 689
-if$ -- 10357
+cite$ -- 69
+duplicate$ -- 1413
+empty$ -- 2436
+format.name$ -- 730
+if$ -- 10719
 int.to.chr$ -- 0
-int.to.str$ -- 96
+int.to.str$ -- 99
 missing$ -- 0
-newline$ -- 771
-num.names$ -- 256
-pop$ -- 1634
+newline$ -- 803
+num.names$ -- 264
+pop$ -- 1678
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 136
 quote$ -- 0
-skip$ -- 3184
+skip$ -- 3289
 stack$ -- 0
-substring$ -- 2432
-swap$ -- 697
-text.length$ -- 97
+substring$ -- 2505
+swap$ -- 740
+text.length$ -- 99
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 2688
+type$ -- 2768
 warning$ -- 3
-while$ -- 242
+while$ -- 256
 width$ -- 0
-write$ -- 893
+write$ -- 936
 (There were 3 error messages)

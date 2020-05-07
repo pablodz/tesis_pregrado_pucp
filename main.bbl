@@ -726,6 +726,40 @@ Niu, B.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Pahl%
+, Beitz%
+, Feldhusen%
+\BCBL {}\ \BBA {} Grote%
+}{%
+Pahl%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+Pahl2007}
+\APACinsertmetastar {%
+Pahl2007}%
+\begin{APACrefauthors}%
+Pahl, G.%
+, Beitz, W.%
+, Feldhusen, J.%
+\BCBL {}\ \BBA {} Grote, K\BHBI H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {{Engineering Design}} {{Engineering Design}}\
+  (\PrintOrdinal{3}\ \BEd).
+\newblock
+\APACaddressPublisher{London}{Springer London}.
+\newblock
+\begin{APACrefURL} \url{http://link.springer.com/10.1007/978-1-84628-319-2}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/978-1-84628-319-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Powell%
 }{%
 Powell%

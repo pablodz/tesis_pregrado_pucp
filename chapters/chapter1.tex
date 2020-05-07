@@ -648,90 +648,172 @@ En la Tabla REF se muestra la comparación entre máquinas clasificadoras\footno
 % Please add the following required packages to your document preamble:
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[H]
-	\centering
-	\caption{Comparación de clasificadores comerciales.}
-	\label{tbl:comparacion de clasificadores comerciales}
-	\begin{tabular}{|
+\begin{savenotes}
+	\begin{table}[H]
+		\centering
+		\caption{Comparación de clasificadores comerciales.}
+		\label{tbl:comparacion de clasificadores comerciales}
+		\begin{tabular}{|
 			>{\columncolor[HTML]{D9D9D9}}l |c|c|c|c|}
-		\hline
-		\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio\textbackslash{}Método}}} &
-		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{AGK}} &
-		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{HELIOS 25}} &
-		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{APOLLO}} &
-		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}PENTAIR\\ V-10000140\end{tabular}}} \\ \hline
-		{\color[HTML]{000000} Compra} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
-		{\color[HTML]{000000} A pedido} \\ \hline
-		{\color[HTML]{000000} Rango ()} &
-		{\color[HTML]{000000} 10 a 200} &
-		{\color[HTML]{000000} 5 a 400} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}1 a 650\\ 5 a 750\end{tabular}} &
-		{\color[HTML]{000000} 0.5 a 200} \\ \hline
-		{\color[HTML]{000000} Entradas} &
-		{\color[HTML]{000000} 1} &
-		{\color[HTML]{000000} 1} &
-		{\color[HTML]{000000} 1} &
-		{\color[HTML]{000000} 1} \\ \hline
-		{\color[HTML]{000000} Salidas} &
-		{\color[HTML]{000000} 4} &
-		{\color[HTML]{000000} 6} &
-		{\color[HTML]{000000} 4} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} Capacidad por hora} &
-		{\color[HTML]{000000} 70 000} &
-		{\color[HTML]{000000} 95 000} &
-		{\color[HTML]{000000} 95 000} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} Potencia} &
-		{\color[HTML]{000000} 0.15 kW} &
-		{\color[HTML]{000000} 0.37 kW} &
-		{\color[HTML]{000000} 0.18 kW} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} RPM} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} 900} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} Suministro eléctrico ()} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220/380   VAC \\ 50/60   Hz.\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}230   VAC\\ 50/60   Hz.\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}230/400\\ VAC  50 Hz.\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220/230\\ VAC 60 Hz.\end{tabular}} \\ \hline
-		{\color[HTML]{000000} Recepción de peces} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual /\\ Bombeo de peces\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual /\\  Bombeo de peces\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual /\\ Bombeo de peces\end{tabular}} &
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Bombeo \\ de peces\end{tabular}} \\ \hline
-		{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Mínima velocidad de \\ entrada de caudal ()\end{tabular}} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} 40} &
-		{\color[HTML]{000000} Bombeo de peces} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} Dimensiones ()} &
-		{\color[HTML]{000000} 350x100x118} &
-		{\color[HTML]{000000} 200x100x110} &
-		{\color[HTML]{000000} 315x128x128} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} Peso (kg)} &
-		{\color[HTML]{000000} 150} &
-		{\color[HTML]{000000} 210} &
-		{\color[HTML]{000000} 375} &
-		{\color[HTML]{000000} -} \\ \hline
-		{\color[HTML]{000000} Precisión (\%)} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} 97} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} 97} \\ \hline
-		{\color[HTML]{000000} Precio (\$)} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} -} &
-		{\color[HTML]{000000} 15 730} &
-		{\color[HTML]{000000} 53 567} \\ \hline
-	\end{tabular}
-\end{table}
+			\hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio\textbackslash{}Método}}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{AGK}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{HELIOS 25\footnote{También existe Helios 10, 30, 40, 50, 60 y 100. En el Anexo A2 se muestra las características de cada una.}}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{APOLLO}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}PENTAIR\\ V-10000140\footnote{Cotización a empresa Pentair en el Anexo A3.}\end{tabular}}} \\ \hline
+			{\color[HTML]{000000} Compra} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
+			{\color[HTML]{000000} A pedido\footnote{Diseño y envío de 6 a 8 semanas luego de ordenar y realizar el pago. Las especificaciones se indican luego de diseñado el producto.}} \\ \hline
+			{\color[HTML]{000000} Rango ($ g $)} &
+			{\color[HTML]{000000} 10 a 200} &
+			{\color[HTML]{000000} 5 a 400} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}1 a 650\\ 5 a 750\end{tabular}} &
+			{\color[HTML]{000000} 0.5 a 200} \\ \hline
+			{\color[HTML]{000000} Entradas} &
+			{\color[HTML]{000000} 1} &
+			{\color[HTML]{000000} 1} &
+			{\color[HTML]{000000} 1} &
+			{\color[HTML]{000000} 1} \\ \hline
+			{\color[HTML]{000000} Salidas} &
+			{\color[HTML]{000000} 4} &
+			{\color[HTML]{000000} 6} &
+			{\color[HTML]{000000} 4} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Capacidad por hora} &
+			{\color[HTML]{000000} 70 000} &
+			{\color[HTML]{000000} 95 000} &
+			{\color[HTML]{000000} 95 000} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Potencia} &
+			{\color[HTML]{000000} 0.15 kW} &
+			{\color[HTML]{000000} 0.37 kW} &
+			{\color[HTML]{000000} 0.18 kW} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} RPM} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} 900} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Suministro eléctrico\\ ($ V-Hz. $)\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220/380   VAC \\ 50/60   Hz.\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}230   VAC\\ 50/60   Hz.\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}230/400\\ VAC  50 Hz.\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220/230\\ VAC 60 Hz.\end{tabular}} \\ \hline
+			{\color[HTML]{000000} Recepción de peces} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual /\\ Bombeo\\de peces\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual /\\  Bombeo\\de peces\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual /\\ Bombeo\\de peces\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Bombeo\\ de peces\end{tabular}} \\ \hline
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Mínima velocidad de \\ entrada de caudal ($ m^3/h $)\end{tabular}} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} 40} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Bombeo\\de peces\end{tabular}} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Dimensiones ($ cm $)\footnote{Las dimensiones de la máquina son de largo($ l $), ancho($ a $) y alto($ h $).}} &
+			{\color[HTML]{000000} 350x100x118} &
+			{\color[HTML]{000000} 200x100x110\footnote{Altura ajustable de 110 a 140 $ cm $.}} &
+			{\color[HTML]{000000} 315x128x128\footnote{Altura ajustable de 128 a 145 $ cm $.}} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Peso ($ kg $)} &
+			{\color[HTML]{000000} 150} &
+			{\color[HTML]{000000} 210} &
+			{\color[HTML]{000000} 375} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Precisión ($ \% $)} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} 97} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} 97} \\ \hline
+			{\color[HTML]{000000} Precio ($ \$ $)} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} 15 730} &
+			{\color[HTML]{000000} 53 567} \\ \hline
+		\end{tabular}
+	\\Fuente: AGK, Helios 25, Apollo, Pentair y Elaboración propia.
+	\end{table}
+\end{savenotes}
+
+En la Tabla \ref{tab:comparacion de contadores comerciales} se resume la comparación entre contadores de truchas comerciales El análisis para realizar esta comparación fue de forma cuantitativa y cualitativa a juicio del autor de este trabajo. 
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{savenotes}
+	\begin{table}[H]
+		\centering
+		\caption{Comparación de contadores comerciales.}
+		\label{tab:comparacion de contadores comerciales}
+		\begin{tabular}{|
+				>{\columncolor[HTML]{D9D9D9}}l |c|c|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio\textbackslash{}Método}}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}CALITRI \\ FC4\end{tabular}}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}PESCAVISION\\ 50\end{tabular}}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}PESCAVISION\\ 300\end{tabular}}} &
+			\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{\begin{tabular}[c]{@{}c@{}}PENTAIR\\ V-10007\end{tabular}}} \\ \hline
+			{\color[HTML]{000000} Compra} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Depende\\ del stock\end{tabular}} &
+			{\color[HTML]{000000} A pedido} \\ \hline
+			{\color[HTML]{000000} Rango ($ g $)} &
+			{\color[HTML]{000000} 50 a 900} &
+			{\color[HTML]{000000} 5 a 4500} &
+			{\color[HTML]{000000} 40 a 1000} &
+			{\color[HTML]{000000} 0.2 a 4000} \\ \hline
+			{\color[HTML]{000000} Canales de conteo} &
+			{\color[HTML]{000000} 4} &
+			{\color[HTML]{000000} 2} &
+			{\color[HTML]{000000} 8} &
+			{\color[HTML]{000000} 4} \\ \hline
+			{\color[HTML]{000000} Capacidad por hora} &
+			{\color[HTML]{000000} 95 000} &
+			{\color[HTML]{000000} 95 000} &
+			{\color[HTML]{000000} 165 000} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Suministro eléctrico\\ ($ V-Hz. $)\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}90/220   VAC \\ 50/60   Hz.\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220 VAC 50/60\\ Hz. / 24 VDC\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220 VAC\\ 50-60 Hz.\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}220/230\\ VAC 60 Hz.\end{tabular}} \\ \hline
+			{\color[HTML]{000000} Recepción de peces} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Manual / \\ Bombeo \\ de peces\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Sistema de\\  clasificación \\ FAIVRE\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Sistema de \\ clasificación \\ FAIVRE\end{tabular}} &
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Bombeo \\ de peces\end{tabular}} \\ \hline
+			{\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Mínima velocidad de \\ entrada de caudal ($ m^3/h $)\end{tabular}} &
+			{\color[HTML]{000000} 12} &
+			{\color[HTML]{000000} 40} &
+			{\color[HTML]{000000} 40} &
+			{\color[HTML]{000000} 40} \\ \hline
+			{\color[HTML]{000000} Dimensiones ($ cm $)\footnote{Las dimensiones de la máquina son de largo($ l $),
+					 ancho($ a $) y alto($ h $).}} &
+			{\color[HTML]{000000} 125x50x35} &
+			{\color[HTML]{000000} 150x50x60} &
+			{\color[HTML]{000000} 200x150x100} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Peso ($ kg $)} &
+			{\color[HTML]{000000} 18} &
+			{\color[HTML]{000000} 20} &
+			{\color[HTML]{000000} 375} &
+			{\color[HTML]{000000} -} \\ \hline
+			{\color[HTML]{000000} Precisión ($ \% $)} &
+			{\color[HTML]{000000} 97} &
+			{\color[HTML]{000000} 98-100} &
+			{\color[HTML]{000000} 98-100} &
+			{\color[HTML]{000000} 97} \\ \hline
+			{\color[HTML]{000000} Precio ($ \$ $)} &
+			{\color[HTML]{000000} 5 705.37} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} -} &
+			{\color[HTML]{000000} 64 027.00} \\ \hline
+		\end{tabular}
+	\\ Fuente: Calitri, FAIVRE, Pentair y Elaboración propia.
+	\end{table}
+\end{savenotes}
 
 
 %% Contenido
