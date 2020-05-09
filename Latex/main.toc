@@ -42,7 +42,7 @@
 \contentsline {subsubsection}{Clasificador completamente automático de pescado \textit {(Patente CN205180233U)}}{23}%
 \contentsline {subsubsection}{Clasificador y contador automático de peces \textit {(Patente CN203884438U)}}{24}%
 \contentsline {subsubsection}{Seleccionadora completamente automática \textit {AGK}}{25}%
-\contentsline {subsubsection}{Clasificador automático para peces Helios}{26}%
+\contentsline {subsubsection}{Clasificador automático para peces \textit {Helios}}{26}%
 \contentsline {subsubsection}{Clasificador automático de peces y contador automático \textit {Pentair V-100 00140}}{28}%
 \contentsline {subsubsection}{Clasificador de peces \textit {Apollo}}{29}%
 \contentsline {subsubsection}{Contador de peces \textit {Pescavision}}{30}%
