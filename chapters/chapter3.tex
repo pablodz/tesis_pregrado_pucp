@@ -124,9 +124,133 @@ De manera similar a las entradas, las salidas se dividen en energía, materia y 
 
 Una vez que se ha formulado la caja negra es posible indicar, con el uso de diagrama de bloques, expresar la relación entre entradas y salidas con una solución neutral. Esta relación debe tener la mayor precisión posible. La estructura de funciones global puede desglosarse en sistemas que a su vez se subdividen en funciones.\cite[p.~169-181]{Pahl2007}
 
+\newpage
+\thispagestyle{mylandscape}
+\begin{landscape}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.95\paperwidth]{chapter3/estructura global de funciones.png}
+		\caption{Estructura global de funciones.}
+		Fuente: Elaboración propia.
+		\label{fig:estructura global de funciones}
+	\end{figure}
+\end{landscape}
+
+\newpage
+\thispagestyle{fancy}
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Lista de funciones por subsistema}
 
+El sistema propuesto consta de seis subsistemas: actuadores, control, energía, interacción con el usuario, materia y medición. El propósito y funciones de cada subsistema se indica en las siguientes líneas.
+
+\begin{enumerate}
+	
+	\item \textbf{Subsistema A: Actuadores}\\ El subsistema integra el accionamiento de los mecanismos que transforman que permiten distribuir la materia en los rangos requeridos.
+		
+		\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+			\item	\textbf{Accionar parada de emergencia:} Esta función permite conectar o desconectar físicamente la energía de entrada del resto del sistema.
+			
+			\item	\textbf{Accionar/Desactivar el suministro de energía:} Esta función se encargará de proveer energía al sistema para dar inicio al proceso al momento que recibe la señal de inicio.
+			
+			\item	\textbf{Accionar recepción de truchas:}
+			Esta función activa o desactiva la entrada de materia al sistema, en este ca-so el ingreso de truchas al sistema.
+			
+			\item	\textbf{Accionar traslado de truchas:}
+			Esta función activa o desactiva la función que recibe truchas y agua para poder desplazar a las truchas dentro del sistema.
+			
+			\item	\textbf{Accionar bomba de agua:}
+			Esta función activa, desactiva y regula el flujo de agua dentro del sistema. 
+			
+			\item	\textbf{Accionar canalización:}
+			Esta función activa o desactiva el sistema de canalización del sistema, es decir, controla la función que regula el paso de una sola trucha por vez a las si-guientes partes del sistema.
+			
+			\item	\textbf{Accionar cámaras:}
+			Esta función activa, desactiva y prepara la adquisición de imágenes o vi-deo del sistema.
+			
+			\item	\textbf{Accionar distribución de truchas:}
+			Esta función se encarga de la distribución de las truchas según su rango dentro del sistema.
+			
+			\item	\textbf{Accionar alarmas e indicadores:}
+			Acciona las alarmas e indicadores del sistema para poder informar al ope-rario de la situación del proceso.
+			
+		\end{enumerate}
+	
+	\item \textbf{Subsistema B: Control}\\ El subsistema de control garantiza la precisión de los mecanismos, la calidad de los procesos, la seguridad del sistema.
+		\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+			\item \textbf{Función general:} Esta función controla el sensado de presencia de trucha, flujo de agua, traslado de truchas, sensado de disponibilidad de agua y cantidad de iluminación.			
+		\end{enumerate}
+	
+	\item \textbf{Subsistema C: Energía}\\ El subsistema de energía mantiene el funcionamiento continuo del sistema para reali-zar sus funciones características a través de una fuente de energía. 
+	
+	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+		\item	\textbf{Regular voltaje ($ DC/DC $):}		Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema.
+		
+		\item	\textbf{Acondicionar energía al sistema de interacción con el usuario ($ DC/DC $):}		Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de interacción con el usuario.
+		
+		\item	\textbf{Acondicionar energía al sistema de control ($ DC/DC $):}	Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de control
+		
+		\item	\textbf{Acondicionar energía al sistema de medición ($ DC/DC $):}	Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de medición.
+		
+		\item	\textbf{Acondicionar energía a los actuadores ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de los actuadores.
+		
+	\end{enumerate}
+	
+	\item \textbf{Subsistema D: Interacción con el usuario}\\ Este subsistema permite la comunicación entre el usuario final / operador y el sistema. Facilita la realización del proceso completo, permitiendo al usuario contar con información importante del proceso para poder tomar decisiones de forma rápida.
+	
+	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+		\item	\textbf{Función ingreso de señales:}		Esta función recibe las señales de entrada como inicio, pausar, reanudar y reiniciar el proceso. Además, recibe la solicitud de reporte. Usa esta información y la envía al subsistema de control.
+		
+		\item	\textbf{Función mostrar señales:}		Esta función muestra las etapas del proceso (iniciar, pausar, reanudar y reiniciar). También muestra la medida de la última trucha que se distribuyó, estado de los contadores, tiempo estimado para completar el proceso, informe generado y mostrar indicadores.
+		
+	\end{enumerate}
+
+	\item \textbf{Subsistema E: Materia}\\ El subsistema de materia contiene las funciones que se encargan de distribuir la mate-ria en rangos que se ingresan al sistema. Las funciones se desarrollan como una secuencia de tareas.
+
+	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+		\item	\textbf{Recepcionar truchas:}
+		Esta función mediante mecanismos recibe indicaciones de otras partes del sistema para accionarse. Es el primer módulo que recepciona a las truchas. 
+		
+		\item	\textbf{Trasladar truchas:}
+		Este mecanismo recibe agua y a las truchas que salen de la función “recepcionar truchas”. Impulsa mediante un flujo de agua constante a las truchas a lo lar-go del sistema hasta llegar a las salidas.
+		
+		\item	\textbf{Canalizar truchas:}
+		Este mecanismo recibe agua y truchas del módulo “trasladar truchas”. Además, es accionado por actuadores para cumplir con dejar pasar una trucha por vez al siguiente módulo del sistema.
+		
+		\item	\textbf{Medir trucha:}
+		Este mecanismo recibe agua y truchas canalizadas del módulo anterior “canalizar truchas”. Acciona cámaras para poder realizar la toma de dimensiones de la trucha e indica al sistema el rango al que fue asignado. Este módulo clasifica virtualmente a las truchas.
+		
+		\item	\textbf{Distribuir trucha:}
+		Este mecanismo recibe agua y trucha medida del módulo anterior “medir trucha". Es accionada y permite seleccionar según los rangos el próximo módulo correspondiente. Este módulo es el encargado de clasificar físicamente a la trucha.
+		
+		\item	\textbf{Contar truchas por rangos:}
+		Este mecanismo recibe agua y truchas asignadas a su rango del módulo anterior “distribuir truchas”. Accionada envía señales al sistema de control sobre la cantidad de peces contados por rangos.
+		
+		\item	\textbf{Enviar truchas por rangos:}
+		Este mecanismo permite trasladar a la trucha que ya fue contada y clasificada por el sistema por los módulos anteriores al respectivo estanque o jaula flotante asignado.
+		
+	\end{enumerate}
+	
+	
+	\item \textbf{Subsistema F: Medición}\\ El subsistema de medición se encarga de sensar las variables del proceso necesarias para ejercer un óptimo control del sistema y minimizar el error. Se considera las siguientes funciones como esenciales.
+
+	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+		\item	\textbf{Sensar presencia de trucha:}
+		Esta función detecta si las truchas han ingresado al sistema o siguen dentro del sistema.
+		
+		\item	\textbf{Sensar flujo de agua:}
+		Esta función mide el flujo de agua dentro del sistema para mantenerlo constante para reducir el estrés hídrico.
+		
+		\item	\textbf{Sensar iluminación:}
+		Esta función sensa la iluminación que es necesaria para capturar imágenes con normalidad.
+		
+	\end{enumerate}	
+	
+	
+	
+	%	To create new enumerate alpha use code below
+	%	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+	%	\end{enumerate}
+\end{enumerate}
 %% NUEVO SUBSECCION X.X.X
 \subsection{Matriz morfológica}
 

@@ -42,6 +42,10 @@
 \usepackage{pdfpages} % Cargar imagenes en pdf
 \usepackage{datetime} % Fecha
 \usepackage{footnote} % Tablas largas y foot note para tablas https://texblog.org/2012/02/03/using-footnote-in-a-table/
+\usepackage{enumitem} % Enumerar letras
+
+\usepackage[paper=portrait,pagesize]{typearea} %PORTRAID-LANDSCAPE 
+
 
 \usepackage{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
 %\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
@@ -59,6 +63,19 @@
 	\fancyfoot[r]{\thepage}
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}}
+% https://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
+\fancypagestyle{mylandscape}{ % LANDSCAPE
+	\fancyhf{} %Clears the header/footer
+	\fancyfoot{% Footer
+		\makebox[\textwidth][r]{% Right
+			\rlap{\hspace{0.75cm}% Push out of margin by \footskip
+				\smash{% Remove vertical height
+					\raisebox{4.87in}{% Raise vertically
+						\rotatebox{90}{\thepage}}}}}}% Rotate counter-clockwise
+	\renewcommand{\headrulewidth}{0pt}% No header rule
+	\renewcommand{\footrulewidth}{0pt}% No footer rule
+}
+
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\chaptermark}[1]{\markboth{\itshape\chaptername~\thechapter}{}}

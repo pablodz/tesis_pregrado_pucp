@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  7 MAY 2020 16:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  7 MAY 2020 17:50
 entering extended mode
 **./main.tex
 (main.tex
@@ -900,6 +900,65 @@ Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box113
 \fn@width=\dimen196
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/enumitem\enumitem.sty"
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip99
+\enit@outerparindent=\dimen197
+\enit@toks=\toks39
+\enit@inbox=\box114
+\enit@count@id=\count360
+\enitdp@description=\count361
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/koma-script\typearea.sty"
+Package: typearea 2020/04/19 v3.30 KOMA-Script package (type area)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/koma-script\scrkbase.sty"
+Package: scrkbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/koma-script\scrbase.sty"
+Package: scrbase 2020/04/19 v3.30 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/koma-script\scrlfile.sty"
+Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
+)))
+\ta@bcor=\skip100
+\ta@div=\count362
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+Package typearea Info: You've used standard option `oneside'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `twoside=false'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `twoside=false' there
+(typearea)             instead of `oneside', too.
+\ta@hblk=\skip101
+\ta@vblk=\skip102
+\ta@temp=\skip103
+\footheight=\skip104
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 12
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 448.13095pt
+(typearea)              DIV departure   = -11%
+(typearea)              \evensidemargin = 2.4185pt
+(typearea)              \oddsidemargin  = 2.4185pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 634.05121pt
+(typearea)              \topmargin      = -53.68701pt
+(typearea)              \headheight     = 23.56255pt
+(typearea)              \headsep        = 28.27505pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 65.97513pt
+(typearea)              \baselineskip   = 18.85004pt
+(typearea)              on input line 1738.
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -1017,24 +1076,24 @@ LaTeX Info: Redefining \selectfont on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count360
-\scratchdimen=\dimen197
-\scratchbox=\box114
-\nofMPsegments=\count361
-\nofMParguments=\count362
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count363
-\MPscratchDim=\dimen198
-\MPnumerator=\count364
-\makeMPintoPDFobject=\count365
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count363
+\scratchdimen=\dimen198
+\scratchbox=\box115
+\nofMPsegments=\count364
+\nofMParguments=\count365
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count366
+\MPscratchDim=\dimen199
+\MPnumerator=\count367
+\makeMPintoPDFobject=\count368
+\everyMPtoPDFconversion=\toks41
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count366
-\c@maskedRefs=\count367
+\c@lstlisting=\count369
+\c@maskedRefs=\count370
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/apacite\spanish.apc"
 File: spanish.apc 2013/07/21 v6.03 apacite language file
@@ -1054,19 +1113,19 @@ Package caption Info: End \AtBeginDocument code.
 * modes: includehead includefoot heightrounded 
 * h-part:(L,W,R)=(72.2698pt, 452.96826pt, 72.2698pt)
 * v-part:(T,H,B)=(72.2698pt, 700.50723pt, 72.2698pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=452.96826pt
+* \paperwidth=597.50793pt
+* \paperheight=845.04694pt
+* \textwidth=448.13095pt
 * \textheight=634.05121pt
-* \oddsidemargin=-0.00018pt
-* \evensidemargin=-0.00018pt
-* \topmargin=-0.00018pt
+* \oddsidemargin=2.4185pt
+* \evensidemargin=2.4185pt
+* \topmargin=-53.68701pt
 * \headheight=15.0pt
-* \headsep=25.0pt
+* \headsep=28.27505pt
 * \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=35.0pt
-* \marginparsep=10.0pt
+* \footskip=65.97513pt
+* \marginparwidth=49.79233pt
+* \marginparsep=12.8401pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -1078,7 +1137,7 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box115
+\AtBeginShipoutBox=\box116
 \openout2 = `general/cover.aux'.
 
 (general/cover.tex
@@ -1151,7 +1210,7 @@ g)
 <use images/introduction/produccion agricola mundial.png>
 Package pdftex.def Info: images/introduction/produccion agricola mundial.png  u
 sed on input line 14.
-(pdftex.def)             Requested size: 452.96826pt x 211.9828pt.
+(pdftex.def)             Requested size: 448.13095pt x 209.72003pt.
 )
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
@@ -1279,7 +1338,7 @@ e png)
 <use images/chapter1/extraccion trucha toneladas anuales.png>
 Package pdftex.def Info: images/chapter1/extraccion trucha toneladas anuales.pn
 g  used on input line 65.
-(pdftex.def)             Requested size: 452.96826pt x 281.49976pt.
+(pdftex.def)             Requested size: 448.13095pt x 278.49402pt.
 LaTeX Font Info:    Trying to load font information for C70+rm on input line 75
 .
  ("C:\Program Files\MiKTeX 2.9\tex/latex/ctex/fd\c70rm.fd"
@@ -1303,7 +1362,7 @@ les importadores y exportadores en dolares.png>
 Package pdftex.def Info: images/chapter1/comercio internacional de productos pe
 squeros por principales importadores y exportadores en dolares.png  used on inp
 ut line 87.
-(pdftex.def)             Requested size: 452.96826pt x 153.1992pt.
+(pdftex.def)             Requested size: 448.13095pt x 151.5642pt.
 
 Overfull \hbox (12.79999pt too wide) in paragraph at lines 84--91
  [][] 
@@ -1321,7 +1380,7 @@ File: images/chapter1/anatomia de la trucha arcoiris.png Graphic file (type png
 <use images/chapter1/anatomia de la trucha arcoiris.png>
 Package pdftex.def Info: images/chapter1/anatomia de la trucha arcoiris.png  us
 ed on input line 102.
-(pdftex.def)             Requested size: 452.96826pt x 186.90495pt.
+(pdftex.def)             Requested size: 448.13095pt x 184.9076pt.
 [7 <./images/chapter1/comercio internacional de productos pesqueros por princip
 ales importadores y exportadores en dolares.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
@@ -1337,7 +1396,7 @@ File: images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
 clasificadora ajustable.png>
 Package pdftex.def Info: images/chapter1/clasificadora de anchura fija rejillas
  de clasificacion y clasificadora ajustable.png  used on input line 137.
-(pdftex.def)             Requested size: 452.96826pt x 236.45107pt.
+(pdftex.def)             Requested size: 448.13095pt x 233.92606pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
@@ -1350,7 +1409,7 @@ le (type png)
 <use images/chapter1/clasificacion y medicion manual de truchas.png>
 Package pdftex.def Info: images/chapter1/clasificacion y medicion manual de tru
 chas.png  used on input line 147.
-(pdftex.def)             Requested size: 452.96826pt x 337.96167pt.
+(pdftex.def)             Requested size: 448.13095pt x 334.34846pt.
 [9 <./images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
  clasificadora ajustable.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 153--154
@@ -1364,7 +1423,7 @@ e (type png)
 <use images/chapter1/herramienta de medicion manual para peces.png>
 Package pdftex.def Info: images/chapter1/herramienta de medicion manual para pe
 ces.png  used on input line 157.
-(pdftex.def)             Requested size: 452.96826pt x 261.76169pt.
+(pdftex.def)             Requested size: 448.13095pt x 258.96718pt.
 [10 <./images/chapter1/clasificacion y medicion manual de truchas.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
@@ -1377,7 +1436,7 @@ ype png)
 <use images/chapter1/maquina seleccionadora de truchas agv.png>
 Package pdftex.def Info: images/chapter1/maquina seleccionadora de truchas agv.
 png  used on input line 170.
-(pdftex.def)             Requested size: 452.96826pt x 308.70676pt.
+(pdftex.def)             Requested size: 448.13095pt x 305.4154pt.
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
 quanjiao) on input line 172.
 [11 <./images/chapter1/herramienta de medicion manual para peces.png>]
@@ -1389,7 +1448,7 @@ ision artificial.png Graphic file (type png)
 sion artificial.png>
 Package pdftex.def Info: images/chapter1/medicion automatizada de especies y ta
 llas de peces por vision artificial.png  used on input line 183.
-(pdftex.def)             Requested size: 452.96826pt x 111.64928pt.
+(pdftex.def)             Requested size: 448.13095pt x 110.45763pt.
  [12 <./images/chapter1/maquina seleccionadora de truchas agv.png>]
 <images/chapter1/medicion de peces dentro de estanques con camaras ortogonales.
 png, id=100, 819.06pt x 537.50812pt>
@@ -1399,7 +1458,7 @@ ales.png Graphic file (type png)
 les.png>
 Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques 
 con camaras ortogonales.png  used on input line 192.
-(pdftex.def)             Requested size: 339.7262pt x 222.94688pt.
+(pdftex.def)             Requested size: 336.0982pt x 220.56839pt.
 <images/chapter1/medicion de peces dentro de estanques con camaras estereo.png,
  id=101, 776.9025pt x 439.6425pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras estereo
@@ -1408,7 +1467,7 @@ File: images/chapter1/medicion de peces dentro de estanques con camaras estereo
 png>
 Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques 
 con camaras estereo.png  used on input line 200.
-(pdftex.def)             Requested size: 339.7262pt x 192.24919pt.
+(pdftex.def)             Requested size: 336.0982pt x 190.19643pt.
  [13 <./images/chapter1/medicion automatizada de especies y tallas de peces por
  vision artificial.png> <./images/chapter1/medicion de peces dentro de estanque
 s con camaras ortogonales.png>]
@@ -1423,7 +1482,7 @@ ype png)
 <use images/chapter1/pez identificado por una red neuronal.png>
 Package pdftex.def Info: images/chapter1/pez identificado por una red neuronal.
 png  used on input line 215.
-(pdftex.def)             Requested size: 226.48413pt x 221.23946pt.
+(pdftex.def)             Requested size: 224.06548pt x 218.87547pt.
 [14 <./images/chapter1/medicion de peces dentro de estanques con camaras estere
 o.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 221--222
@@ -1434,7 +1493,12 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
 36.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [15 <./images/chapter1/pez identificado por una red neuronal.png>]
+)
+Overfull \hbox (4.15358pt too wide) in paragraph at lines 233--241
+ [][] 
+ []
+
+[15 <./images/chapter1/pez identificado por una red neuronal.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
@@ -1448,7 +1512,7 @@ guna de canrash.pdf Graphic file (type pdf)
 una de canrash.pdf>
 Package pdftex.def Info: images/chapter1/clasificacion conteo curado y calculo 
 de biomasa en la laguna de canrash.pdf  used on input line 281.
-(pdftex.def)             Requested size: 452.96826pt x 337.09448pt.
+(pdftex.def)             Requested size: 448.13095pt x 333.4951pt.
  [17 <./images/chapter1/clasificacion conteo curado y calculo de biomasa en la 
 laguna de canrash.pdf>]
 <images/chapter1/contador peces basado en luz infrarroja faivre.png, id=142, 42
@@ -1458,7 +1522,7 @@ c file (type png)
 <use images/chapter1/contador peces basado en luz infrarroja faivre.png>
 Package pdftex.def Info: images/chapter1/contador peces basado en luz infrarroj
 a faivre.png  used on input line 294.
-(pdftex.def)             Requested size: 452.96826pt x 128.85535pt.
+(pdftex.def)             Requested size: 448.13095pt x 127.47939pt.
 <images/chapter1/planos comunes de posicionamiento para camaras de inspeccion.p
 df, id=143, 689.57625pt x 503.8825pt>
 File: images/chapter1/planos comunes de posicionamiento para camaras de inspecc
@@ -1467,7 +1531,7 @@ ion.pdf Graphic file (type pdf)
 on.pdf>
 Package pdftex.def Info: images/chapter1/planos comunes de posicionamiento para
  camaras de inspeccion.pdf  used on input line 307.
-(pdftex.def)             Requested size: 362.37598pt x 264.79599pt.
+(pdftex.def)             Requested size: 358.50612pt x 261.96658pt.
  [18 <./images/chapter1/contador peces basado en luz infrarroja faivre.png>]
 <images/chapter1/contador de peces mediante escaneres.png, id=147, 598.48593pt 
 x 222.07968pt>
@@ -1476,7 +1540,7 @@ pe png)
 <use images/chapter1/contador de peces mediante escaneres.png>
 Package pdftex.def Info: images/chapter1/contador de peces mediante escaneres.p
 ng  used on input line 320.
-(pdftex.def)             Requested size: 452.96826pt x 168.08424pt.
+(pdftex.def)             Requested size: 448.13095pt x 166.29164pt.
  [19 <./images/chapter1/planos comunes de posicionamiento para camaras de inspe
 ccion.pdf>] [20 <./images/chapter1/contador de peces mediante escaneres.png>] [
 21]
@@ -1488,7 +1552,7 @@ dora.pdf Graphic file (type pdf)
 ora.pdf>
 Package pdftex.def Info: images/chapter1/extraccion de caracteristicas mediante
  vision por computadora.pdf  used on input line 394.
-(pdftex.def)             Requested size: 452.96826pt x 255.56712pt.
+(pdftex.def)             Requested size: 448.13095pt x 252.84235pt.
 <images/chapter1/usando relacion entre a y b para calcular longitud del pez.pdf
 , id=179, 784.9325pt x 436.63126pt>
 File: images/chapter1/usando relacion entre a y b para calcular longitud del pe
@@ -1497,7 +1561,7 @@ z.pdf Graphic file (type pdf)
 .pdf>
 Package pdftex.def Info: images/chapter1/usando relacion entre a y b para calcu
 lar longitud del pez.pdf  used on input line 404.
-(pdftex.def)             Requested size: 385.02577pt x 214.1777pt.
+(pdftex.def)             Requested size: 380.91403pt x 211.89249pt.
  [22 <./images/chapter1/extraccion de caracteristicas mediante vision por compu
 tadora.pdf>]
 <images/chapter1/sacadera telescipica de malla fina para peces.png, id=202, 536
@@ -1507,7 +1571,7 @@ File: images/chapter1/sacadera telescipica de malla fina para peces.png Graphic
 <use images/chapter1/sacadera telescipica de malla fina para peces.png>
 Package pdftex.def Info: images/chapter1/sacadera telescipica de malla fina par
 a peces.png  used on input line 422.
-(pdftex.def)             Requested size: 452.96826pt x 195.94446pt.
+(pdftex.def)             Requested size: 448.13095pt x 193.85352pt.
  [23 <./images/chapter1/usando relacion entre a y b para calcular longitud del 
 pez.pdf>]
 <images/chapter1/recepcion automatica por bombeo de peces mediante tuberia.pdf,
@@ -1518,10 +1582,10 @@ File: images/chapter1/recepcion automatica por bombeo de peces mediante tuberia
 pdf>
 Package pdftex.def Info: images/chapter1/recepcion automatica por bombeo de pec
 es mediante tuberia.pdf  used on input line 435.
-(pdftex.def)             Requested size: 452.96826pt x 194.87285pt.
+(pdftex.def)             Requested size: 448.13095pt x 192.7902pt.
  [24 <./images/chapter1/sacadera telescipica de malla fina para peces.png> <./i
 mages/chapter1/recepcion automatica por bombeo de peces mediante tuberia.pdf>]
-Overfull \hbox (15.65134pt too wide) in paragraph at lines 476--476
+Overfull \hbox (20.48865pt too wide) in paragraph at lines 476--476
 []\T1/ptm/b/n/12 Dispositivo de cla-si-fi-ca-ción de pe-ces y mé-to-do de cla-s
 i-fi-ca-ción de pe-ces \T1/ptm/b/it/12 (Pa-ten-te JP5563164B2) 
  []
@@ -1534,9 +1598,9 @@ raphic file (type png)
 <use images/chapter1/clasificadora automatica de peces de origen japones.png>
 Package pdftex.def Info: images/chapter1/clasificadora automatica de peces de o
 rigen japones.png  used on input line 482.
-(pdftex.def)             Requested size: 317.0764pt x 475.6365pt.
+(pdftex.def)             Requested size: 313.69029pt x 470.56523pt.
 
-Overfull \hbox (22.66824pt too wide) in paragraph at lines 482--483
+Overfull \hbox (22.43428pt too wide) in paragraph at lines 482--483
  [][] 
  []
 
@@ -1549,7 +1613,7 @@ phic file (type png)
 <use images/chapter1/clasificadora automatica de peces de origen chino.png>
 Package pdftex.def Info: images/chapter1/clasificadora automatica de peces de o
 rigen chino.png  used on input line 496.
-(pdftex.def)             Requested size: 203.83434pt x 440.06798pt.
+(pdftex.def)             Requested size: 201.65755pt x 435.36737pt.
  [27 <./images/chapter1/clasificadora automatica de peces de origen chino.png>]
 <images/chapter1/clasificador y contador de peces de origen chino.png, id=263, 
 307.1475pt x 239.805pt>
@@ -1558,7 +1622,7 @@ hic file (type png)
 <use images/chapter1/clasificador y contador de peces de origen chino.png>
 Package pdftex.def Info: images/chapter1/clasificador y contador de peces de or
 igen chino.png  used on input line 509.
-(pdftex.def)             Requested size: 452.96826pt x 353.67635pt.
+(pdftex.def)             Requested size: 448.13095pt x 349.90013pt.
  [28 <./images/chapter1/clasificador y contador de peces de origen chino.png>]
 <images/chapter1/clasificadora de peces de origen aleman.png, id=268, 438.8897p
 t x 149.8097pt>
@@ -1567,7 +1631,7 @@ File: images/chapter1/clasificadora de peces de origen aleman.png Graphic file
 <use images/chapter1/clasificadora de peces de origen aleman.png>
 Package pdftex.def Info: images/chapter1/clasificadora de peces de origen alema
 n.png  used on input line 522.
-(pdftex.def)             Requested size: 452.96826pt x 154.61885pt.
+(pdftex.def)             Requested size: 448.13095pt x 152.96843pt.
 <images/chapter1/clasificadoras automaticas para peces de origen frances.png, i
 d=269, 447.92343pt x 233.37187pt>
 File: images/chapter1/clasificadoras automaticas para peces de origen frances.p
@@ -1576,7 +1640,7 @@ ng Graphic file (type png)
 g>
 Package pdftex.def Info: images/chapter1/clasificadoras automaticas para peces 
 de origen frances.png  used on input line 535.
-(pdftex.def)             Requested size: 452.96826pt x 236.0064pt.
+(pdftex.def)             Requested size: 448.13095pt x 233.48523pt.
 [29 <./images/chapter1/clasificadora de peces de origen aleman.png>]
 <images/chapter1/sistema de canalizacion de peces.png, id=274, 702.625pt x 395.
 4775pt>
@@ -1585,7 +1649,7 @@ ng)
 <use images/chapter1/sistema de canalizacion de peces.png>
 Package pdftex.def Info: images/chapter1/sistema de canalizacion de peces.png  
 used on input line 543.
-(pdftex.def)             Requested size: 452.96826pt x 254.96335pt.
+(pdftex.def)             Requested size: 448.13095pt x 252.2418pt.
  [30 <./images/chapter1/clasificadoras automaticas para peces de origen frances
 .png> <./images/chapter1/sistema de canalizacion de peces.png>]
 <images/chapter1/seleccionador con contador integrado y sus partes.png, id=278,
@@ -1595,7 +1659,7 @@ phic file (type png)
 <use images/chapter1/seleccionador con contador integrado y sus partes.png>
 Package pdftex.def Info: images/chapter1/seleccionador con contador integrado y
  sus partes.png  used on input line 555.
-(pdftex.def)             Requested size: 452.96826pt x 360.74426pt.
+(pdftex.def)             Requested size: 448.13095pt x 356.89429pt.
  [31 <./images/chapter1/seleccionador con contador integrado y sus partes.png>]
 <images/chapter1/clasificadora de peces de origen danes.png, id=282, 447.92343p
 t x 159.59625pt>
@@ -1604,7 +1668,7 @@ type png)
 <use images/chapter1/clasificadora de peces de origen danes.png>
 Package pdftex.def Info: images/chapter1/clasificadora de peces de origen danes
 .png  used on input line 611.
-(pdftex.def)             Requested size: 452.96826pt x 161.3979pt.
+(pdftex.def)             Requested size: 448.13095pt x 159.67377pt.
  [32]
 <images/chapter1/contador pescavision 100 300 10x4.pdf, id=286, 543.02875pt x 5
 18.93875pt>
@@ -1613,24 +1677,23 @@ pdf)
 <use images/chapter1/contador pescavision 100 300 10x4.pdf>
 Package pdftex.def Info: images/chapter1/contador pescavision 100 300 10x4.pdf 
  used on input line 624.
-(pdftex.def)             Requested size: 452.96826pt x 432.88869pt.
- [33 <./images/chapter1/clasificadora de peces de origen danes.png>] [34 <./ima
-ges/chapter1/contador pescavision 100 300 10x4.pdf>]
-<images/chapter1/contador de peces de origen belga.png, id=305, 825.0825pt x 26
+(pdftex.def)             Requested size: 448.13095pt x 428.27228pt.
+ [33 <./images/chapter1/clasificadora de peces de origen danes.png>]
+<images/chapter1/contador de peces de origen belga.png, id=290, 825.0825pt x 26
 4.99pt>
 File: images/chapter1/contador de peces de origen belga.png Graphic file (type 
 png)
 <use images/chapter1/contador de peces de origen belga.png>
 Package pdftex.def Info: images/chapter1/contador de peces de origen belga.png 
  used on input line 637.
-(pdftex.def)             Requested size: 452.96826pt x 145.47807pt.
-
-Overfull \hbox (16.32268pt too wide) in paragraph at lines 656--735
+(pdftex.def)             Requested size: 448.13095pt x 143.9254pt.
+ [34 <./images/chapter1/contador pescavision 100 300 10x4.pdf>]
+Overfull \hbox (21.15999pt too wide) in paragraph at lines 656--735
  [][] 
  []
 
 [35 <./images/chapter1/contador de peces de origen belga.png>]
-Overfull \hbox (8.3769pt too wide) in paragraph at lines 749--814
+Overfull \hbox (13.21422pt too wide) in paragraph at lines 749--814
  [][] 
  []
 
@@ -1667,13 +1730,31 @@ File: images/chapter3/caja negra del sistema.png Graphic file (type png)
 <use images/chapter3/caja negra del sistema.png>
 Package pdftex.def Info: images/chapter3/caja negra del sistema.png  used on in
 put line 101.
-(pdftex.def)             Requested size: 452.96826pt x 333.28798pt.
+(pdftex.def)             Requested size: 448.13095pt x 329.72765pt.
  [41 <./images/chapter3/caja negra del sistema.png
 
 pdfTeX warning: pdflatex.exe (file ./images/chapter3/caja negra del sistema.png
 ): large interlaced PNG might cause out of memory (use non-interlaced PNG to fi
 x this)
->]) [42] [43]
+>] [42]
+<images/chapter3/estructura global de funciones.png, id=336, 1711.5945pt x 1198
+.4775pt>
+File: images/chapter3/estructura global de funciones.png Graphic file (type png
+)
+<use images/chapter3/estructura global de funciones.png>
+Package pdftex.def Info: images/chapter3/estructura global de funciones.png  us
+ed on input line 132.
+(pdftex.def)             Requested size: 567.6307pt x 397.45554pt.
+ [43
+
+ <./images/chapter3/estructura global de funciones.png
+
+pdfTeX warning: pdflatex.exe (file ./images/chapter3/estructura global de funci
+ones.png): large interlaced PNG might cause out of memory (use non-interlaced P
+NG to fix this)
+>] [44
+
+] [45] [46]) [47] [48]
 \openout2 = `chapters/chapter4.aux'.
 
  (chapters/chapter4.tex
@@ -1681,7 +1762,7 @@ Cap\'{\i }tulo IV.
 )
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [44
+ [49
 
 
 
@@ -1689,24 +1770,13 @@ LaTeX Info: Redefining \% on input line 13.
 \openout2 = `general/bibliography.aux'.
 
  (general/bibliography.tex (main.bbl
-Underfull \hbox (badness 1237) in paragraph at lines 14--34
-[]\C70/rm/m/n/12/6c ˆ \C70/rm/m/n/12/84 Ó \C70/rm/m/n/12/67 p\T1/ptm/m/n/12 , \
-C70/rm/m/n/12/7a à \C70/rm/m/n/12/66  \T1/ptm/m/n/12 , \C70/rm/m/n/12/5b Y \C
-70/rm/m/n/12/5f · \C70/rm/m/n/12/79 e\T1/ptm/m/n/12 , \C70/rm/m/n/12/67 N \C70/
-rm/m/n/12/6b c \C70/rm/m/n/12/83 c\T1/ptm/m/n/12 , \C70/rm/m/n/12/8b ¸ \C70/rm/
-m/n/12/4e  \C70/rm/m/n/12/5b Ì\T1/ptm/m/n/12 , \C70/rm/m/n/12/4f Þ \C70/rm/m/n
-/12/72 1 \C70/rm/m/n/12/84 \T1/ptm/m/n/12 , ... \C70/rm/m/n/12/82 ® \C70/rm/m/
-n/12/91 Ñ \C70/rm/m/n/12/51 u  \T1/ptm/m/n/12 (2017).  \T1/ptm/m/it/12 Mé-to-
- []
-
-
-Underfull \hbox (badness 1127) in paragraph at lines 14--34
+Underfull \hbox (badness 1755) in paragraph at lines 46--61
 \T1/ptm/m/n/12 do de $\T1/pcr/m/n/12 https :// patents [] .google [] .com / pat
-ent / CN107258625A / en [] ?q = trout{\&}q =
+ent / JP4468278B2 / en [] ?q = trout{\&}q =
  []
 
 
-Underfull \hbox (badness 2173) in paragraph at lines 73--86
+Underfull \hbox (badness 2012) in paragraph at lines 73--86
 []\C70/rm/m/n/12/30 ¹ Õ § ó û ­ å Í ó\T1/ptm/m/n/12 .  (2010).  \T1/ptm/m/it/12
  Fish clas-si-fi-ca-tion de-vi-ce and fish clas-si-fi-ca-tion
  []
@@ -1719,32 +1789,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
-[45
+[50
 
 
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 302--316
 \T1/pcr/m/n/12 index [] .php / en / products / fish [] -counters / en [] -pesca
-vision [] -counter / 19 [] -en []
+vision [] -counter /
  []
 
 
-Underfull \hbox (badness 5756) in paragraph at lines 328--341
+Underfull \hbox (badness 4967) in paragraph at lines 328--341
 []\T1/ptm/m/n/12 FAIVRE.  (2018).  \T1/ptm/m/it/12 Prin-ci-ple of the SPS tech-
 no-logy.  \T1/ptm/m/n/12 Des-car-ga-do 2019-09-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 328--341
+Underfull \hbox (badness 4156) in paragraph at lines 328--341
 \T1/ptm/m/n/12 23, de $\T1/pcr/m/n/12 http :// www [] .faivre [] .fr / index []
- .php / en / products / fish [] -graders /
- []
-
-
-Underfull \hbox (badness 1178) in paragraph at lines 410--423
-[]\T1/ptm/m/n/12 FAO.  (2005).  \T1/ptm/m/it/12 Cla-si-fi-ca-cion Por Ta-ma-ño 
-De Los Pe-ces.  \T1/ptm/m/n/12 Des-car-ga-do de $\T1/pcr/m/n/12 http ://
+ .php / en / products / fish [] -graders / 19 [] -en []
  []
 
 
@@ -1753,16 +1817,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--423
 FAO{\ [] []}Training / General /
  []
 
-[46]
-Underfull \hbox (badness 2343) in paragraph at lines 485--509
+[51]
+Underfull \hbox (badness 1953) in paragraph at lines 485--509
 []\T1/ptm/m/n/12 Flores, J. M. M., Quis-pe, M. Á. Y., Flo-res, A. Q., Arias, L.
  G., Quis-pe, W. P.,
  []
 
 
-Underfull \hbox (badness 3108) in paragraph at lines 485--509
+Underfull \hbox (badness 2626) in paragraph at lines 485--509
 \T1/ptm/m/n/12 Sai-ri-tu-pa, J. C. C., ... Con-do-ri, E. M.  (2010).  Me-jo-ran
 -do la ren-ta-bi-li-
+ []
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 657--669
+[]\T1/ptm/m/n/12 MINAGRI.  (2011).  \T1/ptm/m/it/12 Hi-dro-bio-ló-gi-co.  \T1/p
+tm/m/n/12 Des-car-ga-do 2019-09-20, de $\T1/pcr/m/n/12 https ://
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 657--669
+\T1/pcr/m/n/12 www [] .minagri [] .gob [] .pe / portal / 41 [] -sectoragrario /
+ recursos [] -naturales /
  []
 
 
@@ -1771,26 +1847,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 681--696
  [] -anuales / item /
  []
 
-[47]
-Underfull \hbox (badness 1577) in paragraph at lines 773--788
+[52]
+Underfull \hbox (badness 1325) in paragraph at lines 773--788
 []\T1/ptm/m/n/12 Powell, K.  (2003, nov).  Eat your veg.  \T1/ptm/m/it/12 Na-tu
 -re\T1/ptm/m/n/12 , \T1/ptm/m/it/12 426\T1/ptm/m/n/12 (6965), 378--379.  Des-ca
 r-
  []
 
-
-Underfull \hbox (badness 1584) in paragraph at lines 773--788
-\T1/ptm/m/n/12 ga-do de $\T1/pcr/m/n/12 https :// www [] .nature [] .com / arti
-cles / 426378ahttp :// www [] .nature [] .com /
- []
-
-)) [48]
+)) [53]
 \openout2 = `general/annexes.aux'.
 
  (general/annexes.tex)
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- [49
+ [54
 
 
 
@@ -1810,13 +1880,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14850 strings out of 480930
- 246764 string characters out of 2909538
- 558518 words of memory out of 3000000
- 30121 multiletter control sequences out of 15000+200000
+ 15885 strings out of 480930
+ 264743 string characters out of 2909538
+ 608350 words of memory out of 3000000
+ 31138 multiletter control sequences out of 15000+200000
  627281 words of font info for 154 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,24n,91p,1239b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,24n,92p,1239b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/WINDOWS/Fonts/si
 msun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/
 Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/
@@ -1836,9 +1906,9 @@ KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 9965257 bytes).
+Output written on main.pdf (62 pages, 10905683 bytes).
 PDF statistics:
- 482 PDF objects out of 1000 (max. 8388607)
+ 500 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 253 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
