@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  9 MAY 2020 13:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  9 MAY 2020 13:56
 entering extended mode
 **./main.tex
 (main.tex
@@ -909,6 +909,20 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@count@id=\count360
 \enitdp@description=\count361
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/footmisc\footmisc.sty"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks40
+\footnotemargin=\dimen198
+\c@pp@next@reset=\count362
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/koma-script\typearea.sty"
 Package: typearea 2020/04/19 v3.30 KOMA-Script package (type area)
 
@@ -924,7 +938,7 @@ basics and keyval usage)
 Package: scrlfile 2020/04/19 v3.30 KOMA-Script package (loading files)
 )))
 \ta@bcor=\skip100
-\ta@div=\count362
+\ta@div=\count363
 Package typearea Info: You've used standard option `a4paper'.
 (typearea)             This is correct!
 (typearea)             Internally I'm using `paper=a4'.
@@ -1076,24 +1090,24 @@ LaTeX Info: Redefining \selectfont on input line 4.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count363
-\scratchdimen=\dimen198
+\scratchcounter=\count364
+\scratchdimen=\dimen199
 \scratchbox=\box115
-\nofMPsegments=\count364
-\nofMParguments=\count365
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count366
-\MPscratchDim=\dimen199
-\MPnumerator=\count367
-\makeMPintoPDFobject=\count368
-\everyMPtoPDFconversion=\toks41
+\nofMPsegments=\count365
+\nofMParguments=\count366
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count367
+\MPscratchDim=\dimen256
+\MPnumerator=\count368
+\makeMPintoPDFobject=\count369
+\everyMPtoPDFconversion=\toks42
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-\c@lstlisting=\count369
-\c@maskedRefs=\count370
+\c@lstlisting=\count370
+\c@maskedRefs=\count371
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/apacite\spanish.apc"
 File: spanish.apc 2013/07/21 v6.03 apacite language file
@@ -1560,7 +1574,7 @@ ng Graphic file (type png)
 <use images/chapter1/clasificadoras automaticas para peces de origen frances.pn
 g>
 Package pdftex.def Info: images/chapter1/clasificadoras automaticas para peces 
-de origen frances.png  used on input line 539.
+de origen frances.png  used on input line 540.
 (pdftex.def)             Requested size: 448.13095pt x 233.48523pt.
 [26 <./images/chapter1/clasificadora de peces de origen aleman.png>]
 <images/chapter1/sistema de canalizacion de peces.png, id=300, 702.625pt x 395.
@@ -1569,7 +1583,7 @@ File: images/chapter1/sistema de canalizacion de peces.png Graphic file (type p
 ng)
 <use images/chapter1/sistema de canalizacion de peces.png>
 Package pdftex.def Info: images/chapter1/sistema de canalizacion de peces.png  
-used on input line 547.
+used on input line 548.
 (pdftex.def)             Requested size: 448.13095pt x 252.2418pt.
  [27 <./images/chapter1/clasificadoras automaticas para peces de origen frances
 .png> <./images/chapter1/sistema de canalizacion de peces.png>]
@@ -1579,7 +1593,7 @@ File: images/chapter1/seleccionador con contador integrado y sus partes.png Gra
 phic file (type png)
 <use images/chapter1/seleccionador con contador integrado y sus partes.png>
 Package pdftex.def Info: images/chapter1/seleccionador con contador integrado y
- sus partes.png  used on input line 559.
+ sus partes.png  used on input line 560.
 (pdftex.def)             Requested size: 448.13095pt x 356.89429pt.
  [28 <./images/chapter1/seleccionador con contador integrado y sus partes.png>]
 <images/chapter1/clasificadora de peces de origen danes.png, id=309, 447.92343p
@@ -1588,7 +1602,7 @@ File: images/chapter1/clasificadora de peces de origen danes.png Graphic file (
 type png)
 <use images/chapter1/clasificadora de peces de origen danes.png>
 Package pdftex.def Info: images/chapter1/clasificadora de peces de origen danes
-.png  used on input line 615.
+.png  used on input line 616.
 (pdftex.def)             Requested size: 448.13095pt x 159.67377pt.
  [29]
 <images/chapter1/contador pescavision 100 300 10x4.pdf, id=313, 543.02875pt x 5
@@ -1597,7 +1611,7 @@ File: images/chapter1/contador pescavision 100 300 10x4.pdf Graphic file (type
 pdf)
 <use images/chapter1/contador pescavision 100 300 10x4.pdf>
 Package pdftex.def Info: images/chapter1/contador pescavision 100 300 10x4.pdf 
- used on input line 628.
+ used on input line 629.
 (pdftex.def)             Requested size: 448.13095pt x 428.27228pt.
  [30 <./images/chapter1/clasificadora de peces de origen danes.png>]
 <images/chapter1/contador de peces de origen belga.png, id=317, 825.0825pt x 26
@@ -1606,15 +1620,15 @@ File: images/chapter1/contador de peces de origen belga.png Graphic file (type
 png)
 <use images/chapter1/contador de peces de origen belga.png>
 Package pdftex.def Info: images/chapter1/contador de peces de origen belga.png 
- used on input line 641.
+ used on input line 642.
 (pdftex.def)             Requested size: 448.13095pt x 143.9254pt.
  [31 <./images/chapter1/contador pescavision 100 300 10x4.pdf>]
-Overfull \hbox (21.15999pt too wide) in paragraph at lines 660--739
+Overfull \hbox (21.15999pt too wide) in paragraph at lines 661--740
  [][] 
  []
 
 [32 <./images/chapter1/contador de peces de origen belga.png>]
-Overfull \hbox (13.21422pt too wide) in paragraph at lines 753--818
+Overfull \hbox (13.21422pt too wide) in paragraph at lines 754--819
  [][] 
  []
 
@@ -1665,7 +1679,7 @@ File: images/chapter3/estructura global de funciones.png Graphic file (type png
 <use images/chapter3/estructura global de funciones.png>
 Package pdftex.def Info: images/chapter3/estructura global de funciones.png  us
 ed on input line 132.
-(pdftex.def)             Requested size: 567.6307pt x 397.45554pt.
+(pdftex.def)             Requested size: 585.55522pt x 410.01889pt.
  [40
 
  <./images/chapter3/estructura global de funciones.png
@@ -1675,76 +1689,70 @@ ones.png): large interlaced PNG might cause out of memory (use non-interlaced P
 NG to fix this)
 >] [41
 
-] [42] [43] [44]
-<images/chapter3/dibujo conceptual de la problematica.png, id=380, 472.383pt x 
+] [42] [43]
+<images/chapter3/dibujo conceptual de la problematica.png, id=377, 472.383pt x 
 340.326pt>
 File: images/chapter3/dibujo conceptual de la problematica.png Graphic file (ty
 pe png)
 <use images/chapter3/dibujo conceptual de la problematica.png>
 Package pdftex.def Info: images/chapter3/dibujo conceptual de la problematica.p
-ng  used on input line 267.
+ng  used on input line 247.
 (pdftex.def)             Requested size: 448.13095pt x 322.85608pt.
- [45 <./images/chapter3/dibujo conceptual de la problematica.png>]
+ [44] [45 <./images/chapter3/dibujo conceptual de la problematica.png>]
 <images/chapter3/dibujo de concepto de solucion 1.png, id=385, 475.9965pt x 344
 .925pt>
 File: images/chapter3/dibujo de concepto de solucion 1.png Graphic file (type p
 ng)
 <use images/chapter3/dibujo de concepto de solucion 1.png>
 Package pdftex.def Info: images/chapter3/dibujo de concepto de solucion 1.png  
-used on input line 284.
-(pdftex.def)             Requested size: 448.13095pt x 324.75058pt.
- [46] [47 <./images/chapter3/dibujo de concepto de solucion 1.png>]
-<images/chapter3/dibujo de concepto de solucion 2.png, id=394, 476.325pt x 327.
+used on input line 264.
+(pdftex.def)             Requested size: 380.91403pt x 276.0351pt.
+ [46 <./images/chapter3/dibujo de concepto de solucion 1.png>]
+<images/chapter3/dibujo de concepto de solucion 2.png, id=391, 476.325pt x 327.
 843pt>
 File: images/chapter3/dibujo de concepto de solucion 2.png Graphic file (type p
 ng)
 <use images/chapter3/dibujo de concepto de solucion 2.png>
 Package pdftex.def Info: images/chapter3/dibujo de concepto de solucion 2.png  
-used on input line 301.
-(pdftex.def)             Requested size: 448.13095pt x 308.44258pt.
+used on input line 281.
+(pdftex.def)             Requested size: 380.91403pt x 262.1797pt.
 
-[48] [49 <./images/chapter3/dibujo de concepto de solucion 2.png>]
-Overfull \hbox (8.20113pt too wide) in paragraph at lines 312--313
-[]\T1/ptm/m/n/12 Después, las tru-chas son de-po-si-tas por la par-te su-pe-rio
-r en el sis-te-ma fí-si-co de  |\C70/rm/m/n/12/20 |\T1/ptm/m/n/12 recepción|\C
-70/rm/m/n/12/20 |
- []
-
-<images/chapter3/dibujo de concepto de solucion 3.png, id=402, 405.01312pt x 36
+[47] [48 <./images/chapter3/dibujo de concepto de solucion 2.png>]
+<images/chapter3/dibujo de concepto de solucion 3.png, id=399, 405.01312pt x 36
 1.35pt>
 File: images/chapter3/dibujo de concepto de solucion 3.png Graphic file (type p
 ng)
 <use images/chapter3/dibujo de concepto de solucion 3.png>
 Package pdftex.def Info: images/chapter3/dibujo de concepto de solucion 3.png  
-used on input line 316.
-(pdftex.def)             Requested size: 448.13095pt x 399.82957pt.
-<images/chapter3/dibujo de distribucion de truchas.png, id=403, 539.76656pt x 4
+used on input line 296.
+(pdftex.def)             Requested size: 336.0982pt x 299.8708pt.
+<images/chapter3/dibujo de distribucion de truchas.png, id=400, 539.76656pt x 4
 56.95718pt>
 File: images/chapter3/dibujo de distribucion de truchas.png Graphic file (type 
 png)
 <use images/chapter3/dibujo de distribucion de truchas.png>
 Package pdftex.def Info: images/chapter3/dibujo de distribucion de truchas.png 
- used on input line 324.
-(pdftex.def)             Requested size: 224.06548pt x 189.68947pt.
-[50 <./images/chapter3/dibujo de concepto de solucion 3.png>] [51 <./images/cha
-pter3/dibujo de distribucion de truchas.png>] [52]
-<images/chapter3/analisis tecnico economico.png, id=415, 385.44pt x 268.75406pt
+ used on input line 304.
+(pdftex.def)             Requested size: 201.65755pt x 170.724pt.
+ [49 <./images/chapter3/dibujo de concepto de solucion 3.png>] [50 <./images/ch
+apter3/dibujo de distribucion de truchas.png>] [51]
+<images/chapter3/analisis tecnico economico.png, id=411, 385.44pt x 268.75406pt
 >
 File: images/chapter3/analisis tecnico economico.png Graphic file (type png)
 <use images/chapter3/analisis tecnico economico.png>
 Package pdftex.def Info: images/chapter3/analisis tecnico economico.png  used o
-n input line 614.
+n input line 594.
 (pdftex.def)             Requested size: 336.0982pt x 234.34724pt.
- [53] [54 <./images/chapter3/analisis tecnico economico.png>]
-<images/chapter3/diagrama de operaciones de la solucion optima.png, id=422, 615
+ [52] [53 <./images/chapter3/analisis tecnico economico.png>]
+<images/chapter3/diagrama de operaciones de la solucion optima.png, id=419, 615
 .2805pt x 423.765pt>
 File: images/chapter3/diagrama de operaciones de la solucion optima.png Graphic
  file (type png)
 <use images/chapter3/diagrama de operaciones de la solucion optima.png>
 Package pdftex.def Info: images/chapter3/diagrama de operaciones de la solucion
- optima.png  used on input line 633.
+ optima.png  used on input line 613.
 (pdftex.def)             Requested size: 585.55522pt x 403.30513pt.
- [55
+ [54
 
  <./images/chapter3/diagrama de operaciones de la solucion optima.png>])
 \openout2 = `chapters/chapter4.aux'.
@@ -1754,7 +1762,7 @@ Cap\'{\i }tulo IV.
 )
 LaTeX Info: Redefining \. on input line 13.
 LaTeX Info: Redefining \% on input line 13.
- [56
+ [55
 
 
 
@@ -1782,7 +1790,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--111
 
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
-[57
+[56
 
 
 
@@ -1810,7 +1818,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 410--423
 FAO{\ [] []}Training / General /
  []
 
-[58]
+[57]
 Underfull \hbox (badness 1953) in paragraph at lines 485--509
 []\T1/ptm/m/n/12 Flores, J. M. M., Quis-pe, M. Á. Y., Flo-res, A. Q., Arias, L.
  G., Quis-pe, W. P.,
@@ -1840,20 +1848,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 681--696
  [] -anuales / item /
  []
 
-[59]
+[58]
 Underfull \hbox (badness 1325) in paragraph at lines 773--788
 []\T1/ptm/m/n/12 Powell, K.  (2003, nov).  Eat your veg.  \T1/ptm/m/it/12 Na-tu
 -re\T1/ptm/m/n/12 , \T1/ptm/m/it/12 426\T1/ptm/m/n/12 (6965), 378--379.  Des-ca
 r-
  []
 
-)) [60]
+)) [59]
 \openout2 = `general/annexes.aux'.
 
  (general/annexes.tex)
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
- [61
+ [60
 
 
 
@@ -1869,13 +1877,13 @@ LaTeX Info: Redefining \% on input line 9.
 (chapters/chapter3.aux) (chapters/chapter4.aux) (general/bibliography.aux)
 (general/annexes.aux)) ) 
 Here is how much of TeX's memory you used:
- 15926 strings out of 480930
- 266951 string characters out of 2909538
- 608473 words of memory out of 3000000
- 31174 multiletter control sequences out of 15000+200000
+ 16030 strings out of 480930
+ 268636 string characters out of 2909538
+ 610477 words of memory out of 3000000
+ 31274 multiletter control sequences out of 15000+200000
  628225 words of font info for 157 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,24n,92p,1240b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 51i,24n,92p,1317b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.en
 c}<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/s
 imsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS
@@ -1895,9 +1903,9 @@ KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (70 pages, 9691904 bytes).
+Output written on main.pdf (69 pages, 9691089 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
+ 566 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  283 words of extra memory for PDF output out of 10000 (max. 10000000)
 

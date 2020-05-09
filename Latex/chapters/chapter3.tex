@@ -9,7 +9,7 @@
 %% NUEVA SECCIÓN X.X
 \section{Desarrollo de proyecto conceptual}
 
-El diseño conceptual es parte del proceso de diseño en la que -mediante la identificación de problemas esenciales a través de la abstracción, el establecimiento de estructuras funcionales, búsqueda de principios de funcionamiento adecuados y su combinación en una estructura global- se establece a través de la elaboración de un principio de solución.\cite[p.~159]{Pahl2007}
+El diseño conceptual es parte del proceso de diseño en la que --mediante la identificación de problemas esenciales a través de la abstracción, el establecimiento de estructuras funcionales, búsqueda de principios de funcionamiento adecuados y su combinación en una estructura global-- se establece a través de la elaboración de un principio de solución.\cite[p.~159]{Pahl2007}
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Lista de requerimientos}
@@ -94,7 +94,7 @@ La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sis
 %% NUEVO SUBSECCION X.X.X
 \subsection{Caja negra}
 
-La caja negra mostrada en la Figura \ref{fig:caja negra del sistema} representa la energía (flecha continua), materia (flecha gruesa) y señales (flecha discontinua) que necesita y brinda el sistema para funcionar como un sistema clasificador y contador de truchas de un determinado rango según la lista de requerimientos mostrada en la Tabla REF.
+La caja negra mostrada en la Figura \ref{fig:caja negra del sistema} representa la energía (flecha continua), materia (flecha gruesa) y señales (flecha discontinua) que necesita y brinda el sistema para funcionar como un sistema clasificador y contador de truchas de un determinado rango según la lista de requerimientos mostrada en la Tabla \ref{tab:resumen de los requerimientos del sistema}.
 
 \begin{figure}[H]
 	\centering
@@ -129,7 +129,7 @@ Una vez que se ha formulado la caja negra es posible indicar, con el uso de diag
 \begin{landscape}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.95\paperwidth]{chapter3/estructura global de funciones.png}
+		\includegraphics[width=0.98\paperwidth]{chapter3/estructura global de funciones.png}
 		\caption{Estructura global de funciones.}
 		Fuente: Elaboración propia.
 		\label{fig:estructura global de funciones}
@@ -148,30 +148,23 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 	\item \textbf{Subsistema A: Actuadores}\\ El subsistema integra el accionamiento de los mecanismos que transforman que permiten distribuir la materia en los rangos requeridos.
 		
 		\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-			\item	\textbf{Accionar parada de emergencia:} Esta función permite conectar o desconectar físicamente la energía de entrada del resto del sistema.
+			\item	\textbf{Accionar parada de emergencia:} Esta función permite conectar o desconectar físicamente la energía de en-trada del resto del sistema.
 			
 			\item	\textbf{Accionar/Desactivar el suministro de energía:} Esta función se encargará de proveer energía al sistema para dar inicio al proceso al momento que recibe la señal de inicio.
 			
-			\item	\textbf{Accionar recepción de truchas:}
-			Esta función activa o desactiva la entrada de materia al sistema, en este ca-so el ingreso de truchas al sistema.
+			\item	\textbf{Accionar recepción de truchas:} Esta función activa o desactiva la entrada de materia al sistema, en este caso el ingreso de truchas al sistema.
 			
-			\item	\textbf{Accionar traslado de truchas:}
-			Esta función activa o desactiva la función que recibe truchas y agua para poder desplazar a las truchas dentro del sistema.
+			\item	\textbf{Accionar traslado de truchas:} Esta función activa o desactiva la función que recibe truchas y agua para poder desplazar a las truchas dentro del sistema.
 			
-			\item	\textbf{Accionar bomba de agua:}
-			Esta función activa, desactiva y regula el flujo de agua dentro del sistema. 
+			\item	\textbf{Accionar bomba de agua:} Esta función activa, desactiva y regula el flujo de agua dentro del sistema. 
 			
-			\item	\textbf{Accionar canalización:}
-			Esta función activa o desactiva el sistema de canalización del sistema, es decir, controla la función que regula el paso de una sola trucha por vez a las si-guientes partes del sistema.
+			\item	\textbf{Accionar iluminación:} Esta función activa o desactiva la iluminación necesaria para las cámaras.			
+
+			\item	\textbf{Accionar cámaras:} Esta función activa, desactiva y prepara la adquisición de imágenes o video del sistema.
 			
-			\item	\textbf{Accionar cámaras:}
-			Esta función activa, desactiva y prepara la adquisición de imágenes o vi-deo del sistema.
+			\item	\textbf{Accionar distribución de truchas:} Esta función se encarga de la distribución de las truchas según su rango dentro del sistema.
 			
-			\item	\textbf{Accionar distribución de truchas:}
-			Esta función se encarga de la distribución de las truchas según su rango dentro del sistema.
-			
-			\item	\textbf{Accionar alarmas e indicadores:}
-			Acciona las alarmas e indicadores del sistema para poder informar al ope-rario de la situación del proceso.
+			\item	\textbf{Accionar alarmas e indicadores:} Acciona las alarmas e indicadores del sistema para poder informar al operario de la situación del proceso.
 			
 		\end{enumerate}
 	
@@ -183,13 +176,13 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 	\item \textbf{Subsistema C: Energía}\\ El subsistema de energía mantiene el funcionamiento continuo del sistema para reali-zar sus funciones características a través de una fuente de energía. 
 	
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-		\item	\textbf{Regular voltaje ($ DC/DC $):}		Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema.
+		\item	\textbf{Regular voltaje ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema.
 		
 		\item	\textbf{Acondicionar energía al sistema de interacción con el usuario ($ DC/DC $):}		Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de interacción con el usuario.
 		
-		\item	\textbf{Acondicionar energía al sistema de control ($ DC/DC $):}	Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de control
+		\item	\textbf{Acondicionar energía al sistema de control ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de control
 		
-		\item	\textbf{Acondicionar energía al sistema de medición ($ DC/DC $):}	Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de medición.
+		\item	\textbf{Acondicionar energía al sistema de medición ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de medición.
 		
 		\item	\textbf{Acondicionar energía a los actuadores ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de los actuadores.
 		
@@ -198,35 +191,25 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 	\item \textbf{Subsistema D: Interacción con el usuario}\\ Este subsistema permite la comunicación entre el usuario final / operador y el sistema. Facilita la realización del proceso completo, permitiendo al usuario contar con información importante del proceso para poder tomar decisiones de forma rápida.
 	
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-		\item	\textbf{Función ingreso de señales:}		Esta función recibe las señales de entrada como inicio, pausar, reanudar y reiniciar el proceso. Además, recibe la solicitud de reporte. Usa esta información y la envía al subsistema de control.
+		\item	\textbf{Función ingreso de señales:} Esta función recibe las señales de entrada como \textit{inicio, pausar, reanudar y reiniciar} el proceso. Además, recibe la solicitud de reporte. Usa esta información y la envía al subsistema de control.
 		
-		\item	\textbf{Función mostrar señales:}		Esta función muestra las etapas del proceso (iniciar, pausar, reanudar y reiniciar). También muestra la medida de la última trucha que se distribuyó, estado de los contadores, tiempo estimado para completar el proceso, informe generado y mostrar indicadores.
+		\item	\textbf{Función mostrar señales:} Esta función muestra las etapas del proceso (\textit{iniciar, pausar, reanudar y reiniciar}). También muestra la medida de la última trucha que se distribuyó, estado de los contadores, tiempo estimado para completar el proceso, informe generado y mostrar indicadores.
 		
 	\end{enumerate}
 
 	\item \textbf{Subsistema E: Materia}\\ El subsistema de materia contiene las funciones que se encargan de distribuir la mate-ria en rangos que se ingresan al sistema. Las funciones se desarrollan como una secuencia de tareas.
 
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-		\item	\textbf{Recepcionar truchas:}
-		Esta función mediante mecanismos recibe indicaciones de otras partes del sistema para accionarse. Es el primer módulo que recepciona a las truchas. 
 		
-		\item	\textbf{Trasladar truchas:}
-		Este mecanismo recibe agua y a las truchas que salen de la función “recepcionar truchas”. Impulsa mediante un flujo de agua constante a las truchas a lo lar-go del sistema hasta llegar a las salidas.
+		\item	\textbf{Recepcionar truchas:} Esta función mediante mecanismos recibe indicaciones de otras partes del sistema para accionarse. Es el primer módulo que recepciona a las truchas. 
 		
-		\item	\textbf{Canalizar truchas:}
-		Este mecanismo recibe agua y truchas del módulo “trasladar truchas”. Además, es accionado por actuadores para cumplir con dejar pasar una trucha por vez al siguiente módulo del sistema.
+		\item	\textbf{Trasladar truchas:} Este mecanismo recibe agua y a las truchas que salen de la función "\textit{recepcionar truchas}". Impulsa mediante un flujo de agua constante a las truchas a lo largo del sistema hasta llegar a las salidas.
 		
-		\item	\textbf{Medir trucha:}
-		Este mecanismo recibe agua y truchas canalizadas del módulo anterior “canalizar truchas”. Acciona cámaras para poder realizar la toma de dimensiones de la trucha e indica al sistema el rango al que fue asignado. Este módulo clasifica virtualmente a las truchas.
+		\item	\textbf{Canalizar truchas:} Este mecanismo recibe agua y truchas del módulo "\textit{trasladar truchas}". Además, es accionado por actuadores para cumplir con dejar pasar una trucha por vez al siguiente módulo del sistema.
 		
-		\item	\textbf{Distribuir trucha:}
-		Este mecanismo recibe agua y trucha medida del módulo anterior “medir trucha". Es accionada y permite seleccionar según los rangos el próximo módulo correspondiente. Este módulo es el encargado de clasificar físicamente a la trucha.
+		\item	\textbf{Medir y contar trucha:} Esta función ejecuta algoritmos para poder medir y contar una trucha, además decide qué camino tomará la trucha en el mecanismo de "\textit{distribuir trucha}". Este mecanismo recibe señales de control y envía información sobre las dimensiones y conteo de las truchas al sistema de control.
 		
-		\item	\textbf{Contar truchas por rangos:}
-		Este mecanismo recibe agua y truchas asignadas a su rango del módulo anterior “distribuir truchas”. Accionada envía señales al sistema de control sobre la cantidad de peces contados por rangos.
-		
-		\item	\textbf{Enviar truchas por rangos:}
-		Este mecanismo permite trasladar a la trucha que ya fue contada y clasificada por el sistema por los módulos anteriores al respectivo estanque o jaula flotante asignado.
+		\item	\textbf{Distribuir trucha:} Este mecanismo recibe agua y trucha medida del módulo anterior "\textit{medir trucha}". Es accionada y permite seleccionar según los rangos el próximo módulo correspondiente. Este módulo es el encargado de clasificar físicamente a la trucha.
 		
 	\end{enumerate}
 	
@@ -234,14 +217,11 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 	\item \textbf{Subsistema F: Medición}\\ El subsistema de medición se encarga de sensar las variables del proceso necesarias para ejercer un óptimo control del sistema y minimizar el error. Se considera las siguientes funciones como esenciales.
 
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-		\item	\textbf{Sensar presencia de trucha:}
-		Esta función detecta si las truchas han ingresado al sistema o siguen dentro del sistema.
+		\item	\textbf{Sensar presencia de trucha:} Esta función detecta si las truchas han ingresado al sistema o siguen dentro del sistema.
 		
-		\item	\textbf{Sensar flujo de agua:}
-		Esta función mide el flujo de agua dentro del sistema para mantenerlo constante para reducir el estrés hídrico.
+		\item	\textbf{Sensar flujo de agua:} Esta función mide el flujo de agua dentro del sistema para mantenerlo constante para reducir el estrés hídrico.
 		
-		\item	\textbf{Sensar iluminación:}
-		Esta función sensa la iluminación que es necesaria para capturar imágenes con normalidad.
+		\item	\textbf{Sensar iluminación:} Esta función sensa la iluminación que es necesaria para capturar imágenes con normalidad.
 		
 	\end{enumerate}	
 	
@@ -281,7 +261,7 @@ El sistema puede ser desensamblado ya que se instala en una mesa hueca en el cen
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{chapter3/dibujo de concepto de solucion 1.png}
+	\includegraphics[width=0.85\textwidth]{chapter3/dibujo de concepto de solucion 1.png}
 	\caption{Dibujo de concepto de solución N° 1.}
 	Fuente: Elaboración propia.
 	\label{fig:dibujo de concepto de solucion 1}
@@ -291,14 +271,14 @@ El sistema puede ser desensamblado ya que se instala en una mesa hueca en el cen
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Concepto de solución N° 2}
 
-El sistema (Figura \ref{fig:dibujo de concepto de solucion 2}) cuenta con cuatro secciones físicas: “recepción y traslado de peces”, “canalización, medición y conteo”, “distribución” y “control”. Estas secciones físicas están unidas con tubos plásticos transparentes y cables. Antes de empezar a usar el sistema, se debe verificar si el botón de emergencia está activado, de forma similar el actuador tipo hongo para verificar si el siste-ma está en accionamiento. Luego de revisar, se acciona la bomba sumergible y se acciona la electro-válvula para agregar el flujo de agua que trasladará a las truchas y verificar así la existencia de fugas.
+El sistema (Figura \ref{fig:dibujo de concepto de solucion 2}) cuenta con cuatro secciones físicas: "recepción y traslado de peces", "canalización, medición y conteo", "distribución" y "control". Estas secciones físicas están unidas con tubos plásticos transparentes y cables. Antes de empezar a usar el sistema, se debe verificar si el botón de emergencia está activado, de forma similar el actuador tipo hongo para verificar si el siste-ma está en accionamiento. Luego de revisar, se acciona la bomba sumergible y se acciona la electro-válvula para agregar el flujo de agua que trasladará a las truchas y verificar así la existencia de fugas.
 
-Terminada la preparación, un operario con una sacadera empieza extrayendo truchas de una jaula sin clasificar y depositando las truchas en el sistema físico de “recepción de truchas”. Las truchas depositadas resbalan por la tolva y se trasladan hacia las tuberías de reducción que funcionan como “canalizadores” (evita conglomeración). Estas tuberías de diámetro distinto permiten la medición del caudal para su control mediante el principio de Venturi, en este caso con el uso de sensores de presión. Además, la “detección de presencia de truchas” se da también en este sistema físico mediante sensores infrarrojos. Luego, la trucha es medida y contada por una cámara estéreo que indica al sistema físico de distribución la tubería de salida que la trucha debe tomar. La “distribución de truchas” emplea servomotores que direccionan la salida a la trucha a una salida. Para evitar la presión del agua sobre las compuertas controladas por los servomotores se emplea una rejilla para que el agua pase por una sección inferior. 
+Terminada la preparación, un operario con una sacadera empieza extrayendo truchas de una jaula sin clasificar y depositando las truchas en el sistema físico de "recepción de truchas". Las truchas depositadas resbalan por la tolva y se trasladan hacia las tuberías de reducción que funcionan como "canalizadores" (evita conglomeración). Estas tuberías de diámetro distinto permiten la medición del caudal para su control mediante el principio de Venturi, en este caso con el uso de sensores de presión. Además, la "detección de presencia de truchas" se da también en este sistema físico mediante sensores infrarrojos. Luego, la trucha es medida y contada por una cámara estéreo que indica al sistema físico de distribución la tubería de salida que la trucha debe tomar. La "distribución de truchas" emplea servomotores que direccionan la salida a la trucha a una salida. Para evitar la presión del agua sobre las compuertas controladas por los servomotores se emplea una rejilla para que el agua pase por una sección inferior. 
 Durante todo el proceso, el microcontrolador envía inalámbricamente a un teléfono inteligente datos sobre las dimensiones de la trucha y el conteo. Al finalizar el proceso, se muestra un resumen en el teléfono sobre la clasificación y conteo de truchas.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{chapter3/dibujo de concepto de solucion 2.png}
+	\includegraphics[width=0.85\textwidth]{chapter3/dibujo de concepto de solucion 2.png}
 	\caption{Dibujo de concepto de solución N° 2.}
 	Fuente: Elaboración propia.
 	\label{fig:dibujo de concepto de solucion 2}
@@ -309,11 +289,11 @@ Durante todo el proceso, el microcontrolador envía inalámbricamente a un telé
 
 El tercer concepto de solución (Figura \ref{fig:dibujo de concepto de solucion 3}) hace uso de una plataforma flotante y una estructura como soporte para el sistema. En el dibujo se ha omitido los mecanismos que mantienen a flote a la plataforma. La preparación de este sistema la realiza un operario que revisa las tuberías y que no existan objetos que impidan el tránsito de las truchas. Primero el operario revisa si el botón de emergencia está activado, en caso contrario procede a encender el sistema mediante un interruptor posicionado en el sistema de control (parte lateral del sistema de recepción). Se conecta el teléfono inteligente de forma inalámbrica. El sistema realiza una prueba de los sensores para verificar un correcto funcionamiento. Luego de la verificación, mediante la aplicación se indica una cantidad de flujo deseada y el sistema se encarga de regularla.
 
-Después, las truchas son depositas por la parte superior en el sistema físico de “recepción” de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo “y griega” de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente.
+Después, las truchas son depositas por la parte superior en el sistema físico de "recepción" de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo "y griega" de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{chapter3/dibujo de concepto de solucion 3.png}
+	\includegraphics[width=0.75\textwidth]{chapter3/dibujo de concepto de solucion 3.png}
 	\caption{Dibujo de concepto de solución N° 3.}
 	Fuente: Elaboración propia.
 	\label{fig:dibujo de concepto de solucion 3}
@@ -321,7 +301,7 @@ Después, las truchas son depositas por la parte superior en el sistema físico 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{chapter3/dibujo de distribucion de truchas.png}
+	\includegraphics[width=0.45\textwidth]{chapter3/dibujo de distribucion de truchas.png}
 	\caption{Dibujo de distribución de truchas.}
 	Fuente: Elaboración propia.
 	\label{fig:dibujo de distribucion de truchas}

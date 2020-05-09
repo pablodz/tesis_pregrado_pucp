@@ -62,17 +62,17 @@
 \contentsline {subsubsection}{Salidas}{39}%
 \contentsline {subsection}{\numberline {3.1.3}Estructura de funciones}{39}%
 \contentsline {subsubsection}{Lista de funciones por subsistema}{41}%
-\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{45}%
+\contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{44}%
 \contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{45}%
-\contentsline {subsubsection}{Concepto de solución N° 1}{46}%
+\contentsline {subsubsection}{Concepto de solución N° 1}{45}%
 \contentsline {subsubsection}{Concepto de solución N° 2}{47}%
-\contentsline {subsubsection}{Concepto de solución N° 3}{49}%
-\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{51}%
-\contentsline {subsubsection}{Criterios técnicos}{52}%
-\contentsline {subsubsection}{Criterios económicos}{53}%
-\contentsline {subsubsection}{Elección de concepto óptimo}{53}%
-\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{54}%
-\contentsline {chapter}{\numberline {IV}Costos}{56}%
-\contentsline {section}{\numberline {4.1}Manufactura}{56}%
-\contentsline {section}{\numberline {4.2}Precio unitario}{56}%
-\contentsline {chapter}{Referencias}{57}%
+\contentsline {subsubsection}{Concepto de solución N° 3}{48}%
+\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{50}%
+\contentsline {subsubsection}{Criterios técnicos}{51}%
+\contentsline {subsubsection}{Criterios económicos}{52}%
+\contentsline {subsubsection}{Elección de concepto óptimo}{52}%
+\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{53}%
+\contentsline {chapter}{\numberline {IV}Costos}{55}%
+\contentsline {section}{\numberline {4.1}Manufactura}{55}%
+\contentsline {section}{\numberline {4.2}Precio unitario}{55}%
+\contentsline {chapter}{Referencias}{56}%
