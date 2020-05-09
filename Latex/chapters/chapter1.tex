@@ -9,43 +9,48 @@
 %% NUEVA SECCIÓN X.X
 \section{Definición de la problemática}
 
-Actualmente, la crianza de o cultivo de truchas en el Perú se da de manera artesanal, los procesos involucrados son realizados por operarios de forma manual. La automatización de procesos manuales aumenta diversos factores que van desde la calidad del producto hasta la capacidad de producción. Una \textbf{empresa nacional} en la \textbf{región de Lima} que se dedica a la producción y venta de trucha arcoíris de diversos gramajes para el mercado nacional, luego de realizar una \textbf{consultoría privada}, detectó altos porcentajes de mortandad y desaparición (cerca del 20\% que representan aproximadamente 18 000 truchas) en la etapa de engorde (17.5 centímetros en adelante).\\
-Según la consultoría, \textbf{la mortandad y desaparición de las truchas en la etapa de engorde} se debe a la alta densidad de peces en las jaulas. Las principales causas de un alto grado de desaparición están asociadas a la característica carnívora de las truchas, es decir, pueden alimentarse de otras truchas. Las truchas deben ser clasificadas periódicamente en sus respectivas jaulas flotantes, según tamaño. Sin embargo, debido a la complejidad y cantidad de esfuerzo requerido, (3 operarios para una jaula de 3 metros cúbicos que contienen 5000 truchas requieren 40  horas de trabajo) la clasificación no es muy frecuente. Además, realizar el proceso de forma manual incide en el comportamiento de la trucha, pudiendo causar una muerte por estrés. Debido a esto, \textbf{el presente trabajo busca automatizar dicho proceso}.\\
+
+Actualmente, la crianza de o cultivo de truchas en el Perú se da de manera artesanal, los procesos involucrados son realizados por operarios. La automatización de procesos manuales aumenta diversos factores que van desde la calidad del producto hasta la capacidad de producción. \textbf{Una empresa nacional} ubicada en la \textbf{región de Lima} se dedica a la producción, venta y distribución de trucha arcoíris de diversos gramajes que se comercializan en el mercado nacional. Dicha empresa nacional realizó una \textbf{consultoría privada} el año 2018, detectó altos porcentajes de mortandad y desaparición de truchas\footnote{Cerca del 20\% que representan aproximadamente 18 000 truchas.} en la etapa de engorde\footnote{17.5 centímetros en adelante.}.
+
+Según la consultoría, \textbf{la mortandad} y \textbf{desaparición de las truchas en la etapa de engorde} se debe a la alta densidad de las truchas en las jaulas flotantes. Las principales causas de un alto grado de desaparición están asociadas enfermedades y a la característica carnívora de las truchas, es decir, pueden alimentarse de otras truchas. \textbf{Las truchas deben ser clasificadas periódicamente} en sus respectivas jaulas flotantes, según tallas. Sin embargo, debido a la complejidad y cantidad de esfuerzo manual requerido\footnote{Cuatro operarios para una jaula de 3 $ m^3 $ que contienen 5000 truchas requieren 50 $ h $.}, la clasificación no es muy frecuente. Además, realizar el proceso de forma manual estresa a la trucha, pudiendo causar una muerte por estrés. Debido a esto, \textbf{el presente trabajo busca automatizar dicho proceso}.
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Justificación}
 
-Según la empresa nacional, reducir la mortandad en el cultivo artesanal de truchas aumentará la capacidad de producción. Se detalla que cuando dichas truchas atraviesan las etapas de \textit{alevinos III} (7.5 a 10.0 cm.), \textit{juvenil I} (10.0 a 13.5 cm.) y \textit{engorde} (17 cm. en adelante) aumenta la mortandad considerablemente, siendo los dos últimos los más importantes. La mortandad de truchas se da por diversos motivos, entre ellos, el más importante, la falta de clasificación correcta de truchas según su tamaño.\\
-La clasificación y conteo realizado por operarios de forma manual requiere excesivo tiempo y mano de obra. Esto puede agravarse ya que en tiempos de mayor presencia fluvial se realiza el trabajo bajo condiciones meteorológicas adversas que dificultan el trabajo haciéndolo más lento y en oportunidades inviable debido a que se requiere el uso de generadores de electricidad, hacer uso de estos en esas condiciones puede generar accidentes. \\
+Según la empresa nacional, reducir la mortandad en el cultivo artesanal de truchas aumentará la capacidad de producción. Se detalla que cuando dichas truchas atraviesan las etapas de \textit{alevinos III} (7.5 a 10.0 cm.), \textit{juvenil I} (10.0 a 13.5 cm.) y \textit{engorde} (17 cm. en adelante) aumenta la mortandad respecto a las otras etapas, siendo engorde la que más importancia tiene. La clasificación y conteo manual puede agravarse ya que en tiempos de mayor presencia fluvial se realiza el trabajo bajo condiciones meteorológicas adversas que dificultan el trabajo haciéndolo más lento y en oportunidades inviable debido a que se requiere el uso de generadores de electricidad, hacer uso de estos en esas condiciones puede generar accidentes. 
+
+Este trabajo de investigación aborda desde la problemática hasta el diseño conceptual que servirá como punto de partida para el diseño y posterior implementación de la máquina y sistemas que la compongan.
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Alcance}
-Este trabajo busca diseñar un sistema clasificador y contador de truchas arcoíris de un determinado rango de tamaños. De igual forma, se busca integrar nuevas tecnologías y métodos, según sean viables bajo el análisis del diseño conceptual y preliminar del sistema mecatrónico, a los sistemas. Además, se busca integrar los sistemas de clasificación y conteo de truchas.
-La cuantificación de producción brindará una idea clara de los beneficios que puede aportar un sistema mecatrónico al cultivo de truchas arcoíris en lagunas. \\
+
+Este trabajo busca diseñar un sistema clasificador y contador de truchas arcoíris de un determinado rango de tamaños. Así mismo, se busca integrar nuevas tecnologías y mé-todos, según sean viabilidad técnica y económica, al diseño conceptual.
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Objetivos}
 
+Se presenta el objetivo general y los objetivos específicos del presente trabajo.
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Objetivo general}
 
-Diseñar un sistema clasificador y contador truchas arcoíris de 10 a 20 centímetros.
+Realizar el diseño conceptual de un sistema clasificador y contador de truchas arcoíris de 15 a 20 centímetros.
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Objetivos específicos}
 
 \begin{itemize}
-\item Identificar procesos críticos en la crianza artesanal de trucha arcoíris.
-\item Diseñar un sistema de clasificación.
-\item Diseñar un sistema de conteo de truchas.
-\item Cuantificar la capacidad de producción del sistema de recepción, clasificación y conteo de truchas arcoíris.
+\item Definir la problemática: identificar procesos críticos en la crianza artesanal de trucha arcoíris y seleccionar un proceso.
+\item Elaborar el diseño conceptual: elaborar la lista de exigencias, estructura de funciones, matriz morfológica y plantear tres conceptos de solución.
+\item Seleccionar la solución óptima y elaborar el diagrama de operaciones de la so-lución óptima. 
 \end{itemize}
 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Metodología}
 
-La metodología, que contempla las recomendaciones para encontrar una solución óptima, está basada en el libro \textit{Engineering Design – A Systematic Approach}.\footnote{Traducción: \textit{"Diseño de ingeniería: un enfoque sistemático"}}  Esta metodología puede incluir múltiples normas de diseño, en este caso las normas VDI 2221-2225 \textit{(La Asociación de Ingenieros Alemanes)}.  \\
-El análisis, el términos generales, consiste en recopilar información, realizar una lista de requerimientos, discernir entre procesos críticos que pueden ser automatizados, separar los procesos en sistemas que cumplan funciones, listar las mejores opciones para cada subsistema, iterar hasta encontrar la solución más óptima que integre todos los subsistemas, proponer tres o más soluciones óptimas como concepto de solución, seleccionar una de estas, seleccionar materiales y procesos de fabricación, seleccionar componentes comerciales para cada dispositivo elegido para el concepto de solución, realizar cálculos de diseño, realizar planos de diseño y presentar una propuesta final. En cada etapa del diseño la parte conceptual puede variar, pero los principios de funcionamiento deben prevalecer.\\
+La metodología, que contempla las recomendaciones para encontrar una solución óptima, está basada en el libro \textit{Engineering Design – A Systematic Approach}.\footnote{Traducción: \textit{"Diseño de ingeniería: un enfoque sistemático"}}  Esta metodología puede incluir múltiples normas de diseño, en este caso las normas VDI 2221-2225 \textit{(La Asociación de Ingenieros Alemanes)}.
+
+El análisis, el términos generales, consiste en recopilar información, realizar una lista de requerimientos, discernir entre procesos críticos que pueden ser automatizados, separar los procesos en sistemas que cumplan funciones, listar las mejores opciones para cada subsistema, iterar hasta encontrar la solución más óptima que integre todos los subsistemas, proponer tres o más soluciones óptimas como concepto de solución, seleccionar una de estas y realizar su diagrama de operaciones .
 
 %% NUEVA SECCIÓN X.X
 \section{Estado del arte}

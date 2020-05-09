@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  9 MAY 2020 01:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7400 64-bit) (preloaded format=pdflatex 2020.4.28)  9 MAY 2020 11:41
 entering extended mode
 **./main.tex
 (main.tex
@@ -1197,20 +1197,6 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 9.
-<images/introduction/produccion agricola mundial.png, id=14, 423.08063pt x 197.
-98969pt>
-File: images/introduction/produccion agricola mundial.png Graphic file (type pn
-g)
-<use images/introduction/produccion agricola mundial.png>
-Package pdftex.def Info: images/introduction/produccion agricola mundial.png  u
-sed on input line 14.
-(pdftex.def)             Requested size: 448.13095pt x 209.72003pt.
 )
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
@@ -1218,10 +1204,11 @@ LaTeX Info: Redefining \% on input line 7.
 
 
 
- <./images/introduction/produccion agricola mundial.png>]
+]
 \openout2 = `general/gratitude.aux'.
 
- (general/gratitude.tex)
+
+(general/gratitude.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 11--8
 
  []
@@ -1300,402 +1287,388 @@ Package gloss Info: Writing gloss file main.gls.aux on input line 8.
 
  (chapters/chapter1.tex
 Cap\'{\i }tulo I.
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--14
-
- []
-
-LaTeX Info: Redefining \. on input line 14.
-LaTeX Info: Redefining \% on input line 14.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Info: Redefining \. on input line 16.
+LaTeX Info: Redefining \% on input line 16.
 [1
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 18--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--25
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 52--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 60--62
+Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
 
 [4]
-<images/chapter1/extraccion trucha toneladas anuales.png, id=51, 582.67688pt x 
+<images/chapter1/extraccion trucha toneladas anuales.png, id=50, 582.67688pt x 
 362.10281pt>
 File: images/chapter1/extraccion trucha toneladas anuales.png Graphic file (typ
 e png)
 <use images/chapter1/extraccion trucha toneladas anuales.png>
 Package pdftex.def Info: images/chapter1/extraccion trucha toneladas anuales.pn
-g  used on input line 65.
+g  used on input line 70.
 (pdftex.def)             Requested size: 448.13095pt x 278.49402pt.
-LaTeX Font Info:    Trying to load font information for C70+rm on input line 75
+LaTeX Font Info:    Trying to load font information for C70+rm on input line 80
 .
  ("C:\Program Files\MiKTeX 2.9\tex/latex/ctex/fd\c70rm.fd"
 File: c70rm.fd 2019/05/29 v2.4.16 Chinese font definition (CTEX)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 75--77
+Underfull \hbox (badness 10000) in paragraph at lines 80--82
 
  []
 
 [5 <./images/chapter1/extraccion trucha toneladas anuales.png>]
 
 LaTeX Warning: Reference `Productos comerciales y patentes' on page 6 undefined
- on input line 78.
+ on input line 83.
 
 <images/chapter1/comercio internacional de productos pesqueros por principales 
-importadores y exportadores en dolares.png, id=62, 618.81187pt x 209.28188pt>
+importadores y exportadores en dolares.png, id=61, 618.81187pt x 209.28188pt>
 File: images/chapter1/comercio internacional de productos pesqueros por princip
 ales importadores y exportadores en dolares.png Graphic file (type png)
 <use images/chapter1/comercio internacional de productos pesqueros por principa
 les importadores y exportadores en dolares.png>
 Package pdftex.def Info: images/chapter1/comercio internacional de productos pe
 squeros por principales importadores y exportadores en dolares.png  used on inp
-ut line 87.
+ut line 92.
 (pdftex.def)             Requested size: 448.13095pt x 151.5642pt.
 
-Overfull \hbox (12.79999pt too wide) in paragraph at lines 84--91
+Overfull \hbox (12.79999pt too wide) in paragraph at lines 89--96
  [][] 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--104
 
  []
 
-<images/chapter1/anatomia de la trucha arcoiris.png, id=73, 1510.64375pt x 623.
+[6 <./images/chapter1/comercio internacional de productos pesqueros por princip
+ales importadores y exportadores en dolares.png>]
+<images/chapter1/anatomia de la trucha arcoiris.png, id=72, 1510.64375pt x 623.
 32875pt>
 File: images/chapter1/anatomia de la trucha arcoiris.png Graphic file (type png
 )
 <use images/chapter1/anatomia de la trucha arcoiris.png>
 Package pdftex.def Info: images/chapter1/anatomia de la trucha arcoiris.png  us
-ed on input line 102.
+ed on input line 107.
 (pdftex.def)             Requested size: 448.13095pt x 184.9076pt.
-[7 <./images/chapter1/comercio internacional de productos pesqueros por princip
-ales importadores y exportadores en dolares.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
+ [7 <./images/chapter1/anatomia de la trucha arcoiris.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
 
  []
 
-[8 <./images/chapter1/anatomia de la trucha arcoiris.png>]
 <images/chapter1/clasificadora de anchura fija rejillas de clasificacion y clas
-ificadora ajustable.png, id=80, 496.10344pt x 258.9675pt>
+ificadora ajustable.png, id=76, 496.10344pt x 258.9675pt>
 File: images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
  clasificadora ajustable.png Graphic file (type png)
 <use images/chapter1/clasificadora de anchura fija rejillas de clasificacion y 
 clasificadora ajustable.png>
 Package pdftex.def Info: images/chapter1/clasificadora de anchura fija rejillas
- de clasificacion y clasificadora ajustable.png  used on input line 137.
+ de clasificacion y clasificadora ajustable.png  used on input line 142.
 (pdftex.def)             Requested size: 448.13095pt x 233.92606pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
-<images/chapter1/clasificacion y medicion manual de truchas.png, id=81, 1061.46
+<images/chapter1/clasificacion y medicion manual de truchas.png, id=80, 1061.46
 562pt x 791.95876pt>
 File: images/chapter1/clasificacion y medicion manual de truchas.png Graphic fi
 le (type png)
 <use images/chapter1/clasificacion y medicion manual de truchas.png>
 Package pdftex.def Info: images/chapter1/clasificacion y medicion manual de tru
-chas.png  used on input line 147.
+chas.png  used on input line 152.
 (pdftex.def)             Requested size: 448.13095pt x 334.34846pt.
 [9 <./images/chapter1/clasificadora de anchura fija rejillas de clasificacion y
  clasificadora ajustable.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-<images/chapter1/herramienta de medicion manual para peces.png, id=85, 816.8015
+<images/chapter1/herramienta de medicion manual para peces.png, id=84, 816.8015
 6pt x 472.01344pt>
 File: images/chapter1/herramienta de medicion manual para peces.png Graphic fil
 e (type png)
 <use images/chapter1/herramienta de medicion manual para peces.png>
 Package pdftex.def Info: images/chapter1/herramienta de medicion manual para pe
-ces.png  used on input line 157.
+ces.png  used on input line 162.
 (pdftex.def)             Requested size: 448.13095pt x 258.96718pt.
 [10 <./images/chapter1/clasificacion y medicion manual de truchas.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 166--167
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-<images/chapter1/maquina seleccionadora de truchas agv.png, id=91, 777.65532pt 
+<images/chapter1/maquina seleccionadora de truchas agv.png, id=90, 777.65532pt 
 x 529.98pt>
 File: images/chapter1/maquina seleccionadora de truchas agv.png Graphic file (t
 ype png)
 <use images/chapter1/maquina seleccionadora de truchas agv.png>
 Package pdftex.def Info: images/chapter1/maquina seleccionadora de truchas agv.
-png  used on input line 170.
+png  used on input line 175.
 (pdftex.def)             Requested size: 448.13095pt x 305.4154pt.
 Package CJKpunct Info: use punctuation spaces for family 'rm' with punctstyle (
-quanjiao) on input line 172.
+quanjiao) on input line 177.
 [11 <./images/chapter1/herramienta de medicion manual para peces.png>]
 <images/chapter1/medicion automatizada de especies y tallas de peces por vision
- artificial.png, id=97, 641.39626pt x 158.09062pt>
+ artificial.png, id=96, 641.39626pt x 158.09062pt>
 File: images/chapter1/medicion automatizada de especies y tallas de peces por v
 ision artificial.png Graphic file (type png)
 <use images/chapter1/medicion automatizada de especies y tallas de peces por vi
 sion artificial.png>
 Package pdftex.def Info: images/chapter1/medicion automatizada de especies y ta
-llas de peces por vision artificial.png  used on input line 183.
+llas de peces por vision artificial.png  used on input line 188.
 (pdftex.def)             Requested size: 448.13095pt x 110.45763pt.
  [12 <./images/chapter1/maquina seleccionadora de truchas agv.png>]
 <images/chapter1/medicion de peces dentro de estanques con camaras ortogonales.
-png, id=103, 819.06pt x 537.50812pt>
+png, id=102, 819.06pt x 537.50812pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras ortogon
 ales.png Graphic file (type png)
 <use images/chapter1/medicion de peces dentro de estanques con camaras ortogona
 les.png>
 Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques 
-con camaras ortogonales.png  used on input line 192.
+con camaras ortogonales.png  used on input line 197.
 (pdftex.def)             Requested size: 336.0982pt x 220.56839pt.
 <images/chapter1/medicion de peces dentro de estanques con camaras estereo.png,
- id=104, 776.9025pt x 439.6425pt>
+ id=103, 776.9025pt x 439.6425pt>
 File: images/chapter1/medicion de peces dentro de estanques con camaras estereo
 .png Graphic file (type png)
 <use images/chapter1/medicion de peces dentro de estanques con camaras estereo.
 png>
 Package pdftex.def Info: images/chapter1/medicion de peces dentro de estanques 
-con camaras estereo.png  used on input line 200.
+con camaras estereo.png  used on input line 205.
 (pdftex.def)             Requested size: 336.0982pt x 190.19643pt.
  [13 <./images/chapter1/medicion automatizada de especies y tallas de peces por
  vision artificial.png> <./images/chapter1/medicion de peces dentro de estanque
 s con camaras ortogonales.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 211--212
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-<images/chapter1/pez identificado por una red neuronal.png, id=108, 292.09125pt
+<images/chapter1/pez identificado por una red neuronal.png, id=107, 292.09125pt
  x 285.31593pt>
 File: images/chapter1/pez identificado por una red neuronal.png Graphic file (t
 ype png)
 <use images/chapter1/pez identificado por una red neuronal.png>
 Package pdftex.def Info: images/chapter1/pez identificado por una red neuronal.
-png  used on input line 215.
+png  used on input line 220.
 (pdftex.def)             Requested size: 224.06548pt x 218.87547pt.
 [14 <./images/chapter1/medicion de peces dentro de estanques con camaras estere
 o.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
 
-Overfull \hbox (4.15358pt too wide) in paragraph at lines 233--241
+Overfull \hbox (4.15358pt too wide) in paragraph at lines 238--246
  [][] 
  []
 
 [15 <./images/chapter1/pez identificado por una red neuronal.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 277--278
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 [16]
 <images/chapter1/clasificacion conteo curado y calculo de biomasa en la laguna 
-de canrash.pdf, id=120, 690.58pt x 513.92pt>
+de canrash.pdf, id=119, 690.58pt x 513.92pt>
 File: images/chapter1/clasificacion conteo curado y calculo de biomasa en la la
 guna de canrash.pdf Graphic file (type pdf)
 <use images/chapter1/clasificacion conteo curado y calculo de biomasa en la lag
 una de canrash.pdf>
 Package pdftex.def Info: images/chapter1/clasificacion conteo curado y calculo 
-de biomasa en la laguna de canrash.pdf  used on input line 281.
+de biomasa en la laguna de canrash.pdf  used on input line 286.
 (pdftex.def)             Requested size: 448.13095pt x 333.4951pt.
  [17 <./images/chapter1/clasificacion conteo curado y calculo de biomasa en la 
 laguna de canrash.pdf>]
-<images/chapter1/contador peces basado en luz infrarroja faivre.png, id=145, 42
+<images/chapter1/contador peces basado en luz infrarroja faivre.png, id=144, 42
 6.09187pt x 121.20282pt>
 File: images/chapter1/contador peces basado en luz infrarroja faivre.png Graphi
 c file (type png)
 <use images/chapter1/contador peces basado en luz infrarroja faivre.png>
 Package pdftex.def Info: images/chapter1/contador peces basado en luz infrarroj
-a faivre.png  used on input line 294.
+a faivre.png  used on input line 299.
 (pdftex.def)             Requested size: 448.13095pt x 127.47939pt.
 <images/chapter1/planos comunes de posicionamiento para camaras de inspeccion.p
-df, id=146, 689.57625pt x 503.8825pt>
+df, id=145, 689.57625pt x 503.8825pt>
 File: images/chapter1/planos comunes de posicionamiento para camaras de inspecc
 ion.pdf Graphic file (type pdf)
 <use images/chapter1/planos comunes de posicionamiento para camaras de inspecci
 on.pdf>
 Package pdftex.def Info: images/chapter1/planos comunes de posicionamiento para
- camaras de inspeccion.pdf  used on input line 307.
+ camaras de inspeccion.pdf  used on input line 312.
 (pdftex.def)             Requested size: 358.50612pt x 261.96658pt.
  [18 <./images/chapter1/contador peces basado en luz infrarroja faivre.png>]
-<images/chapter1/contador de peces mediante escaneres.png, id=150, 598.48593pt 
+<images/chapter1/contador de peces mediante escaneres.png, id=149, 598.48593pt 
 x 222.07968pt>
 File: images/chapter1/contador de peces mediante escaneres.png Graphic file (ty
 pe png)
 <use images/chapter1/contador de peces mediante escaneres.png>
 Package pdftex.def Info: images/chapter1/contador de peces mediante escaneres.p
-ng  used on input line 320.
+ng  used on input line 325.
 (pdftex.def)             Requested size: 448.13095pt x 166.29164pt.
  [19 <./images/chapter1/planos comunes de posicionamiento para camaras de inspe
 ccion.pdf>] [20 <./images/chapter1/contador de peces mediante escaneres.png>] [
 21]
 <images/chapter1/extraccion de caracteristicas mediante vision por computadora.
-pdf, id=181, 695.59875pt x 392.46625pt>
+pdf, id=180, 695.59875pt x 392.46625pt>
 File: images/chapter1/extraccion de caracteristicas mediante vision por computa
 dora.pdf Graphic file (type pdf)
 <use images/chapter1/extraccion de caracteristicas mediante vision por computad
 ora.pdf>
 Package pdftex.def Info: images/chapter1/extraccion de caracteristicas mediante
- vision por computadora.pdf  used on input line 394.
+ vision por computadora.pdf  used on input line 399.
 (pdftex.def)             Requested size: 448.13095pt x 252.84235pt.
 <images/chapter1/usando relacion entre a y b para calcular longitud del pez.pdf
-, id=182, 784.9325pt x 436.63126pt>
+, id=181, 784.9325pt x 436.63126pt>
 File: images/chapter1/usando relacion entre a y b para calcular longitud del pe
 z.pdf Graphic file (type pdf)
 <use images/chapter1/usando relacion entre a y b para calcular longitud del pez
 .pdf>
 Package pdftex.def Info: images/chapter1/usando relacion entre a y b para calcu
-lar longitud del pez.pdf  used on input line 404.
+lar longitud del pez.pdf  used on input line 409.
 (pdftex.def)             Requested size: 380.91403pt x 211.89249pt.
  [22 <./images/chapter1/extraccion de caracteristicas mediante vision por compu
 tadora.pdf>]
-<images/chapter1/sacadera telescipica de malla fina para peces.png, id=206, 536
+<images/chapter1/sacadera telescipica de malla fina para peces.png, id=205, 536
 .0025pt x 231.86626pt>
 File: images/chapter1/sacadera telescipica de malla fina para peces.png Graphic
  file (type png)
 <use images/chapter1/sacadera telescipica de malla fina para peces.png>
 Package pdftex.def Info: images/chapter1/sacadera telescipica de malla fina par
-a peces.png  used on input line 422.
+a peces.png  used on input line 427.
 (pdftex.def)             Requested size: 448.13095pt x 193.85352pt.
  [23 <./images/chapter1/usando relacion entre a y b para calcular longitud del 
 pez.pdf>]
 <images/chapter1/recepcion automatica por bombeo de peces mediante tuberia.pdf,
- id=229, 611.28375pt x 262.9825pt>
+ id=228, 611.28375pt x 262.9825pt>
 File: images/chapter1/recepcion automatica por bombeo de peces mediante tuberia
 .pdf Graphic file (type pdf)
 <use images/chapter1/recepcion automatica por bombeo de peces mediante tuberia.
 pdf>
 Package pdftex.def Info: images/chapter1/recepcion automatica por bombeo de pec
-es mediante tuberia.pdf  used on input line 435.
+es mediante tuberia.pdf  used on input line 440.
 (pdftex.def)             Requested size: 448.13095pt x 192.7902pt.
  [24 <./images/chapter1/sacadera telescipica de malla fina para peces.png> <./i
 mages/chapter1/recepcion automatica por bombeo de peces mediante tuberia.pdf>]
-Overfull \hbox (20.48865pt too wide) in paragraph at lines 476--476
+Overfull \hbox (20.48865pt too wide) in paragraph at lines 481--481
 []\T1/ptm/b/n/12 Dispositivo de cla-si-fi-ca-ción de pe-ces y mé-to-do de cla-s
 i-fi-ca-ción de pe-ces \T1/ptm/b/it/12 (Pa-ten-te JP5563164B2) 
  []
 
 [25]
 <images/chapter1/clasificadora automatica de peces de origen japones.png, id=25
-6, 426.09187pt x 639.13782pt>
+5, 426.09187pt x 639.13782pt>
 File: images/chapter1/clasificadora automatica de peces de origen japones.png G
 raphic file (type png)
 <use images/chapter1/clasificadora automatica de peces de origen japones.png>
 Package pdftex.def Info: images/chapter1/clasificadora automatica de peces de o
-rigen japones.png  used on input line 482.
+rigen japones.png  used on input line 487.
 (pdftex.def)             Requested size: 313.69029pt x 470.56523pt.
 
-Overfull \hbox (22.43428pt too wide) in paragraph at lines 482--483
+Overfull \hbox (22.43428pt too wide) in paragraph at lines 487--488
  [][] 
  []
 
 [26 <./images/chapter1/clasificadora automatica de peces de origen japones.png>
 ]
-<images/chapter1/clasificadora automatica de peces de origen chino.png, id=261,
+<images/chapter1/clasificadora automatica de peces de origen chino.png, id=260,
  293.59688pt x 633.86812pt>
 File: images/chapter1/clasificadora automatica de peces de origen chino.png Gra
 phic file (type png)
 <use images/chapter1/clasificadora automatica de peces de origen chino.png>
 Package pdftex.def Info: images/chapter1/clasificadora automatica de peces de o
-rigen chino.png  used on input line 496.
+rigen chino.png  used on input line 501.
 (pdftex.def)             Requested size: 201.65755pt x 435.36737pt.
  [27 <./images/chapter1/clasificadora automatica de peces de origen chino.png>]
-<images/chapter1/clasificador y contador de peces de origen chino.png, id=266, 
+<images/chapter1/clasificador y contador de peces de origen chino.png, id=265, 
 307.1475pt x 239.805pt>
 File: images/chapter1/clasificador y contador de peces de origen chino.png Grap
 hic file (type png)
 <use images/chapter1/clasificador y contador de peces de origen chino.png>
 Package pdftex.def Info: images/chapter1/clasificador y contador de peces de or
-igen chino.png  used on input line 509.
+igen chino.png  used on input line 514.
 (pdftex.def)             Requested size: 448.13095pt x 349.90013pt.
  [28 <./images/chapter1/clasificador y contador de peces de origen chino.png>]
-<images/chapter1/clasificadora de peces de origen aleman.png, id=272, 438.8897p
+<images/chapter1/clasificadora de peces de origen aleman.png, id=271, 438.8897p
 t x 149.8097pt>
 File: images/chapter1/clasificadora de peces de origen aleman.png Graphic file 
 (type png)
 <use images/chapter1/clasificadora de peces de origen aleman.png>
 Package pdftex.def Info: images/chapter1/clasificadora de peces de origen alema
-n.png  used on input line 522.
+n.png  used on input line 527.
 (pdftex.def)             Requested size: 448.13095pt x 152.96843pt.
 <images/chapter1/clasificadoras automaticas para peces de origen frances.png, i
-d=273, 447.92343pt x 233.37187pt>
+d=272, 447.92343pt x 233.37187pt>
 File: images/chapter1/clasificadoras automaticas para peces de origen frances.p
 ng Graphic file (type png)
 <use images/chapter1/clasificadoras automaticas para peces de origen frances.pn
 g>
 Package pdftex.def Info: images/chapter1/clasificadoras automaticas para peces 
-de origen frances.png  used on input line 535.
+de origen frances.png  used on input line 540.
 (pdftex.def)             Requested size: 448.13095pt x 233.48523pt.
 [29 <./images/chapter1/clasificadora de peces de origen aleman.png>]
-<images/chapter1/sistema de canalizacion de peces.png, id=277, 702.625pt x 395.
+<images/chapter1/sistema de canalizacion de peces.png, id=276, 702.625pt x 395.
 4775pt>
 File: images/chapter1/sistema de canalizacion de peces.png Graphic file (type p
 ng)
 <use images/chapter1/sistema de canalizacion de peces.png>
 Package pdftex.def Info: images/chapter1/sistema de canalizacion de peces.png  
-used on input line 543.
+used on input line 548.
 (pdftex.def)             Requested size: 448.13095pt x 252.2418pt.
  [30 <./images/chapter1/clasificadoras automaticas para peces de origen frances
 .png> <./images/chapter1/sistema de canalizacion de peces.png>]
-<images/chapter1/seleccionador con contador integrado y sus partes.png, id=281,
+<images/chapter1/seleccionador con contador integrado y sus partes.png, id=280,
  628.59843pt x 500.62032pt>
 File: images/chapter1/seleccionador con contador integrado y sus partes.png Gra
 phic file (type png)
 <use images/chapter1/seleccionador con contador integrado y sus partes.png>
 Package pdftex.def Info: images/chapter1/seleccionador con contador integrado y
- sus partes.png  used on input line 555.
+ sus partes.png  used on input line 560.
 (pdftex.def)             Requested size: 448.13095pt x 356.89429pt.
  [31 <./images/chapter1/seleccionador con contador integrado y sus partes.png>]
-<images/chapter1/clasificadora de peces de origen danes.png, id=285, 447.92343p
+<images/chapter1/clasificadora de peces de origen danes.png, id=284, 447.92343p
 t x 159.59625pt>
 File: images/chapter1/clasificadora de peces de origen danes.png Graphic file (
 type png)
 <use images/chapter1/clasificadora de peces de origen danes.png>
 Package pdftex.def Info: images/chapter1/clasificadora de peces de origen danes
-.png  used on input line 611.
+.png  used on input line 616.
 (pdftex.def)             Requested size: 448.13095pt x 159.67377pt.
  [32]
-<images/chapter1/contador pescavision 100 300 10x4.pdf, id=289, 543.02875pt x 5
+<images/chapter1/contador pescavision 100 300 10x4.pdf, id=288, 543.02875pt x 5
 18.93875pt>
 File: images/chapter1/contador pescavision 100 300 10x4.pdf Graphic file (type 
 pdf)
 <use images/chapter1/contador pescavision 100 300 10x4.pdf>
 Package pdftex.def Info: images/chapter1/contador pescavision 100 300 10x4.pdf 
- used on input line 624.
+ used on input line 629.
 (pdftex.def)             Requested size: 448.13095pt x 428.27228pt.
  [33 <./images/chapter1/clasificadora de peces de origen danes.png>]
-<images/chapter1/contador de peces de origen belga.png, id=293, 825.0825pt x 26
+<images/chapter1/contador de peces de origen belga.png, id=292, 825.0825pt x 26
 4.99pt>
 File: images/chapter1/contador de peces de origen belga.png Graphic file (type 
 png)
 <use images/chapter1/contador de peces de origen belga.png>
 Package pdftex.def Info: images/chapter1/contador de peces de origen belga.png 
- used on input line 637.
+ used on input line 642.
 (pdftex.def)             Requested size: 448.13095pt x 143.9254pt.
  [34 <./images/chapter1/contador pescavision 100 300 10x4.pdf>]
-Overfull \hbox (21.15999pt too wide) in paragraph at lines 656--735
+Overfull \hbox (21.15999pt too wide) in paragraph at lines 661--740
  [][] 
  []
 
 [35 <./images/chapter1/contador de peces de origen belga.png>]
-Overfull \hbox (13.21422pt too wide) in paragraph at lines 749--814
+Overfull \hbox (13.21422pt too wide) in paragraph at lines 754--819
  [][] 
  []
 
@@ -1727,7 +1700,7 @@ LaTeX Info: Redefining \% on input line 80.
 
 
 ] [40]
-<images/chapter3/caja negra del sistema.png, id=331, 843.3909pt x 620.5584pt>
+<images/chapter3/caja negra del sistema.png, id=330, 843.3909pt x 620.5584pt>
 File: images/chapter3/caja negra del sistema.png Graphic file (type png)
 <use images/chapter3/caja negra del sistema.png>
 Package pdftex.def Info: images/chapter3/caja negra del sistema.png  used on in
@@ -1739,7 +1712,7 @@ pdfTeX warning: pdflatex.exe (file ./images/chapter3/caja negra del sistema.png
 ): large interlaced PNG might cause out of memory (use non-interlaced PNG to fi
 x this)
 >] [42]
-<images/chapter3/estructura global de funciones.png, id=339, 1711.5945pt x 1198
+<images/chapter3/estructura global de funciones.png, id=338, 1711.5945pt x 1198
 .4775pt>
 File: images/chapter3/estructura global de funciones.png Graphic file (type png
 )
@@ -1757,7 +1730,7 @@ NG to fix this)
 >] [44
 
 ] [45] [46] [47]
-<images/chapter3/dibujo conceptual de la problematica.png, id=357, 472.383pt x 
+<images/chapter3/dibujo conceptual de la problematica.png, id=356, 472.383pt x 
 340.326pt>
 File: images/chapter3/dibujo conceptual de la problematica.png Graphic file (ty
 pe png)
@@ -1766,7 +1739,7 @@ Package pdftex.def Info: images/chapter3/dibujo conceptual de la problematica.p
 ng  used on input line 267.
 (pdftex.def)             Requested size: 448.13095pt x 322.85608pt.
  [48 <./images/chapter3/dibujo conceptual de la problematica.png>]
-<images/chapter3/dibujo de concepto de solucion 1.png, id=362, 475.9965pt x 344
+<images/chapter3/dibujo de concepto de solucion 1.png, id=361, 475.9965pt x 344
 .925pt>
 File: images/chapter3/dibujo de concepto de solucion 1.png Graphic file (type p
 ng)
@@ -1775,7 +1748,7 @@ Package pdftex.def Info: images/chapter3/dibujo de concepto de solucion 1.png
 used on input line 284.
 (pdftex.def)             Requested size: 448.13095pt x 324.75058pt.
  [49] [50 <./images/chapter3/dibujo de concepto de solucion 1.png>]
-<images/chapter3/dibujo de concepto de solucion 2.png, id=370, 476.325pt x 327.
+<images/chapter3/dibujo de concepto de solucion 2.png, id=369, 476.325pt x 327.
 843pt>
 File: images/chapter3/dibujo de concepto de solucion 2.png Graphic file (type p
 ng)
@@ -1791,7 +1764,7 @@ r en el sis-te-ma fí-si-co de  |\C70/rm/m/n/12/20 |\T1/ptm/m/n/12 recepción|\C
 70/rm/m/n/12/20 |
  []
 
-<images/chapter3/dibujo de concepto de solucion 3.png, id=379, 405.01312pt x 36
+<images/chapter3/dibujo de concepto de solucion 3.png, id=378, 405.01312pt x 36
 1.35pt>
 File: images/chapter3/dibujo de concepto de solucion 3.png Graphic file (type p
 ng)
@@ -1799,7 +1772,7 @@ ng)
 Package pdftex.def Info: images/chapter3/dibujo de concepto de solucion 3.png  
 used on input line 316.
 (pdftex.def)             Requested size: 448.13095pt x 399.82957pt.
-<images/chapter3/dibujo de distribucion de truchas.png, id=380, 539.76656pt x 4
+<images/chapter3/dibujo de distribucion de truchas.png, id=379, 539.76656pt x 4
 56.95718pt>
 File: images/chapter3/dibujo de distribucion de truchas.png Graphic file (type 
 png)
@@ -1809,7 +1782,7 @@ Package pdftex.def Info: images/chapter3/dibujo de distribucion de truchas.png
 (pdftex.def)             Requested size: 224.06548pt x 189.68947pt.
 [53 <./images/chapter3/dibujo de concepto de solucion 3.png>] [54 <./images/cha
 pter3/dibujo de distribucion de truchas.png>] [55]
-<images/chapter3/analisis tecnico economico.png, id=391, 385.44pt x 268.75406pt
+<images/chapter3/analisis tecnico economico.png, id=390, 385.44pt x 268.75406pt
 >
 File: images/chapter3/analisis tecnico economico.png Graphic file (type png)
 <use images/chapter3/analisis tecnico economico.png>
@@ -1817,7 +1790,7 @@ Package pdftex.def Info: images/chapter3/analisis tecnico economico.png  used o
 n input line 614.
 (pdftex.def)             Requested size: 336.0982pt x 234.34724pt.
  [56] [57 <./images/chapter3/analisis tecnico economico.png>]
-<images/chapter3/diagrama de operaciones de la solucion optima.png, id=398, 615
+<images/chapter3/diagrama de operaciones de la solucion optima.png, id=397, 615
 .2805pt x 423.765pt>
 File: images/chapter3/diagrama de operaciones de la solucion optima.png Graphic
  file (type png)
@@ -1954,11 +1927,11 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 15939 strings out of 480930
- 267689 string characters out of 2909538
+ 15933 strings out of 480930
+ 267365 string characters out of 2909538
  608471 words of memory out of 3000000
- 31185 multiletter control sequences out of 15000+200000
- 627595 words of font info for 155 fonts, out of 3000000 for 9000
+ 31180 multiletter control sequences out of 15000+200000
+ 628225 words of font info for 157 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,24n,92p,1239b,775s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/WINDOWS/Fonts/si
@@ -1980,9 +1953,9 @@ KTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/u
 tmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (73 pages, 11624623 bytes).
+Output written on main.pdf (73 pages, 11593589 bytes).
 PDF statistics:
- 547 PDF objects out of 1000 (max. 8388607)
+ 546 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
