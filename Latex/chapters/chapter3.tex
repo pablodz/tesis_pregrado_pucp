@@ -254,32 +254,396 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 %% NUEVO SUBSECCION X.X.X
 \subsection{Matriz morfológica}
 
+La matriz morfológica brinda posibles soluciones a los propósitos de cada función. Cada solución posee un principio de funcionamiento diferente. La búsqueda de posibles soluciones se basa en analizar las entradas/salidas de señales, energía y materia de cada función y proponer un dispositivo, mecanismo o sistema que pueda satisfacer la tarea.\cite[p.~181-184]{Pahl2007}
+
+
 %% NUEVO SUBSECCION X.X.X
 \subsection{Conceptos de solución}
+
+Los conceptos de solución que se presentan a continuación deben dar solución acorde a la problemática. En la Figura \ref{fig:dibujo conceptual de la problematica} se muestra un dibujo de dicha problemática.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/dibujo conceptual de la problematica.png}
+	\caption{Dibujo conceptual de la problemática.}
+	Fuente: Elaboración propia.
+	\label{fig:dibujo conceptual de la problematica}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Concepto de solución N° 1}
 
+El sistema (Figura \ref{fig:dibujo de concepto de solucion 1}) hace uso de una plataforma flotante y una mesa como soporte para el sistema. En el dibujo se ha omitido los cilindros que mantienen a flote la plataforma. El sistema cuenta con cuatro sistemas físicos separados que son acoplados en la parte central de la mesa. Para iniciar el funcionamiento el operario debe verificar que el interruptor de seguridad se encuentra des-activado. Luego de verificar debe accionar mediante el uso de un switch la energización del sistema y con esto accionar a su vez el flujo de agua debido a la activación de la bomba sumergible.
+
+Una vez realizada la preparación del sistema la reja accionada mediante un motor que acciona el sistema piñón-cremallera debe dejar el paso de truchas al siguiente sistema físico. El operario debe extraer mediante una sacadera truchas de la jaula sin clasificar y depositarlas en el sistema físico de recepción. Las truchas avanzarán debido al flujo de agua constante y la gravedad. A continuación, las truchas pasan por un filtro de tamaño para evitar la conglomeración. En el siguiente sistema físico las truchas son medidas y contadas mediante el uso de cámaras, que a su vez usan sistemas de iluminación. Con la información adquirida, el sistema decide el direccionamiento de compuertas para que la trucha pueda salir por el canal adecuado, con el uso de cámaras verifica su correcto funcionamiento.
+El sistema puede ser desensamblado ya que se instala en una mesa hueca en el centro que permite el posicionamiento de esta, brindando así la posibilidad de cambios a cualquiera de las cuatro partes físicas.
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/dibujo de concepto de solucion 1.png}
+	\caption{Dibujo de concepto de solución N° 1.}
+	Fuente: Elaboración propia.
+	\label{fig:dibujo de concepto de solucion 1}
+\end{figure}
+
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Concepto de solución N° 2}
+
+El sistema (Figura \ref{fig:dibujo de concepto de solucion 2}) cuenta con cuatro secciones físicas: “recepción y traslado de peces”, “canalización, medición y conteo”, “distribución” y “control”. Estas secciones físicas están unidas con tubos plásticos transparentes y cables. Antes de empezar a usar el sistema, se debe verificar si el botón de emergencia está activado, de forma similar el actuador tipo hongo para verificar si el siste-ma está en accionamiento. Luego de revisar, se acciona la bomba sumergible y se acciona la electro-válvula para agregar el flujo de agua que trasladará a las truchas y verificar así la existencia de fugas.
+
+Terminada la preparación, un operario con una sacadera empieza extrayendo truchas de una jaula sin clasificar y depositando las truchas en el sistema físico de “recepción de truchas”. Las truchas depositadas resbalan por la tolva y se trasladan hacia las tuberías de reducción que funcionan como “canalizadores” (evita conglomeración). Estas tuberías de diámetro distinto permiten la medición del caudal para su control mediante el principio de Venturi, en este caso con el uso de sensores de presión. Además, la “detección de presencia de truchas” se da también en este sistema físico mediante sensores infrarrojos. Luego, la trucha es medida y contada por una cámara estéreo que indica al sistema físico de distribución la tubería de salida que la trucha debe tomar. La “distribución de truchas” emplea servomotores que direccionan la salida a la trucha a una salida. Para evitar la presión del agua sobre las compuertas controladas por los servomotores se emplea una rejilla para que el agua pase por una sección inferior. 
+Durante todo el proceso, el microcontrolador envía inalámbricamente a un teléfono inteligente datos sobre las dimensiones de la trucha y el conteo. Al finalizar el proceso, se muestra un resumen en el teléfono sobre la clasificación y conteo de truchas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/dibujo de concepto de solucion 2.png}
+	\caption{Dibujo de concepto de solución N° 2.}
+	Fuente: Elaboración propia.
+	\label{fig:dibujo de concepto de solucion 2}
+\end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Concepto de solución N° 3}
 
+El tercer concepto de solución (Figura \ref{fig:dibujo de concepto de solucion 3}) hace uso de una plataforma flotante y una estructura como soporte para el sistema. En el dibujo se ha omitido los mecanismos que mantienen a flote a la plataforma. La preparación de este sistema la realiza un operario que revisa las tuberías y que no existan objetos que impidan el tránsito de las truchas. Primero el operario revisa si el botón de emergencia está activado, en caso contrario procede a encender el sistema mediante un interruptor posicionado en el sistema de control (parte lateral del sistema de recepción). Se conecta el teléfono inteligente de forma inalámbrica. El sistema realiza una prueba de los sensores para verificar un correcto funcionamiento. Luego de la verificación, mediante la aplicación se indica una cantidad de flujo deseada y el sistema se encarga de regularla.
+
+Después, las truchas son depositas por la parte superior en el sistema físico de “recepción” de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo “y griega” de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/dibujo de concepto de solucion 3.png}
+	\caption{Dibujo de concepto de solución N° 3.}
+	Fuente: Elaboración propia.
+	\label{fig:dibujo de concepto de solucion 3}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{chapter3/dibujo de distribucion de truchas.png}
+	\caption{Dibujo de distribución de truchas.}
+	Fuente: Elaboración propia.
+	\label{fig:dibujo de distribucion de truchas}
+\end{figure}
+
 %% NUEVO SUBSECCION X.X.X
 \subsection{Evaluación técnico-económica}
+
+La evaluación de los conceptos se realiza tomando en cuenta diferentes criterios tanto cuantitativos como cualitativos. En la tabla Tabla \ref{tab:pesos de relevancia} se muestra la valoración y su significado.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering
+	\caption{Pesos de relevancia.}
+	\label{tab:pesos de relevancia}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[HTML]{D9D9D9} 
+		\textbf{Valor (g)} & \textbf{Significado} \\ \hline
+		4                  & Muy Importante       \\ \hline
+		3                  & Importante           \\ \hline
+		2                  & Indiferente          \\ \hline
+		1                  & Poco Importante      \\ \hline
+		0                  & Nada Importante      \\ \hline
+	\end{tabular}
+	\\Fuente: Elaboración propia.
+\end{table}
+
+
+Asimismo, cada concepto de solución planteado recibe un puntaje que indica qué tanto cumple con cada criterio. El puntaje y su significado se muestra en la Tabla \ref{tab:escala de efectividad de las soluciones}.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering
+	\caption{Escala de efectividad de las soluciones.}
+	\label{tab:escala de efectividad de las soluciones}
+	\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[HTML]{D9D9D9} 
+		\textbf{Valor (g)} & \textbf{Significado} 					\\ \hline
+		4                  & Satisface completamente (Ideal)        \\ \hline
+		3                  & Satisface bien           				\\ \hline
+		2                  & Satisface suficientemente        		\\ \hline
+		1                  & Satisface infinitamente     			\\ \hline
+		0                  & No satisface				     		\\ \hline
+	\end{tabular}
+	\\Fuente: Elaboración propia.
+\end{table}
+
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Criterios técnicos}
 
+Los criterios técnicos escogidos para calificar el sistema son: \textbf{confiabilidad}, referido a alguna fuga de truchas en las tuberías o compartimientos que se puedan dar y que terminen liberando a la trucha al medio, \textbf{transportabilidad}, referido a la cantidad de pasos para poder ensamblar el sistema para poder usarlo y la dificultad de transportarlo de un lugar de almacenamiento hasta la jaula flotan-te en la situación mostrada en la Figura REF; \textbf{complejidad}, referido al número de componentes, sensores y actuadores que emplea el sistema para cumplir su función; \textbf{uso de energía}, referido al consumo eléctrico de los sensores y actuadores que emplea el sistema para cumplir su función; \textbf{dimensiones}, referido a las dimensiones físicas del sistema en general.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering
+	\caption{Evaluación de criterios técnicos.}
+	\label{tab:evaluacion de criterios tecnicos}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{D9D9D9}}l |
+			>{\columncolor[HTML]{D9D9D9}}l |
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |}
+		\hline
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Técnicos}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución 1}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución 2}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución 3}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución ideal}}} \\ \hline
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{N°}}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio}}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{g}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} \\ \hline
+		{\color[HTML]{000000} 1} &
+		{\color[HTML]{000000} Confiabilidad} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 12} \\ \hline
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} Transportabilidad} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 8} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 12} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 8} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 16} \\ \hline
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} Complejidad} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 12} \\ \hline
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} Uso de energía} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 1} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 8} \\ \hline
+		{\color[HTML]{000000} 5} &
+		{\color[HTML]{000000} Dimensiones} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 12} \\ \hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Suma}}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 10} &
+		{\color[HTML]{000000} 31} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 14} &
+		{\color[HTML]{000000} 42} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 11} &
+		{\color[HTML]{000000} 33} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 20} &
+		{\color[HTML]{000000} 60} \\ \hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Promedio ponderado}}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{0.50}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{0.52}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{0.70}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{0.70}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{0.55}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{0.55}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{1.0}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{1.0}} \\ \hline
+	\end{tabular}
+	\\ Fuente: Elaboración propia.
+\end{table}
+
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Criterios económicos}
+
+Los criterios económicos escogidos para calificar el sistema son: \textbf{número de piezas}, referido a la cantidad de componentes electrónicos que emplea el concepto para cumplir las funciones; \textbf{costo de piezas}, referido al costo de adquisición de los componentes electrónicos y mecánicos; \textbf{productividad}, referido a la cantidad de truchas que puede procesar el sistema; fácil montaje, referido al tiempo que toma ensamblar el sistema para poder usarlo; \textbf{fácil adquisición}, referido a la existencia en stock de los materiales de fabricación para poder hacer el sistema.
+
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+	\centering
+	\caption{Evaluación de criterios económicos.}
+	\label{tab:evaluacion de criterios economicos}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{D9D9D9}}c |
+			>{\columncolor[HTML]{D9D9D9}}l |
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |c|
+			>{\columncolor[HTML]{D9D9D9}}c |}
+		\hline
+		\multicolumn{3}{|c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Técnicos}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución 1}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución 2}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución 3}}} &
+		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Solución ideal}}} \\ \hline
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{N°}} &
+		\multicolumn{1}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Criterio}}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{g}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{p}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{pxg}} \\ \hline
+		{\color[HTML]{000000} 1} &
+		{\color[HTML]{000000} Número de piezas} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 12} \\ \hline
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} Costo de piezas} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 12} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 12} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 8} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 16} \\ \hline
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} Productividad} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 9} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 12} \\ \hline
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} Fácil montaje} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 6} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 8} \\ \hline
+		{\color[HTML]{000000} 5} &
+		{\color[HTML]{000000} Fácil adquisición} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 12} &
+		{\color[HTML]{000000} 3} &
+		{\color[HTML]{000000} 12} &
+		{\color[HTML]{000000} 2} &
+		{\color[HTML]{000000} 8} &
+		{\color[HTML]{000000} 4} &
+		{\color[HTML]{000000} 16} \\ \hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Suma}}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 13} &
+		{\color[HTML]{000000} 43} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 14} &
+		{\color[HTML]{000000} 45} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 11} &
+		{\color[HTML]{000000} 35} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} 20} &
+		{\color[HTML]{000000} 64} \\ \hline
+		\multicolumn{3}{|l|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Promedio ponderado}}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{0.65}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{0.67}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{0.70}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{0.71}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{0.55}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{0.54}} &
+		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{1.0}} &
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{1.0}} \\ \hline
+	\end{tabular}
+	\\ Fuente: Elaboración propia.
+\end{table}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Elección de concepto óptimo}
 
+Con los datos obtenidos en la Tabla \ref{tab:evaluacion de criterios tecnicos} y Tabla \ref{tab:evaluacion de criterios economicos} podemos hacer una comparación numérica de promedios ponderados de valoraciones según criterios establecidos. En la Figura REF se muestra esta comparación en un gráfico de dispersión, en la que el eje vertical es el valor obtenido de cada solución en los criterios técnicos y en el caso del eje horizontal es el valor obtenido en cada solución en los criterios económicos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{chapter3/analisis tecnico economico.png}
+	\caption{Análisis técnico económico.}
+	Fuente: Elaboración propia.
+	\label{fig:analisis tecnico economico}
+\end{figure}
+
+El \textbf{concepto de solución N° 2 obtuvo un puntaje superior} a las otras dos alternativas. Además, muestra un equilibrio entre la valoración técnica y económica. Por lo que se escoge este concepto de solución como solución óptima.
+
 %% NUEVO SUBSECCION X.X.X
 \subsection{Diagrama de operaciones de solución escogida}
+
+El diagrama de operaciones muestra la secuencia de pasos para poder operar la máquina o sistema de forma adecuada en un funcionamiento normal. En la Figura REF se muestra el diagrama de operaciones como un diagrama de flujo para poder usar adecuadamente el sistema clasificador y contador de peces.
+
+
+\newpage
+\thispagestyle{mylandscape}
+\begin{landscape}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.98\paperwidth]{chapter3/diagrama de operaciones de la solucion optima.png}
+		\caption{Estructura global de funciones.}
+		Fuente: Elaboración propia.
+		\label{fig:diagrama de operaciones de la solucion optima}
+	\end{figure}
+\end{landscape}
+
+\newpage
+\thispagestyle{fancy}
+
+
+
+
+
 
 %%%%%%% FALTA PUNTOS 
 %%%%%%% FALTA PUNTOS 

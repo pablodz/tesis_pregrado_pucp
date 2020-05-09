@@ -5,7 +5,7 @@
 \contentsline {chapter}{Agradecimientos}{\es@scroman {ii}}%
 \contentsline {chapter}{\'{I}ndice general}{\es@scroman {iii}}%
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {v}}%
-\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {vi}}%
+\contentsline {chapter}{\'{I}ndice de cuadros}{\es@scroman {vii}}%
 \contentsline {chapter}{\numberline {I}Marco problemático}{1}%
 \contentsline {section}{\numberline {1.1}Definición de la problemática}{1}%
 \contentsline {subsection}{\numberline {1.1.1}Justificación}{2}%
@@ -64,15 +64,15 @@
 \contentsline {subsubsection}{Lista de funciones por subsistema}{44}%
 \contentsline {subsection}{\numberline {3.1.4}Matriz morfológica}{48}%
 \contentsline {subsection}{\numberline {3.1.5}Conceptos de solución}{48}%
-\contentsline {subsubsection}{Concepto de solución N° 1}{48}%
-\contentsline {subsubsection}{Concepto de solución N° 2}{48}%
-\contentsline {subsubsection}{Concepto de solución N° 3}{48}%
-\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{48}%
-\contentsline {subsubsection}{Criterios técnicos}{48}%
-\contentsline {subsubsection}{Criterios económicos}{48}%
-\contentsline {subsubsection}{Elección de concepto óptimo}{48}%
-\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{48}%
-\contentsline {chapter}{\numberline {IV}Costos}{49}%
-\contentsline {section}{\numberline {4.1}Manufactura}{49}%
-\contentsline {section}{\numberline {4.2}Precio unitario}{49}%
-\contentsline {chapter}{Referencias}{50}%
+\contentsline {subsubsection}{Concepto de solución N° 1}{49}%
+\contentsline {subsubsection}{Concepto de solución N° 2}{50}%
+\contentsline {subsubsection}{Concepto de solución N° 3}{52}%
+\contentsline {subsection}{\numberline {3.1.6}Evaluación técnico-económica}{54}%
+\contentsline {subsubsection}{Criterios técnicos}{55}%
+\contentsline {subsubsection}{Criterios económicos}{56}%
+\contentsline {subsubsection}{Elección de concepto óptimo}{56}%
+\contentsline {subsection}{\numberline {3.1.7}Diagrama de operaciones de solución escogida}{57}%
+\contentsline {chapter}{\numberline {IV}Costos}{59}%
+\contentsline {section}{\numberline {4.1}Manufactura}{59}%
+\contentsline {section}{\numberline {4.2}Precio unitario}{59}%
+\contentsline {chapter}{Referencias}{60}%
