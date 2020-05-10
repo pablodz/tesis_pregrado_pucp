@@ -466,6 +466,47 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 	\end{center}
 
 
+	% Please add the following required packages to your document preamble:
+	% \usepackage[table,xcdraw]{xcolor}
+	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+	% \usepackage{longtable}
+	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+	\begin{longtable}{|
+			>{\columncolor[HTML]{D9D9D9}}c |c|c|c|c|c|}
+		\caption{Matriz morfológica del subsistema F}
+		\label{tab:matriz morfológica del subsistema f}\\
+		\hline
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Función}} &
+		\multicolumn{5}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Posibles soluciones}}} \\ \hline
+		\endfirsthead
+		%
+		\multicolumn{6}{c}%
+		{{Tabla \thetable\ continuación de la página anterior.}} \\
+		\hline
+		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Función}} &
+		\multicolumn{5}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Posibles soluciones}}} \\ \hline
+		\endhead
+		%
+		\begin{tabular}[c]{@{}c@{}}Sensar presencia\\ de trucha\end{tabular} &
+		Sensor de presencia &
+		Fotorresistencia y láser &
+		Sensor infrarrojo &
+		Sensor de ultrasonido &
+		Sensor de peso \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Sensar\\ flujo de agua\end{tabular} &
+		Sensor de caudal &
+		Rotámetro electrónico &
+		\begin{tabular}[c]{@{}c@{}}Tubos de Venturi y\\ sensores de presión\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}Medidor de flujo\\ de velocidad\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}Sensor de presión \\ líquida\end{tabular} \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Sensar\\ iluminación\end{tabular} &
+		\multicolumn{5}{c|}{Sensor electrónico} \\ \hline
+	\end{longtable}
+
+	\begin{center}
+	Fuente: Teslabem, Bigtronica, Arduino e imágenes de dominio público.
+	\end{center}
+
 \end{landscape}
 
 
