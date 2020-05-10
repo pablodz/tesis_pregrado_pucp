@@ -565,8 +565,6 @@ Durante todo el proceso, el microcontrolador envía inalámbricamente a un telé
 
 El tercer concepto de solución (Figura \ref{fig:dibujo de concepto de solucion 3}) hace uso de una plataforma flotante y una estructura como soporte para el sistema. En el dibujo se ha omitido los mecanismos que mantienen a flote a la plataforma. La preparación de este sistema la realiza un operario que revisa las tuberías y que no existan objetos que impidan el tránsito de las truchas. Primero el operario revisa si el botón de emergencia está activado, en caso contrario procede a encender el sistema mediante un interruptor posicionado en el sistema de control (parte lateral del sistema de recepción). Se conecta el teléfono inteligente de forma inalámbrica. El sistema realiza una prueba de los sensores para verificar un correcto funcionamiento. Luego de la verificación, mediante la aplicación se indica una cantidad de flujo deseada y el sistema se encarga de regularla.
 
-Después, las truchas son depositas por la parte superior en el sistema físico de "recepción" de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo "y griega" de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente.
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{chapter3/dibujo de concepto de solucion 3.png}
@@ -574,6 +572,8 @@ Después, las truchas son depositas por la parte superior en el sistema físico 
 	Fuente: Elaboración propia.
 	\label{fig:dibujo de concepto de solucion 3}
 \end{figure}
+
+Después, las truchas son depositas por la parte superior en el sistema físico de "recepción" de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo "y griega" de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente. El sistema de distribución de truchas  de la Figura \ref{dibujo de concepto de solucion 3} es similar al del concepto solución N° 2, también se muestra en la Figura \ref{dibujo de distribucion de truchas}.
 
 \begin{figure}[H]
 	\centering
@@ -873,25 +873,46 @@ Con los datos obtenidos en la Tabla \ref{tab:evaluacion de criterios tecnicos} y
 	\label{fig:analisis tecnico economico}
 \end{figure}
 
-El \textbf{concepto de solución N° 2 obtuvo un puntaje superior} a las otras dos alternativas. Además, muestra un equilibrio entre la valoración técnica y económica. Por lo que se escoge este concepto de solución como solución óptima.
+El \textbf{concepto de solución N° 2 obtuvo un mejor puntaje} con respecto a las otras dos alternativas por lo cual se selecciona como la \textbf{propuesta óptima}. Además, muestra un equilibrio entre la valoración técnica y económica. Por lo que se escoge este concepto de solución como solución óptima.
 
 %% NUEVO SUBSECCION X.X.X
-\subsection{Diagrama de operaciones de solución escogida}
+\subsection{Diagrama de operaciones de solución seleccionada}
 
-El diagrama de operaciones muestra la secuencia de pasos para poder operar la máquina o sistema de forma adecuada en un funcionamiento normal. En la Figura \ref{fig:diagrama de operaciones de la solucion optima} se muestra el diagrama de operaciones como un diagrama de flujo para poder usar adecuadamente el sistema clasificador y contador de peces.
-
+El diagrama de operaciones muestra la secuencia de pasos para poder operar la máquina o sistema de forma adecuada en un funcionamiento normal. En la Figura \ref{fig:proceso de clasificacion y conteo manual} se muestra a modo de referencia el diagrama de operaciones del proceso manual, la Figura \ref{fig:proceso de clasificacion y conteo propuesto} muestra el método propuesto y la secuencia de acciones se explaya en la Figura \ref{fig:flujograma de funcionamiento de la solucion optima}.
 
 \newpage
 \thispagestyle{mylandscape}
+
 \begin{landscape}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=0.98\paperwidth]{chapter3/diagrama de operaciones de la solucion optima.png}
-		\caption{Estructura global de funciones.}
+		\includegraphics[width=0.98\paperwidth]{chapter3/proceso de clasificacion y conteo manual.png}
+		\caption{Método manual de clasificación y conteo de truchas.}
 		Fuente: Elaboración propia.
-		\label{fig:diagrama de operaciones de la solucion optima}
+		\label{fig:proceso de clasificacion y conteo manual}
 	\end{figure}
 \end{landscape}
+
+\begin{landscape}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.98\paperwidth]{chapter3/proceso de clasificacion y conteo propuesto.png}
+		\caption{Método propuesto de clasificación y conteo de truchas.}
+		Fuente: Elaboración propia.
+		\label{fig:proceso de clasificacion y conteo propuesto}
+	\end{figure}
+\end{landscape}
+
+\begin{landscape}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.98\paperwidth]{chapter3/flujograma de funcionamiento de la solucion optima.png}
+		\caption{Flujograma de funcionamiento de la solución óptima.}
+		Fuente: Elaboración propia.
+		\label{fig:flujograma de funcionamiento de la solucion optima}
+	\end{figure}
+\end{landscape}
+
 
 \newpage
 \thispagestyle{fancy}
