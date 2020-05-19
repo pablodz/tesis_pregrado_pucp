@@ -1,0 +1,84 @@
+This is BibTeX, Version 0.99d (MiKTeX 2.9.7400 64-bit)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: apacite.bst
+A level-1 auxiliary file: general/cover.aux
+A level-1 auxiliary file: general/summary.aux
+A level-1 auxiliary file: general/introduction.aux
+A level-1 auxiliary file: general/gratitude.aux
+A level-1 auxiliary file: general/table-of-content.aux
+A level-1 auxiliary file: chapters/chapter1.aux
+A level-1 auxiliary file: chapters/chapter2.aux
+A level-1 auxiliary file: chapters/chapter3.aux
+A level-1 auxiliary file: chapters/chapter4.aux
+A level-1 auxiliary file: general/conclusions.aux
+A level-1 auxiliary file: general/bibliography.aux
+Illegal, another \bibstyle command---line 70 of file general/bibliography.aux
+ : \bibstyle
+ :          {apalike}
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: general/annexes.aux
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: general/library.bib
+apacite.bst [2013/07/21 v6.03 APA bibliography style]
+Warning--No journal in AGKAquakultur-Teich2010
+ptr=1, stack=
+
+---the literal stack isn't empty for entry AGKAquakultur-Teich2010
+while executing---line 5079 of file apacite.bst
+Warning--No journal in Martinez2003
+ptr=1, stack=
+
+---the literal stack isn't empty for entry Martinez2003
+while executing---line 5079 of file apacite.bst
+Warning--No school in Vega2013
+You've used 33 entries,
+            6951 wiz_defined-function locations,
+            1495 strings with 17507 characters,
+and the built_in function-call counts, 54705 in all, are:
+= -- 6680
+> -- 450
+< -- 2469
++ -- 2314
+- -- 116
+* -- 3296
+:= -- 9702
+add.period$ -- 135
+call.type$ -- 33
+change.case$ -- 565
+chr.to.int$ -- 0
+cite$ -- 69
+duplicate$ -- 1413
+empty$ -- 2436
+format.name$ -- 730
+if$ -- 10719
+int.to.chr$ -- 0
+int.to.str$ -- 99
+missing$ -- 0
+newline$ -- 803
+num.names$ -- 264
+pop$ -- 1678
+preamble$ -- 1
+purify$ -- 136
+quote$ -- 0
+skip$ -- 3289
+stack$ -- 0
+substring$ -- 2505
+swap$ -- 740
+text.length$ -- 99
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 2768
+warning$ -- 3
+while$ -- 256
+width$ -- 0
+write$ -- 936
+(There were 3 error messages)
