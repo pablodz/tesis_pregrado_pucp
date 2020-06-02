@@ -28,7 +28,7 @@
   integrado para la trucha de esturi{\'{o}}n y la trucha arco iris}.}
 \newblock
 \begin{APACrefURL}
-  \url{https://patents.google.com/patent/CN107258625A/en?q=trout{\&}q=farming{\&}oq=trout+farming}
+  \url{https://patents.google.com/patent/CN107258625A/en?q=trout&q=farming&oq=trout+farming}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -55,7 +55,7 @@
   aquaculture or farmed been rainbow trout.}}
 \newblock
 \begin{APACrefURL}
-  \url{https://patents.google.com/patent/JP4468278B2/en?q=trout{\&}q=farming{\&}oq=trout+farming}
+  \url{https://patents.google.com/patent/JP4468278B2/en?q=trout&q=farming&oq=trout+farming}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -417,7 +417,7 @@ FAO.%
   Por Tama{\~{n}}o De Los Peces}.}
 \newblock
 \begin{APACrefURL}
-  \url{http://www.fao.org/fishery/static/FAO{\_}Training/FAO{\_}Training/General/x6709s/x6709s12.htm{\#}top}
+  \url{http://www.fao.org/fishery/static/FAO_Training/FAO_Training/General/x6709s/x6709s12.htm#top}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -503,7 +503,7 @@ Flores, J\BPBI M\BPBI M.%
   producci{\'{o}}n de trucha}{}{}{39}.
 \newblock
 \begin{APACrefURL}
-  \url{http://www.labor.org.pe/descargas/modulo{\_}buenas{\_}practicas{\_}produccion{\_}truchicola{\_}puno{\_}2010.pdf}
+  \url{http://www.labor.org.pe/descargas/modulo_buenas_practicas_produccion_truchicola_puno_2010.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -528,7 +528,7 @@ FONDEPES.%
   {{Manual de crianza de trucha en ambientes convencionales}}.
 \newblock
 \begin{APACrefURL}
-  \url{https://www.fondepes.gob.pe/src/manuales/MANUAL{\_}TRUCHA.pdf}
+  \url{https://www.fondepes.gob.pe/src/manuales/MANUAL_TRUCHA.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -587,8 +587,7 @@ Hao, M.%
 \newblock
 \BIn{} (\BPGS\ 15--32).
 \newblock
-\begin{APACrefURL}
-  \url{http://link.springer.com/10.1007/978-3-319-48354-2{\_}2}
+\begin{APACrefURL} \url{http://link.springer.com/10.1007/978-3-319-48354-2_2}
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/978-3-319-48354-2_2} \end{APACrefDOI}
@@ -639,7 +638,7 @@ Martinez, J.%
   ”}} {{Referencias Documentales Bajo El Sistema “ Harvard ”}}.{\BBCQ}
 \newblock
 \begin{APACrefURL}
-  \url{http://www.tesispsico.unlugar.com/mat{\_}catedra/investig{\_}documental.pdf}
+  \url{http://www.tesispsico.unlugar.com/mat_catedra/investig_documental.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -719,7 +718,7 @@ Niu, B.%
 {\BBOQ}\APACrefatitle {{Survey of Fish Behavior Analysis by Computer Vision}}
   {{Survey of Fish Behavior Analysis by Computer Vision}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Journal of Aquaculture Research {\&}
+\APACjournalVolNumPages{Journal of Aquaculture Research &
   Development}{09}{05}{}.
 \newblock
 \begin{APACrefDOI} \doi{10.4172/2155-9546.1000534} \end{APACrefDOI}

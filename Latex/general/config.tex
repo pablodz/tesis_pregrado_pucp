@@ -1,6 +1,10 @@
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION DOCUMENTO GENERAL
+%----------------------------------------------------------------------------------------
+
 \documentclass[12pt,a4paper,oneside]{report} % Formato tesis, 12 tamaño de letra
-\usepackage[english,spanish]{babel} % Asignar idioma por defecto
-\selectlanguage{spanish} % Idioma por defecto x2
+\usepackage[english]{babel} % Asignar idioma por defecto spanish
+%\selectlanguage{spanish} % Idioma por defecto x2
 \usepackage[T1]{fontenc} % Aceptar caracteres con tíldes en el pdf generado
 \usepackage[UTF8]{ctex}
 \usepackage[utf8]{inputenc} % Aceptar caracteres con tíldes en Latex
@@ -45,28 +49,48 @@
 \usepackage{enumitem} % Enumerar letras
 \usepackage[bottom]{footmisc} % Forzar notas de página pegadas hacia abajo https://bit.ly/3fyOA2f
 
+
 \usepackage[paper=portrait,pagesize]{typearea} %PORTRAID-LANDSCAPE 
 
 \usepackage{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
-%\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+\usepackage{breakurl} % Broken links
+\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+\usepackage{natbib}
+\usepackage{etoolbox}
 
-\fancyhead{}  % Clears all page headers and footers
-\setlength{\headheight}{15pt}
-\pagestyle{fancy}
-%\fancyhead[r]{\leftmark}
-%\fancyfoot[c]{PUCP}
-%\fancyfoot[r]{\thepage}
-\fancypagestyle{plain}{%
-	\fancyhf{} % clear all header and footer fields
-	\fancyhead[r]{\leftmark}
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION FORMATO SECCIONES
+%----------------------------------------------------------------------------------------
+
+\fancypagestyle{blank-page}{
+	\fancyhf{}% clear all header and footer fields	
+	\fancyhead[L,C,R]{}
+	\fancyfoot[L,C,R]{}
+}
+
+\fancypagestyle{after-table-of-content}{
+	\fancyhf{}% clear all header and footer fields	
+	\fancyhead[L,C,R]{}
+	\fancyfoot[L,C,R]{}
 	\fancyfoot[c]{PUCP}
-	\fancyfoot[r]{\thepage}
 	\renewcommand{\headrulewidth}{0.4pt}
-	\renewcommand{\footrulewidth}{0.4pt}}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+\fancypagestyle{myportland}{
+	\fancyhf{}% clear all header and footer fields	
+	\fancyhead[L,C,R]{}
+	\fancyfoot[L,C,R]{}
+	\fancyfoot[c]{\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
 % https://tex.stackexchange.com/questions/337/how-to-change-certain-pages-into-landscape-portrait-mode
-\fancypagestyle{mylandscape}{ % LANDSCAPE
-	
-	\fancyhf{} %Clears the header/footer
+\fancypagestyle{mylandscape}{ % LANDSCAPE	
+	\fancyhead{}% clear all header 
+	\fancyfoot{}% clear all footer
+	\fancyhf{}% clear all header and footer fields	
+	\fancyhead[LO,RE]{}
+	\fancyfoot[LO,RE]{}
 	\fancyfoot{% Footer
 		\makebox[\textwidth][r]{% Right
 			\rlap{\hspace{0.75cm}% Push out of margin by \footskip
@@ -77,42 +101,41 @@
 	\renewcommand{\footrulewidth}{0pt}% No footer rule
 }
 
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
-\renewcommand{\chaptermark}[1]{\markboth{\itshape\chaptername~\thechapter}{}}
 
-\graphicspath{{images/}}
-
-\captionsetup[table]{skip=10pt}
-\captionsetup[figure]{skip=10pt}
+\newcommand*\rot{\rotatebox{90}} % Poder rotar 90° texto, imagenes, lo que sea
+\graphicspath{{images/}} % Directorio que contiene imagenes
+\captionsetup[table]{skip=10pt} % Posición tablas
+\captionsetup[figure]{skip=10pt} % Posición figuras
 \captionsetup{justification=centering}
 
-\bibliographystyle{apacite}
-\renewcommand\bibname{Bibliografía}
-
-\renewcommand{\BOthers}[1]{et al.\hbox{}}%       et al
-\renewcommand{\BOthersPeriod}[1]{et al.\hbox{}}%  et al.
-
-
 
 %----------------------------------------------------------------------------------------
-%	CONFIGURACION
+%	CONFIGURACION NOMBRE DE TÍTULOS, CAPÍTULOS, TABLAS, ÍNDICES
 %----------------------------------------------------------------------------------------
-\renewcommand*{\contentsname}{Tabla de contenidos}
-\renewcommand*{\listtablename}{Índice de tablas}
-\renewcommand*{\listfigurename}{Índice de figuras}
+\addto\captionsenglish{
+\renewcommand{\contentsname}{Índice}
+\renewcommand{\listfigurename}{Índice de figuras}
+\renewcommand{\listtablename}{Índice de tablas}
 \renewcommand{\baselinestretch}{1.0}
 \renewcommand{\appendixname}{Anexos}
 \renewcommand{\appendixtocname}{Anexos}
 \renewcommand{\appendixpagename}{Anexos}
-\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
-\renewcommand*{\tablename}{Tabla}
-\renewcommand\spanishtablename{Otro nombre}
-\renewcommand*{\chaptername}{Capítulo}
-\renewcommand*{\thechapter}{\Roman{chapter}}
-\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\tablename}{Tabla}
 \renewcommand{\figurename}{Figura}
+\renewcommand{\thechapter}{\Roman{chapter}}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 \renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
-\newcommand*\rot{\rotatebox{90}}
+\renewcommand{\bibname}{Bibliografía}
+\renewcommand{\refname}{Bibliografía}
+}
 
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION BIBLIOGRAFIA
+%----------------------------------------------------------------------------------------
+\bibliographystyle{apacite}
+\renewcommand{\BOthers}[1]{et al.\hbox{}}%       et al
+\renewcommand{\BOthersPeriod}[1]{et al.\hbox{}}%  et al.
