@@ -2,13 +2,11 @@
 %	Capítulo 3
 %----------------------------------------------------------------------------------------
 
-\newpage
-\clearpage{\pagestyle{empty}\cleardoublepage}
-\doublespacing
-%% NUEVO CAPITULO X
-\chapter{Diseño Mecatrónico}
-\newpage
 \pagestyle{myportland}
+\doublespacing
+%\pagenumbering{arabic}
+\chapter[----- Diseño Mecatrónico]{Diseño Mecatrónico}
+\thispagestyle{myportland}
 
 %% NUEVA SECCIÓN X.X
 \section{Desarrollo de proyecto conceptual}
@@ -63,27 +61,27 @@ La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sis
 		{\color[HTML]{000000} \textbf{Reponsable}} \\ \hline
 		
 		
-					&    & \underline{Función principal:}																										& P.D.V. 	\\
+		&    & \underline{Función principal:}																										& P.D.V. 	\\
 		2019-09-24  & E  & Clasificar y contar truchas arcoíris de 10 a 20 $ cm $. en al menos 2 salidas y enviar un reporte de la clasificación y el conteo.   & \multicolumn{1}{l|}{}	\\ 
-					&    & \underline{Geometría:}																												& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Geometría:}																												& \multicolumn{1}{l|}{}	\\
 		2019-09-24  & E  & El sistema no debe exceder los 200x200x200 $ cm $.																					& \multicolumn{1}{l|}{}	\\ 
-					&    & \underline{Fuerzas:}																													& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Fuerzas:}																													& \multicolumn{1}{l|}{}	\\
 		2019-09-24  & E  & Pesar menos de 200 $ kg $.																											& \multicolumn{1}{l|}{}	\\ 
-					&    & \underline{Energía:}																													& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Energía:}																													& \multicolumn{1}{l|}{}	\\
 		2019-10-05  & E  & Usará baterías DC.																													& \multicolumn{1}{l|}{}	\\ 	
 		2019-09-24  & E  & Funcionar desde -10 a 40 °C.																											& \multicolumn{1}{l|}{}	\\ 	
 		2019-09-24  & D  & La máquina debe enviar la información.																								& \multicolumn{1}{l|}{}	\\ 	
-					&    & \underline{Materiales:}																												& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Materiales:}																												& \multicolumn{1}{l|}{}	\\
 		2019-09-22  & E  & La máquina debe ser inoxidable.																										& \multicolumn{1}{l|}{}	\\ 	
 		2019-09-20  & E  & La máquina no debe desprender ningún residuo que pueda contaminar el agua.															& \multicolumn{1}{l|}{}	\\ 	
 		2019-09-25  & D  & Los materiales de manufactura deben poder ser adquiridos en el mercado peruano.														& \multicolumn{1}{l|}{}	\\ 			
-					&    & \underline{Señales:}																													& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Señales:}																													& \multicolumn{1}{l|}{}	\\
 		2019-09-24  & E  & Se debe enviar una señal en caso de fallo del sistema y pausar el proceso.															& \multicolumn{1}{l|}{}	\\ 	
-					&    & \underline{Hardware:}																												& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Hardware:}																												& \multicolumn{1}{l|}{}	\\
 		2019-10-05  & E  & La máquina debe usar cámaras o dispositivos similares para obtener imágenes.															& \multicolumn{1}{l|}{}	\\ 		
-					&    & \underline{Software:}																												& \multicolumn{1}{l|}{}	\\
+		&    & \underline{Software:}																												& \multicolumn{1}{l|}{}	\\
 		2019-10-05  & D  & El sistema generará un reporte de la clasificación y conteo.																			& \multicolumn{1}{l|}{}	\\ 	
-					&    & \underline{Costos:}   																												& \multicolumn{1}{l|}{}	\\ 
+		&    & \underline{Costos:}   																												& \multicolumn{1}{l|}{}	\\ 
 		2019-09-24  & D  & El precio unitario menor a 10 mil dólares.       								    												& \multicolumn{1}{l|}{}	\\  \hline
 		
 		
@@ -92,7 +90,7 @@ La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sis
 		\multicolumn{2}{c|}{\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{Última modificación: 2019-10-05}}} &
 		{\color[HTML]{000000} } \\ \hline
 	\end{longtable}
-
+	
 \end{savenotes}
 
 %% NUEVO SUBSECCION X.X.X
@@ -151,32 +149,32 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 \begin{enumerate}
 	
 	\item \textbf{Subsistema A: Actuadores}\\ El subsistema integra el accionamiento de los mecanismos que transforman que permiten distribuir la materia en los rangos requeridos.
+	
+	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+		\item	\textbf{Accionar parada de emergencia:} Esta función permite conectar o desconectar físicamente la energía de en-trada del resto del sistema.
 		
-		\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-			\item	\textbf{Accionar parada de emergencia:} Esta función permite conectar o desconectar físicamente la energía de en-trada del resto del sistema.
-			
-			\item	\textbf{Accionar/Desactivar el suministro de energía:} Esta función se encargará de proveer energía al sistema para dar inicio al proceso al momento que recibe la señal de inicio.
-			
-			\item	\textbf{Accionar recepción de truchas:} Esta función activa o desactiva la entrada de materia al sistema, en este caso el ingreso de truchas al sistema.
-			
-			\item	\textbf{Accionar traslado de truchas:} Esta función activa o desactiva la función que recibe truchas y agua para poder desplazar a las truchas dentro del sistema.
-			
-			\item	\textbf{Accionar bomba de agua:} Esta función activa, desactiva y regula el flujo de agua dentro del sistema. 
-			
-			\item	\textbf{Accionar iluminación:} Esta función activa o desactiva la iluminación necesaria para las cámaras.			
-
-			\item	\textbf{Accionar cámaras:} Esta función activa, desactiva y prepara la adquisición de imágenes o video del sistema.
-			
-			\item	\textbf{Accionar distribución de truchas:} Esta función se encarga de la distribución de las truchas según su rango dentro del sistema.
-			
-			\item	\textbf{Accionar alarmas e indicadores:} Acciona las alarmas e indicadores del sistema para poder informar al operario de la situación del proceso.
-			
-		\end{enumerate}
+		\item	\textbf{Accionar/Desactivar el suministro de energía:} Esta función se encargará de proveer energía al sistema para dar inicio al proceso al momento que recibe la señal de inicio.
+		
+		\item	\textbf{Accionar recepción de truchas:} Esta función activa o desactiva la entrada de materia al sistema, en este caso el ingreso de truchas al sistema.
+		
+		\item	\textbf{Accionar traslado de truchas:} Esta función activa o desactiva la función que recibe truchas y agua para poder desplazar a las truchas dentro del sistema.
+		
+		\item	\textbf{Accionar bomba de agua:} Esta función activa, desactiva y regula el flujo de agua dentro del sistema. 
+		
+		\item	\textbf{Accionar iluminación:} Esta función activa o desactiva la iluminación necesaria para las cámaras.			
+		
+		\item	\textbf{Accionar cámaras:} Esta función activa, desactiva y prepara la adquisición de imágenes o video del sistema.
+		
+		\item	\textbf{Accionar distribución de truchas:} Esta función se encarga de la distribución de las truchas según su rango dentro del sistema.
+		
+		\item	\textbf{Accionar alarmas e indicadores:} Acciona las alarmas e indicadores del sistema para poder informar al operario de la situación del proceso.
+		
+	\end{enumerate}
 	
 	\item \textbf{Subsistema B: Control}\\ El subsistema de control garantiza la precisión de los mecanismos, la calidad de los procesos, la seguridad del sistema.
-		\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-			\item \textbf{Función general:} Esta función controla el sensado de presencia de trucha, flujo de agua, traslado de truchas, sensado de disponibilidad de agua y cantidad de iluminación.			
-		\end{enumerate}
+	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
+		\item \textbf{Función general:} Esta función controla el sensado de presencia de trucha, flujo de agua, traslado de truchas, sensado de disponibilidad de agua y cantidad de iluminación.			
+	\end{enumerate}
 	
 	\item \textbf{Subsistema C: Energía}\\ El subsistema de energía mantiene el funcionamiento continuo del sistema para reali-zar sus funciones características a través de una fuente de energía. 
 	
@@ -201,9 +199,9 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 		\item	\textbf{Función mostrar señales:} Esta función muestra las etapas del proceso (\textit{iniciar, pausar, reanudar y reiniciar}). También muestra la medida de la última trucha que se distribuyó, estado de los contadores, tiempo estimado para completar el proceso, informe generado y mostrar indicadores.
 		
 	\end{enumerate}
-
+	
 	\item \textbf{Subsistema E: Materia}\\ El subsistema de materia contiene las funciones que se encargan de distribuir la mate-ria en rangos que se ingresan al sistema. Las funciones se desarrollan como una secuencia de tareas.
-
+	
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
 		
 		\item	\textbf{Recepcionar truchas:} Esta función mediante mecanismos recibe indicaciones de otras partes del sistema para accionarse. Es el primer módulo que recepciona a las truchas. 
@@ -220,7 +218,7 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 	
 	
 	\item \textbf{Subsistema F: Medición}\\ El subsistema de medición se encarga de sensar las variables del proceso necesarias para ejercer un óptimo control del sistema y minimizar el error. Se considera las siguientes funciones como esenciales.
-
+	
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
 		\item	\textbf{Sensar presencia de trucha:} Esta función detecta si las truchas han ingresado al sistema o siguen dentro del sistema.
 		
@@ -281,7 +279,7 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 			\begin{minipage}{0.20\textwidth}
 				\includegraphics[width=1\textwidth]{chapter3/matriz/boton de emergencia.png}
 				\\ Botón de emergencia.
-			\end{minipage}} &
+		\end{minipage}} &
 		\multicolumn{5}{c|}{Interruptor de emergencia} &
 		\multicolumn{5}{c|}{\begin{tabular}[c]{@{}c@{}}Interruptor de doble estado\\ de apagado de emergencia\end{tabular}} \\ \hline
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar/Desactivar\\ el suministro de energía\end{tabular}} &
@@ -322,9 +320,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 	\begin{center}
 		Fuente: Geekboleteletronics Hawkusa, Homedepot, Parts-express, TcPoolEquipment, Uctronics, Eco-sources, imágenes de dominio público y elaboración propia.
 	\end{center}
-
+	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+	
 	% Please add the following required packages to your document preamble:
 	% \usepackage[table,xcdraw]{xcolor}
 	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
@@ -355,8 +353,8 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 	\begin{center}
 		Fuente: Imágenes de dominio público y elaboración propia.
 	\end{center}
-
-
+	
+	
 	% Please add the following required packages to your document preamble:
 	% \usepackage{multirow}
 	% \usepackage[table,xcdraw]{xcolor}
@@ -390,12 +388,12 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multirow{-5}{*}{Transformador rectificador} &
 		\multirow{-2}{*}{Fuente switching} \\ \hline
 	\end{longtable}
-
+	
 	\begin{center}
-	Fuente: Imágenes de dominio público y elaboración propia.
+		Fuente: Imágenes de dominio público y elaboración propia.
 	\end{center}
-
-
+	
+	
 	% Please add the following required packages to your document preamble:
 	% \usepackage{multirow}
 	% \usepackage[table,xcdraw]{xcolor}
@@ -427,11 +425,11 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multirow{-2}{*}{Interfaz con el usuario en computadora} &
 		\multirow{-2}{*}{Panel de control con botones e indicadores} \\ \hline
 	\end{longtable}
-
+	
 	\begin{center}
-	Fuente: Imágenes de dominio público y elaboración propia.
+		Fuente: Imágenes de dominio público y elaboración propia.
 	\end{center}
-
+	
 	% Please add the following required packages to your document preamble:
 	% \usepackage[table,xcdraw]{xcolor}
 	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
@@ -464,12 +462,12 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{2}{c|}{Compuerta única programable} &
 		\multicolumn{2}{c|}{Dimensionalidad} \\ \hline
 	\end{longtable}
-
+	
 	\begin{center}
-	Fuente: FAO, imágenes de dominio público y elaboración propia.
+		Fuente: FAO, imágenes de dominio público y elaboración propia.
 	\end{center}
-
-
+	
+	
 	% Please add the following required packages to your document preamble:
 	% \usepackage[table,xcdraw]{xcolor}
 	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
@@ -506,11 +504,11 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\begin{tabular}[c]{@{}c@{}}Sensar\\ iluminación\end{tabular} &
 		\multicolumn{5}{c|}{Sensor electrónico} \\ \hline
 	\end{longtable}
-
+	
 	\begin{center}
-	Fuente: Teslabem, Bigtronica, Arduino e imágenes de dominio público.
+		Fuente: Teslabem, Bigtronica, Arduino e imágenes de dominio público.
 	\end{center}
-
+	
 \end{landscape}
 
 
@@ -931,6 +929,7 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 %%%%%%% FALTA PUNTOS 
 %%%%%%% FALTA PUNTOS 
 %%%%%%% FALTA PUNTOS 
+
 
 
 
