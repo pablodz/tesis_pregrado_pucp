@@ -1,2 +1,3 @@
-# tesis_pregrado_pucp
-tesis_pregrado_pucp
+# Tesis de Pregrado
+
+Mi tesis de pregrado
