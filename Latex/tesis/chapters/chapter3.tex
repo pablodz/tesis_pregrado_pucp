@@ -18,6 +18,7 @@ El diseño conceptual es parte del proceso de diseño en la que --mediante la id
 
 La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sistema}) se formuló mediante la realización de entrevistas (Anexo  A1) en las cuales se recopilaron aspectos requerimientos implícitos y explícitos de calidad y cantidad que debe tener el sistema en general. Dicha entrevista se planteó con las recomendaciones que muestra el libro \textit{Engineering Design}\footnote{Engineering Design – A Systematic Approach.\cite[p.~144-158]{Pahl2007}}.
 
+\newpage % AVOID ERROR WITH ALIGN 
 \begin{savenotes}
 	% Please add the following required packages to your document preamble:
 	% \usepackage{multirow}
@@ -26,6 +27,7 @@ La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sis
 	% \usepackage{longtable}
 	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
 	\scriptsize
+	\renewcommand{\arraystretch}{\myarraystrech}
 	\begin{longtable}{|c|p{0.6cm}|p{10cm}|c|}		
 		\caption{Resumen de los requerimientos del sistema.}
 		\label{tab:resumen de los requerimientos del sistema}\\
@@ -248,16 +250,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 	% \usepackage{longtable}
 	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
-	% Please add the following required packages to your document preamble:
-	% \usepackage[table,xcdraw]{xcolor}
-	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-	% \usepackage{longtable}
-	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
-	% Please add the following required packages to your document preamble:
-	% \usepackage[table,xcdraw]{xcolor}
-	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-	% \usepackage{longtable}
-	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
+	
+	\renewcommand{\arraystretch}{\myarraystrech}
+	%\scriptsize
 	\begin{longtable}{|
 			>{\columncolor[HTML]{D9D9D9}}c |c|l|l|c|l|c|c|l|c|c|c|l|c|l|l|}
 		\caption{Matriz morfológica del subsistema A}
@@ -275,11 +270,14 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\endhead
 		%
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar \\ parada de emergencia\end{tabular}} &
-		\multicolumn{5}{c|}{			
-			\begin{minipage}{0.20\textwidth}
-				\includegraphics[width=1\textwidth]{chapter3/matriz/boton de emergencia.png}
-				\\ Botón de emergencia.
-		\end{minipage}} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{3 cm}
+				\centering\includegraphics[width=1.5 cm]{chapter3/matriz/boton de emergencia.png} \\ 
+					\begin{myflushcenter}
+						{\footnotesize Botón de emergencia}
+					\end{myflushcenter}
+			\end{minipage}
+		} &
 		\multicolumn{5}{c|}{Interruptor de emergencia} &
 		\multicolumn{5}{c|}{\begin{tabular}[c]{@{}c@{}}Interruptor de doble estado\\ de apagado de emergencia\end{tabular}} \\ \hline
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar/Desactivar\\ el suministro de energía\end{tabular}} &
@@ -317,10 +315,11 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{5}{c|}{Bocina} &
 		\multicolumn{5}{c|}{Indicadora visual} \\ \hline
 	\end{longtable}
+
 	\begin{center}
 		Fuente: Geekboleteletronics Hawkusa, Homedepot, Parts-express, TcPoolEquipment, Uctronics, Eco-sources, imágenes de dominio público y elaboración propia.
 	\end{center}
-	
+\newpage
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	% Please add the following required packages to your document preamble:
@@ -899,7 +898,7 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.98\paperwidth]{chapter3/proceso de clasificacion y conteo propuesto.png}
-		\caption{Método propuesto de clasificación y conteo de truchas.}
+		\caption{Método propuesto de clasificación y conteo de truchas.}%
 		Fuente: Elaboración propia.
 		\label{fig:proceso de clasificacion y conteo propuesto}
 	\end{figure}
@@ -929,7 +928,6 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 %%%%%%% FALTA PUNTOS 
 %%%%%%% FALTA PUNTOS 
 %%%%%%% FALTA PUNTOS 
-
 
 
 
