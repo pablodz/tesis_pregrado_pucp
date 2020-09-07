@@ -92,7 +92,9 @@ La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sis
 		\multicolumn{2}{c|}{\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{Última modificación: 2019-10-05}}} &
 		{\color[HTML]{000000} } \\ \hline
 	\end{longtable}
-	
+	\begin{myflushleftportland}			
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 \end{savenotes}
 
 %% NUEVO SUBSECCION X.X.X
@@ -104,7 +106,9 @@ La caja negra mostrada en la Figura \ref{fig:caja negra del sistema} representa 
 	\centering
 	\includegraphics[width=1\textwidth]{chapter3/caja negra del sistema.png}
 	\caption{Caja negra del sistema.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}			
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:caja negra del sistema}
 \end{figure}
 
@@ -135,7 +139,9 @@ Una vez que se ha formulado la caja negra es posible indicar, con el uso de diag
 		\centering
 		\includegraphics[width=0.98\paperwidth]{chapter3/estructura global de funciones.png}
 		\caption{Estructura global de funciones.}
-		Fuente: Elaboración propia.
+		\begin{myflushleftportland}			
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
 		\label{fig:estructura global de funciones}
 	\end{figure}
 \end{landscape}
@@ -252,7 +258,7 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 	% Note: It may be necessary to compile the document several times to get a multi-page table to line up properly
 	
 	\renewcommand{\arraystretch}{\myarraystrech}
-	%\scriptsize
+	\footnotesize
 	\begin{longtable}{|
 			>{\columncolor[HTML]{D9D9D9}}c |c|l|l|c|l|c|c|l|c|c|c|l|c|l|l|}
 		\caption{Matriz morfológica del subsistema A}
@@ -271,55 +277,250 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		%
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar \\ parada de emergencia\end{tabular}} &
 		\multicolumn{5}{c|}{
-			\begin{minipage}{3 cm}
-				\centering\includegraphics[width=1.5 cm]{chapter3/matriz/boton de emergencia.png} \\ 
-					\begin{myflushcenter}
-						{\footnotesize Botón de emergencia}
-					\end{myflushcenter}
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/boton de emergencia.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Botón de emergencia}
+				\end{myflushcenter}
 			\end{minipage}
 		} &
-		\multicolumn{5}{c|}{Interruptor de emergencia} &
-		\multicolumn{5}{c|}{\begin{tabular}[c]{@{}c@{}}Interruptor de doble estado\\ de apagado de emergencia\end{tabular}} \\ \hline
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interruptor de emergencia.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Interruptor de emergencia}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interruptor de doble estado de apagado de emergencia.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Interruptor de doble estado de apagado de emergencia}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar/Desactivar\\ el suministro de energía\end{tabular}} &
-		\multicolumn{3}{c|}{Switch} &
-		\multicolumn{3}{c|}{Interruptor tipo botón} &
-		\multicolumn{3}{c|}{Actuador de cabeza de palanca} &
-		\multicolumn{3}{c|}{Interruptor de palanca} &
-		\multicolumn{3}{c|}{Interruptor deslizante} \\ \hline
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/switch.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Switch}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interruptor tipo boton.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Interruptor tipo botón}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interruptor tipo hongo.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Interruptor tipo hongo}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interruptor tipo palanca.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Interruptor tipo palanca}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interruptor tipo deslizante.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Interruptor tipo deslizante}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar\\ recepción de truchas\end{tabular}} &
-		\multicolumn{5}{c|}{Vávula accionada por servomotor} &
-		\multicolumn{5}{c|}{Válvula de compuertas} &
-		\multicolumn{5}{c|}{Reja accionada por motor} \\ \hline
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/valvula accionada por servomotor.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Vávula accionada por servomotor}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/valvula de compuertas.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Vávula de compuertas}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/rejas de impedimento accionadas por motor.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Rejas de impedimento accionadas por motor}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Accionar\\ traslado de truchas\end{tabular}} &
-		\multicolumn{5}{c|}{Electroválvula solenoide} &
-		\multicolumn{5}{c|}{Electroválvula de acción indirecta} &
-		\multicolumn{5}{c|}{Electroválvula de acción mixta} \\ \hline
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/electrovalvula solenoide.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Electroválvula solenoide}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/electrovalvula de accion indirecta.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Electroválvula de acción indirecta}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/electrovalvula de accion mixta.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Electroválvula de acción mixta}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Accionar\\ bomba de agua\end{tabular} &
-		\multicolumn{3}{c|}{\begin{tabular}[c]{@{}c@{}}Bomba de agua\\ centrífuga\end{tabular}} &
-		\multicolumn{3}{c|}{\begin{tabular}[c]{@{}c@{}}Bomba de agua\\ sumergible\end{tabular}} &
-		\multicolumn{3}{c|}{Bomba de refuerzo} &
-		\multicolumn{3}{c|}{Electrobomba} &
-		\multicolumn{3}{c|}{Motobomba} \\ \hline
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/bomba de agua centrifuga.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Bomba de agua centrífuga}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/bomba de agua sumergible.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Bomba de agua sumergible}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/bomba de agua de refuerzo.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Bomba de agua de refuerzo}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/electrobomba.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Electrobomba}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{3}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/motobomba.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Motobomba}
+				\end{myflushcenter}
+			\end{minipage}
+		}  \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Accionar\\ iluminación\end{tabular} &
-		\multicolumn{8}{c|}{Led de alta potencia} &
-		\multicolumn{7}{c|}{LED reflector} \\ \hline
+		\multicolumn{8}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/led de alta potencia.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Led de alta potencia}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{7}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/led reflector.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize LED reflector}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Accionar\\ cámaras\end{tabular} &
-		\multicolumn{5}{c|}{Módulo con cámara} &
-		\multicolumn{5}{c|}{Cámara estéreo} &
-		\multicolumn{5}{c|}{Cámara infrarroja} \\ \hline
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/camara simple.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Cámara simple}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/camara estereo.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Cámara estéreo}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/camara infrarroja.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Cámara infrarroja}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Accionar\\ distribución de truchas\end{tabular} &
-		\multicolumn{8}{c|}{Sevomotor} &
-		\multicolumn{7}{c|}{Actuador eléctrico} \\ \hline
+		\multicolumn{8}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/servomotor.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Servomotor}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{7}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/actuador electrico.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Actuador eléctrico}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Accionar \\ alarmas e indicadores\end{tabular} &
-		\multicolumn{5}{c|}{Timbre} &
-		\multicolumn{5}{c|}{Bocina} &
-		\multicolumn{5}{c|}{Indicadora visual} \\ \hline
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/timbre.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Timbre}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/bocina.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Bocina}
+				\end{myflushcenter}
+			\end{minipage}
+		} &
+		\multicolumn{5}{c|}{
+			\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/indicador visual.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Indicadora visual}
+				\end{myflushcenter}
+			\end{minipage}
+		} \\ \hline
 	\end{longtable}
-
-	\begin{center}
+	\begin{myflushleftlandscape}
 		Fuente: Geekboleteletronics Hawkusa, Homedepot, Parts-express, TcPoolEquipment, Uctronics, Eco-sources, imágenes de dominio público y elaboración propia.
-	\end{center}
-\newpage
+	\end{myflushleftlandscape}
+
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	% Please add the following required packages to your document preamble:
@@ -349,9 +550,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\begin{tabular}[c]{@{}c@{}}Computadora\\ monoplaca\end{tabular} &
 		Computadora ordinaria \\ \hline
 	\end{longtable}
-	\begin{center}
+	\begin{myflushleftlandscape}
 		Fuente: Imágenes de dominio público y elaboración propia.
-	\end{center}
+	\end{myflushleftlandscape}
 	
 	
 	% Please add the following required packages to your document preamble:
@@ -388,9 +589,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multirow{-2}{*}{Fuente switching} \\ \hline
 	\end{longtable}
 	
-	\begin{center}
+	\begin{myflushleftlandscape}
 		Fuente: Imágenes de dominio público y elaboración propia.
-	\end{center}
+	\end{myflushleftlandscape}
 	
 	
 	% Please add the following required packages to your document preamble:
@@ -425,9 +626,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multirow{-2}{*}{Panel de control con botones e indicadores} \\ \hline
 	\end{longtable}
 	
-	\begin{center}
+	\begin{myflushleftlandscape}
 		Fuente: Imágenes de dominio público y elaboración propia.
-	\end{center}
+	\end{myflushleftlandscape}
 	
 	% Please add the following required packages to your document preamble:
 	% \usepackage[table,xcdraw]{xcolor}
@@ -462,9 +663,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{2}{c|}{Dimensionalidad} \\ \hline
 	\end{longtable}
 	
-	\begin{center}
+	\begin{myflushleftlandscape}
 		Fuente: FAO, imágenes de dominio público y elaboración propia.
-	\end{center}
+	\end{myflushleftlandscape}
 	
 	
 	% Please add the following required packages to your document preamble:
@@ -504,9 +705,9 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{5}{c|}{Sensor electrónico} \\ \hline
 	\end{longtable}
 	
-	\begin{center}
+	\begin{myflushleftlandscape}
 		Fuente: Teslabem, Bigtronica, Arduino e imágenes de dominio público.
-	\end{center}
+	\end{myflushleftlandscape}
 	
 \end{landscape}
 
@@ -523,7 +724,9 @@ Los conceptos de solución que se presentan a continuación deben dar solución 
 	\centering
 	\includegraphics[width=1\textwidth]{chapter3/dibujo conceptual de la problematica.png}
 	\caption{Dibujo conceptual de la problemática.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:dibujo conceptual de la problematica}
 \end{figure}
 
@@ -540,7 +743,9 @@ El sistema puede ser desensamblado ya que se instala en una mesa hueca en el cen
 	\centering
 	\includegraphics[width=0.85\textwidth]{chapter3/dibujo de concepto de solucion 1.png}
 	\caption{Dibujo de concepto de solución N° 1.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:dibujo de concepto de solucion 1}
 \end{figure}
 
@@ -557,7 +762,9 @@ Durante todo el proceso, el microcontrolador envía inalámbricamente a un telé
 	\centering
 	\includegraphics[width=0.85\textwidth]{chapter3/dibujo de concepto de solucion 2.png}
 	\caption{Dibujo de concepto de solución N° 2.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:dibujo de concepto de solucion 2}
 \end{figure}
 
@@ -570,7 +777,9 @@ El tercer concepto de solución (Figura \ref{fig:dibujo de concepto de solucion 
 	\centering
 	\includegraphics[width=0.75\textwidth]{chapter3/dibujo de concepto de solucion 3.png}
 	\caption{Dibujo de concepto de solución N° 3.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:dibujo de concepto de solucion 3}
 \end{figure}
 
@@ -580,7 +789,9 @@ Después, las truchas son depositas por la parte superior en el sistema físico 
 	\centering
 	\includegraphics[width=0.45\textwidth]{chapter3/dibujo de distribucion de truchas.png}
 	\caption{Dibujo de distribución de truchas.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:dibujo de distribucion de truchas}
 \end{figure}
 
@@ -606,7 +817,9 @@ La evaluación de los conceptos se realiza tomando en cuenta diferentes criterio
 		1                  & Poco Importante      \\ \hline
 		0                  & Nada Importante      \\ \hline
 	\end{tabular}
-	\\Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 \end{table}
 
 
@@ -629,7 +842,9 @@ Asimismo, cada concepto de solución planteado recibe el respectivo puntaje que 
 		1                  & Satisface infinitamente     			\\ \hline
 		0                  & No satisface				     		\\ \hline
 	\end{tabular}
-	\\Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 \end{table}
 
 
@@ -744,7 +959,9 @@ Los criterios técnicos escogidos para calificar el sistema son: \textbf{confiab
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{1.0}} &
 		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{1.0}} \\ \hline
 	\end{tabular}
-	\\ Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 \end{table}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
@@ -858,7 +1075,9 @@ Los criterios económicos escogidos para calificar el sistema son: \textbf{núme
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{1.0}} &
 		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{1.0}} \\ \hline
 	\end{tabular}
-	\\ Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 \end{table}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
@@ -870,7 +1089,9 @@ Con los datos obtenidos en la Tabla \ref{tab:evaluacion de criterios tecnicos} y
 	\centering
 	\includegraphics[width=0.75\textwidth]{chapter3/analisis tecnico economico.png}
 	\caption{Análisis técnico económico.}
-	Fuente: Elaboración propia.
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
 	\label{fig:analisis tecnico economico}
 \end{figure}
 
@@ -889,7 +1110,9 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 		\centering
 		\includegraphics[width=0.98\paperwidth]{chapter3/proceso de clasificacion y conteo manual.png}
 		\caption{Método manual de clasificación y conteo de truchas.}
-		Fuente: Elaboración propia.
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
 		\label{fig:proceso de clasificacion y conteo manual}
 	\end{figure}
 \end{landscape}
@@ -899,7 +1122,9 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 		\centering
 		\includegraphics[width=0.98\paperwidth]{chapter3/proceso de clasificacion y conteo propuesto.png}
 		\caption{Método propuesto de clasificación y conteo de truchas.}%
-		Fuente: Elaboración propia.
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
 		\label{fig:proceso de clasificacion y conteo propuesto}
 	\end{figure}
 \end{landscape}
@@ -909,7 +1134,9 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 		\centering
 		\includegraphics[width=0.98\paperwidth]{chapter3/flujograma de funcionamiento de la solucion optima.png}
 		\caption{Flujograma de funcionamiento de la solución óptima.}
-		Fuente: Elaboración propia.
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
 		\label{fig:flujograma de funcionamiento de la solucion optima}
 	\end{figure}
 \end{landscape}

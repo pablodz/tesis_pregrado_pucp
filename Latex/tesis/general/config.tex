@@ -264,6 +264,8 @@ heightrounded, % to avoid spurious underfull messages
 %----------------------------------------------------------------------------------------
 
 \newcommand{\myarraystrech}{0.75}
+\newcommand{\mymaxsizeofcontenttable}{3 cm}
+\newcommand{\mysizeimageinsidetable}{1.5 cm}
 
 
 \newenvironment{myflushcenter}{%
@@ -273,6 +275,24 @@ heightrounded, % to avoid spurious underfull messages
 	\begin{center}
 	}{%
 	\end{center}
+}
+
+% Para datos debajo de tablas e imagenes en páginas verticales
+\newenvironment{myflushleftportland}{%
+	\vspace{-1.5em}
+	\begin{flushleft} 
+	\small
+	}{%
+	\end{flushleft}
+}
+
+% Para datos debajo de tablas e imagenes en páginas verticales
+\newenvironment{myflushleftlandscape}{%
+	\vspace{-3em}
+	\begin{flushleft} 
+	\small
+	}{%
+	\end{flushleft}
 }
 
 %----------------------------------------------------------------------------------------
