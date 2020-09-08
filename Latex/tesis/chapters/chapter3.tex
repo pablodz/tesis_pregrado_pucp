@@ -9,7 +9,8 @@
 \thispagestyle{myportland}
 
 %% NUEVA SECCIÓN X.X
-\section{Desarrollo de proyecto conceptual}
+\section{Desarrollo de diseño mecatrónico conceptual}
+\label{sec:desarrollo del diseno mecatronico conceptual}
 
 El diseño conceptual es parte del proceso de diseño en la que --mediante la identificación de problemas esenciales a través de la abstracción, el establecimiento de estructuras funcionales, búsqueda de principios de funcionamiento adecuados y su combinación en una estructura global-- se establece a través de la elaboración de un principio de solución.\cite[p.~159]{Pahl2007}
 
@@ -92,9 +93,9 @@ La lista de requerimientos (Tabla \ref{tab:resumen de los requerimientos del sis
 		\multicolumn{2}{c|}{\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{Última modificación: 2019-10-05}}} &
 		{\color[HTML]{000000} } \\ \hline
 	\end{longtable}
-	\begin{myflushleftportland}			
+	\begin{myflushleftportland2}			
 		Fuente: Elaboración propia.
-	\end{myflushleftportland}
+	\end{myflushleftportland2}
 \end{savenotes}
 
 %% NUEVO SUBSECCION X.X.X
@@ -120,7 +121,7 @@ El sistema tiene como función principal clasificar truchas que provienen de un 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Entradas}
 
-El sistema tiene entradas de diversos tipos: energía, materia y señal. La entrada de energía es únicamente una batería de 12 VDC ya que es portable; Las entradas de materia son indispensablemente el agua y las truchas a clasificar; Las señales de entrada para este proceso son las básicas para cualquier proceso de este tipo (\textit{iniciar, pausar, reanudar y reiniciar}), además la señal de generar un reporte para ser analizado y mantener control sobre el cultivo.
+El sistema tiene entradas de diversos tipos: energía, materia y señal. La entrada de energía es únicamente una batería de 24 VDC ya que es portable; Las entradas de materia son indispensablemente el agua y las truchas a clasificar; Las señales de entrada para este proceso son las básicas para cualquier proceso de este tipo (\textit{iniciar, pausar, reanudar y reiniciar}), además la señal de generar un reporte para ser analizado y mantener control sobre el cultivo.
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Salidas}
@@ -187,15 +188,15 @@ El sistema propuesto consta de seis subsistemas: actuadores, control, energía, 
 	\item \textbf{Subsistema C: Energía}\\ El subsistema de energía mantiene el funcionamiento continuo del sistema para reali-zar sus funciones características a través de una fuente de energía. 
 	
 	\begin{enumerate}[label=\Alph*)] % \alph for lowercase
-		\item	\textbf{Regular voltaje ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema.
+		\item	\textbf{Regular voltaje ($ DC/DC $):} Esta función acondiciona la energía de entrada (24 VDC) a la energía necesaria para el sistema.
 		
-		\item	\textbf{Acondicionar energía al sistema de interacción con el usuario ($ DC/DC $):}		Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de interacción con el usuario.
+		\item	\textbf{Acondicionar energía al sistema de interacción con el usuario ($ DC/DC $):}		Esta función acondiciona la energía de entrada (24 VDC) a la energía necesaria para el sistema de interacción con el usuario.
 		
-		\item	\textbf{Acondicionar energía al sistema de control ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de control
+		\item	\textbf{Acondicionar energía al sistema de control ($ DC/DC $):} Esta función acondiciona la energía de entrada (24 VDC) a la energía necesaria para el sistema de control
 		
-		\item	\textbf{Acondicionar energía al sistema de medición ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de medición.
+		\item	\textbf{Acondicionar energía al sistema de medición ($ DC/DC $):} Esta función acondiciona la energía de entrada (24 VDC) a la energía necesaria para el sistema de medición.
 		
-		\item	\textbf{Acondicionar energía a los actuadores ($ DC/DC $):} Esta función acondiciona la energía de entrada (12 VDC) a la energía necesaria para el sistema de los actuadores.
+		\item	\textbf{Acondicionar energía a los actuadores ($ DC/DC $):} Esta función acondiciona la energía de entrada (24 VDC) a la energía necesaria para el sistema de los actuadores.
 		
 	\end{enumerate}
 	
@@ -545,16 +546,36 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\endhead
 		%
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \begin{tabular}[c]{@{}c@{}}Función general: sensado de \\ presencia de trucha, flujo de\\  agua, traslado de truchas, \\ sensado de disponibilidad \\ de agua y cantidad de \\ iluminación.\end{tabular}} &
-		Microcontrolador &
-		\begin{tabular}[c]{@{}c@{}}Controlador lógico\\ programable\end{tabular} &
-		\begin{tabular}[c]{@{}c@{}}Computadora\\ monoplaca\end{tabular} &
-		Computadora ordinaria \\ \hline
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/microcontrolador.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Microcontrolador}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/controlador logico programable.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Controlador lógico programable}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/computadora monoplaca.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Computadora monoplaca}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/computadora ordinaria.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Computadora ordinaria}
+			\end{myflushcenter}
+		\end{minipage} \\ \hline
 	\end{longtable}
 	\begin{myflushleftlandscape}
 		Fuente: Imágenes de dominio público y elaboración propia.
 	\end{myflushleftlandscape}
 	
-	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	% Please add the following required packages to your document preamble:
 	% \usepackage{multirow}
 	% \usepackage[table,xcdraw]{xcolor}
@@ -577,16 +598,40 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{2}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Posibles soluciones}}} \\ \hline
 		\endhead
 		%
-		{\color[HTML]{000000} Acondicionar voltaje (AC/DC)}                                                             & \multicolumn{2}{c|}{Fuente de alimentación} \\ \hline
+		{\color[HTML]{000000} Acondicionar voltaje (AC/DC)}                                                             & \multicolumn{2}{c|}{			
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/fuente de alimentacion.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Fuente de alimentación}
+				\end{myflushcenter}
+		\end{minipage} } \\ \hline
 		Regular voltaje (DC/DC)                                                                                         &                      &                      \\ \cline{1-1}
 		\begin{tabular}[c]{@{}c@{}}Acondicionar energía al sistema de\\ interacción con el usuario (DC/DC)\end{tabular} &                      &                      \\ \cline{1-1}
 		\begin{tabular}[c]{@{}c@{}}Acondicionar energía al sistema de\\ control (DC/DC)\end{tabular} &
 		&
-		\multirow{-3}{*}{Variador de voltaje} \\ \cline{1-1} \cline{3-3} 
+		\multirow{-3}{*}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/variador de voltaje.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Variador de voltaje}
+				\end{myflushcenter}
+		\end{minipage}} \\ \cline{1-1} \cline{3-3} 
 		\begin{tabular}[c]{@{}c@{}}Acondicionar energía al sistema de\\ medición (DC/DC)\end{tabular}                   &                      &                      \\ \cline{1-1}
 		\begin{tabular}[c]{@{}c@{}}Acondicionar energía a los \\ actuadores (DC/DC)\end{tabular} &
-		\multirow{-5}{*}{Transformador rectificador} &
-		\multirow{-2}{*}{Fuente switching} \\ \hline
+		\multirow{-5}{*}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/transformador rectificador.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Transformador rectificador}
+				\end{myflushcenter}
+		\end{minipage}} &
+		\multirow{-3}{*}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/fuente switching.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Fuente switching}
+				\end{myflushcenter}
+		\end{minipage}} \\ \hline
 	\end{longtable}
 	
 	\begin{myflushleftlandscape}
@@ -616,19 +661,41 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{3}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Posibles soluciones}}} \\ \hline
 		\endhead
 		%
-		\begin{tabular}[c]{@{}c@{}}Función ingreso de señales:\\ iniciar, pausar, reanudar y \\ reiniciar el proces\end{tabular} &
+		\begin{tabular}[c]{@{}c@{}}Función ingreso de señales:\\ iniciar, pausar, reanudar y \\ reiniciar el proceso\end{tabular} &
 		&
 		&
 		\\ \cline{1-1}
 		\begin{tabular}[c]{@{}c@{}}Función mostrar señales:\\ iniciar, pausar, reanudar y\\ reiniciar el proceso\end{tabular} &
-		\multirow{-2}{*}{Aplicación en celular} &
-		\multirow{-2}{*}{Interfaz con el usuario en computadora} &
-		\multirow{-2}{*}{Panel de control con botones e indicadores} \\ \hline
+		\multirow{-5}{*}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/aplicacion en celular.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Aplicación en celular}
+				\end{myflushcenter}
+		\end{minipage}} &
+		\multirow{-4}{*}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/interfaz con el usuario en computadora.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Interfaz con el usuario en computadora}
+			\end{myflushcenter}
+		\end{minipage}} &
+		\multirow{-4}{*}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/panel de control con botones e indicadores.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Panel de control con botones e indicadores}
+			\end{myflushcenter}
+		\end{minipage}} \\ \hline
 	\end{longtable}
 	
 	\begin{myflushleftlandscape}
 		Fuente: Imágenes de dominio público y elaboración propia.
 	\end{myflushleftlandscape}
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 	
 	% Please add the following required packages to your document preamble:
 	% \usepackage[table,xcdraw]{xcolor}
@@ -651,21 +718,89 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{6}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Posibles soluciones}}} \\ \hline
 		\endhead
 		%
-		Recepcionar truchas & \multicolumn{3}{c|}{Tolva}                     & \multicolumn{3}{c|}{Malla}                             \\ \hline
+		Recepcionar truchas & \multicolumn{3}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/tolva.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Tolva}
+				\end{myflushcenter}
+		\end{minipage}}                     & \multicolumn{3}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/malla.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Malla}
+			\end{myflushcenter}
+		\end{minipage}}                             \\ \hline
 		Trasladar truchas &
-		\multicolumn{2}{c|}{Inyección de caudal} &
-		\multicolumn{2}{c|}{Juego de pistones} &
-		\multicolumn{2}{c|}{Cadenas transportadoras} \\ \hline
-		Canalizar truhas    & \multicolumn{2}{c|}{Tolva} & \multicolumn{2}{c|}{Filtros de tamaño} & \multicolumn{2}{c|}{Filtro único} \\ \hline
+		\multicolumn{2}{c|}{		
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/inyeccion de caudal.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Inyección de caudal}
+			\end{myflushcenter}
+		\end{minipage}} &
+		\multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/juego de pistones.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Juego de pistones}
+			\end{myflushcenter}
+		\end{minipage}} &
+		\multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/cadenas transportadoras.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Cadenas transportadoras}
+			\end{myflushcenter}
+		\end{minipage}} \\ \hline
+		Canalizar truhas    & \multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+				\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/tolva.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Tolva}
+				\end{myflushcenter}
+		\end{minipage}} & \multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/filtro de tamano.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Filtros de tamaño}
+			\end{myflushcenter}
+		\end{minipage}} & \multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/filtro unico.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Filtro único}
+			\end{myflushcenter}
+		\end{minipage}} \\ \hline
 		Distribuir truchas &
-		\multicolumn{2}{c|}{Múltiples compuertas programables} &
-		\multicolumn{2}{c|}{Compuerta única programable} &
-		\multicolumn{2}{c|}{Dimensionalidad} \\ \hline
-	\end{longtable}
-	
+		\multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/multiples compuertas programables.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Múltiples compuertas programables}
+			\end{myflushcenter}
+		\end{minipage}} &
+		\multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/compuerta unica programable.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Compuerta única programable}
+			\end{myflushcenter}
+		\end{minipage}} &
+		\multicolumn{2}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/dimensionalidad.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Dimensionalidad}
+			\end{myflushcenter}
+		\end{minipage}} \\ \hline
+	\end{longtable}	
 	\begin{myflushleftlandscape}
 		Fuente: FAO, imágenes de dominio público y elaboración propia.
-	\end{myflushleftlandscape}
+	\end{myflushleftlandscape}	
+	
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	
 	
 	% Please add the following required packages to your document preamble:
@@ -689,26 +824,80 @@ La matriz morfológica brinda posibles soluciones a los propósitos de cada func
 		\multicolumn{5}{c|}{\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{Posibles soluciones}}} \\ \hline
 		\endhead
 		%
-		\begin{tabular}[c]{@{}c@{}}Sensar presencia\\ de trucha\end{tabular} &
-		Sensor de presencia &
-		Fotorresistencia y láser &
-		Sensor infrarrojo &
-		Sensor de ultrasonido &
-		Sensor de peso \\ \hline
+		\begin{tabular}[c]{@{}c@{}}Sensar presencia\\ de trucha\end{tabular} &		
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor de presencia.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Sensor de presencia}
+			\end{myflushcenter}
+		\end{minipage} &		
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/fotorresistencia y laser.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Fotorresistencia y láser}
+			\end{myflushcenter}
+		\end{minipage} &		
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor infrarrojo.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Sensor infrarrojo}
+			\end{myflushcenter}
+		\end{minipage} &		
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor de ultrasonido.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Sensor de ultrasonido}
+			\end{myflushcenter}
+		\end{minipage} &		
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor de peso.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Sensor de peso}
+			\end{myflushcenter}
+		\end{minipage}\\ \hline
 		\begin{tabular}[c]{@{}c@{}}Sensar\\ flujo de agua\end{tabular} &
-		Sensor de caudal &
-		Rotámetro electrónico &
-		\begin{tabular}[c]{@{}c@{}}Tubos de Venturi y\\ sensores de presión\end{tabular} &
-		\begin{tabular}[c]{@{}c@{}}Medidor de flujo\\ de velocidad\end{tabular} &
-		\begin{tabular}[c]{@{}c@{}}Sensor de presión \\ líquida\end{tabular} \\ \hline
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor de caudal.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Sensor de caudal}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/rotametro electronico.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Rotámetro electrónico}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/tubo de venturi y sensor de presion.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Tubos de Venturi y sensor de presión}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/medidor de flujo de velocidad.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Medidor de flujo de velocidad}
+			\end{myflushcenter}
+		\end{minipage} &
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor de presion liquida.png} \\ 
+			\begin{myflushcenter}
+				{\footnotesize Sensor de presión}
+			\end{myflushcenter}
+		\end{minipage} \\ \hline
 		\begin{tabular}[c]{@{}c@{}}Sensar\\ iluminación\end{tabular} &
-		\multicolumn{5}{c|}{Sensor electrónico} \\ \hline
-	\end{longtable}
-	
+		\multicolumn{5}{c|}{
+		\begin{minipage}{\mymaxsizeofcontenttable}
+			\centering\includegraphics[width=\mysizeimageinsidetable]{chapter3/matriz/sensor electronico.png} \\ 
+				\begin{myflushcenter}
+					{\footnotesize Sensor electrónico}
+				\end{myflushcenter}
+		\end{minipage}} \\ \hline
+	\end{longtable}	
 	\begin{myflushleftlandscape}
 		Fuente: Teslabem, Bigtronica, Arduino e imágenes de dominio público.
-	\end{myflushleftlandscape}
-	
+	\end{myflushleftlandscape}	
 \end{landscape}
 
 
@@ -760,12 +949,24 @@ Durante todo el proceso, el microcontrolador envía inalámbricamente a un telé
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.85\textwidth]{chapter3/dibujo de concepto de solucion 2.png}
+	\includegraphics[width=0.95\textwidth]{chapter3/dibujo de concepto de solucion 2.png}
 	\caption{Dibujo de concepto de solución N° 2.}
 	\begin{myflushleftportland}
 		Fuente: Elaboración propia.
 	\end{myflushleftportland}
 	\label{fig:dibujo de concepto de solucion 2}
+\end{figure}
+
+En la Figura \ref{fig:concepto virtual del concepto de solucion 2} se muestra un acercamiento virtual al concepto de solución N° 2. La idea principal de la tolva y el juego de tuberías se mantiene. En el caso de la clasificación se lleva a cabo mediante una cámara, que con el apoyo de espejos, puede obtener imágenes del animal de más perfiles. Luego, la etapa de drenaje de agua se realiza con una tubería simple. Finalmente la clasificadora de truchas se realiza con un juego de servomotores. En la Figura no se muestra, a detalle, la salida hacia las tres jaulas correspondientes.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/concepto virtual del concepto de solucion 2.png}
+	\caption{Concepto virtual del concepto de solución N° 2.}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:concepto virtual del concepto de solucion 2}
 \end{figure}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
@@ -783,7 +984,7 @@ El tercer concepto de solución (Figura \ref{fig:dibujo de concepto de solucion 
 	\label{fig:dibujo de concepto de solucion 3}
 \end{figure}
 
-Después, las truchas son depositas por la parte superior en el sistema físico de "recepción" de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo "y griega" de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente. El sistema de distribución de truchas  de la Figura \ref{dibujo de concepto de solucion 3} es similar al del concepto solución N° 2, también se muestra en la Figura \ref{dibujo de distribucion de truchas}.
+Después, las truchas son depositas por la parte superior en el sistema físico de "recepción" de tal forma que solo puede pasar una por vez. Debido a la gravedad las truchas descenderán por la tubería hasta una parte dónde se le agrega caudal al sistema mediante un codo tipo "y griega" de tubería. A continuación, la trucha es medida y contada respecto a su clasificación. El sistema reporta a una aplicación móvil dicha información y controla las compuertas (Figura \ref{fig:dibujo de distribucion de truchas}) para direccionar a la trucha a la salida correspondiente. El sistema de distribución de truchas  de la Figura \ref{fig:dibujo de concepto de solucion 3} es similar al del concepto solución N° 2, también se muestra en la Figura \ref{fig:dibujo de distribucion de truchas}.
 
 \begin{figure}[H]
 	\centering
@@ -817,10 +1018,10 @@ La evaluación de los conceptos se realiza tomando en cuenta diferentes criterio
 		1                  & Poco Importante      \\ \hline
 		0                  & Nada Importante      \\ \hline
 	\end{tabular}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
 \end{table}
+\begin{myflushleftportland2}
+	Fuente: Elaboración propia.
+\end{myflushleftportland2}
 
 
 Asimismo, cada concepto de solución planteado recibe el respectivo puntaje que indica qué tanto cumple con cada criterio. El puntaje y su significado se muestra en la Tabla \ref{tab:escala de efectividad de las soluciones}.
@@ -842,10 +1043,10 @@ Asimismo, cada concepto de solución planteado recibe el respectivo puntaje que 
 		1                  & Satisface infinitamente     			\\ \hline
 		0                  & No satisface				     		\\ \hline
 	\end{tabular}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
 \end{table}
+\begin{myflushleftportland2}
+	Fuente: Elaboración propia.
+\end{myflushleftportland2}
 
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
@@ -959,10 +1160,10 @@ Los criterios técnicos escogidos para calificar el sistema son: \textbf{confiab
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{1.0}} &
 		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{1.0}} \\ \hline
 	\end{tabular}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
 \end{table}
+\begin{myflushleftportland2}
+	Fuente: Elaboración propia.
+\end{myflushleftportland2}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Criterios económicos}
@@ -1075,10 +1276,10 @@ Los criterios económicos escogidos para calificar el sistema son: \textbf{núme
 		\cellcolor[HTML]{D9D9D9}{\color[HTML]{000000} \textbf{1.0}} &
 		\cellcolor[HTML]{A6A6A6}{\color[HTML]{000000} \textbf{1.0}} \\ \hline
 	\end{tabular}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
 \end{table}
+\begin{myflushleftportland2}
+	Fuente: Elaboración propia.
+\end{myflushleftportland2}
 
 %% NUEVA SUB-SUB-SECCION X.X.X.X
 \subsubsection{Elección de concepto óptimo}
@@ -1156,5 +1357,218 @@ El diagrama de operaciones muestra la secuencia de pasos para poder operar la m�
 %%%%%%% FALTA PUNTOS 
 %%%%%%% FALTA PUNTOS 
 
+\newpage
+\pagestyle{myportland}
 
+%% NUEVA SECCIÓN X.X
+\section{Desarrollo de diseño mecatrónico integral}
+
+En la sección \ref{sec:desarrollo del diseno mecatronico conceptual} se analizó el concepto de solución óptimo. En la Figura \ref{fig:estado diseno mecatronico etapa 4} se muestra la etapa final de unir las sub-soluciones para desarrollar una forma viable de implementarlos de una forma integral.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/estado diseno solucion.png}
+	\caption{Estado de diseño mecatrónico etapa 4: realizar solución}
+	\begin{myflushleftportland}
+		Fuente: \cite{Pahl2007}
+	\end{myflushleftportland}
+	\label{fig:estado diseno mecatronico etapa 4}
+\end{figure}
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Diseño del subsistema A: Actuadores}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de interruptor de seguridad de apagado de emergencia}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de interruptor de interruptor tipo hongo}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de reja accionada por motor}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de la electroválvula}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de bomba sumergible}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de led de alta potencia} % de alta potencia
+
+El propósito de los leds de alta potencia es iluminar la zona en la que se realiza la captura de imágenes para detectar truchas y procesarlas. El uso de una led adecuado puede mejorar el rendimiento de la cámara.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de cámara estéreo} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+Tener en cuenta: \\
+- Tamaño de píxeles requerido \\
+- Cantidad de frames (80 fps con 3-4L/s) (Falta calcular con lo que hemos calculado 16 cm/s) \\ 
+- La inclinación hace que el pez no tenga velocidad hacia arriba \\
+- Cámara estereo o simple?? \\
+- Necesita GPU? \\
+
+"TABLA X"
+
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de servomotor} % de alta potencia
+
+Calcular: \\
+- Torque necesario \\
+- Condiciones de uso (estará en agua) \\
+- Tiempo de uso \\
+
+La selección de los servomotores depende del propósito en la función que se encuentre. En la Tabla XX 
+
+"TABLA X"
+
+\begin{itemize}
+	
+	\item \textbf{Servomotor 1: } Este servomotor apoya en la función de \textit{accionar recepción de truchas}.
+
+	\item \textbf{Servomotor 2: } Este servomotor apoya en la función de \textit{distribuir truchas}.
+	
+\end{itemize}
+
+
+%% NUEVO SUBSECCION X.X.X.X± latex
+\subsubsection{Selección de indicadora visual} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Diseño del subsistema B: Control}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. 
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de microcontrolador} % de alta potencia
+
+
+- Necesitamos: 80 fps \\
+- Tamaño máximo: 15 cm \\
+- Tamaño mínimo: 20 cm \\
+- Velocidad estándar: 2 - 3 L/s (Longitud/segundos) \\
+- Velocidad máxima: 3 - 4 L/s (Longitud/segundos) \\
+- Debe poder: \\
+---- procesar imágenes de forma rápida. \\
+----  
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter3/grafica tamano y velocidad de nado trucha arcoiris.png}
+	\caption{Aproximación lineal de la relación entre peso y la velocidad de nado de truchas arcoíris}
+	\begin{myflushleftportland}
+		Fuente: \cite{Fry1970}
+	\end{myflushleftportland}
+	\label{fig:grafica tamano y velocidad de nado trucha arcoiris}
+\end{figure}
+
+
+En la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} se muestra la relación entre \textit{X: peso de la trucha ($g$)} e \textit{Y: velocidad de nado ($cm/s$)} con un error \textit{Z= $\pm 0.033$}. 
+
+\begin{equation} \label{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris}
+	Y=-3.965+2.908(Z)X
+\end{equation}
+
+En el caso de este trabajo, la dimensión máxima y mínima de las truchas arcoíris son de 20 cm y 15 cm, respectivamente. De la Tabla \ref{tbl:clasificacion de truchas por etapas de produccion} podemos obtener los gramos mediante interpolación lineal para cada límite: valores mínimo-máximo son 153 y 199 \textit{$g$}, respectivamente. Utilizando los valores antes indicados y empleando la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} obtenemos los valores límites dentro del rango $[10.71; 15.13] (cm/s)$. Luego de escoger la máxima velocidad con redondeo hacia arriba (16 $cm/s$), ...
+
+
+
+
+
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Diseño del subsistema C: Energía}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de fuente de alimentación} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de transformador rectificador} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de fuentes switching} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVA SECCIÓN X.X.X
+\section{Diseño del subsistema D: Interacción con el usuario}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X
+\subsubsection{Diseño de aplicación en celular} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Diseño del subsistema E: Materia}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Diseño de tolva} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Diseño de inyección del caudal} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Diseño de filtro único} % de alta potencia
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Diseño de juego de compuertas programable} 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Diseño del subsistema F: Medición}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección del sensor infrarrojo}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de caudal} 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección electrónico} 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
 

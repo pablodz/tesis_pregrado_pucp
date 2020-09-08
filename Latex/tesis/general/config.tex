@@ -277,11 +277,20 @@ heightrounded, % to avoid spurious underfull messages
 	\end{center}
 }
 
-% Para datos debajo de tablas e imagenes en páginas verticales
+% Para datos debajo de imagenes en páginas verticales
 \newenvironment{myflushleftportland}{%
 	\vspace{-1.5em}
 	\begin{flushleft} 
 	\small
+	}{%
+	\end{flushleft}
+}
+
+% Para datos debajo de tablas en páginas verticales
+\newenvironment{myflushleftportland2}{%
+	\vspace{-2.5em}
+	\begin{flushleft} 
+		\small
 	}{%
 	\end{flushleft}
 }
