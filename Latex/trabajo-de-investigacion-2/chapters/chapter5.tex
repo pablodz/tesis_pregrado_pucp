@@ -39,6 +39,16 @@ En la sección llamada \textit{"Desarrollo del diseño mecatrónico conceptual"}
 	\label{fig:estado diseno mecatronico etapa 3}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/concepto optimo.png}
+	\caption{Concepto óptimo}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:concepto optimo}
+\end{figure}
+
 %% NUEVA SECCIÓN X.X.X
 \subsection{Descripción del sistema integral}
 
@@ -200,54 +210,138 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 
 \begin{itemize}
 	
-	\item \textbf{Diseño de tuberías:} Descripción.
+	\item \textbf{Diseño de tuberías}
+	
+	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/concepto optimo tuberias.png}
+		\caption{Diseño de tuberías para el concepto óptimo}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:concepto optimo tuberias}
+	\end{figure}
+
 	Diseño de filtro único incluido
+	
+	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.25\textwidth]{chapter5/filtro unico.png}
+		\caption{Filtro único}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:filtro unico}
+	\end{figure}
+
+	\item \textbf{Selección de caudales apropiados} 
+
+	En la Sección \ref{sssec:seleccion de microcontrolador} se calculó la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el 
+	
+	\begin{equation}\label{eq:calculo de caudal maximo}
+		\begin{split}
+			Q_{max} & = v_{max}*A \\
+			Q_{max} & = 16*\frac{\pi}{4}*(r_{int})^2 \\
+			Q_{max} & = 16*\frac{\pi}{4}*(9.1)^2 \\
+			Q_{max} & = 1040.62 \\
+		\end{split}		
+	\end{equation}
+	Donde: $Q_{max} (cm^3/s)$ es el caudal máximo, $v_{max} (cm/s)$ es la velocidad máxima del agua, $r_{int} (cm)$
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.	
+
 	
 	\item \textbf{Selección de las electroválvulas}
 	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+	Los valores límites que se tendrían que controlar mediante las electroválvulas pertenecen al rango $[0;12345] (m^3/s)$. En la Tabla XXX se muestran algunas marcas que cumplen con estos requerimientos.
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+		\caption{Ejemplo de tabla}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:ejemplo de tabla}
+	\end{figure}
+	
+	Las características técnicas que se muestran en la Tabla XXX muestran que ................................
+	
+	Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
 	
 	\item \textbf{Control de los caudales de agua}
 	
 	Los caudales que generan las bombas de agua sirven para impulsar a las truchas por el interior de la máquina. 
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/diagrama de control de electrovalvulas.png}
+		\caption{Diagrama de control de electrovalvulas}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:diagrama de control de electrovalvulas}
+	\end{figure}
+
 	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
-
-
-	\item \textbf{Selección de caudales apropiados:} Descripción.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/control electrovalvulas pid.png}
+		\caption{Control PID de una electrovalvula}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:control electrovalvulas pid}
+	\end{figure}
 	
-	
+	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
 
-En la Sección \ref{sssec:seleccion de microcontrolador} se calculó la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el 
-
-\begin{equation}\label{eq:calculo de caudal maximo}
-	\begin{split}
-		Q_{max} & = v_{max}*A \\
-		Q_{max} & = 16*\frac{\pi}{4}*(r_{int})^2 \\
-		Q_{max} & = 16*\frac{\pi}{4}*(9.1)^2 \\
-		Q_{max} & = 1040.62 \\
-	\end{split}		
-\end{equation}
-Donde: $Q_{max} (cm^3/s)$ es el caudal máximo, $v_{max} (cm/s)$ es la velocidad máxima del agua, $r_{int} (cm)$
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.	
-	
 \end{itemize}
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de procesamiento de imágenes}
 
-Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+Este subsistema consiste obtener una serie de imágenes de una trucha en tránsito e indicar al sistema a dónde debería dirigirse una trucha determinada. El subsistema debe clasificar y contar truchas, con dicha finalidad necesita de la selección de una cámara y generar el ambiente adecuado para obtener las imágenes. Explicado los objetivos del subsistema, en las siguientes líneas se detalla: la selección del sensor infrarrojo, la selección de cámara estéreo, la selección de iluminación adecuada y la selección de algoritmos.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección del sensor infrarrojo}
+\label{sssec:seleccion del sensor infrarrojo}
 
-Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+El sensor infrarrojo tiene como objetivo activar el algoritmo de detección y conteo de truchas por un determinado periodo de tiempo con la finalidad de evitar un sobre uso de los recursos computacionales. El sensor infrarrojo está unos centímetros antes de la parte que la cámara captura y su posición es como se muestra en las Figura \ref{fig:posicion sensor infrarrojo}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/posicion sensor infrarrojo.png}
+	\caption{Posicionamiento del sensor infrarrojo}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:posicion sensor infrarrojo}
+\end{figure}
+
+Entonces, el sensor infrarrojo debe tener un tiempo de respuesta ........ ........ Las comparaciones técnicas de los dispositivos comerciales que cumplen este requerimiento se muestran en la Tabla XXX.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+	\caption{Ejemplo de tabla}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:ejemplo de tabla}
+\end{figure}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de cámara estéreo} % de alta potencia
+\label{sssec:seleccion de camara estereo}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
 
@@ -262,11 +356,13 @@ Tener en cuenta: \\
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de iluminación adecuada} 
+\label{sssec:seleccion de iluminacion adecuada}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de led de alta potencia} % de alta potencia
+\label{sssec:seleccion de led de alta potencia}
 
 El propósito de los leds de alta potencia es iluminar la zona en la que se realiza la captura de imágenes para detectar truchas y procesarlas. El uso de una led adecuado puede mejorar el rendimiento de la cámara.
 
