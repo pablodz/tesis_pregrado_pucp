@@ -313,13 +313,12 @@ Este subsistema consiste obtener una serie de imágenes de una trucha en tránsi
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección del sensor infrarrojo}
-\label{sssec:seleccion del sensor infrarrojo}
 
 El sensor infrarrojo tiene como objetivo activar el algoritmo de detección y conteo de truchas por un determinado periodo de tiempo con la finalidad de evitar un sobre uso de los recursos computacionales. El sensor infrarrojo está unos centímetros antes de la parte que la cámara captura y su posición es como se muestra en las Figura \ref{fig:posicion sensor infrarrojo}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{chapter5/posicion sensor infrarrojo.png}
+	\includegraphics[width=0.5\textwidth]{chapter5/posicion sensor infrarrojo.png}
 	\caption{Posicionamiento del sensor infrarrojo}
 	\begin{myflushleftportland}
 		Fuente: Elaboración propia.
@@ -340,10 +339,10 @@ Entonces, el sensor infrarrojo debe tener un tiempo de respuesta ........ ......
 \end{figure}
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de cámara estéreo} % de alta potencia
-\label{sssec:seleccion de camara estereo}
+\subsubsection{Selección de cámara estéreo} 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+El objetivo de la cámara estéreo es la de obtener fotos por determinado periodo de tiempo designado por los algoritmos de procesamiento de imágenes. Con el fin de cumplir el objetivo mencionado deben cumplirse requerimientos: fotografiar a la trucha con un enfoque aceptable que permita distinguir a la trucha adecuadamente.
+
 
 Tener en cuenta: \\
 - Tamaño de píxeles requerido \\
@@ -352,25 +351,57 @@ Tener en cuenta: \\
 - Cámara estereo o simple?? \\
 - Necesita GPU? \\
 
-"TABLA X"
+En la Tabla XX se muestra una tabla técnica comparativa.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+	\caption{Ejemplo de tabla}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:ejemplo de tabla}
+\end{figure}
+
+Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de iluminación adecuada} 
-\label{sssec:seleccion de iluminacion adecuada}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de led de alta potencia} % de alta potencia
-\label{sssec:seleccion de led de alta potencia}
+\subsubsection{Selección de led de alta potencia}
 
 El propósito de los leds de alta potencia es iluminar la zona en la que se realiza la captura de imágenes para detectar truchas y procesarlas. El uso de una led adecuado puede mejorar el rendimiento de la cámara.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+
+La selección de una iluminación adecuada es tan importante como la selección de los otros componentes del subsistema: la ausencia de una iluminación adecuada puede degradar el rendimiento de los algoritmos, así como los de obtención de fotografías en la cámara estéreo debido al tiempo de exposición necesario por fotografía.
+
+\begin{equation}\label{eq:calculo de led de alta potencia}
+	\begin{split}
+		Iluminación_{necesaria}&=1000 (lumenes)
+	\end{split}		
+\end{equation}
+
+En la Tabla XX se muestra una tabla técnica comparativa.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+	\caption{Ejemplo de tabla}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:ejemplo de tabla}
+\end{figure}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de algoritmos}
 \label{sssec:seleccion de algoritmos}
+
+Los algoritmos tienen como objetivo contar y clasificar truchas. Dichos algoritmos son evaluados en la Tabla XXX mediante una comparación técnica en cuanto a diversos puntos: tiempo de respuesta, costo de hardware requerido, consumo eléctrico del hardware, ......
 
 - NN: YOLO,YOLOv2,YOLOv3,YOLOv4,YOLOv5 \\
 - NN: CNN - Fish segmentation \\
@@ -381,16 +412,47 @@ Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cit
 
 \begin{itemize}
 	
-	\item \textbf{Selección de algoritmo contador de truchas:} Descripción.
+	\item \textbf{Selección de algoritmo contador de truchas} 
 	
-	\item \textbf{Selección de algoritmo clasificador de truchas:} Descripción.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+		\caption{Ejemplo de tabla}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:ejemplo de tabla}
+	\end{figure}
+
+	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+	
+	\item \textbf{Selección de algoritmo clasificador de truchas} 
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+		\caption{Ejemplo de tabla}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:ejemplo de tabla}
+	\end{figure}
+	
+	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 	
 \end{itemize}
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de suministro de energía}
 
- Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+El sistema debe suministrar energía a los diversos mecanismos electrónicos, sistemas de control y actuadores necesarios para que la máquina funcione de manera apropiada. Este subsistema debe cumplir diversos requerimientos: estar herméticamente aislado a la entrada de agua, ........\\
+En los siguientes párrafos se analizaran a detalle: la selección de la batería, la selección de la fuente de alimentación, la selección de transformadores, la selección de fuentes switching, el diagrama esquemático y el diagrama eléctrico.
+
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de la batería} 
@@ -459,7 +521,7 @@ Otros:\\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{chapter3/grafica tamano y velocidad de nado trucha arcoiris.png}
+	\includegraphics[width=1\textwidth]{chapter5/grafica tamano y velocidad de nado trucha arcoiris.png}
 	\caption{Aproximación lineal de la relación entre peso y la velocidad de nado de truchas arcoíris}
 	\begin{myflushleftportland}
 		Fuente: \cite{Fry1970}
@@ -512,6 +574,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de flotadores}
 
+Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Cálculo de sistema flotador}
 
@@ -526,3 +590,42 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 \subsubsection{Diseño de sistema de flotadores}
 
 Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+
+
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Planos del sistema}
+
+Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Lista de planos de ensamble}
+
+Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{chapter5/ejemplo tabla plano ensamble.png}
+	\caption{...}
+	\begin{myflushleftportland}
+		Fuente: ...
+	\end{myflushleftportland}
+	\label{fig:ejemplo tabla plano ensamble}
+\end{figure}
+
+
+%% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Plano de despiece}
+
+Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{chapter5/ejemplo tabla plano despiece.png}
+	\caption{...}
+	\begin{myflushleftportland}
+		Fuente: ...
+	\end{myflushleftportland}
+	\label{fig:ejemplo tabla plano despiece}
+\end{figure}
