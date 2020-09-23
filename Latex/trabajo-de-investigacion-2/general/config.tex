@@ -306,6 +306,14 @@ heightrounded, % to avoid spurious underfull messages
 	\end{flushleft}
 }
 
+% Para evitar espacios luego de nombre de imagen
+\newenvironment{myfigure}{%
+	\begin{figure}
+	}{%
+	\end{figure}
+	\vspace{-2.0em}
+}
+
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------

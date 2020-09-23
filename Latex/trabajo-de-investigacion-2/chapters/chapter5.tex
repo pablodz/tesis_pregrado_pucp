@@ -17,9 +17,9 @@
 %% NUEVA SECCIÓN X.X
 \section{Desarrollo de diseño mecatrónico integral}
 
-En la sección llamada \textit{"Desarrollo del diseño mecatrónico conceptual"} \cite{DiazVergara2020} se analizó el concepto de solución óptimo. En la Figura \ref{fig:estado diseno mecatronico etapa 3} se muestra la etapa final de unir las sub-soluciones para desarrollar una forma viable de implementarlos de una forma integral.
+En la sección llamada \textit{"Desarrollo del diseño mecatrónico conceptual"} \footnote{\cite{DiazVergara2020}} se analizó el concepto de solución óptimo. En la Figura \ref{fig:estado diseno mecatronico etapa 3} se muestra la etapa final de unir las sub-soluciones para desarrollar una forma viable de implementarlos de una forma integral.
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{chapter5/estado diseno subsoluciones.png}
 	\caption{Estado de diseño mecatrónico: sub-soluciones}
@@ -27,27 +27,21 @@ En la sección llamada \textit{"Desarrollo del diseño mecatrónico conceptual"}
 		Fuente: Elaboración propia
 	\end{myflushleftportland}
 	\label{fig:estado diseno mecatronico etapa 3}
-\end{figure}
+\end{myfigure}
 
-\begin{figure}[H]
+Según el proceso de diseño indicado en la norma VDI 2221 que se muestra en la Figura \ref{fig:vdi2221} se parte del diseño conceptual propuesto (5) y se presenta el diseño integral (6)\footnote{\cite{Pahl2007}}, también llamado diseño de ingeniería, que abarca diferentes puntos: dimensionamiento del sistema; cálculos; selección técnica de materiales entorno a su aplicación; selección técnica de sensores; actuadores y dispositivos de control; lógica del control del sistema y su estrategia; planos mecánicos: ensamble y despiece; planos eléctricos y/o electrónicos; simulaciones de la máquina y una estimación de costos.
+
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.75\textwidth]{chapter5/vdi2221.png}
 	\caption{Fases de diseño según VDI 2221}
 	\begin{myflushleftportland}
 		Fuente: \cite{Pahl2007}
 	\end{myflushleftportland}
-	\label{fig:estado diseno mecatronico etapa 3}
-\end{figure}
+	\label{fig:vdi2221}
+\end{myfigure}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{chapter5/concepto optimo.png}
-	\caption{Concepto óptimo}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
-	\label{fig:concepto optimo}
-\end{figure}
+
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Descripción del sistema integral}
@@ -62,10 +56,114 @@ Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viver
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de materiales de fabricación}
 
-Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam.
+Cada subsistema posee mecanismos que se rigen por un material en general, esto incluye a las partes principales del subsistema. Sin embargo, no considera el material de tornillos, ajustes o dispositivos similares. Existen así mismos requisitos que se pueden generalizar para todos los subsistemas por el entorno de trabajo a la que estará sometida la máquina detallados en la \textit{"Lista de requerimientos"} \footnote{\cite{DiazVergara2020}.}. Basado en dichas demandas, cada subsistema es analizado y presentado con dos alternativas posibles de materiales. Consecuentemente, se elige un material decisivo para ser empleado bajo el sustento técnico que se explicará en los siguientes párrafos.
+
+\begin{itemize}
+	\item \textbf{Subsistema de recepción y traslado de truchas:} Cuenta con dos mecanismos; recepción de truchas y tuberías de traslado. El primero debe recepcionar a las truchas y dirigirlas al mecanismo de tuberías. El segundo debe trasladar a las truchas de un punto a otro de la máquina mediante las tuberías. En la Tabla \ref{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable} se comparan técnicamente las propiedades de dos materiales.
+	
+	\begin{table}[H]
+		\centering
+		\caption{Tabla comparativa de propiedades entre $Aluminio$ vs $Acero Inoxidable$}
+		\label{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable}
+		\begin{tabular}{|l|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Propiedad}} & \textbf{Aluminio} & \textbf{Acero Inoxidable} \\ \hline
+			Módulo de Young ($GPa$) & 69 & 200 \\ \hline
+			Esfuerzo de fatiga $Y$ ($MPa$) & 58-110 & 210-440 \\ \hline
+			Resistencia a la tracción ($MPa$) & 130-410 & 580-1180 \\ \hline
+			Temperatura máxima mecánica ($°C$) & 650 & 1450 \\ \hline
+			Conductividad térmica ($W/m-K$) & 170 & 16 \\ \hline
+			Expansión térmica (${\mu}m/m-K$) & 24 & 17 \\ \hline
+			Conductividad eléctrica ($\%$) & 43 & 2.4 \\ \hline
+			Densidad ($g/cm^3$) & 2.7 & 7.8 \\ \hline
+		\end{tabular}
+		\begin{flushleft}
+			*Terminología técnica de los materiales: Aluminio 6061, Acero Inoxidable ANSI 304.\\		
+			Fuente: \cite{MakeItFrom2020}.
+		\end{flushleft}
+	\end{table}
+	
+	
+	\item \textbf{Subsistema de procesamiento de imágenes:} Cuenta con dos mecanismos; tuberías y juego de espejos. El primero debe brindar a la cámara suficiente transparentabilidad para obtener una fotografía adecuada. El segundo debe brindar a la cámara más perfiles del cuerpo que es trasladado por la tubería.
+	
+	\item \textbf{Subsistema de procesamiento de suministro de energía:} Los materiales son propios de los dispositivos que serán adquiridos.
+	
+	\item \textbf{Subsistema de control e interacción con el usuario:} Los materiales son propios de los dispositivos que serán adquiridos.
+	
+	\item \textbf{Subsistema de flotación:} Cuenta con dos mecanismos; armadura y flotadores. El primero debe funcionar como esqueleto para los otros subsistemas y del mismo. El segundo debe mantener el sistema a flote.
+	
+\end{itemize}
+
+\begin{table}[H]
+	\centering
+	\caption{Tabla comparativa de propiedades entre $PMMA$ vs $PVC-U$}
+	\label{tab:tabla comparativa pmma vs pvcu}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Propiedad}} & \multicolumn{1}{c|}{\textbf{Acrílico}} & \textbf{PVC} \\ \hline		
+		Resistencia al impacto: con muescas ($J/m$) & 74                & 360          \\ \hline
+		Expansión térmica (${\mu}m/m-K$)                 & 76                & 61           \\ \hline
+		Densidad ($g/cm^3$)                                   & 1.2               & 1.4          \\ \hline
+		Resistencia al peso                                 & 32                & 20           \\ \hline
+		Alargamiento a la rotura ($ \% $)                        & 4                 & 58           \\ \hline
+	\end{tabular}
+	\begin{flushleft}
+		*Terminología técnica de los materiales: Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U), Polimetilmetacrilato (Acrílico)(PMMA).\\		
+		Fuente: \cite{MakeItFrom2020}.
+	\end{flushleft}
+\end{table}
+
+
+
+
+\begin{table}[H]
+	\centering
+	\caption{Tabla comparativa de propiedades entre $HDPE$ vs $PVC-U$}
+	\label{tab:tabla comparativa de propiedades entre hdpe vs pvcu}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Propiedad}} & \textbf{HDPE} & \textbf{PVC-U} \\ \hline
+		Densidad ($g/cm^3$) & 1.0-1.3 & 1.4 \\ \hline
+		Elongación a rotura ($\%$) & 2.5-100 & 58 \\ \hline
+		Resistencia al impacto ($J/m$) & 50-260 & 360 \\ \hline
+		Resistencia al peso: Flexión & 19-32 & 20 \\ \hline
+		Resistencia a la tracción ($MPa$) & 24-80 & 47 \\ \hline
+	\end{tabular}
+	\begin{flushleft}
+		*Terminología técnica de los materiales: Polietileno de alta densidad (HDPE), Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U)\\		
+		Fuente: \cite{MakeItFrom2020}.
+	\end{flushleft}
+\end{table}
+
+
+Los materiales de fabricación finales se muestran en la Tabla \ref{tab:materiales de fabricacion por subsistema} y fueron seleccionados por su superioridad en las propiedades que son valoradas en este proyecto. Las Tablas 
+
+\begin{table}[H]
+	\centering
+	\caption{Materiales de fabricación por subsistema}
+	\label{tab:materiales de fabricacion por subsistema}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Subsistema}} & \multicolumn{1}{c|}{\textbf{Mecanismo}} & \textbf{Material} \\ \hline
+		Recepción y traslado de truchas      & Recepción de truchas   & Acero Inoxidable            \\ \hline
+		Recepción y traslado de truchas      & Tuberías de traslado   & PVC                         \\ \hline
+		Procesamiento de imágenes            & Tubería                & Acrílico                    \\ \hline
+		Procesamiento de imágenes            & Juego de espejos       & Cristal Acrílico    \\ \hline
+		Suministro de energía                & \multicolumn{1}{c|}{-} & -                           \\ \hline
+		Control e interacción con el usuario & \multicolumn{1}{c|}{-} & -                           \\ \hline
+		Flotación                            & Armadura               & Aluminio o Acero Inoxidable \\ \hline
+		Flotación                            & Flotadores             & HDP                         \\ \hline
+	\end{tabular}
+	\begin{flushleft}
+	*Terminología técnica de los materiales: Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U), Polimetilmetacrilato (Acrílico)(PMMA), Polietileno de alta densidad (HDPE), Acero Inoxidable 304, Aluminio 6061 ($AL$)\\	
+	Fuente: Elaboración propia. 
+	\end{flushleft}
+\end{table}
+
+
 
 %% NUEVA SECCIÓN X.X.X
-\subsection{Subsistema de traslado de truchas}
+\subsection{Subsistema de recepción y traslado de truchas}
 
 Este subsistema consiste en encapsular los mecanismos físicos que están en el ciclo que sigue una trucha dentro de la máquina. 
 
@@ -111,7 +209,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 	\item \textbf{Cálculo de fuerza y velocidad de compuertas}
 	La fuerza necesaria es simplemente el giro de la compuerta que está unida a un eje y a su vez al mecanismo de engranajes con el servomotor.
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/compuerta.png}
 		\caption{Compuerta}
@@ -119,11 +217,11 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:compuerta}
-	\end{figure}
+	\end{myfigure}
 	
 	La velocidad de compuertas debe ir acorde a la distancia entre una trucha y la siguiente a esta. 
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/velocidad de compuerta.png}
 		\caption{Velocidad de compuerta}
@@ -131,7 +229,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:velocidad de compuerta}
-	\end{figure}
+	\end{myfigure}
 
 	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
@@ -168,7 +266,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 	
 	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/mecanismo servomotor-compuerta.png}
 		\caption{Mecanismo servomotor-compuerta}
@@ -176,11 +274,11 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:mecanismo servomotor-compuerta}
-	\end{figure}
+	\end{myfigure}
 	
 	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/mecanismo de compuertas engranajes.png}
 		\caption{Engranajes del mecanismo de compuertas}
@@ -188,7 +286,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:mecanismo de compuertas engranajes}
-	\end{figure}
+	\end{myfigure}
 	
 	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
@@ -214,7 +312,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 	
 	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/concepto optimo tuberias.png}
 		\caption{Diseño de tuberías para el concepto óptimo}
@@ -222,13 +320,13 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:concepto optimo tuberias}
-	\end{figure}
+	\end{myfigure}
 
 	Diseño de filtro único incluido
 	
 	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.	
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=0.25\textwidth]{chapter5/filtro unico.png}
 		\caption{Filtro único}
@@ -236,7 +334,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:filtro unico}
-	\end{figure}
+	\end{myfigure}
 
 	\item \textbf{Selección de caudales apropiados} 
 
@@ -260,7 +358,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 	Los valores límites que se tendrían que controlar mediante las electroválvulas pertenecen al rango $[0;12345] (m^3/s)$. En la Tabla XXX se muestran algunas marcas que cumplen con estos requerimientos.
 	
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
 		\caption{Ejemplo de tabla}
@@ -268,7 +366,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:ejemplo de tabla}
-	\end{figure}
+	\end{myfigure}
 	
 	Las características técnicas que se muestran en la Tabla XXX muestran que ................................
 	
@@ -279,7 +377,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 	Los caudales que generan las bombas de agua sirven para impulsar a las truchas por el interior de la máquina. 
 	
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/diagrama de control de electrovalvulas.png}
 		\caption{Diagrama de control de electrovalvulas}
@@ -287,11 +385,11 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:diagrama de control de electrovalvulas}
-	\end{figure}
+	\end{myfigure}
 
 	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=1\textwidth]{chapter5/control electrovalvulas pid.png}
 		\caption{Control PID de una electrovalvula}
@@ -299,7 +397,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:control electrovalvulas pid}
-	\end{figure}
+	\end{myfigure}
 	
 	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
@@ -316,7 +414,7 @@ Este subsistema consiste obtener una serie de imágenes de una trucha en tránsi
 
 El sensor infrarrojo tiene como objetivo activar el algoritmo de detección y conteo de truchas por un determinado periodo de tiempo con la finalidad de evitar un sobre uso de los recursos computacionales. El sensor infrarrojo está unos centímetros antes de la parte que la cámara captura y su posición es como se muestra en las Figura \ref{fig:posicion sensor infrarrojo}.
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{chapter5/posicion sensor infrarrojo.png}
 	\caption{Posicionamiento del sensor infrarrojo}
@@ -324,11 +422,11 @@ El sensor infrarrojo tiene como objetivo activar el algoritmo de detección y co
 		Fuente: Elaboración propia.
 	\end{myflushleftportland}
 	\label{fig:posicion sensor infrarrojo}
-\end{figure}
+\end{myfigure}
 
 Entonces, el sensor infrarrojo debe tener un tiempo de respuesta ........ ........ Las comparaciones técnicas de los dispositivos comerciales que cumplen este requerimiento se muestran en la Tabla XXX.
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
 	\caption{Ejemplo de tabla}
@@ -336,7 +434,7 @@ Entonces, el sensor infrarrojo debe tener un tiempo de respuesta ........ ......
 		Fuente: Elaboración propia.
 	\end{myflushleftportland}
 	\label{fig:ejemplo de tabla}
-\end{figure}
+\end{myfigure}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de cámara estéreo} 
@@ -353,7 +451,7 @@ Tener en cuenta: \\
 
 En la Tabla XX se muestra una tabla técnica comparativa.
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
 	\caption{Ejemplo de tabla}
@@ -361,7 +459,7 @@ En la Tabla XX se muestra una tabla técnica comparativa.
 		Fuente: Elaboración propia.
 	\end{myflushleftportland}
 	\label{fig:ejemplo de tabla}
-\end{figure}
+\end{myfigure}
 
 Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
 
@@ -387,7 +485,7 @@ La selección de una iluminación adecuada es tan importante como la selección 
 
 En la Tabla XX se muestra una tabla técnica comparativa.
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
 	\caption{Ejemplo de tabla}
@@ -395,7 +493,7 @@ En la Tabla XX se muestra una tabla técnica comparativa.
 		Fuente: Elaboración propia.
 	\end{myflushleftportland}
 	\label{fig:ejemplo de tabla}
-\end{figure}
+\end{myfigure}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de algoritmos}
@@ -416,7 +514,7 @@ Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cit
 	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
 		\caption{Ejemplo de tabla}
@@ -424,7 +522,7 @@ Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cit
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:ejemplo de tabla}
-	\end{figure}
+	\end{myfigure}
 
 	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 	
@@ -432,7 +530,7 @@ Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cit
 	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 	
-	\begin{figure}[H]
+	\begin{myfigure}[H]
 		\centering
 		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
 		\caption{Ejemplo de tabla}
@@ -440,7 +538,7 @@ Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cit
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
 		\label{fig:ejemplo de tabla}
-	\end{figure}
+	\end{myfigure}
 	
 	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 	
@@ -519,7 +617,7 @@ En la Sección \ref{sssec:algoritmos de deteccion de truchas}  se analiza los po
 Otros:\\
 - Intel NSC2 \\
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{chapter5/grafica tamano y velocidad de nado trucha arcoiris.png}
 	\caption{Aproximación lineal de la relación entre peso y la velocidad de nado de truchas arcoíris}
@@ -527,7 +625,7 @@ Otros:\\
 		Fuente: \cite{Fry1970}
 	\end{myflushleftportland}
 	\label{fig:grafica tamano y velocidad de nado trucha arcoiris}
-\end{figure}
+\end{myfigure}
 
 
 En la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} se muestra la relación entre \textit{X: peso de la trucha ($g$)} e \textit{Y: velocidad de nado ($cm/s$)} con un error \textit{Z= $\pm 0.033$}. 
@@ -572,7 +670,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 %% NUEVA SECCIÓN X.X.X
-\subsection{Subsistema de flotadores}
+\subsection{Subsistema de flotación}
 
 Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
@@ -587,7 +685,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Diseño de sistema de flotadores}
+\subsubsection{Diseño de sistema de flotación}
 
 Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
@@ -603,7 +701,7 @@ Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 
 Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{chapter5/ejemplo tabla plano ensamble.png}
 	\caption{...}
@@ -611,7 +709,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 		Fuente: ...
 	\end{myflushleftportland}
 	\label{fig:ejemplo tabla plano ensamble}
-\end{figure}
+\end{myfigure}
 
 
 %% NUEVO SUBSECCION X.X.X.X
@@ -620,7 +718,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
 
-\begin{figure}[H]
+\begin{myfigure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{chapter5/ejemplo tabla plano despiece.png}
 	\caption{...}
@@ -628,4 +726,4 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 		Fuente: ...
 	\end{myflushleftportland}
 	\label{fig:ejemplo tabla plano despiece}
-\end{figure}
+\end{myfigure}
