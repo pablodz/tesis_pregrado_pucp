@@ -81,6 +81,8 @@ heightrounded, % to avoid spurious underfull messages
 \usepackage{titlesec} % Cambiar chapter style
 \usepackage{indentfirst} % Agregar indentado de 1cm al inicio de cada párrafo de cada sección
 
+%\usepackage{svg} % Soporte imagenes svg
+% SVG necesita agregar --shel por eso no lo usaremos
 
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION ESPACIADO, TAMAÑO DE LETRA Y RELACIONADOS A FIGURAS, TABLAS
@@ -314,6 +316,22 @@ heightrounded, % to avoid spurious underfull messages
 	\vspace{-2.0em}
 }
 
+% Para evitar espacios luego de la tabla
+\newenvironment{mytable}{%
+	\begin{table}
+	}{%
+	\end{table}
+	\vspace{-2.0em}
+}
+
+% Para evitar espacios en ecuaciones
+\newenvironment{myequation}{%
+	\vspace{-2.5em}
+	\begin{equation}
+		}{%
+	\end{equation}
+	\vspace{-2.0em}
+}
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------

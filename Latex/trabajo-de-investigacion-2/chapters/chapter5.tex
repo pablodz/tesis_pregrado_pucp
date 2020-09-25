@@ -59,9 +59,9 @@ Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viver
 Cada subsistema posee mecanismos que se rigen por un material en general, esto incluye a las partes principales del subsistema. Sin embargo, no considera el material de tornillos, ajustes o dispositivos similares. Existen así mismos requisitos que se pueden generalizar para todos los subsistemas por el entorno de trabajo a la que estará sometida la máquina detallados en la \textit{"Lista de requerimientos"} \footnote{\cite{DiazVergara2020}.}. Basado en dichas demandas, cada subsistema es analizado y presentado con dos alternativas posibles de materiales. Consecuentemente, se elige un material decisivo para ser empleado bajo el sustento técnico que se explicará en los siguientes párrafos.
 
 \begin{itemize}
-	\item \textbf{Subsistema de recepción y traslado de truchas:} Cuenta con dos mecanismos; recepción de truchas y tuberías de traslado. El primero debe recepcionar a las truchas y dirigirlas al mecanismo de tuberías. El segundo debe trasladar a las truchas de un punto a otro de la máquina mediante las tuberías. En la Tabla \ref{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable} se comparan técnicamente las propiedades de dos materiales.
+	\item \textbf{Subsistema de recepción y traslado de truchas:} Cuenta con dos mecanismos; recepción de truchas y tuberías de traslado. El primero debe recepcionar a las truchas y dirigirlas al mecanismo de tuberías. El segundo debe trasladar a las truchas de un punto a otro de la máquina mediante las tuberías. En la Tabla \ref{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable} se comparan técnicamente las propiedades de dos materiales posibles.
 	
-	\begin{table}[H]
+	\begin{mytable}[H]
 		\centering
 		\caption{Tabla comparativa de propiedades entre $Aluminio$ vs $Acero Inoxidable$}
 		\label{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable}
@@ -81,10 +81,32 @@ Cada subsistema posee mecanismos que se rigen por un material en general, esto i
 			*Terminología técnica de los materiales: Aluminio 6061, Acero Inoxidable ANSI 304.\\		
 			Fuente: \cite{MakeItFrom2020}.
 		\end{flushleft}
-	\end{table}
+	\end{mytable}
+
+	Se elige el material Aluminio 6061 por la alta durabilidad .... ..... .........
 	
+	\item \textbf{Subsistema de procesamiento de imágenes:} Cuenta con dos mecanismos; tuberías y juego de espejos. El primero debe brindar a la cámara suficiente transparencia para obtener una fotografía adecuada. El segundo debe brindar a la cámara más perfiles del cuerpo que es trasladado por la tubería. En la Tabla \ref{tab:tabla comparativa de propiedades entre pmma vs pvcu} se compara técnicamente las propiedades de dos materiales posibles.
 	
-	\item \textbf{Subsistema de procesamiento de imágenes:} Cuenta con dos mecanismos; tuberías y juego de espejos. El primero debe brindar a la cámara suficiente transparentabilidad para obtener una fotografía adecuada. El segundo debe brindar a la cámara más perfiles del cuerpo que es trasladado por la tubería.
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de propiedades entre $PMMA$ vs $PVC-U$}
+		\label{tab:tabla comparativa de propiedades entre pmma vs pvcu}
+		\begin{tabular}{|l|c|c|}
+			\hline
+			\multicolumn{1}{|c|}{\textbf{Propiedad}} & \multicolumn{1}{c|}{\textbf{Acrílico}} & \textbf{PVC} \\ \hline		
+			Resistencia al impacto: con muescas ($J/m$) & 74                & 360          \\ \hline
+			Expansión térmica (${\mu}m/m-K$)                 & 76                & 61           \\ \hline
+			Densidad ($g/cm^3$)                                   & 1.2               & 1.4          \\ \hline
+			Resistencia al peso                                 & 32                & 20           \\ \hline
+			Alargamiento a la rotura ($ \% $)                        & 4                 & 58           \\ \hline
+		\end{tabular}
+		\begin{flushleft}
+			*Terminología técnica de los materiales: Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U), Polimetilmetacrilato (Acrílico)(PMMA).\\		
+			Fuente: \cite{MakeItFrom2020}.
+		\end{flushleft}
+	\end{mytable}
+
+	Se elige el material Aluminio 6061 por la alta durabilidad .... ..... .........
 	
 	\item \textbf{Subsistema de procesamiento de suministro de energía:} Los materiales son propios de los dispositivos que serán adquiridos.
 	
@@ -94,29 +116,12 @@ Cada subsistema posee mecanismos que se rigen por un material en general, esto i
 	
 \end{itemize}
 
-\begin{table}[H]
-	\centering
-	\caption{Tabla comparativa de propiedades entre $PMMA$ vs $PVC-U$}
-	\label{tab:tabla comparativa pmma vs pvcu}
-	\begin{tabular}{|l|c|c|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Propiedad}} & \multicolumn{1}{c|}{\textbf{Acrílico}} & \textbf{PVC} \\ \hline		
-		Resistencia al impacto: con muescas ($J/m$) & 74                & 360          \\ \hline
-		Expansión térmica (${\mu}m/m-K$)                 & 76                & 61           \\ \hline
-		Densidad ($g/cm^3$)                                   & 1.2               & 1.4          \\ \hline
-		Resistencia al peso                                 & 32                & 20           \\ \hline
-		Alargamiento a la rotura ($ \% $)                        & 4                 & 58           \\ \hline
-	\end{tabular}
-	\begin{flushleft}
-		*Terminología técnica de los materiales: Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U), Polimetilmetacrilato (Acrílico)(PMMA).\\		
-		Fuente: \cite{MakeItFrom2020}.
-	\end{flushleft}
-\end{table}
 
 
 
 
-\begin{table}[H]
+
+\begin{mytable}[H]
 	\centering
 	\caption{Tabla comparativa de propiedades entre $HDPE$ vs $PVC-U$}
 	\label{tab:tabla comparativa de propiedades entre hdpe vs pvcu}
@@ -133,12 +138,12 @@ Cada subsistema posee mecanismos que se rigen por un material en general, esto i
 		*Terminología técnica de los materiales: Polietileno de alta densidad (HDPE), Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U)\\		
 		Fuente: \cite{MakeItFrom2020}.
 	\end{flushleft}
-\end{table}
+\end{mytable}
 
 
 Los materiales de fabricación finales se muestran en la Tabla \ref{tab:materiales de fabricacion por subsistema} y fueron seleccionados por su superioridad en las propiedades que son valoradas en este proyecto. Las Tablas 
 
-\begin{table}[H]
+\begin{mytable}[H]
 	\centering
 	\caption{Materiales de fabricación por subsistema}
 	\label{tab:materiales de fabricacion por subsistema}
@@ -158,7 +163,7 @@ Los materiales de fabricación finales se muestran en la Tabla \ref{tab:material
 	*Terminología técnica de los materiales: Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U), Polimetilmetacrilato (Acrílico)(PMMA), Polietileno de alta densidad (HDPE), Acero Inoxidable 304, Aluminio 6061 ($AL$)\\	
 	Fuente: Elaboración propia. 
 	\end{flushleft}
-\end{table}
+\end{mytable}
 
 
 
@@ -170,6 +175,53 @@ Este subsistema consiste en encapsular los mecanismos físicos que están en el 
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de tolvas}
+
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/calculo de dimensiones y angulo de la tolva.png}
+	\caption{Cálculo de dimensiones y angulo de la tolva}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:calculo de dimensiones y angulo de la tolva}
+\end{myfigure}
+
+Las leyes de Newton se muestran en la Ecuación \ref{eq:leyes de newton}
+
+\begin{myequation}\label{eq:leyes de newton}
+	\begin{split}
+		F_{R}=m*a \\
+		\sum_{0}^{n}F_{x,y,z}=0
+	\end{split}
+\end{myequation}
+
+En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se muestra el diagrama de cuerpo libre del cual se extrae la fuerza de fricción ($F_{f}$) y la fuerza normal ($N$) que se muestran en la Ecuación \ref{eq:calculo de angulo de la tolva}
+
+\begin{myequation}\label{eq:calculo de angulo de la tolva}
+	\begin{split}
+		F_{f}=\mu*N  \\
+		\sum_{}^{}F_{y}=N-mg*cos(\beta)=0
+	\end{split}
+\end{myequation}
+
+\begin{myequation}\label{eq:calculo de angulo de la tolva2}
+	\begin{split}
+		mg*sin(\beta)-F_{f}&=m*\ddot{x} \\
+		mg*sin(\beta)-\mu_{k}*mg*cos(\beta)&=m*\ddot{x} \\
+		9.81(sin(\beta)-\mu_{k}*cos(\beta))&=\ddot{x}
+	\end{split}
+\end{myequation}
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/grafico angulo de tolva vs aceleracion.png}
+	\caption{Ángulo de tolva vs aceleración en la trucha}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:grafico angulo de tolva vs aceleracion}
+\end{myfigure}
 
 \begin{itemize}
 	
@@ -233,11 +285,11 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 
 	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
-	\begin{equation}\label{eq:calculo de tiempo necesario}
+	\begin{myequation}\label{eq:calculo de tiempo necesario}
 		\begin{split}
 			L_1+L_2+L_3 &= t * v
 		\end{split}		
-	\end{equation}
+	\end{myequation}
 
 	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
@@ -340,14 +392,14 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 
 	En la Sección \ref{sssec:seleccion de microcontrolador} se calculó la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el 
 	
-	\begin{equation}\label{eq:calculo de caudal maximo}
+	\begin{myequation}\label{eq:calculo de caudal maximo}
 		\begin{split}
 			Q_{max} & = v_{max}*A \\
 			Q_{max} & = 16*\frac{\pi}{4}*(r_{int})^2 \\
 			Q_{max} & = 16*\frac{\pi}{4}*(9.1)^2 \\
 			Q_{max} & = 1040.62 \\
 		\end{split}		
-	\end{equation}
+	\end{myequation}
 	Donde: $Q_{max} (cm^3/s)$ es el caudal máximo, $v_{max} (cm/s)$ es la velocidad máxima del agua, $r_{int} (cm)$
 	
 	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.	
@@ -441,6 +493,31 @@ Entonces, el sensor infrarrojo debe tener un tiempo de respuesta ........ ......
 
 El objetivo de la cámara estéreo es la de obtener fotos por determinado periodo de tiempo designado por los algoritmos de procesamiento de imágenes. Con el fin de cumplir el objetivo mencionado deben cumplirse requerimientos: fotografiar a la trucha con un enfoque aceptable que permita distinguir a la trucha adecuadamente.
 
+Cómo mide la cámara estéreo 
+
+El error realizado en pruebas con vehículos autónomos brindado en \cite{Zaarane2020} se muestra en la Figura \ref{fig:medicion de distancia con distintas distancias}
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/medicion de distancia con distintas distancias.png}
+	\caption{Pruebas de medición con distintas distancias al objeto.}
+	\begin{myflushleftportland}
+		Fuente: \cite{Zaarane2020}
+	\end{myflushleftportland}
+	\label{fig:medicion de distancia con distintas distancias}
+\end{myfigure}
+
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/diagrama esquematico camara estereo y dependencia de la distancia del objeto.png}
+	\caption[Diagrama esquemático y dependencia de la distancia del objeto seguido por una cámara estéreo.]{(Izquierda) Diagrama esquemático de un objeto representado por dos cámaras alineadas horizontalmente separadas por una pequeña distancia. (Derecha) Dependencia de la distancia del objeto en la disparidad.}
+	\begin{myflushleftportland}
+		Fuente: \cite{Mahammed2013}
+	\end{myflushleftportland}
+	\label{fig:diagrama esquematico camara estereo y dependencia de la distancia del objeto}
+\end{myfigure}
+
 
 Tener en cuenta: \\
 - Tamaño de píxeles requerido \\
@@ -448,6 +525,8 @@ Tener en cuenta: \\
 - La inclinación hace que el pez no tenga velocidad hacia arriba \\
 - Cámara estereo o simple?? \\
 - Necesita GPU? \\
+
+
 
 En la Tabla XX se muestra una tabla técnica comparativa.
 
@@ -477,11 +556,11 @@ El propósito de los leds de alta potencia es iluminar la zona en la que se real
 
 La selección de una iluminación adecuada es tan importante como la selección de los otros componentes del subsistema: la ausencia de una iluminación adecuada puede degradar el rendimiento de los algoritmos, así como los de obtención de fotografías en la cámara estéreo debido al tiempo de exposición necesario por fotografía.
 
-\begin{equation}\label{eq:calculo de led de alta potencia}
+\begin{myequation}\label{eq:calculo de led de alta potencia}
 	\begin{split}
 		Iluminación_{necesaria}&=1000 (lumenes)
 	\end{split}		
-\end{equation}
+\end{myequation}
 
 En la Tabla XX se muestra una tabla técnica comparativa.
 
@@ -630,9 +709,9 @@ Otros:\\
 
 En la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} se muestra la relación entre \textit{X: peso de la trucha ($g$)} e \textit{Y: velocidad de nado ($cm/s$)} con un error \textit{Z= $\pm 0.033$}. 
 
-\begin{equation} \label{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris}
+\begin{myequation} \label{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris}
 	Y=-3.965+2.908(Z)X
-\end{equation}
+\end{myequation}
 
 En el caso de este trabajo, la dimensión máxima y mínima de las truchas arcoíris son de 20 cm y 15 cm, respectivamente. De la Tabla \ref{tbl:clasificacion de truchas por etapas de produccion} podemos obtener los gramos mediante interpolación lineal para cada límite: valores mínimo-máximo son 153 y 199 \textit{$g$}, respectivamente. Utilizando los valores antes indicados y empleando la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} obtenemos los valores límites dentro del rango $[10.71; 15.13] (cm/s)$. Luego de escoger la máxima velocidad con redondeo hacia arriba (16 $cm/s$), ...
 
