@@ -51,7 +51,7 @@
 \usepackage{comment} % Hacer comentarios en latex
 \usepackage{pslatex} % Tipo de fuente
 \usepackage{apacite} % Citación en APA
-\usepackage{fixltx2e} % Corrige bugs de Latex 3
+%\usepackage{fixltx2e} % Corrige bugs de Latex 3 | No es necesario en builds >2015
 \usepackage{caption} % Objetos flotantes en el documento
 \usepackage[top=2.54cm,
 bottom=2.54cm,
@@ -310,18 +310,20 @@ heightrounded, % to avoid spurious underfull messages
 
 % Para evitar espacios luego de nombre de imagen
 \newenvironment{myfigure}{%
+	\vspace{-1.0em}
 	\begin{figure}
 	}{%
 	\end{figure}
-	\vspace{-2.0em}
+	\vspace{-1.5em}
 }
 
 % Para evitar espacios luego de la tabla
 \newenvironment{mytable}{%
+	\vspace{-1.0em}
 	\begin{table}
 	}{%
 	\end{table}
-	\vspace{-2.0em}
+	\vspace{-1.5em}
 }
 
 % Para evitar espacios en ecuaciones

@@ -51,10 +51,24 @@ Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viver
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Arquitectura de hardware}
 
+En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propuesta de arquitectura de hardware. Esta arquitectura nos muestra las entradas de energía del sistema, su redistribución a cada componente, el control asociado a cada pieza mediante el subsistema de control y los protocolos o energía asociado a cada par de bloques. El tipo de conexión se detalla en la leyenda.
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/arquitectura de hardware del sistema.png}
+	\caption{Arquitectura de hardware del sistema}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:arquitectura de hardware del sistema}
+\end{myfigure}
+
+
 Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de materiales de fabricación}
+\label{sssec:seleccion de materiales de fabricacion}
 
 Cada subsistema posee mecanismos que se rigen por un material en general, esto incluye a las partes principales del subsistema. Sin embargo, no considera el material de tornillos, ajustes o dispositivos similares. Existen así mismos requisitos que se pueden generalizar para todos los subsistemas por el entorno de trabajo a la que estará sometida la máquina detallados en la \textit{"Lista de requerimientos"} \footnote{\cite{DiazVergara2020}.}. Basado en dichas demandas, cada subsistema es analizado y presentado con dos alternativas posibles de materiales. Consecuentemente, se elige un material decisivo para ser empleado bajo el sustento técnico que se explicará en los siguientes párrafos.
 
@@ -174,8 +188,9 @@ Este subsistema consiste en encapsular los mecanismos físicos que están en el 
 
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Diseño de tolvas}
+\subsubsection{Diseño de tolva de recepción de truchas}
 
+El diseño implica un análisis ....
 
 \begin{myfigure}[H]
 	\centering
@@ -205,13 +220,19 @@ En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se muestra el
 	\end{split}
 \end{myequation}
 
+
+
 \begin{myequation}\label{eq:calculo de angulo de la tolva2}
 	\begin{split}
 		mg*sin(\beta)-F_{f}&=m*\ddot{x} \\
 		mg*sin(\beta)-\mu_{k}*mg*cos(\beta)&=m*\ddot{x} \\
-		9.81(sin(\beta)-\mu_{k}*cos(\beta))&=\ddot{x}
+		g*sin(\beta)-g*\mu_{k}*cos(\beta)&=\ddot{x}
 	\end{split}
 \end{myequation}
+
+Para disminuir el impacto de la trucha sobre la tolva o sobre las tuberías interiores se debe disminuir la aceleración de la trucha al ser depositada en la tolva. La Figura \ref{fig:grafico angulo de tolva vs aceleracion} muestra la ecuación que relaciona la aceleración con el ángulo de elevación de la pared de la tolva. Consecuentemente, se escoge un ángulo ($\beta=30°$) para tener una aceleración aproximadamente nula ($\ddot{x}\approx0$). Se considera $\mu_{k}=0.57$ para el material escogido en la sección \ref{sssec:seleccion de materiales de fabricacion}.
+
+% Material escogido Acero inoxidable
 
 \begin{myfigure}[H]
 	\centering
@@ -223,20 +244,10 @@ En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se muestra el
 	\label{fig:grafico angulo de tolva vs aceleracion}
 \end{myfigure}
 
-\begin{itemize}
-	
-	\item \textbf{Diseño de tolva de recepción de truchas} 
-	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
-	
-\end{itemize}
-
-
-
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de reja accionada por motor}
 
-Esta compuerta puede ser reemplazada por una tapa para la tolva de recepción de truchas. 
+Esta compuerta puede ser reemplazada por una tapa para la tolva de recepción de truchas. En el presente trabajo se decide optar por eliminar este componente.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de bomba sumergible}
@@ -511,7 +522,7 @@ El error realizado en pruebas con vehículos autónomos brindado en \cite{Zaaran
 \begin{myfigure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{chapter5/diagrama esquematico camara estereo y dependencia de la distancia del objeto.png}
-	\caption[Diagrama esquemático y dependencia de la distancia del objeto seguido por una cámara estéreo.]{(Izquierda) Diagrama esquemático de un objeto representado por dos cámaras alineadas horizontalmente separadas por una pequeña distancia. (Derecha) Dependencia de la distancia del objeto en la disparidad.}
+	\caption[Diagrama esquemático y dependencia de la distancia del objeto seguido por una cámara estéreo.]{(Izq.) Diagrama esquemático de un objeto representado por dos cámaras alineadas horizontalmente separadas por una pequeña distancia. (Der.) Dependencia de la distancia del objeto en la disparidad.}
 	\begin{myflushleftportland}
 		Fuente: \cite{Mahammed2013}
 	\end{myflushleftportland}
@@ -551,14 +562,25 @@ Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa pla
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de led de alta potencia}
 
-El propósito de los leds de alta potencia es iluminar la zona en la que se realiza la captura de imágenes para detectar truchas y procesarlas. El uso de una led adecuado puede mejorar el rendimiento de la cámara.
+El propósito de los leds de alta potencia es iluminar la zona en la que se realiza la captura de imágenes para detectar truchas y procesarlas. El uso de una led adecuado puede mejorar el rendimiento de la cámara. En la Figura \ref{fig:iluminacion opciones} se muestra las opciones de iluminación que se consideraron, resultando el uso de dos tiras de leds adecuadas para el sistema.
+
+% EN LA CARPETA IMAGENES ESTAN TODA LAS IMAGENES BASE
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/iluminacion opciones.png}
+	\caption[Opciones de posicionamiento de iluminación.]{(Izq.) Iluminación con dos leds frente al sistema. (Cen.) Iluminación con cuatro leds frente al sistema. (Der.) Iluminación con dos tiras leds.}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:iluminacion opciones}
+\end{myfigure}
 
 
 La selección de una iluminación adecuada es tan importante como la selección de los otros componentes del subsistema: la ausencia de una iluminación adecuada puede degradar el rendimiento de los algoritmos, así como los de obtención de fotografías en la cámara estéreo debido al tiempo de exposición necesario por fotografía.
 
 \begin{myequation}\label{eq:calculo de led de alta potencia}
 	\begin{split}
-		Iluminación_{necesaria}&=1000 (lumenes)
+		Iluminación_{necesaria}&=1000 %(lumenes)
 	\end{split}		
 \end{myequation}
 
