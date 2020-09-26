@@ -500,58 +500,68 @@ Entonces, el sensor infrarrojo debe tener un tiempo de respuesta ........ ......
 \end{myfigure}
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de cámara estéreo} 
+\subsubsection{Selección de cámaras} 
 
-El objetivo de la cámara estéreo es la de obtener fotos por determinado periodo de tiempo designado por los algoritmos de procesamiento de imágenes. Con el fin de cumplir el objetivo mencionado deben cumplirse requerimientos: fotografiar a la trucha con un enfoque aceptable que permita distinguir a la trucha adecuadamente.
+Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
 
-Cómo mide la cámara estéreo 
+\begin{itemize}
+	\item \textbf{Cámara estéreo}
+	
+	El objetivo de la cámara estéreo es la de obtener fotos por determinado periodo de tiempo designado por los algoritmos de procesamiento de imágenes. Con el fin de cumplir el objetivo mencionado deben cumplirse requerimientos: fotografiar a la trucha con un enfoque aceptable que permita distinguir a la trucha adecuadamente.
+	
+	Cómo mide la cámara estéreo 
+	
+	El error realizado en pruebas con vehículos autónomos brindado en \cite{Zaarane2020} se muestra en la Figura \ref{fig:medicion de distancia con distintas distancias}
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/medicion de distancia con distintas distancias.png}
+		\caption{Pruebas de medición con distintas distancias al objeto.}
+		\begin{myflushleftportland}
+			Fuente: \cite{Zaarane2020}
+		\end{myflushleftportland}
+		\label{fig:medicion de distancia con distintas distancias}
+	\end{myfigure}
+	
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/diagrama esquematico camara estereo y dependencia de la distancia del objeto.png}
+		\caption[Diagrama esquemático y dependencia de la distancia del objeto seguido por una cámara estéreo.]{(Izq.) Diagrama esquemático de un objeto representado por dos cámaras alineadas horizontalmente separadas por una pequeña distancia. (Der.) Dependencia de la distancia del objeto en la disparidad.}
+		\begin{myflushleftportland}
+			Fuente: \cite{Mahammed2013}
+		\end{myflushleftportland}
+		\label{fig:diagrama esquematico camara estereo y dependencia de la distancia del objeto}
+	\end{myfigure}
+	
+	
+	Tener en cuenta: \\
+	- Tamaño de píxeles requerido \\
+	- Cantidad de frames (80 fps con 3-4L/s) (Falta calcular con lo que hemos calculado 16 cm/s) \\ 
+	- La inclinación hace que el pez no tenga velocidad hacia arriba \\
+	- Cámara estereo o simple?? \\
+	- Necesita GPU? \\
+	
+	
+	
+	En la Tabla XX se muestra una tabla técnica comparativa.
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+		\caption{Ejemplo de tabla}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:ejemplo de tabla}
+	\end{myfigure}
+	
+	Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
+	
+	\item \textbf{Cámara simple}
+\end{itemize}
 
-El error realizado en pruebas con vehículos autónomos brindado en \cite{Zaarane2020} se muestra en la Figura \ref{fig:medicion de distancia con distintas distancias}
 
-\begin{myfigure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{chapter5/medicion de distancia con distintas distancias.png}
-	\caption{Pruebas de medición con distintas distancias al objeto.}
-	\begin{myflushleftportland}
-		Fuente: \cite{Zaarane2020}
-	\end{myflushleftportland}
-	\label{fig:medicion de distancia con distintas distancias}
-\end{myfigure}
-
-
-\begin{myfigure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{chapter5/diagrama esquematico camara estereo y dependencia de la distancia del objeto.png}
-	\caption[Diagrama esquemático y dependencia de la distancia del objeto seguido por una cámara estéreo.]{(Izq.) Diagrama esquemático de un objeto representado por dos cámaras alineadas horizontalmente separadas por una pequeña distancia. (Der.) Dependencia de la distancia del objeto en la disparidad.}
-	\begin{myflushleftportland}
-		Fuente: \cite{Mahammed2013}
-	\end{myflushleftportland}
-	\label{fig:diagrama esquematico camara estereo y dependencia de la distancia del objeto}
-\end{myfigure}
-
-
-Tener en cuenta: \\
-- Tamaño de píxeles requerido \\
-- Cantidad de frames (80 fps con 3-4L/s) (Falta calcular con lo que hemos calculado 16 cm/s) \\ 
-- La inclinación hace que el pez no tenga velocidad hacia arriba \\
-- Cámara estereo o simple?? \\
-- Necesita GPU? \\
-
-
-
-En la Tabla XX se muestra una tabla técnica comparativa.
-
-\begin{myfigure}[H]
-	\centering
-	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
-	\caption{Ejemplo de tabla}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
-	\label{fig:ejemplo de tabla}
-\end{myfigure}
-
-Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de iluminación adecuada} 
@@ -739,9 +749,17 @@ En el caso de este trabajo, la dimensión máxima y mínima de las truchas arco�
 
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de indicadores visuales} % de alta potencia
+\subsubsection{Selección de indicadores}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. 
+
+\begin{itemize}
+	\item \textbf{Indicador visual:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum.
+	
+	\item \textbf{Indicador sonoro:}	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tDolor sed viverra ipsum nunc aliquet bibendum.
+\end{itemize}
+
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de interruptor de seguridad de apagado de emergencia}
