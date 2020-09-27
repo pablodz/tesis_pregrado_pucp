@@ -45,6 +45,7 @@ Según el proceso de diseño indicado en la norma VDI 2221 que se muestra en la 
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Descripción del sistema integral}
+\label{ssec:descripcion del sistema integral}
 
 Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam.
 
@@ -183,6 +184,7 @@ Los materiales de fabricación finales se muestran en la Tabla \ref{tab:material
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de recepción y traslado de truchas}
+\label{ssec:subsistema de recepcion y traslado de truchas}
 
 Este subsistema consiste en encapsular los mecanismos físicos que están en el ciclo que sigue una trucha dentro de la máquina. 
 
@@ -469,6 +471,7 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de procesamiento de imágenes}
+\label{ssec:subsistema de procesamiento de imágenes}
 
 Este subsistema consiste obtener una serie de imágenes de una trucha en tránsito e indicar al sistema a dónde debería dirigirse una trucha determinada. El subsistema debe clasificar y contar truchas, con dicha finalidad necesita de la selección de una cámara y generar el ambiente adecuado para obtener las imágenes. Explicado los objetivos del subsistema, en las siguientes líneas se detalla: la selección del sensor infrarrojo, la selección de cámara estéreo, la selección de iluminación adecuada y la selección de algoritmos.
 
@@ -657,6 +660,7 @@ Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cit
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de suministro de energía}
+\label{ssec:subsistema de suministro de energia}
 
 El sistema debe suministrar energía a los diversos mecanismos electrónicos, sistemas de control y actuadores necesarios para que la máquina funcione de manera apropiada. Este subsistema debe cumplir diversos requerimientos: estar herméticamente aislado a la entrada de agua, ........\\
 En los siguientes párrafos se analizaran a detalle: la selección de la batería, la selección de la fuente de alimentación, la selección de transformadores, la selección de fuentes switching, el diagrama esquemático y el diagrama eléctrico.
@@ -698,6 +702,7 @@ Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectet
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de control e interacción con el usuario}
+\label{ssec:subsistema de control e interaccion con el usuario}
 
 Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. . Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. 
 
@@ -751,12 +756,64 @@ En el caso de este trabajo, la dimensión máxima y mínima de las truchas arco�
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de indicadores}
 
-Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. 
+Los indicadores ya sean visuales o sonoros son parte fundamental de una máquina. En el caso de la CCT\footnote{Máquina Contadora y Clasificadora de Truchas.} el sistema debe indicar al operario diversos estados o funciones: al detectar una trucha, al contar una trucha, al encender y al apagar.
 
 \begin{itemize}
 	\item \textbf{Indicador visual:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum.
 	
-	\item \textbf{Indicador sonoro:}	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tDolor sed viverra ipsum nunc aliquet bibendum.
+	\item \textbf{Indicador sonoro:} Una bocina indica al operario . En la Tabla \ref{tab:tabla comparativa de bocinas} se compara características técnicas entre algunas bocinas candidatas para el sistema.
+	
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de bocinas}
+		\label{tab:tabla comparativa de bocinas}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}                         & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{SE-B40} & \textbf{KH} & \textbf{TS-G1010F} \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}}&
+			-
+			&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/bocina 1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}  
+			&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/bocina 2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/bocina 3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Fabricante}}              & -                                                                     &                 &             &                    \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Dimensión (cm.)}}         & -                                                                     &                 &             &                    \\ \hline
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Frecuencia de trabajo (Hz)}
+				\end{minipage}
+			}   & -                                                                     &                 &             &                    \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Voltaje de alimentación (V)}
+				\end{minipage}
+			} & -                                                                     & 12 VDC          & 12 VDC      & 12 VDC             \\ \hline
+			\multicolumn{1}{|l|}{\textbf{RMS (W)}}                 & -                                                                     & 80              & 25          & 30                 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Precio (S/)}}             & -                                                                     & 105             & 105         & 79                 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Disponibilidad}}          & Inmediata                                                             & A pedido        & A pedido    & A pedido           \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia.
+		\end{flushleft}
+	\end{mytable}
+	
 \end{itemize}
 
 
@@ -764,34 +821,189 @@ Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectet
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de interruptor de seguridad de apagado de emergencia}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+La implementación de un interruptor de seguridad es muy importante en el diseño de máquinas ya que es el mecanismo físico por el cual podemos parar la máquina quitando el suministro eléctrico a todos los componentes. En la Tabla \ref{tab:tabla comparativa de interruptor de seguridad de apagado de emergencia} se compara características técnicas entre interruptor de seguridad candidatos para el sistema.
+
+\begin{mytable}[H]
+	\centering
+	\caption{Tabla comparativa de interruptor de seguridad de apagado de emergencia.}
+	\label{tab:tabla comparativa de interruptor de seguridad de apagado de emergencia}
+	\begin{tabular}{l|c|c|c|c|}
+		\cline{2-5}
+		\multicolumn{1}{c|}{\textbf{}}                          & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Figura}}&
+		-
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/interruptor de seguridad de apagado de emergencia 1.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage}  
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/interruptor de seguridad de apagado de emergencia 2.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage}
+		&  
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/interruptor de seguridad de apagado de emergencia 3.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage}  \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fabricante}}               & -                                                                     & 9          & 10         & 11         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Nivel de protección}}      & 12                                                                    & 13         & 14         & 15         \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}			
+				\textbf{Máximo voltaje admisible (V)}
+			\end{minipage}
+		}
+		&
+		16
+		& 17         & 18         & 19         \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}			
+				\textbf{Diámetro del botón (mm.)}
+			\end{minipage}
+		} & 20                                                                    & 21         & 22         & 23         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Precio (S/)}}              & 24                                                                    & 25         & 26         & 27         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Disponibilidad}}           & 32                                                                    & 33         & 34         & 35         \\ \hline
+	\end{tabular}
+	\begin{flushleft}	
+		Fuente: Imágenes de dominio público y elaboración propia.
+	\end{flushleft}
+\end{mytable}
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de interruptor de interruptor tipo hongo}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+El encendido o apagado de la máquina es realizado por este interruptor, es decir, el control del suministro de energía del sistema depende de dicho dispositivo. En la Tabla \ref{tab:tabla comparativa de interruptor de interruptor tipo hongo} se compara características técnicas entre interruptores tipo hongo candidatos para el sistema.
+
+\begin{mytable}[H]
+\centering
+\caption{Tabla comparativa de interruptor de interruptor tipo hongo.}
+\label{tab:tabla comparativa de interruptor de interruptor tipo hongo}
+\begin{tabular}{l|c|c|c|c|}
+	\cline{2-5}
+	\multicolumn{1}{c|}{\textbf{}}                          & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+	\multicolumn{1}{|l|}{\textbf{Figura}}&
+	-
+	&
+	\begin{minipage}{\mythirdmaxsizeofcontenttable}
+		\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/interruptor tipo hongo 1.png} \\ 
+		%\begin{myflushcenter}
+		%	{\footnotesize Nombre imagen}
+		%\end{myflushcenter}
+	\end{minipage}  
+	&
+	\begin{minipage}{\mythirdmaxsizeofcontenttable}
+		\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/interruptor tipo hongo 2.png} \\ 
+		%\begin{myflushcenter}
+		%	{\footnotesize Nombre imagen}
+		%\end{myflushcenter}
+	\end{minipage}
+	&  
+	\begin{minipage}{\mythirdmaxsizeofcontenttable}
+		\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/interruptor tipo hongo 3.png} \\ 
+		%\begin{myflushcenter}
+		%	{\footnotesize Nombre imagen}
+		%\end{myflushcenter}
+	\end{minipage}  \\ \hline
+	\multicolumn{1}{|l|}{\textbf{Fabricante}}               & -                                                                     & 9          & 10         & 11         \\ \hline
+	\multicolumn{1}{|l|}{\textbf{Nivel de protección}}      & 12                                                                    & 13         & 14         & 15         \\ \hline
+	\multicolumn{1}{|l|}{
+		\begin{minipage}{\myforthmaxsizeofcontenttable}			
+			\textbf{Máximo voltaje admisible (V)}
+		\end{minipage}
+	}
+	&
+	16
+	& 17         & 18         & 19         \\ \hline
+	\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}			
+				\textbf{Diámetro del botón (mm.)}
+			\end{minipage}
+	} & 20                                                                    & 21         & 22         & 23         \\ \hline
+	\multicolumn{1}{|l|}{\textbf{Precio (S/)}}              & 24                                                                    & 25         & 26         & 27         \\ \hline
+	\multicolumn{1}{|l|}{\textbf{Disponibilidad}}           & 32                                                                    & 33         & 34         & 35         \\ \hline
+\end{tabular}
+\begin{flushleft}	
+	Fuente: Imágenes de dominio público y elaboración propia.
+\end{flushleft}
+\end{mytable}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Cálculo del consumo de energía del sistema} 
 
-Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+El cálculo del consumo de energía del sistema es la suma de potencia requerida por cada componente. Dicha información se presenta en la Tabla \ref{fig:potencia requerida por componente}, además se muestra el modelo, la potencia máxima, voltaje de cada componente. Se considera, también, la cantidad de cada modelo de componente electrónico usado en el sistema.
+
+% TIENE QUE SER TABLA
+% TIENE QUE SER TABLA
+% TIENE QUE SER TABLA
+% TIENE QUE SER TABLA
+% TIENE QUE SER TABLA
+     
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/potencia requerida por componente.png}
+	\caption{Potencia requerida por componente}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:potencia requerida por componente}
+\end{myfigure}
 
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diagrama de flujo}
 
-Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo} describe los pasos necesarios para el control del sistema. .. ... .. [Explicar diagrama de flujo]
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/diagrama de flujo.png}
+	\caption{Diagrama de flujo principal}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:diagrama de flujo}
+\end{myfigure}
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño frontend de la aplicación móvil}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+La aplicación móvil permitirá a un operario visualizar los estados de la máquina, así como tener un registro de la clasificación y conteo de truchas, es decir, extraer los datos luego de ser procesados por la máquina CCT de manera inalámbrica al terminar el proceso. Además, posterior a este trabajo, podría agregarse más características al aplicativo móvil. El framework de desarrollo del aplicativo, que no se desarrollará en el presente trabajo, escogido es Flutter por su paradigma multiplataforma, es decir, escribir un programa que se vea igual en los sistemas operativos Android y iOS \cite{Simone2020}. El diseño frontend escogido para el proyecto y su desarrollo sencillo 
+
+Designing the obvious
+\cite{Joekman2010} \\
+Google Flutter Mobile Development Quick Start Guide
+\cite{PrajyotMainkar2019} \\
+Mobile Learning Design: Theories and Application
+\cite{Churchill2016} \\
+Mobile Design Pattern Gallery: UI Patterns for Mobile Applications
+\cite{Neil2012}
+
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/aplicacion movil login.png}
+	\caption{Aplicación móvil: inicio de sesión}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:aplicacion movil login}
+\end{myfigure}
 
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de flotación}
+\label{ssec:subsistema de flotacion}
 
-Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+Luego de definir en las Secciones \ref{ssec:subsistema de recepcion y traslado de truchas}, \ref{ssec:subsistema de procesamiento de imágenes}, \ref{ssec:subsistema de suministro de energia}, y \ref{ssec:subsistema de control e interaccion con el usuario}, la selección de los dispositivos y su interacción el sistema permiten calcular las dimensiones de la máquina para analizar la flotabilidad y seleccionar flotadores adecuados. En las siguientes subsecciones se analizan los cálculos, selección y diseño del sistema de flotación.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Cálculo de sistema flotador}
@@ -803,6 +1015,60 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 
 Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
+
+\begin{mytable}[H]
+	\centering
+	\caption{Tabla comparativa de flotadores.}
+	\label{tab:tabla comparativa de flotadores}
+	\begin{tabular}{l|c|c|c|c|}
+		\cline{2-5}
+		\multicolumn{1}{c|}{\textbf{}}                          & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Figura}}&
+		-
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 1.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage}  
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 2.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage}
+		&  
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 3.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage}  \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fabricante}}               & -                                                                     & 9          & 10         & 11         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Característica}}      & 12                                                                    & 13         & 14         & 15         \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}			
+				\textbf{Característica}
+			\end{minipage}
+		}
+		&
+		16
+		& 17         & 18         & 19         \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}			
+				\textbf{Característica}
+			\end{minipage}
+		} & 20                                                                    & 21         & 22         & 23         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Característica}}              & 24                                                                    & 25         & 26         & 27         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Característica}}           & 32                                                                    & 33         & 34         & 35         \\ \hline
+	\end{tabular}
+	\begin{flushleft}	
+		Fuente: Imágenes de dominio público y elaboración propia.
+	\end{flushleft}
+\end{mytable}
+
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de sistema de flotación}
 
@@ -812,23 +1078,35 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Planos del sistema}
+\label{ssec:planos del sistema}
 
-Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+Los planos permiten visualizar el sistema de una forma en particular dependiendo del tipo de plano. En el presente trabajo optaremos por incluir dos tipos: planos de ensamble y planos de despiece.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Lista de planos de ensamble}
 
-Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+Un plano de ensamble presenta una visión de las diferentes partes que van juntas, cada componente va listada y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{\cite{Goetsch2010}} En la Tabla XXX se muestra una lista de planos de ensamble.
 
-\begin{myfigure}[H]
+
+\begin{mytable}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{chapter5/ejemplo tabla plano ensamble.png}
-	\caption{...}
-	\begin{myflushleftportland}
-		Fuente: ...
-	\end{myflushleftportland}
-	\label{fig:ejemplo tabla plano ensamble}
-\end{myfigure}
+	\caption{Lista de planos de ensamble.}
+	\label{tab:lista de planos de ensamble}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{N° Lámina} & \textbf{Plano} & \textbf{Tipo} \\ \hline
+		\textbf{L1}        & 1              & 2             \\ \hline
+		\textbf{L2}        & 3              & 4             \\ \hline
+		\textbf{L3}        & 5              & 6             \\ \hline
+		\textbf{L4}        & 7              & 8             \\ \hline
+		\textbf{L5}        & 9              & 10            \\ \hline
+		\textbf{L6}        & 11             & 12            \\ \hline
+		\textbf{L7}        & 13             & 14            \\ \hline
+	\end{tabular}
+	\begin{flushleft}	
+	Fuente: Imágenes de dominio público y elaboración propia.
+\end{flushleft}
+\end{mytable}
 
 
 %% NUEVO SUBSECCION X.X.X.X
