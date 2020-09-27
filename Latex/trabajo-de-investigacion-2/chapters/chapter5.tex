@@ -47,12 +47,17 @@ Según el proceso de diseño indicado en la norma VDI 2221 que se muestra en la 
 \subsection{Descripción del sistema integral}
 \label{ssec:descripcion del sistema integral}
 
-Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam.
+La máquina clasificadora y contadora de truchas\footnote{CCT}, y su sistema respectivo tienen como función principal recepcionar truchas mediante una tolva, procesar la clasificación, conteo y distribución hacia tres jaulas flotantes en medio de la Laguna de Paucarcocha.\footnote{\cite{DiazVergara2020}} La máquina se sitúa sobre el agua y es empleada por un operario, que se encarga de extraer truchas con una sacadera telescópica\footnote{También llamada cal-cal.}.
+
+[+ Descripción ]\\
+
+En las siguientes páginas se analizan diversos puntos generales concernientes al sistema: arquitectura de hardware, la selección de materiales de fabricación, la selección de materiales de fabricación.
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Arquitectura de hardware}
 
-En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propuesta de arquitectura de hardware. Esta arquitectura nos muestra las entradas de energía del sistema, su redistribución a cada componente, el control asociado a cada pieza mediante el subsistema de control y los protocolos o energía asociado a cada par de bloques. El tipo de conexión se detalla en la leyenda.
+En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propuesta de arquitectura de hardware. Esta arquitectura nos muestra las entradas de energía del sistema, su redistribución a cada componente, el control asociado a cada pieza mediante el subsistema de control y los protocolos o energía asociado a cada par de bloques. Además, el tipo de conexión se detalla en la leyenda.
 
 \begin{myfigure}[H]
 	\centering
@@ -64,8 +69,6 @@ En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propue
 	\label{fig:arquitectura de hardware del sistema}
 \end{myfigure}
 
-
-Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de materiales de fabricación}
@@ -172,7 +175,7 @@ Los materiales de fabricación finales se muestran en la Tabla \ref{tab:material
 		Suministro de energía                & \multicolumn{1}{c|}{-} & -                           \\ \hline
 		Control e interacción con el usuario & \multicolumn{1}{c|}{-} & -                           \\ \hline
 		Flotación                            & Armadura               & Aluminio o Acero Inoxidable \\ \hline
-		Flotación                            & Flotadores             & HDP                         \\ \hline
+		Flotación                            & Flotadores             & HDPE                         \\ \hline
 	\end{tabular}
 	\begin{flushleft}
 	*Terminología técnica de los materiales: Cloruro de polivinilo no plastificado (rígido) (uPVC, PVC-U), Polimetilmetacrilato (Acrílico)(PMMA), Polietileno de alta densidad (HDPE), Acero Inoxidable 304, Aluminio 6061 ($AL$)\\	
@@ -180,31 +183,28 @@ Los materiales de fabricación finales se muestran en la Tabla \ref{tab:material
 	\end{flushleft}
 \end{mytable}
 
-
-
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de recepción y traslado de truchas}
 \label{ssec:subsistema de recepcion y traslado de truchas}
 
-Este subsistema consiste en encapsular los mecanismos físicos que están en el ciclo que sigue una trucha dentro de la máquina. 
-
+Este subsistema consiste en encapsular los mecanismos físicos que están en el ciclo que sigue una trucha dentro de la máquina: tolva, tuberías, bomba de agua, distribución física por mecanismos, caudales apropiados y el control respectivo. Los puntos mencionados se detallan en las siguientes páginas.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de tolva de recepción de truchas}
 
-El diseño implica un análisis ....
+El diseño implica un análisis sobre las situaciones que suceden cuando se realiza el proceso de depositar las truchas. En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se analiza dicha situación con la finalidad de escoger un ángulo de elevación de la tolva ($\beta$) adecuado. Respecto a la tolva, se designan los siguientes valores iniciales: $A_{min},B_{min}=200 mm.$; $\beta \in [0;45] °$; $H_{tolva}=150 mm.$. Además, debe cumplirse que $A_{max}>B_{max}$ orientado hacia el operario que depositará la trucha.
 
 \begin{myfigure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{chapter5/calculo de dimensiones y angulo de la tolva.png}
-	\caption{Cálculo de dimensiones y angulo de la tolva}
+	\caption{Cálculo de dimensiones y ángulo de la tolva}
 	\begin{myflushleftportland}
 		Fuente: Elaboración propia.
 	\end{myflushleftportland}
 	\label{fig:calculo de dimensiones y angulo de la tolva}
 \end{myfigure}
 
-Las leyes de Newton se muestran en la Ecuación \ref{eq:leyes de newton}
+Parte de la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} muestra el diagrama de cuerpo libre del cual se extrae la fuerza de fricción ($F_{f}$) y la fuerza normal ($N$) que se muestran en la Ecuación \ref{eq:calculo de angulo de la tolva}. Las leyes de Newton se muestran en la Ecuación \ref{eq:leyes de newton}. 
 
 \begin{myequation}\label{eq:leyes de newton}
 	\begin{split}
@@ -213,8 +213,6 @@ Las leyes de Newton se muestran en la Ecuación \ref{eq:leyes de newton}
 	\end{split}
 \end{myequation}
 
-En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se muestra el diagrama de cuerpo libre del cual se extrae la fuerza de fricción ($F_{f}$) y la fuerza normal ($N$) que se muestran en la Ecuación \ref{eq:calculo de angulo de la tolva}
-
 \begin{myequation}\label{eq:calculo de angulo de la tolva}
 	\begin{split}
 		F_{f}=\mu*N  \\
@@ -222,7 +220,7 @@ En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se muestra el
 	\end{split}
 \end{myequation}
 
-
+Luego, se reemplazan la Ecuación \ref{eq:calculo de angulo de la tolva} en la Ecuación \ref{eq:leyes de newton} y se obtiene la Ecuación \ref{eq:calculo de angulo de la tolva2}. La variable a despejar es la aceleración en el eje x ($\ddot{x}$).
 
 \begin{myequation}\label{eq:calculo de angulo de la tolva2}
 	\begin{split}
@@ -232,7 +230,7 @@ En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se muestra el
 	\end{split}
 \end{myequation}
 
-Para disminuir el impacto de la trucha sobre la tolva o sobre las tuberías interiores se debe disminuir la aceleración de la trucha al ser depositada en la tolva. La Figura \ref{fig:grafico angulo de tolva vs aceleracion} muestra la ecuación que relaciona la aceleración con el ángulo de elevación de la pared de la tolva. Consecuentemente, se escoge un ángulo ($\beta=30°$) para tener una aceleración aproximadamente nula ($\ddot{x}\approx0$). Se considera $\mu_{k}=0.57$ para el material escogido en la sección \ref{sssec:seleccion de materiales de fabricacion}.
+Para disminuir el impacto de la trucha sobre la tolva o sobre las tuberías interiores se debe disminuir la aceleración de la trucha al ser depositada en la tolva. La Figura \ref{fig:grafico angulo de tolva vs aceleracion} muestra la ecuación que relaciona la aceleración con el ángulo de elevación de la pared de la tolva. Consecuentemente, se escoge un ángulo ($\beta=30°$) para tener una aceleración aproximadamente nula ($\ddot{x}\approx0$). Se considera $\mu_{k}=0.57$ para el material escogido en la sección \ref{sssec:seleccion de materiales de fabricacion}. Consecuentemente, se calculan los valores de $A_{max}\approx{900} mm.$ y $B_{max}\approx{700} mm.$, respectivamente.
 
 % Material escogido Acero inoxidable
 
@@ -252,16 +250,162 @@ Para disminuir el impacto de la trucha sobre la tolva o sobre las tuberías inte
 Esta compuerta puede ser reemplazada por una tapa para la tolva de recepción de truchas. En el presente trabajo se decide optar por eliminar este componente.
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de bomba sumergible}
+\subsubsection{Diseño de subsistema de tuberías}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+Las tuberías del sistema tienen como propósito abastecer de un caudal a la máquina.
+
+Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+
+\begin{itemize}
+	
+	\item \textbf{Diseño de tuberías}
+	
+	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/concepto optimo tuberias.png}
+		\caption{Diseño de tuberías para el concepto óptimo}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:concepto optimo tuberias}
+	\end{myfigure}
+	
+	Diseño de filtro único incluido
+	
+	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.	
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=0.25\textwidth]{chapter5/filtro unico.png}
+		\caption{Filtro único}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:filtro unico}
+	\end{myfigure}
+	
+	\item \textbf{Selección de caudales apropiados} 
+	
+	En la Sección \ref{sssec:seleccion de microcontrolador} se calculó la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el 
+	
+	\begin{myequation}\label{eq:calculo de caudal maximo}
+		\begin{split}
+			Q_{max} & = v_{max}*A \\
+			Q_{max} & = 16*\frac{\pi}{4}*(r_{int})^2 \\
+			Q_{max} & = 16*\frac{\pi}{4}*(9.1)^2 \\
+			Q_{max} & = 1040.62 
+		\end{split}		
+	\end{myequation}
+
+	Donde: $Q_{max} (cm^3/s)$ es el caudal máximo, $v_{max} (cm/s)$ es la velocidad máxima del agua, $r_{int} (cm)$.
+	
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.	
+	
+	
+	\item \textbf{Selección de las electroválvulas}
+	
+	Los valores límites que se tendrían que controlar mediante las electroválvulas pertenecen al rango $[0;12345] (m^3/s)$. En la Tabla XXX se muestran algunas marcas que cumplen con estos requerimientos.
+	
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
+		\caption{Ejemplo de tabla}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:ejemplo de tabla}
+	\end{myfigure}
+	
+	[BORRADOR]Las características técnicas que se muestran en la Tabla XXX muestran que ........ ........... ............. [/BORRADOR]
+	 
+	
+	[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+	
+	\item \textbf{Control de los caudales de agua}
+	
+	Los caudales que generan las bombas de agua sirven para impulsar a las truchas por el interior de la máquina. 
+	
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/diagrama de control de electrovalvulas.png}
+		\caption{Diagrama de control de electrovalvulas}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:diagrama de control de electrovalvulas}
+	\end{myfigure}
+	
+	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/control electrovalvulas pid.png}
+		\caption{Control PID de una electrovalvula}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:control electrovalvulas pid}
+	\end{myfigure}
+	
+	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+	
+	
+\end{itemize}
 
 %% NUEVO SUBSECCION X.X.X.X
+\subsubsection{Selección de bomba de agua sumergible}
 
 
-%% NUEVO SUBSECCION X.X.X.X
+En la subsección anterior \textit{"Diseño de subsistema de tuberías"} se calcularon los caudales apropiados para el sistema. La bomba de agua sumergible se selecciona de acuerdo a características técnicas como potencia, consumo de energía, horas de uso continuo, entre otras que se exponen en la Tabla \ref{tab:tabla comparativa de bombas de agua sumergibles}.
 
 
+\begin{mytable}[H]
+	\centering
+	\caption{Tabla comparativa de bombas de agua sumergibles.}
+	\label{tab:tabla comparativa de bombas de agua sumergibles}
+	\begin{tabular}{l|c|c|c|c|}
+		\cline{2-5}
+		\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Figura}}     & -                                                                     
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/bomba de agua sumergible 1.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage} 
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/bomba de agua sumergible 2.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage} 
+		&
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}
+			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/bomba de agua sumergible 3.png} \\ 
+			%\begin{myflushcenter}
+			%	{\footnotesize Nombre imagen}
+			%\end{myflushcenter}
+		\end{minipage} 
+		\\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fabricante}} & 8                                                                     & 9          & 10         & 11         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{A}}          & 12                                                                    & 13         & 14         & 15         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{B}}          & 16                                                                    & 17         & 18         & 19         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{C}}          & 20                                                                    & 21         & 22         & 23         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{D}}          & 24                                                                    & 25         & 26         & 27         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{E}}          & 32                                                                    & 33         & 34         & 35         \\ \hline
+	\end{tabular}
+	\begin{flushleft}	
+		Fuente: Imágenes de dominio público y elaboración propia.
+	\end{flushleft}
+\end{mytable}
+
+[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
 
 
 %% NUEVO SUBSECCION X.X.X.X
@@ -364,110 +508,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 
 
 
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Diseño de subsistema de tuberías}
 
-Las tuberías del sistema tienen como propósito abastecer de un caudal a la máquina.
-
-Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
-
-\begin{itemize}
-	
-	\item \textbf{Diseño de tuberías}
-	
-	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{chapter5/concepto optimo tuberias.png}
-		\caption{Diseño de tuberías para el concepto óptimo}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:concepto optimo tuberias}
-	\end{myfigure}
-
-	Diseño de filtro único incluido
-	
-	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed.	
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=0.25\textwidth]{chapter5/filtro unico.png}
-		\caption{Filtro único}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:filtro unico}
-	\end{myfigure}
-
-	\item \textbf{Selección de caudales apropiados} 
-
-	En la Sección \ref{sssec:seleccion de microcontrolador} se calculó la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el 
-	
-	\begin{myequation}\label{eq:calculo de caudal maximo}
-		\begin{split}
-			Q_{max} & = v_{max}*A \\
-			Q_{max} & = 16*\frac{\pi}{4}*(r_{int})^2 \\
-			Q_{max} & = 16*\frac{\pi}{4}*(9.1)^2 \\
-			Q_{max} & = 1040.62 \\
-		\end{split}		
-	\end{myequation}
-	Donde: $Q_{max} (cm^3/s)$ es el caudal máximo, $v_{max} (cm/s)$ es la velocidad máxima del agua, $r_{int} (cm)$
-	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.	
-
-	
-	\item \textbf{Selección de las electroválvulas}
-	
-	Los valores límites que se tendrían que controlar mediante las electroválvulas pertenecen al rango $[0;12345] (m^3/s)$. En la Tabla XXX se muestran algunas marcas que cumplen con estos requerimientos.
-	
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
-		\caption{Ejemplo de tabla}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:ejemplo de tabla}
-	\end{myfigure}
-	
-	Las características técnicas que se muestran en la Tabla XXX muestran que ................................
-	
-	Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
-	
-	\item \textbf{Control de los caudales de agua}
-	
-	Los caudales que generan las bombas de agua sirven para impulsar a las truchas por el interior de la máquina. 
-	
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{chapter5/diagrama de control de electrovalvulas.png}
-		\caption{Diagrama de control de electrovalvulas}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:diagrama de control de electrovalvulas}
-	\end{myfigure}
-
-	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{chapter5/control electrovalvulas pid.png}
-		\caption{Control PID de una electrovalvula}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:control electrovalvulas pid}
-	\end{myfigure}
-	
-	Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
-
-
-\end{itemize}
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de procesamiento de imágenes}
@@ -762,7 +803,7 @@ Los indicadores ya sean visuales o sonoros son parte fundamental de una máquina
 	\item \textbf{Indicador visual:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum.
 	
 	\item \textbf{Indicador sonoro:} Una bocina indica al operario . En la Tabla \ref{tab:tabla comparativa de bocinas} se compara características técnicas entre algunas bocinas candidatas para el sistema.
-	
+
 	\begin{mytable}[H]
 		\centering
 		\caption{Tabla comparativa de bocinas}
@@ -813,6 +854,8 @@ Los indicadores ya sean visuales o sonoros son parte fundamental de una máquina
 			Fuente: Imágenes de dominio público y elaboración propia.
 		\end{flushleft}
 	\end{mytable}
+
+	[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
 	
 \end{itemize}
 
@@ -876,6 +919,8 @@ La implementación de un interruptor de seguridad es muy importante en el diseñ
 	\end{flushleft}
 \end{mytable}
 
+[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de interruptor de interruptor tipo hongo}
@@ -929,11 +974,13 @@ El encendido o apagado de la máquina es realizado por este interruptor, es deci
 	} & 20                                                                    & 21         & 22         & 23         \\ \hline
 	\multicolumn{1}{|l|}{\textbf{Precio (S/)}}              & 24                                                                    & 25         & 26         & 27         \\ \hline
 	\multicolumn{1}{|l|}{\textbf{Disponibilidad}}           & 32                                                                    & 33         & 34         & 35         \\ \hline
-\end{tabular}
-\begin{flushleft}	
-	Fuente: Imágenes de dominio público y elaboración propia.
-\end{flushleft}
+	\end{tabular}
+	\begin{flushleft}	
+		Fuente: Imágenes de dominio público y elaboración propia.
+	\end{flushleft}
 \end{mytable}
+
+[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Cálculo del consumo de energía del sistema} 
@@ -1069,6 +1116,8 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 	\end{flushleft}
 \end{mytable}
 
+[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de sistema de flotación}
 
@@ -1085,7 +1134,7 @@ Los planos permiten visualizar el sistema de una forma en particular dependiendo
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Lista de planos de ensamble}
 
-Un plano de ensamble presenta una visión de las diferentes partes que van juntas, cada componente va listada y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{\cite{Goetsch2010}} En la Tabla XXX se muestra una lista de planos de ensamble.
+El plano de ensamble presenta una visión de los diferentes componentes, cómo son las juntas, incluye un listado de componentes y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{\cite{Goetsch2010}} En la Tabla \ref{tab:lista de planos de ensamble} se muestra una lista de planos de ensamble.
 
 
 \begin{mytable}[H]
@@ -1094,7 +1143,7 @@ Un plano de ensamble presenta una visión de las diferentes partes que van junta
 	\label{tab:lista de planos de ensamble}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{N° Lámina} & \textbf{Plano} & \textbf{Tipo} \\ \hline
+		\textbf{N° Lámina} & \textbf{Plano} & \textbf{Tamaño de pieza} \\ \hline
 		\textbf{L1}        & 1              & 2             \\ \hline
 		\textbf{L2}        & 3              & 4             \\ \hline
 		\textbf{L3}        & 5              & 6             \\ \hline
@@ -1104,7 +1153,7 @@ Un plano de ensamble presenta una visión de las diferentes partes que van junta
 		\textbf{L7}        & 13             & 14            \\ \hline
 	\end{tabular}
 	\begin{flushleft}	
-	Fuente: Imágenes de dominio público y elaboración propia.
+	Fuente: Elaboración propia.
 \end{flushleft}
 \end{mytable}
 
@@ -1112,15 +1161,24 @@ Un plano de ensamble presenta una visión de las diferentes partes que van junta
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Plano de despiece}
 
-Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+El plano de despiece presenta las características técnicas de cada pieza. Muestra dimensiones para poder fabricar la pieza. En la Tabla \ref{tab:plano de despiece} se muestra una lista de planos de despiece de cada pieza.
 
-
-\begin{myfigure}[H]
+\begin{mytable}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{chapter5/ejemplo tabla plano despiece.png}
-	\caption{...}
-	\begin{myflushleftportland}
-		Fuente: ...
-	\end{myflushleftportland}
-	\label{fig:ejemplo tabla plano despiece}
-\end{myfigure}
+	\caption{Lista de planos de despiece}
+	\label{tab:plano de despiece}
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{N°} & \textbf{Nombre de pieza} & \textbf{Tamaño de página} \\ \hline
+		\textbf{1}  & 1                        & 2                         \\ \hline
+		\textbf{2}  & 3                        & 4                         \\ \hline
+		\textbf{3}  & 5                        & 6                         \\ \hline
+		\textbf{4}  & 7                        & 8                         \\ \hline
+		\textbf{5}  & 9                        & 10                        \\ \hline
+		\textbf{6}  & 11                       & 12                        \\ \hline
+		\textbf{7}  & 13                       & 14                        \\ \hline
+	\end{tabular}
+	\begin{flushleft}	
+	Fuente: Elaboración propia.
+\end{flushleft}
+\end{mytable}
