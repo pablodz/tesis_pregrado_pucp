@@ -669,7 +669,22 @@ Para una óptima recepción se propone llegar como mínimo 75\% de haces de luz.
 	\label{tab:tabla comparativa de sensores infrarrojos}
 	\begin{tabular}{l|c|c|c|c|}
 		\cline{2-5}
-		\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+		\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} &
+		\multicolumn{1}{|l|}{				
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+				\textbf{HD-DS25 CM-3MM}
+			\end{minipage}
+		}&
+		\multicolumn{1}{|l|}{				
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+				\textbf{QT50CM}
+			\end{minipage}
+		}&
+		\multicolumn{1}{|l|}{				
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+				\textbf{GP2Y0A 21YK0F}
+			\end{minipage}
+		}  \\ \hline
 		\multicolumn{1}{|l|}{\textbf{Figura}} & - 
 		&		  
 		\begin{minipage}{\mythirdmaxsizeofcontenttable}
@@ -692,40 +707,61 @@ Para una óptima recepción se propone llegar como mínimo 75\% de haces de luz.
 			%	{\footnotesize Nombre imagen}
 			%\end{myflushcenter}
 		\end{minipage}\\ \hline
-		\multicolumn{1}{|l|}{\textbf{Fabricante}} & 8                                                                     & 9          & 10         & 11         \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Fabricante}} 
+		& - & Adafruit & Adafruit & SHARP\\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}	
-				\textbf{Área circular de receptor ($mm^2$)}
+				\textbf{Tipo de comunicación}
 			\end{minipage}
-		} & 12   & 13         & 14         & 15         \\ \hline
+		} & Digital & [0;VCC] & [0;VCC] & Analógico         \\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}	
-				\textbf{Longitud de onda infrarroja ($nm$)}
+				\textbf{Área mínima circular de receptor ($mm^2$)}
 			\end{minipage}
-		} & 16  & 17  & 18 & 19 \\ \hline
+		} & 15.4 & 28.27 & 78.54 & 162.86         \\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}	
-				\textbf{Voltaje de entrada ($V$)}
+				\textbf{Ángulo de visión/recepción (°)}
 			\end{minipage}
-		} & 20  & 21         & 22         & 23         \\ \hline
+		} & 5 & 10 & 10 & -         \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}	
+				\textbf{Distancia de detección ($mm.$)}
+			\end{minipage}
+		} & 170 & [0;250] & [0;500] & [100;800] \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}	
+				\textbf{Longitud de onda infrarroja recomendada ($nm$)}
+			\end{minipage}
+		} & 850 & - & - & 870$\pm$70 \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}	
+				\textbf{Voltaje operativo VCC ($V$)}
+			\end{minipage}
+		} & 5  & [3.0;5.5] & [3.0;5.5] & [4.5;5.5]         \\ \hline
+		\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}	
+				\textbf{Consumo de corriente ($mA$)}
+			\end{minipage}
+		} & -  & 100 & 100 & 30         \\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}	
 				\textbf{Temperatura operativa (°$C$)}
 			\end{minipage}
-		} & 32 & 33 & 34 & 35 \\ \hline
+		} & [-10;60] & [-25;60] & [-25;60] & [-10;60] \\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}	
 				\textbf{Precio ($S/$)}
 			\end{minipage}
-		} & 24 & 25 & 26 & 27 \\ \hline
+		} & - & 7.00 & 23.32 & 53.68 \\ \hline
 	\end{tabular}
 	\begin{flushleft}	
-		Fuente: Imágenes de dominio público y elaboración propia.
-		*USD a PEN: S/ 3.43.
+		Fuente: Marktech Optoelectronics y elaboración propia.\\
+		Tasa de cambio de USD a PEN: S/ 3.59.
 	\end{flushleft}
 \end{mytable}
 
-
+[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de cámaras} 
