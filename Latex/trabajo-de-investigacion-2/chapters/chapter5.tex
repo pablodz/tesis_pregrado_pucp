@@ -756,7 +756,7 @@ Para una óptima recepción se propone llegar como mínimo 75\% de haces de luz.
 		} & - & 7.00 & 23.32 & 53.68 \\ \hline
 	\end{tabular}
 	\begin{flushleft}	
-		Fuente: Marktech Optoelectronics y elaboración propia.\\
+		Fuente: Marktech Optoelectronics y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
 		Tasa de cambio de USD a PEN: S/ 3.59.
 	\end{flushleft}
 \end{mytable}
@@ -766,27 +766,55 @@ Para una óptima recepción se propone llegar como mínimo 75\% de haces de luz.
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de cámaras} 
 
-Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
+En el sistema se emplea dos cámaras con distintos requerimientos técnicos. Por un lado, una cámara estéreo se encarga de capturar imágenes que van a ser procesadas por algoritmos de detección y conteo de truchas. Por otro lado, una cámara normal registra la trayectoria de las truchas que en la distribución de estas a los canales de salida definidos por los algoritmos. 
 
 \begin{itemize}
-	\item \textbf{Cámara estéreo}
 	
-	El objetivo de la cámara estéreo es la de obtener fotos por determinado periodo de tiempo designado por los algoritmos de procesamiento de imágenes. Con el fin de cumplir el objetivo mencionado deben cumplirse requerimientos: fotografiar a la trucha con un enfoque aceptable que permita distinguir a la trucha adecuadamente.
+	\item \textbf{Cálculo de distancias apropiadas de las cámaras}
 	
-	Cómo mide la cámara estéreo 
-	
-	El error realizado en pruebas con vehículos autónomos brindado en \cite{Zaarane2020} se muestra en la Figura \ref{fig:medicion de distancia con distintas distancias}
+	El área que se debe captar sobre el proceso, sin las tuberías transparentes, se representan  en una vista frontal y de perfil en la Figura \ref{fig:distancia entre juego de espejos y camara estereo}. Donde: $d$ es la distancia entre el juego de espejos y la cámara, $\alpha$ es el HDFV\footnote{Campo de visión horizontal.}, $\beta$ es el VDFV\footnote{Campo de visión vertical.}, $A$ es la altura del área proyectada y $L$ es la largo del área proyectada del juego de espejos.
 	
 	\begin{myfigure}[H]
 		\centering
-		\includegraphics[width=1\textwidth]{chapter5/medicion de distancia con distintas distancias.png}
-		\caption{Pruebas de medición con distintas distancias al objeto.}
+		\includegraphics[width=1\textwidth]{chapter5/distancia entre juego de espejos y camara estereo.png}
+		\caption{Distancia entre juego de espejos y cámara estéreo}
 		\begin{myflushleftportland}
-			Fuente: \cite{Zaarane2020}
+			Fuente: Elaboración propia.
 		\end{myflushleftportland}
-		\label{fig:medicion de distancia con distintas distancias}
+		\label{fig:distancia entre juego de espejos y camara estereo}
+	\end{myfigure}
+
+	De la geometría se obtiene los valores de $\alpha$ y $\beta$, que dependen de las otras variables. El posicionamiento de la cámara ($d$) estéreo estará sujeto a sus valores de HDFV y VDFV como se muestra en la Ecuación \ref{eq:calculo beta de distancia entre espejos y camara estereo} y \ref{eq:calculo alfa de distancia entre espejos y camara estereo}, respectivamente.
+		
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/calculo de distancia entre espejos y camara estereo.png}
+		\caption{Cálculo de distancia apropiada para la cámara estéreo}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:calculo de distancia entre espejos y camara estereo}
 	\end{myfigure}
 	
+	\begin{myequation}\label{eq:calculo alfa de distancia entre espejos y camara estereo}
+		\begin{split}
+			tan(\alpha_{min}/2)&=\frac{A/2}{d}\\
+			\alpha_{min}&=2*atan(\frac{A}{2*d})\\
+		\end{split}		
+	\end{myequation}
+
+	\begin{myequation}\label{eq:calculo beta de distancia entre espejos y camara estereo}
+		\begin{split}
+			tan(\beta_{min}/2)&=\frac{L/2}{d}\\
+			\beta_{min}&=2*atan(\frac{L}{2*d})\\
+		\end{split}		
+	\end{myequation}
+
+
+	
+	\item \textbf{Selección de cámara estéreo}
+	
+	El objetivo de la cámara estéreo es la de obtener fotos por determinado periodo de tiempo designado por los algoritmos de procesamiento de imágenes. Con el fin de cumplir el objetivo mencionado deben cumplirse requerimientos técnicos: fotografiar a la trucha con un enfoque aceptable que permita distinguir a la trucha adecuadamente, ángulo de visión horizontal y vertical, resolución, entre otros. En la Figura \ref{fig:diagrama esquematico camara estereo y dependencia de la distancia del objeto} se visualiza un diagrama referencial de una cámara estéreo, con la cuál podemos obtener distancias a partir de dos imágenes. 
 	
 	\begin{myfigure}[H]
 		\centering
@@ -798,60 +826,316 @@ Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed
 		\label{fig:diagrama esquematico camara estereo y dependencia de la distancia del objeto}
 	\end{myfigure}
 	
+	Por ejemplo, el error realizado en pruebas con vehículos autónomos brindado en \cite{Zaarane2020} se muestra en la Figura \ref{fig:medicion de distancia con distintas distancias}. 
 	
-	Tener en cuenta: \\
-	- Tamaño de píxeles requerido \\
-	- Cantidad de frames (80 fps con 3-4L/s) (Falta calcular con lo que hemos calculado 16 cm/s) \\ 
-	- La inclinación hace que el pez no tenga velocidad hacia arriba \\
-	- Cámara estereo o simple?? \\
-	- Necesita GPU? \\
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/medicion de distancia con distintas distancias.png}
+		\caption{Pruebas de medición con distintas distancias al objeto.}
+		\begin{myflushleftportland}
+			Fuente: \cite{Zaarane2020}
+		\end{myflushleftportland}
+		\label{fig:medicion de distancia con distintas distancias}
+	\end{myfigure}
+		
+	%- Tamaño de píxeles requerido \\
+	%- Cantidad de frames (80 fps con 3-4L/s) (Falta calcular con lo que hemos calculado 16 cm/s) \\ 
+	%- La inclinación hace que el pez no tenga velocidad hacia arriba \\
+
 	
-	En la Tabla \ref{tab:tabla comparativa de camaras estereo} se muestra tanto los requerimientos mínimos como las cámaras estéreo candidatas para el sistema. 
+	En la Tabla \ref{tab:tabla comparativa de camaras estereo} se muestra tanto los requerimientos mínimos como las cámaras estéreo candidatas para el sistema. El cálculo mencionado en la sección anterior se calcula luego de escoger una de entre las tres opciones mostradas.
 	
+	\begin{savenotes}
 	\begin{mytable}[H]
 		\centering
 		\caption{Tabla comparativa de cámaras estéreo.}
 		\label{tab:tabla comparativa de camaras estereo}
 		\begin{tabular}{l|c|c|c|c|}
 			\cline{2-5}
-			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
+			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{OAK-D}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{B0263}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{B0204}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
 			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
 			&		  
 			\begin{minipage}{\mythirdmaxsizeofcontenttable}
-				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/sensor infrarrojo 1.png} \\ 
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/camara estereo 1.png} \\ 
 				%\begin{myflushcenter}
 				%	{\footnotesize Nombre imagen}
 				%\end{myflushcenter}
 			\end{minipage}
 			&		  
 			\begin{minipage}{\mythirdmaxsizeofcontenttable}
-				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/sensor infrarrojo 2.png} \\ 
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/camara estereo 2.png} \\ 
 				%\begin{myflushcenter}
 				%	{\footnotesize Nombre imagen}
 				%\end{myflushcenter}
 			\end{minipage}
 			&  
 			\begin{minipage}{\mythirdmaxsizeofcontenttable}
-				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/sensor infrarrojo 3.png} \\ 
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/camara estereo 3.png} \\ 
 				%\begin{myflushcenter}
 				%	{\footnotesize Nombre imagen}
 				%\end{myflushcenter}
 			\end{minipage}\\ \hline
-			\multicolumn{1}{|l|}{\textbf{Fabricante}} & 8                                                                     & 9          & 10         & 11         \\ \hline
-			\multicolumn{1}{|l|}{\textbf{A}}          & 12                                                                    & 13         & 14         & 15         \\ \hline
-			\multicolumn{1}{|l|}{\textbf{B}}          & 16                                                                    & 17         & 18         & 19         \\ \hline
-			\multicolumn{1}{|l|}{\textbf{C}}          & 20                                                                    & 21         & 22         & 23         \\ \hline
-			\multicolumn{1}{|l|}{\textbf{D}}          & 24                                                                    & 25         & 26         & 27         \\ \hline
-			\multicolumn{1}{|l|}{\textbf{E}}          & 32                                                                    & 33         & 34         & 35         \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & OpenCV & UCTRONICS & UCTRONICS \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Sensor óptico}
+				\end{minipage}
+			} & - & OV9282 & OV9281 & OV2311 \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Tipo de obturador}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+				Global sincronizado 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+				Global sincronizado 
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+				Global sincronizado 
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+				Global dual 
+			\end{myflushcenter}\end{minipage} \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{RGB o B/N}
+				\end{minipage}
+			} & - & RGB & B/N & B/N \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Resolución}
+				\end{minipage}
+			} & 0.5MP & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1MP (1280× 800 $px/3{\mu}m$)
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1MP (1280× 800 $px/3{\mu}m$)
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					2MP (1600x 1300 $px/3{\mu}m$)
+			\end{myflushcenter}\end{minipage} \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Frames por segundo ($FPS$)}
+				\end{minipage}
+			} & 60 % NECESITO MÁS DE 80
+			& 120 & 60 & 60 \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Tamaño de lente ('')}
+				\end{minipage}
+			} & Independiente & 1/2.3 & 1/4 & 1/2.9 \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Enfoque ($mm.$)}
+				\end{minipage}
+			} & - & [196;$\infty$] & [30;$\infty$] & [30;$\infty$] \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}
+					\textbf{Campo de visión ° (HFDV,VFDV,DFDV)\footnote{HFDV: Campo de visión horizontal. VFDV: Campo de visión vertical. DFDV: Campo de visión diagonal}}
+				\end{minipage}
+			} & Adaptable & 71.8, --, 81.0 & 70, 52.1 , -- & 100, 68.2, -- \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Procesamiento gráfico}
+				\end{minipage}
+			} & - & MA2085 VPU\footnote{Movidius™ Myriad™ VPU. \href{https://www.intel.com/content/www/us/en/products/processors/movidius-vpu/movidius-myriad-x.html}{Enlace a unidad de procesamiento de visión.}} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+				Jetson Nano o Xavier NX
+			\end{myflushcenter}\end{minipage}
+		 	& \begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+		 			Raspberry Pi 3
+		 	\end{myflushcenter}\end{minipage} \\ \hline 
+		 	\multicolumn{1}{|l|}{
+		 		\begin{minipage}{\myforthmaxsizeofcontenttable}	
+		 			\textbf{Temperatura operativa}
+		 		\end{minipage}
+		 	} & [-20;60] & [-30;60] & [-30;85] & [-30;85] \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Soporte IA\footnote{Chips diseñados y optimizados para procesar detección de objetos mediante redes neuronales.}}
+				\end{minipage}
+			} & - & Sí & Sí & No \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Consumo de energía ($W$)}
+				\end{minipage}
+			} & <20 & $\approx6$ & - & - \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Precio (S/)}
+				\end{minipage}
+			} & <1000 & 475.41 & 358.97 & 717.28 \\ \hline
 		\end{tabular}
 		\begin{flushleft}	
-			Fuente: Imágenes de dominio público y elaboración propia.
+			Fuente: OpenCV, ArduCam y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
 		\end{flushleft}
 	\end{mytable}
+	\end{savenotes}
 	
-	Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
+	[BORRADOR] El actuador modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
 	
-	\item \textbf{Cámara simple}
+	\item \textbf{Selección de cámara simple}
+	
+	La cámara simple tiene como función verificar la correcta trayectoria de las truchas en el mecanismo de distribución hacia las respectivas jaulas flotantes. Los requerimientos técnicos se presentan en la Tabla \ref{tab:tabla comparativa de camaras simples} así como las principales características de cada una.
+	
+	\begin{savenotes}
+		\begin{mytable}[H]
+			\centering
+			\caption{Tabla comparativa de cámaras.}
+			\label{tab:tabla comparativa de camaras simples}
+			\begin{tabular}{l|c|c|c|c|}
+				\cline{2-5}
+				\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+				\multicolumn{1}{|l|}{				
+					\begin{minipage}{\mythirdmaxsizeofcontenttable}
+						\begin{myflushcenter}
+							\textbf{B0249}
+						\end{myflushcenter}
+					\end{minipage}
+				}&
+				\multicolumn{1}{|l|}{				
+					\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+						\begin{myflushcenter}
+							\textbf{2}
+						\end{myflushcenter}
+					\end{minipage}
+				}&
+				\multicolumn{1}{|l|}{				
+					\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+						\begin{myflushcenter}
+							\textbf{3}
+						\end{myflushcenter}
+					\end{minipage}
+				}  \\ \hline
+				\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+				&		  
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/camara simple 1.png} \\ 
+					%\begin{myflushcenter}
+					%	{\footnotesize Nombre imagen}
+					%\end{myflushcenter}
+				\end{minipage}
+				&		  
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/camara simple 2.png} \\ 
+					%\begin{myflushcenter}
+					%	{\footnotesize Nombre imagen}
+					%\end{myflushcenter}
+				\end{minipage}
+				&  
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/camara simple 3.png} \\ 
+					%\begin{myflushcenter}
+					%	{\footnotesize Nombre imagen}
+					%\end{myflushcenter}
+				\end{minipage}\\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Fabricante}
+					\end{minipage}
+				} & - & ArduCam & - & - \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Sensor óptico}
+					\end{minipage}
+				} & - & IMX477  & 2354235235 & 23523532523 \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Tipo de obturador}
+					\end{minipage}
+				} & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						Global sincronizado 
+				\end{myflushcenter}\end{minipage} & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						Global sincronizado 
+				\end{myflushcenter}\end{minipage} &
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						Global sincronizado 
+				\end{myflushcenter}\end{minipage}&
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						Global dual 
+				\end{myflushcenter}\end{minipage} \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{RGB o B/N}
+					\end{minipage}
+				} & - & RGB & B/N & B/N \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Resolución}
+					\end{minipage}
+				} & 0.5MP & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						1MP (1280× 800 $px/3{\mu}m$)
+				\end{myflushcenter}\end{minipage} & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						1MP (1280× 800 $px/3{\mu}m$)
+				\end{myflushcenter}\end{minipage} & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						2MP (1600x 1300 $px/3{\mu}m$)
+				\end{myflushcenter}\end{minipage} \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}
+						\textbf{-}
+					\end{minipage}
+				} & Adaptable & 71.8, --, 81.0 & 70, 52.1 , -- & 100, 68.2, -- \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Procesamiento gráfico}
+					\end{minipage}
+				} & - & - & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						Jetson Nano o Jetson Xavier NX
+				\end{myflushcenter}\end{minipage}
+				& 11 \\ \hline 
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Precio (S/)}
+					\end{minipage}
+				} & <1000 & 475.41 & 358.97 & 717.28 \\ \hline
+			\end{tabular}
+			\begin{flushleft}	
+				Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+				Tasa de cambio de USD a PEN: S/ 3.59.
+			\end{flushleft}
+		\end{mytable}
+	\end{savenotes}
+	
+	[BORRADOR] El actuador modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+	
+	
+	
 \end{itemize}
 
 
