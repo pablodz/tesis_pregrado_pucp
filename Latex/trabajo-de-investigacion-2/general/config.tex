@@ -65,21 +65,29 @@ heightrounded, % to avoid spurious underfull messages
 \usepackage{blindtext}
 \usepackage{pdfpages} % Cargar imagenes en pdf
 \usepackage{datetime} % Fecha
+
 \usepackage{footnote} % Tablas largas y foot note para tablas https://texblog.org/2012/02/03/using-footnote-in-a-table/
 \usepackage{enumitem} % Enumerar letras
 \usepackage[bottom]{footmisc} % Forzar notas de página pegadas hacia abajo https://bit.ly/3fyOA2f
+\usepackage{scrextend} % Cambiar formato nota de página
+\deffootnote[.5in]{.5in}{.195in}{\makebox[.5in][r]{\thefootnotemark.\hspace{.2in}}}  % Cambiar formato nota de página
+% ERROR DE "TITLE ALREADY DEFINED" Pueden omitirlo, no afecta en nada, pueden comentarlo incluso en el archivo.sty
+
 
 \usepackage[paper=portrait,pagesize]{typearea} %PORTRAID-LANDSCAPE 
 
 \usepackage{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
 \usepackage{breakurl} % Broken links
-\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+\usepackage[hyperfootnotes=false]{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía ADEMAS, false porque así lo recomienda la libreria footmisc
 \usepackage{natbib}
 \usepackage{etoolbox}
 
 \usepackage{mathptmx} % Times News Roman
 \usepackage{titlesec} % Cambiar chapter style
 \usepackage{indentfirst} % Agregar indentado de 1cm al inicio de cada párrafo de cada sección
+
+
+
 
 %\usepackage{svg} % Soporte imagenes svg
 % SVG necesita agregar --shel por eso no lo usaremos
@@ -349,3 +357,9 @@ heightrounded, % to avoid spurious underfull messages
 \renewcommand{\BOthers}[1]{et al.\hbox{}}%       et al
 \renewcommand{\BOthersPeriod}[1]{et al.\hbox{}}%  et al.
 % CONTINUA EN BIBLIOGRAPHY.TEX
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION NOTAS DE PAGINA
+%----------------------------------------------------------------------------------------
+
+\setlength{\footskip}{25pt} % Elimina espacios luego de notas de pagina

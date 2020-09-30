@@ -16,6 +16,7 @@
 
 %% NUEVA SECCIÓN X.X
 \section{Desarrollo de diseño mecatrónico integral}
+\label{sec:desarrollo de diseno mecatronico integral}
 
 En la sección llamada \textit{"Desarrollo del diseño mecatrónico conceptual"} \footnote{\cite{DiazVergara2020}} se analizó el concepto de solución óptimo. En la Figura \ref{fig:estado diseno mecatronico etapa 3} se muestra la etapa final de unir las sub-soluciones para desarrollar una forma viable de implementarlos de una forma integral.
 
@@ -53,7 +54,7 @@ La máquina clasificadora y contadora de truchas\footnote{CCT}, y su sistema res
 
 En las siguientes páginas se analizan diversos puntos generales concernientes al sistema: arquitectura de hardware, la selección de materiales de fabricación, la selección de materiales de fabricación.
 
-\textcolor{blue}{[BORRADOR] Explicar cambios importantes respecto a Diseño conceptual sustentando cálculos realizados o algoritmos ... [/BORRADOR]}\\
+\textcolor{blue}{[BORRADOR] Explicar cambios importantes respecto a Diseño conceptual sustentando cálculos realizados o algoritmo. Cambios realizados: servomotor -> Leva + Motor a pasos; batería ya no es requerida, el operario se ocupa de suministrar batería; cámara simple agregada mediante stickers de puntos rojos, solo analizamos color rojo de compuertas y filtrar a la trucha. Ya no se realiza diagrama eléctrico, todo será manejo de DC. Potencia computacional requerida aumenta de microcontrolador a microprocesador [/BORRADOR]}\\
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Arquitectura de hardware}
@@ -69,6 +70,8 @@ En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propue
 	\end{myflushleftportland}
 	\label{fig:arquitectura de hardware del sistema}
 \end{myfigure}
+
+\textcolor{blue}{[BORRADOR] Terminar de definir los voltajes que se utilizarán. [/BORRADOR]}
 
 
 %% NUEVO SUBSECCION X.X.X.X
@@ -293,7 +296,7 @@ Las tuberías del sistema tienen como propósito abastecer de un caudal a la má
 	
 	\item \textbf{Selección de caudales apropiados} 
 	
-	En la Sección \ref{sssec:seleccion de microcontrolador} se calcula la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el \textcolor{blue}{[BORRADOR] Terminar de redactar [/BORRADOR]} 
+	En la Sección \ref{sssec:seleccion de microprocesador} se calcula la velocidad máxima, aproximada, de nado de las truchas arcoíris: $16 (cm/s)$. La Ecuación \ref{eq:calculo de caudal maximo} toma el valor de \textit{$v_{max}=16 (cm/s)$}  y el \textcolor{blue}{[BORRADOR] Terminar de redactar [/BORRADOR]} 
 	
 	\begin{myequation}\label{eq:calculo de caudal maximo}
 		\begin{split}
@@ -541,9 +544,8 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 	
 	\item \textbf{Diseño de mecanismo que acciona la compuerta}
 	
+	En la sección anterior se eligió el mecanismo a emplear. El diseño del mecanismo va \textcolor{blue}{[BORRADOR] Agregar descripción. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. [/BORRADOR]}	
 	
-	
-	En la sección anterior se eligió el mecanismo a emplear. El diseño del mecanismo va
 	
 	\begin{myfigure}[H]
 		\centering
@@ -569,58 +571,56 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 	
 	\textcolor{blue}{[BORRADOR] Agregar descripción. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. [/BORRADOR]}	 
 	
-	\item \textbf{Cálculo de fuerza y velocidad de compuertas}
+	\item \textbf{Cálculo de torque y velocidad de giro de compuerta}
 	
-	La fuerza necesaria es simplemente el giro de la compuerta que está unida a un eje y a su vez al mecanismo de engranajes con el servomotor.\textcolor{blue}{[BORRADOR] Explicar selección entre otras cosas .... Además, citar a \cite{ChinchayDeLaCruz2010} [/BORRADOR]}
 	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{chapter5/compuerta.png}
-		\caption{Compuerta}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:compuerta}
-	\end{myfigure}
-	
-	La velocidad de compuertas debe ir acorde a la distancia entre una trucha y la siguiente a esta. 
+	La fuerza necesaria es simplemente el giro de la compuerta que está unida a un eje y a su vez al mecanismo de engranajes con el servomotor.\textcolor{blue}{[BORRADOR] Explicar selección entre otras cosas .... Además, citar a \cite{ChinchayDeLaCruz2010} en análisis de falla de levas [/BORRADOR]}
 	
 	\begin{myfigure}[H]
 		\centering
-		\includegraphics[width=1\textwidth]{chapter5/velocidad de compuerta.png}
-		\caption{Velocidad de compuerta}
+		\includegraphics[width=1\textwidth]{chapter5/dlc leva compuerta.png}
+		\caption{Diagrama de cuerpo libre del mecanismo de la compuerta.}
 		\begin{myflushleftportland}
 			Fuente: Elaboración propia.
 		\end{myflushleftportland}
-		\label{fig:velocidad de compuerta}
+		\label{fig:dlc leva compuerta}
 	\end{myfigure}
 
-	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+	\textcolor{blue}{[BORRADOR] Explicar las Ecuaciones a continuación [/BORRADOR]}
 	
-	\begin{myequation}\label{eq:calculo de tiempo necesario}
+	\begin{myequation}\label{eq:calculo fuerza normal}
 		\begin{split}
-			L_1+L_2+L_3 &= t * v
+			\sum_{}^{}M_{R}&=m_{compuerta}*g*cos(\beta)*d_{eje}-2*N*d_{eje}=0 \\
+			N&=\frac{m*g*cos(\beta)}{2}			
 		\end{split}		
 	\end{myequation}
 
-	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+	\begin{myequation}\label{eq:calculo de torque máximo}
+		\begin{split}
+			\overrightarrow{T_{X}}&=N*sin(\beta)*L \\
+			\overrightarrow{T_{X}}&=\frac{m*g*cos(\beta)}{2}*sin(\beta)*L \\
+			\overrightarrow{T_{X}}&=m*g*L*\frac{sin(2\beta)}{2} \\
+			\overrightarrow{T_{X_{max}}}&=\frac{m*g*L}{2} \quad (\beta=45^\circ) \\
+		\end{split}		
+	\end{myequation}
+
+	La velocidad de compuertas debe ir acorde a la distancia entre una trucha y la siguiente a esta. \textcolor{blue}{[BORRADOR] Explicar velocidad RPM necesarias y explicar las ecuaciones siguientes [/BORRADOR]}
+	
+	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 
 	
-	\item \textbf{Selección de servomotores}
-		
-	Calcular: \\
-	- Torque necesario \\
-	- Condiciones de uso (estará en agua) \\
-	- Tiempo de uso \\
+	\item \textbf{Selección de motores a paso}
+			
+	%La selección de los servomotores depende del propósito en la función que se encuentre................
 	
-	La selección de los servomotores depende del propósito en la función que se encuentre................
+	%Este mecanismo mostrado en la Figura acciona la compuerta presentada en la %Figura \ref{fig:compuerta}. El torque necesario del eje es $T_{max}=X (M*mm)$  %y gracias al mecanismo de engranajes puede reducirse a $T_{max_2}=Y (M*mm)$ 
 	
-	Este servomotor acciona la compuerta presentada en la Figura \ref{fig:compuerta}. El torque necesario del eje es $T_{max}=X (M*mm)$  y gracias al mecanismo de engranajes puede reducirse a $T_{max_2}=Y (M*mm)$ En la Tabla \ref{tab:tabla comparativa de servomotores} se muestra una comparación técnica entre tres servomotores que cumplen los requerimientos técnicos y conceptuales.
+	En la Tabla \ref{tab:tabla comparativa de motores a pasos} se muestra una comparación técnica entre tres motores a pasos que cumplen los requisitos mínimos. 
 	
 	\begin{mytable}[H]
 		\centering
-		\caption{Tabla comparativa de servomotores.}
-		\label{tab:tabla comparativa de servomotores}
+		\caption{Tabla comparativa de motores a pasos.}
+		\label{tab:tabla comparativa de motores a pasos}
 		\begin{tabular}{l|c|c|c|c|}
 			\cline{2-5}
 			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
@@ -658,26 +658,12 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 			Fuente: Imágenes de dominio público y elaboración propia.
 		\end{flushleft}
 	\end{mytable}
-	
-	
-%	\begin{itemize}
-%		
-%		%% ANTES HABIA 2 MECANISMOS CON SERVO, AHORA SOLO 1
-%		
-%		%\item \textbf{Servomotor 1: } Este servomotor apoya en la función de
-%		\textit{accionar recepción de truchas}. 
-%		
-%		\item \textbf{Servomotor de compuerta} 
-%		
-%	\end{itemize}
 
-
+	\textcolor{blue}{[BORRADOR] Seleccionar uno y explicar la selección [/BORRADOR]}	
 	
+	%\item \textbf{Diseño de juego de compuertas programables}
 	
-	
-	\item \textbf{Diseño de juego de compuertas programables}
-	
-	Descripción.
+	%Descripción.
 
 \end{itemize}
 
@@ -859,7 +845,7 @@ Para una óptima recepción se propone llegar como mínimo 75\% de haces de luz.
 	\end{flushleft}
 \end{mytable}
 
-[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+\textcolor{blue}{[BORRADOR] Seleccionar uno y explicar la selección [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de cámaras} 
@@ -908,7 +894,28 @@ En el sistema se emplea dos cámaras con distintos requerimientos técnicos. Por
 		\end{split}		
 	\end{myequation}
 
-
+	\item \textbf{Cálculo de cuadros por segundo (fps) necesarios para la cámara estéreo}
+	
+	\textcolor{blue}{[BORRADOR] Agregar descripción [/BORRADOR]}
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/grafica tamano y velocidad de nado trucha arcoiris.png}
+		\caption{Aproximación lineal de la relación entre peso y la velocidad de nado de truchas arcoíris}
+		\begin{myflushleftportland}
+			Fuente: \cite{Fry1970}
+		\end{myflushleftportland}
+		\label{fig:grafica tamano y velocidad de nado trucha arcoiris}
+	\end{myfigure}
+	
+	
+	En la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} se muestra la relación entre \textit{X: peso de la trucha ($g$)} e \textit{Y: velocidad de nado ($cm/s$)} con un error \textit{Z= $\pm 0.033$}. 
+	
+	\begin{myequation} \label{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris}
+		Y=-3.965+2.908(Z)X
+	\end{myequation}
+	
+	En el caso de este trabajo, la dimensión máxima y mínima de las truchas arcoíris son de 20 cm y 15 cm, respectivamente. De la Tabla \textit{Clasificación de truchas por etapas de producción}\footnote{\cite{DiazVergara2020}} podemos obtener los gramos mediante interpolación lineal para cada límite: valores mínimo-máximo son 153 y 199 \textit{$g$}, respectivamente. Utilizando los valores antes indicados y empleando la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} obtenemos los valores límites dentro del rango $[10.71; 15.13] (cm/s)$. Luego de escoger la máxima velocidad con redondeo hacia arriba $v_{max}=16cm/s$), \textcolor{blue}{[BORRADOR] Falta explicación [/BORRADOR]}
 	
 	\item \textbf{Selección de cámara estéreo}
 	
@@ -923,6 +930,8 @@ En el sistema se emplea dos cámaras con distintos requerimientos técnicos. Por
 		\end{myflushleftportland}
 		\label{fig:diagrama esquematico camara estereo y dependencia de la distancia del objeto}
 	\end{myfigure}
+
+	\textcolor{blue}{[BORRADOR] Falta explicación [/BORRADOR]}
 	
 	Por ejemplo, el error realizado en pruebas con vehículos autónomos brindado en \cite{Zaarane2020} se muestra en la Figura \ref{fig:medicion de distancia con distintas distancias}. 
 	
@@ -1259,19 +1268,14 @@ En el sistema se emplea dos cámaras con distintos requerimientos técnicos. Por
 		\end{mytable}
 	\end{savenotes}
 	
-	\textcolor{blue}{[BORRADOR] Decicisión de qué actuador será escogido y por qué en base a las características mencionadas [/BORRADOR]}
-	
-	
+	\textcolor{blue}{[BORRADOR] Decicisión de qué cámara será escogida y por qué, en base a las características mencionadas [/BORRADOR]}
 	
 \end{itemize}
-
-
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de iluminación adecuada} 
 
-
-Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin.
+\textcolor{blue}{[BORRADOR] Explicar. [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de led de alta potencia}
@@ -1298,66 +1302,132 @@ La selección de una iluminación adecuada es tan importante como la selección 
 	\end{split}		
 \end{myequation}
 
-En la Tabla XX se muestra una tabla técnica comparativa.
+\textcolor{blue}{[BORRADOR] Encontrar referencias bibliográficas de valores de iluminación adecuadas para este propósito. [/BORRADOR]}
 
-\begin{myfigure}[H]
-	\centering
-	\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
-	\caption{Ejemplo de tabla}
-	\begin{myflushleftportland}
-		Fuente: Elaboración propia.
-	\end{myflushleftportland}
-	\label{fig:ejemplo de tabla}
-\end{myfigure}
+En la Tabla \ref{tab:tabla comparativa de leds de alta potencia} se muestra una tabla técnica comparativa. \textcolor{blue}{[BORRADOR] Introducción para la tabla [/BORRADOR]}
+
+\begin{savenotes}
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de leds de alta potencia.}
+		\label{tab:tabla comparativa de leds de alta potencia}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{T1}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T2}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T3}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/led alta potencia 1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/led alta potencia 2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/led alta potencia 3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & 12SAF4 & AFAS222 & ASFASF \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{ABC}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					- 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					2 
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					3 
+			\end{myflushcenter}\end{minipage} \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
+
+\textcolor{blue}{[BORRADOR] Decisión de qué LED será escogido y por qué, en base a las características mencionadas [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de algoritmos}
-\label{sssec:seleccion de algoritmos}
+\subsubsection{Selección de algoritmo de clasificación y conteo}
+\label{sssec:seleccion de algoritmo de clasificacion y conteo}
 
-Los algoritmos tienen como objetivo contar y clasificar truchas. Dichos algoritmos son evaluados en la Tabla XXX mediante una comparación técnica en cuanto a diversos puntos: tiempo de respuesta, costo de hardware requerido, consumo eléctrico del hardware, ......
+Los algoritmos tienen como objetivo contar y clasificar truchas. \textcolor{red}{[BORRADOR] Explicar la necesidad de algoritmos. Explicar por qué algoritmos de detección CNN. [/BORRADOR]}
 
-- NN: YOLO,YOLOv2,YOLOv3,YOLOv4,YOLOv5 \\
-- NN: CNN - Fish segmentation \\
-- Segmentación por características \\
+Los algoritmos de detección son evaluados en la Tabla \ref{tab:tabla comparativa de algoritmos} mediante una comparación técnica en cuanto a diversos puntos: \textcolor{blue}{[BORRADOR] tiempo de respuesta, costo de hardware requerido, consumo eléctrico del hardware, etc. [/BORRADOR]} 
 
-Referencia a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cite{Redmon2017}, YOLO v3.0 \cite{Redmon2018}, YOLO v4.0 \cite{Solawetz2020}, YOLO v5.0 \cite{bochkovskiy2020yolov4}.
-
-
-\begin{itemize}
-	
-	\item \textbf{Selección de algoritmo contador de truchas} 
-	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
-	
-	\begin{myfigure}[H]
+\begin{savenotes}
+	\begin{mytable}[H]
 		\centering
-		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
-		\caption{Ejemplo de tabla}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:ejemplo de tabla}
-	\end{myfigure}
+		\caption{Tabla comparativa de algoritmos.}
+		\label{tab:tabla comparativa de algoritmos}
+		\begin{tabular}{l|c|c|c|c|c|c|c|}
+			\cline{2-8}
+			\multicolumn{1}{c|}{\textbf{}} &
+			\textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} &
+			\textbf{1} &
+			\textbf{2} &
+			\textbf{3} &
+			\textbf{1} &
+			\textbf{2} &
+			\textbf{3} \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}}     & -  & 5  & 6  & 7  & 5  & 6  & 7  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Fabricante}} & 8  & 9  & 10 & 11 & 9  & 10 & 11 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{A}}          & 12 & 13 & 14 & 15 & 13 & 14 & 15 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{B}}          & 16 & 17 & 18 & 19 & 17 & 18 & 19 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{C}}          & 20 & 21 & 22 & 23 & 21 & 22 & 23 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{D}}          & 24 & 25 & 26 & 27 & 25 & 26 & 27 \\ \hline
+			\multicolumn{1}{|l|}{\textbf{E}}          & 32 & 33 & 34 & 35 & 33 & 34 & 35 \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. \\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
 
-	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
-	
-	\item \textbf{Selección de algoritmo clasificador de truchas} 
-	
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=0.85\textwidth]{chapter5/ejemplo de tabla.png}
-		\caption{Ejemplo de tabla}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:ejemplo de tabla}
-	\end{myfigure}
-	
-	Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
-	
-\end{itemize}
+\textcolor{red}{[BORRADOR] Redes analizadas: YOLO,YOLOv2,YOLOv3,YOLOv4,YOLOv5. CNN - Fish segmentation. Falta: Segmentación por características, otros. \\ Referenciar a todas las versiones de YOLO. YOLO \cite{Redmon2016}, YOLO v2.0 \cite{Redmon2017}, YOLO v3.0 \cite{Redmon2018}, YOLO v4.0 \cite{Solawetz2020}, YOLO v5.0 \cite{bochkovskiy2020yolov4}. [/BORRADOR]}
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de suministro de energía}
@@ -1367,102 +1437,579 @@ El sistema debe suministrar energía a los diversos mecanismos electrónicos, si
 En los siguientes párrafos se analizaran a detalle: la selección de la batería, la selección de la fuente de alimentación, la selección de transformadores, la selección de fuentes switching, el diagrama esquemático y el diagrama eléctrico.
 
 
-
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de la batería} 
-
-Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.  Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. las elementum sagittis vitae et.
-
-
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de fuente de alimentación} 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+La fuente de alimentación permite convertir la energía suministrada en corriente alterna a corriente continua mediante el uso de rectificadores de alta eficiencia. En la Tabla \ref{tab:tabla comparativa de fuentes de alimentacion} se visualizan los requerimientos técnicos mínimos que deben tener los dispositivos, además se presentan tres alternativas de las cuales una es seleccionada para ser empleada en el sistema.
+
+\begin{savenotes}
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de fuentes de alimentación.}
+		\label{tab:tabla comparativa de fuentes de alimentacion}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{T1}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T2}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T3}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/fuente de alimentacion 1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/fuente de alimentacion 2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/fuente de alimentacion 3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & 12SAF4 & AFAS222 & ASFASF \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{ABC}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					- 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					2 
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					3 
+			\end{myflushcenter}\end{minipage} \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
+
+\textcolor{blue}{[BORRADOR] Explicar la selección [/BORRADOR]}
+
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de transformadores rectificadores}
+\subsubsection{Selección de reguladores de voltaje de conmutación}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+Los reguladores de voltaje de conmutación permiten dividir la tensión eléctrica continua de manera más eficiente comparado con otros métodos. En las Tablas \ref{tab:tabla comparativa de reguladores de voltaje de conmutacion1}, \ref{tab:tabla comparativa de reguladores de voltaje de conmutacion2} y \ref{tab:tabla comparativa de reguladores de voltaje de conmutacion3} se muestras los requerimientos mínimos para cada regulador dependiendo del voltaje de entrada y salida. La comparación de entre tres modelos permite una selección básica del componente óptimo.
 
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de fuentes switching}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 11111111111111111111111111111111111111111111111111111 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{savenotes}
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de reguladores de voltaje de conmutación de X DC a Y DC.}
+		\label{tab:tabla comparativa de reguladores de voltaje de conmutacion1}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{T1}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T2}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T3}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 1-1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 1-2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 1-3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & 12SAF4 & AFAS222 & ASFASF \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{ABC}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					- 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					2 
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					3 
+			\end{myflushcenter}\end{minipage} \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
+
+\textcolor{blue}{[BORRADOR] Explicar la selección [/BORRADOR]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 22222222222222222222222222222222222222222222222222222 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{savenotes}
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de reguladores de voltaje de conmutación de X DC a Y DC.}
+		\label{tab:tabla comparativa de reguladores de voltaje de conmutacion2}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{T1}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T2}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T3}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 2-1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 2-2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 2-3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & 12SAF4 & AFAS222 & ASFASF \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{ABC}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					- 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					2 
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					3 
+			\end{myflushcenter}\end{minipage} \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
+
+\textcolor{blue}{[BORRADOR] Explicar la selección [/BORRADOR]}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 33333333333333333333333333333333333333333333333333333 %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{savenotes}
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de reguladores de voltaje de conmutación de X DC a Y DC.}
+		\label{tab:tabla comparativa de reguladores de voltaje de conmutacion3}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}            & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{T1}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T2}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{T3}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 3-1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 3-2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/regulador de voltaje de conmutacion 3-3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & 12SAF4 & AFAS222 & ASFASF \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{ABC}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					- 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					1
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					2 
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					3 
+			\end{myflushcenter}\end{minipage} \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
+
+\textcolor{blue}{[BORRADOR] Explicar la selección [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diagrama esquemático} 
 
-Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+\textcolor{blue}{[BORRADOR] Explicar el diagrama esquemático [/BORRADOR]}
 
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/diagrama esquematico.pdf}
+	\caption{Diagrama esquemático del sistema}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.
+	\end{myflushleftportland}
+	\label{fig:diagrama esquematico}
+\end{myfigure}
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Diagrama eléctrico} 
+%\subsubsection{Diagrama eléctrico} 
 
-Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Subsistema de control e interacción con el usuario}
 \label{ssec:subsistema de control e interaccion con el usuario}
 
-Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. . Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. 
+\textcolor{blue}{[BORRADOR] Describir el subsistema de control [/BORRADOR]}
 
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de microcontrolador}
-\label{sssec:seleccion de microcontrolador}
+\subsubsection{Selección de microprocesador}
+\label{sssec:seleccion de microprocesador}
 
-- Necesitamos: 80 fps \\
-- Tamaño máximo: 15 cm \\
-- Tamaño mínimo: 20 cm \\
-- Velocidad estándar: 2 - 3 L/s (Longitud/segundos) \\
-- Velocidad máxima: 3 - 4 L/s (Longitud/segundos) \\
-- Debe poder: \\
----- procesar imágenes de forma rápida. \\
-----  
+El microprocesador se encarga de recibir los datos que le envía el módulo de procesamiento de imágenes tanto de la cámara estéreo como de la cámara simple. Si bien el procesamiento de imágenes se realiza en los módulos mencionados, la decisión de abrir/cerrar compuertas, control PID de las electroválvulas y conexión con el subsistema de interacción con el usuario se realizan en el microprocesador. En la Tabla \ref{tab:tabla comparativa de microprocesadores} se muestran los requerimientos mínimos y tres alternativas para escoger el microprocesador óptimo.
 
-En caso de usar NN \\
-- 2 x Jetson Nano + Gumstix Jetson Nano Snapshot Board \\
-- 1 x ESP32 \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%- Necesitamos: 80 fps \\
+%- Tamaño máximo: 15 cm \\
+%- Tamaño mínimo: 20 cm \\
+%- Velocidad estándar: 2 - 3 L/s (Longitud/segundos) \\
+%- Velocidad máxima: 3 - 4 L/s (Longitud/segundos) \\
 
-En caso de no usar NN \\
-- ESP32 o Raspberry Pi 4B \\
-- 1 x Jetson Nano \\
+%En la Sección \ref{sssec:seleccion de algoritmo de clasificacion y conteo} se analiza los posibles algoritmos que pueden ser aplicados para la detección de truchas mediante visión por computadora.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-En la Sección \ref{sssec:algoritmos de deteccion de truchas}  se analiza los posibles algoritmos que pueden ser aplicados para la detección de truchas mediante visión por computadora.
+\begin{savenotes}
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de microprocesadores.}
+		\label{tab:tabla comparativa de microprocesadores}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}} & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\begin{myflushcenter}
+						\textbf{111111}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{222222}
+					\end{myflushcenter}
+				\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+					\begin{myflushcenter}
+						\textbf{333333}
+					\end{myflushcenter}
+				\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/microprocesador 1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/microprocesador 2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/microprocesador 3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & AAAA & AAAA & AAAAAA \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Tipo de obturador}
+				\end{minipage}
+			} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					ASFASFSAF 
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					WERWRWER 
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					ASFASF
+			\end{myflushcenter}\end{minipage}&
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					AAAAA 
+			\end{myflushcenter}\end{minipage} \\ \hline
+		\end{tabular}
+		\begin{flushleft}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{flushleft}
+	\end{mytable}
+\end{savenotes}
 
-Otros:\\
-- Intel NSC2 \\
-
-\begin{myfigure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{chapter5/grafica tamano y velocidad de nado trucha arcoiris.png}
-	\caption{Aproximación lineal de la relación entre peso y la velocidad de nado de truchas arcoíris}
-	\begin{myflushleftportland}
-		Fuente: \cite{Fry1970}
-	\end{myflushleftportland}
-	\label{fig:grafica tamano y velocidad de nado trucha arcoiris}
-\end{myfigure}
-
-
-En la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} se muestra la relación entre \textit{X: peso de la trucha ($g$)} e \textit{Y: velocidad de nado ($cm/s$)} con un error \textit{Z= $\pm 0.033$}. 
-
-\begin{myequation} \label{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris}
-	Y=-3.965+2.908(Z)X
-\end{myequation}
-
-En el caso de este trabajo, la dimensión máxima y mínima de las truchas arcoíris son de 20 cm y 15 cm, respectivamente. De la Tabla \ref{tbl:clasificacion de truchas por etapas de produccion} podemos obtener los gramos mediante interpolación lineal para cada límite: valores mínimo-máximo son 153 y 199 \textit{$g$}, respectivamente. Utilizando los valores antes indicados y empleando la Ecuación \ref{eq:ecuacion relacion tamano y velocidad de nado de trucha arcoiris} obtenemos los valores límites dentro del rango $[10.71; 15.13] (cm/s)$. Luego de escoger la máxima velocidad con redondeo hacia arriba (16 $cm/s$), ...
-
+\textcolor{blue}{[BORRADOR] Seleccionar y explicar selección... [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de indicadores}
 
-Los indicadores ya sean visuales o sonoros son parte fundamental de una máquina. En el caso de la CCT\footnote{Máquina Contadora y Clasificadora de Truchas.} el sistema debe indicar al operario diversos estados o funciones: al detectar una trucha, al contar una trucha, al encender y al apagar.
+Los indicadores ya sean visuales o sonoros son parte fundamental de una máquina y se usan los dos tipos de indicadores para redundar el sistema de alertas de la CCT\footnote{Máquina Contadora y Clasificadora de Truchas.}. En el caso de la CCT el sistema debe indicar al operario diversos estados o funciones: al detectar una trucha, al contar una trucha, al encender y al apagar.
 
 \begin{itemize}
-	\item \textbf{Indicador visual:} Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum.
+	\item \textbf{Indicador visual:} Los indicadores visuales indican al usuario diversos estados de la máquina: prendido, procesando, apagado y error general. Por lo que el indicador visual, además de ser visible bajo la luz del día, brinda una gama de colores superior a 4 fácilmente diferenciables. Los indicadores visuales LED son ideales para esta situación. En la Tabla \ref{tab:tabla comparativa de indicadores visuales} se comparan tres dispositivos que cumplen con los requerimientos mínimos.	
 	
-	\item \textbf{Indicador sonoro:} Una bocina indica al operario . En la Tabla \ref{tab:tabla comparativa de bocinas} se compara características técnicas entre algunas bocinas candidatas para el sistema.
+	\begin{savenotes}
+		\begin{mytable}[H]
+			\centering
+			\caption{Tabla comparativa de indicadores visuales.}
+			\label{tab:tabla comparativa de indicadores visuales}
+			\begin{tabular}{l|c|c|c|c|}
+				\cline{2-5}
+				\multicolumn{1}{c|}{\textbf{}} & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+				\multicolumn{1}{|l|}{				
+					\begin{minipage}{\mythirdmaxsizeofcontenttable}
+						\begin{myflushcenter}
+							\textbf{111111}
+						\end{myflushcenter}
+					\end{minipage}
+				}&
+				\multicolumn{1}{|l|}{				
+					\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+						\begin{myflushcenter}
+							\textbf{222222}
+						\end{myflushcenter}
+					\end{minipage}
+				}&
+				\multicolumn{1}{|l|}{				
+					\begin{minipage}{\mythirdmaxsizeofcontenttable}	
+						\begin{myflushcenter}
+							\textbf{333333}
+						\end{myflushcenter}
+					\end{minipage}
+				}  \\ \hline
+				\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+				&		  
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/indicador visual 1.png} \\ 
+					%\begin{myflushcenter}
+					%	{\footnotesize Nombre imagen}
+					%\end{myflushcenter}
+				\end{minipage}
+				&		  
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/indicador visual 2.png} \\ 
+					%\begin{myflushcenter}
+					%	{\footnotesize Nombre imagen}
+					%\end{myflushcenter}
+				\end{minipage}
+				&  
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}
+					\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/indicador visual 3.png} \\ 
+					%\begin{myflushcenter}
+					%	{\footnotesize Nombre imagen}
+					%\end{myflushcenter}
+				\end{minipage}\\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Fabricante}
+					\end{minipage}
+				} & - & AAAA & AAAA & AAAAAA \\ \hline
+				\multicolumn{1}{|l|}{
+					\begin{minipage}{\myforthmaxsizeofcontenttable}	
+						\textbf{Tipo de obturador}
+					\end{minipage}
+				} & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						ASFASFSAF 
+				\end{myflushcenter}\end{minipage} & 
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						WERWRWER 
+				\end{myflushcenter}\end{minipage} &
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						ASFASF
+				\end{myflushcenter}\end{minipage}&
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+						AAAAA 
+				\end{myflushcenter}\end{minipage} \\ \hline
+			\end{tabular}
+			\begin{flushleft}	
+				Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnico (\textit{Datasheet}) en el Anexo.\\
+				Tasa de cambio de USD a PEN: S/ 3.59.
+			\end{flushleft}
+		\end{mytable}
+	\end{savenotes}
+
+	\textcolor{blue}{[BORRADOR] Seleccionar y explicar [/BORRADOR]}	
+		
+	\item \textbf{Indicador sonoro:} Similar a un indicador visual, una bocina indica al operario el estado de la máquina. Sin embargo, los indicadores sonoros son perfectos para alertar al operario de algún mal funcionamiento de la máquina. En la Tabla \ref{tab:tabla comparativa de bocinas} se compara características técnicas entre algunas bocinas candidatas para el sistema.
 
 	\begin{mytable}[H]
 		\centering
@@ -1511,15 +2058,14 @@ Los indicadores ya sean visuales o sonoros son parte fundamental de una máquina
 			\multicolumn{1}{|l|}{\textbf{Disponibilidad}}          & Inmediata                                                             & A pedido        & A pedido    & A pedido           \\ \hline
 		\end{tabular}
 		\begin{flushleft}	
-			Fuente: Imágenes de dominio público y elaboración propia.
+			Fuente: Imágenes de dominio público, %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\cite{DiazVergara2019}
+			 y elaboración propia.
 		\end{flushleft}
 	\end{mytable}
 
-	[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+	\textcolor{blue}{[BORRADOR] Seleccionar y explicar [/BORRADOR]}
 	
 \end{itemize}
-
-
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de interruptor de seguridad de apagado de emergencia}
@@ -1579,7 +2125,7 @@ La implementación de un interruptor de seguridad es muy importante en el diseñ
 	\end{flushleft}
 \end{mytable}
 
-[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+\textcolor{blue}{[BORRADOR] Seleccionar y explicar [/BORRADOR]}
 
 
 %% NUEVO SUBSECCION X.X.X.X
@@ -1639,7 +2185,7 @@ El encendido o apagado de la máquina es realizado por este interruptor, es deci
 	\end{flushleft}
 \end{mytable}
 
-[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+\textcolor{blue}{[BORRADOR] Seleccionar y explicar [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Cálculo del consumo de energía del sistema} 
@@ -1666,7 +2212,7 @@ El cálculo del consumo de energía del sistema es la suma de potencia requerida
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diagrama de flujo}
 
-El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo} describe los pasos necesarios para el control del sistema. .. ... .. [Explicar diagrama de flujo]
+El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo} describe los pasos necesarios para el control del sistema. \textcolor{blue}{[BORRADOR] Explicar diagrama de flujo [/BORRADOR]}
 
 \begin{myfigure}[H]
 	\centering
@@ -1684,14 +2230,19 @@ El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo
 
 La aplicación móvil permitirá a un operario visualizar los estados de la máquina, así como tener un registro de la clasificación y conteo de truchas, es decir, extraer los datos luego de ser procesados por la máquina CCT de manera inalámbrica al terminar el proceso. Además, posterior a este trabajo, podría agregarse más características al aplicativo móvil. El framework de desarrollo del aplicativo, que no se desarrollará en el presente trabajo, escogido es Flutter por su paradigma multiplataforma, es decir, escribir un programa que se vea igual en los sistemas operativos Android y iOS \cite{Simone2020}. El diseño frontend escogido para el proyecto y su desarrollo sencillo 
 
-Designing the obvious
-\cite{Joekman2010} \\
-Google Flutter Mobile Development Quick Start Guide
-\cite{PrajyotMainkar2019} \\
-Mobile Learning Design: Theories and Application
-\cite{Churchill2016} \\
-Mobile Design Pattern Gallery: UI Patterns for Mobile Applications
-\cite{Neil2012}
+
+\textcolor{blue}{[BORRADOR] 
+	Bibliografía:\\
+	Designing the obvious
+	\cite{Joekman2010} \\
+	Google Flutter Mobile Development Quick Start Guide
+	\cite{PrajyotMainkar2019} \\
+	Mobile Learning Design: Theories and Application
+	\cite{Churchill2016} \\
+	Mobile Design Pattern Gallery: UI Patterns for Mobile Applications
+	\cite{Neil2012}
+	[/BORRADOR]}
+
 
 
 \begin{myfigure}[H]
@@ -1712,15 +2263,26 @@ Mobile Design Pattern Gallery: UI Patterns for Mobile Applications
 Luego de definir en las Secciones \ref{ssec:subsistema de recepcion y traslado de truchas}, \ref{ssec:subsistema de procesamiento de imágenes}, \ref{ssec:subsistema de suministro de energia}, y \ref{ssec:subsistema de control e interaccion con el usuario}, la selección de los dispositivos y su interacción el sistema permiten calcular las dimensiones de la máquina para analizar la flotabilidad y seleccionar flotadores adecuados. En las siguientes subsecciones se analizan los cálculos, selección y diseño del sistema de flotación.
 
 %% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Cálculo de sistema flotador}
+\subsubsection{Cálculo de fuerzas necesarias para mantener a flote el sistema}
 
-Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+\textcolor{blue}{[BORRADOR] Explicar subsección e importancia [/BORRADOR]} 
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/calculo de fuerzas necesarias para mantener a flote el sistema.png}
+	\caption{Fuerzas necesarias para mantener a flote el sistema}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:calculo de fuerzas necesarias para mantener a flote el sistema}
+\end{myfigure}
+
+\textcolor{blue}{[BORRADOR] Ecuaciones y resultados [/BORRADOR]} 
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de flotadores}
 
-Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
-
+\textcolor{blue}{[BORRADOR] Introducción [/BORRADOR]} 
 
 \begin{mytable}[H]
 	\centering
@@ -1776,14 +2338,24 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 	\end{flushleft}
 \end{mytable}
 
-[BORRADOR] El actuador lineal modelo XXX cumple con los requerimientos de la velocidad de movimiento que no puede ser demasiado lenta porque automatizar el proceso no sería óptimo, por lo que al final terminamos optando por el que tiene menor costo. [/BORRADOR]
+\textcolor{blue}{[BORRADOR] Explicar selección [/BORRADOR]} 
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de sistema de flotación}
 
-Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
+\textcolor{blue}{[BORRADOR] Introducción [/BORRADOR]} 
 
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/calculo de fuerzas necesarias para mantener a flote el sistema.png}
+	\caption{Fuerzas necesarias para mantener a flote el sistema}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:calculo de fuerzas necesarias para mantener a flote el sistema}
+\end{myfigure}
 
+\textcolor{blue}{[BORRADOR] Comentario [/BORRADOR]} 
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Planos del sistema}
