@@ -53,6 +53,7 @@ La máquina clasificadora y contadora de truchas\footnote{CCT}, y su sistema res
 
 En las siguientes páginas se analizan diversos puntos generales concernientes al sistema: arquitectura de hardware, la selección de materiales de fabricación, la selección de materiales de fabricación.
 
+\textcolor{blue}{[BORRADOR] Explicar cambios importantes respecto a Diseño conceptual sustentando cálculos realizados o algoritmos ... [/BORRADOR]}\\
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Arquitectura de hardware}
@@ -443,12 +444,134 @@ En la subsección anterior \textit{"Diseño de subsistema de tuberías"} se calc
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de subsistema de distribución de truchas}
 
-Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo de clasificación dirige a la trucha en tránsito a la salida correspondiente en el mecanismo de distribución de truchas. Dicho mecanismo recibe a la trucha y debe redirigir mediante un juego de compuertas a tres salidas que a su vez se impulsan mediante un caudal a sus respectivas jaulas flotantes.
+Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo de clasificación indica al sistema la trayectoria que debe seguir la trucha en tránsito y es accionado por el mecanismo de distribución, mostrado en la Figura \ref{fig:mecanismo de distribucion de truchas}. Dicho mecanismo recibe a la trucha por una única entrada y redirige mediante un juego de compuertas a tres salidas. Finalmente, las truchas son impulsadas al ingresar a tuberías con caudal de agua constante que las transporta hasta las jaulas flotantes correspondientes.
+
+\begin{myfigure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{chapter5/mecanismo de distribucion de truchas.png}
+	\caption{Mecanismo de distribución de truchas}
+	\begin{myflushleftportland}
+		Fuente: Elaboración propia.
+	\end{myflushleftportland}
+	\label{fig:mecanismo de distribucion de truchas}
+\end{myfigure}
 
 \begin{itemize}
 	
+	\item \textbf{Selección de mecanismo que acciona la compuerta}
+	
+	La selección del mecanismo que activa la compuerta tiene requisitos técnicos que son muy importantes, de no funcionar puede parar completamente el proceso general, por lo que se realiza una comparación de los posibles mecanismos a utilizar para hacer girar la compuerta de manera cíclica ordenado por el subsistema de control. La comparación conceptual se muestra en la Tabla \ref{tab:tabla comparativa de conceptos de mecanismos para compuerta} y los conceptos de mecanismos analizados se muestran en la Figura \ref{fig:conceptos de mecanismos de distribucion de truchas}.
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/conceptos de mecanismos de distribucion de truchas.png}
+		\caption[Conceptos de mecanismos de distribución de truchas]{(a) Mecanismo de eje servomotor. (b) Mecanismo de tolva y seguidor. (c) Mecanismo de servomotor lineal.}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:conceptos de mecanismos de distribucion de truchas}
+	\end{myfigure}
+
+	El mecanismo inicialmente propuesto (Figura \ref{fig:conceptos de mecanismos de distribucion de truchas}-a) corresponde a un servomotor conectado al eje de la compuerta del sistema de distribución, los apoyos no son representados en las figuras. El sistema, al efectuar cierta cantidad de giros en un periodo largo\footnote{Una jornada diaria de clasificación puede someter al mecanismo a abrir/cerrar la compuerta en $t_{compuerta}\approx1 s.$ durante $t_{jornadaxdia}=6 h.$} presenta un deterioro considerable en el eje del servomotor, por lo que se analiza un mecanismo de leva-seguidor (Figura \ref{fig:conceptos de mecanismos de distribucion de truchas}-b) que traslada el giro fuera del eje, en un solo sentido y se aplica el giro sobre un extremo de la compuerta, el disco de leva está posicionado para brindar un movimiento armónico al extremo de la compuerta. Así también, se considera un mecanismo de servomotor lineal que mediante una traba en la cremallera desplaza la compuerta hasta la posición requerida mediante giros en los dos sentidos.
+	
+	\begin{savenotes}	
+	\begin{mytable}[H]
+		\centering
+		\caption{Tabla comparativa de conceptos de mecanismos.}
+		\label{tab:tabla comparativa de conceptos de mecanismos para compuerta}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}} & 
+			\textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					\textbf{Servomotor de rotación posicional}
+			\end{myflushcenter}\end{minipage} & 
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					\textbf{Leva y seguidor}
+			\end{myflushcenter}\end{minipage} &
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+					\textbf{Servomotor lineal}
+			\end{myflushcenter}\end{minipage} \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - & 
+			Figura \ref{fig:conceptos de mecanismos de distribucion de truchas}-a &
+			Figura \ref{fig:conceptos de mecanismos de distribucion de truchas}-b &
+			Figura \ref{fig:conceptos de mecanismos de distribucion de truchas}-c \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Cantidad de sentidos de giro}
+				\end{minipage}
+			} & - & 2 & 1 & 2 \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Complejidad mecánica\footnote{Basado en análisis de falla. Calificación cualitativa: baja, media o alta.}}
+				\end{minipage}
+			} & - & Baja & Alta & Media \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Disponibilidad en el mercado\footnote{Basado en el componente más "difícil" de conseguir.Calificación cualitativa: nacional o internacional}}
+				\end{minipage}
+			} & - & Nacional & Internacional & Nacional \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Torque máximo\footnote{Basado en situación crítica encontrada derivando la ecuación de torque respectivo. Dónde: $d_{eje}$ es la distancia del centro de gravedad de la compuerta al eje, $d_{leva}$ es la distancia del centro del disco de leva hasta la parte más alejada de este y $d_{ser}$ es diámetro del engranaje en el mecanismo piñón-cremallera del servomotor lineal. ($d_{ser}<d_{leva}<d_{eje}$)} ($\bar{\tau_{max}}$)}
+				\end{minipage}
+			} & - & $\approx m*g*d_{eje}$ & $\approx m*g*d_{leva}/2$ & $\approx m*g*d_{ser}/4$ \\ \hline
+		 	\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Desgaste\footnote{Calificación cualitativa: bajo, medio o alto.}}
+				\end{minipage}
+			} & - & Alto & Bajo & Medio \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Acoplamiento al sistema\footnote{Basado en cantidad de componentes adicionales necesarios para implementar. Calificación cualitativa: bajo, medio o alto.}}
+				\end{minipage}
+			} & - & Bajo & Medio & Medio \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}			
+					\textbf{Ruido generado\footnote{Basado en mecanismo mecánico empleado. Calificación cualitativa: bajo, medio, alto.}}
+				\end{minipage}
+			} & - & Medio & Bajo & Medio \\ \hline
+			\end{tabular}
+		\begin{flushleft}	
+			Fuente: Elaboración propia.
+		\end{flushleft}
+	\end{mytable}
+	\end{savenotes}	
+	
+	El mecanismo escogido es el leva y seguidor ya que solo es necesario su giro en un sentido, lo cual disminuye el desgaste, se acopla al sistema sin implementar más soportes que los otros mecanismos, no genera ruido y su fabricación, en caso no se encuentre en el mercado peruano, se puede realizar en un taller nacional.  	
+	
+	\item \textbf{Diseño de mecanismo que acciona la compuerta}
+	
+	
+	
+	En la sección anterior se eligió el mecanismo a emplear. El diseño del mecanismo va
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/mecanismo compuerta.png}
+		\caption{Mecanismo servomotor-compuerta}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:mecanismo servomotor-compuerta}
+	\end{myfigure}
+	
+	\textcolor{blue}{[BORRADOR] Agregar descripción. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. [/BORRADOR]}	 
+	
+	\begin{myfigure}[H]
+		\centering
+		\includegraphics[width=1\textwidth]{chapter5/mecanismo compuerta leva posicionamiento.png}
+		\caption{Engranajes del mecanismo de compuertas}
+		\begin{myflushleftportland}
+			Fuente: Elaboración propia.
+		\end{myflushleftportland}
+		\label{fig:mecanismo de compuertas engranajes}
+	\end{myfigure}
+	
+	\textcolor{blue}{[BORRADOR] Agregar descripción. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. [/BORRADOR]}	 
+	
 	\item \textbf{Cálculo de fuerza y velocidad de compuertas}
-	La fuerza necesaria es simplemente el giro de la compuerta que está unida a un eje y a su vez al mecanismo de engranajes con el servomotor.
+	
+	La fuerza necesaria es simplemente el giro de la compuerta que está unida a un eje y a su vez al mecanismo de engranajes con el servomotor.\textcolor{blue}{[BORRADOR] Explicar selección entre otras cosas .... Además, citar a \cite{ChinchayDeLaCruz2010} [/BORRADOR]}
 	
 	\begin{myfigure}[H]
 		\centering
@@ -549,33 +672,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 %	\end{itemize}
 
 
-	\item \textbf{Diseño de mecanismo servomotor-compuerta} 
 	
-	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{chapter5/mecanismo servomotor-compuerta.png}
-		\caption{Mecanismo servomotor-compuerta}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:mecanismo servomotor-compuerta}
-	\end{myfigure}
-	
-	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
-	
-	\begin{myfigure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{chapter5/mecanismo de compuertas engranajes.png}
-		\caption{Engranajes del mecanismo de compuertas}
-		\begin{myflushleftportland}
-			Fuente: Elaboración propia.
-		\end{myflushleftportland}
-		\label{fig:mecanismo de compuertas engranajes}
-	\end{myfigure}
-	
-	Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. 
 	
 	
 	\item \textbf{Diseño de juego de compuertas programables}
@@ -1526,8 +1623,7 @@ El encendido o apagado de la máquina es realizado por este interruptor, es deci
 		\begin{minipage}{\myforthmaxsizeofcontenttable}			
 			\textbf{Máximo voltaje admisible (V)}
 		\end{minipage}
-	}
-	&
+	} &
 	16
 	& 17         & 18         & 19         \\ \hline
 	\multicolumn{1}{|l|}{
@@ -1632,10 +1728,17 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 	\label{tab:tabla comparativa de flotadores}
 	\begin{tabular}{l|c|c|c|c|}
 		\cline{2-5}
-		\multicolumn{1}{c|}{\textbf{}}                          & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{1} & \textbf{2} & \textbf{3} \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Figura}}&
-		-
-		&
+		\multicolumn{1}{c|}{\textbf{}} & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} &
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+			\textbf{1}
+		\end{myflushcenter}\end{minipage} & 
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+			\textbf{2}
+		\end{myflushcenter}\end{minipage} &
+		\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenter}
+			\textbf{3}
+		\end{myflushcenter}\end{minipage} \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Figura}}& - &
 		\begin{minipage}{\mythirdmaxsizeofcontenttable}
 			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 1.png} \\ 
 			%\begin{myflushcenter}
@@ -1656,26 +1759,20 @@ Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis grav
 			%	{\footnotesize Nombre imagen}
 			%\end{myflushcenter}
 		\end{minipage}  \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Fabricante}}               & -                                                                     & 9          & 10         & 11         \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Característica}}      & 12                                                                    & 13         & 14         & 15         \\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}			
-				\textbf{Característica}
+				\textbf{Concepto}
 			\end{minipage}
-		}
-		&
-		16
-		& 17         & 18         & 19         \\ \hline
+		} & - & 9 & 10 & 11 \\ \hline
 		\multicolumn{1}{|l|}{
 			\begin{minipage}{\myforthmaxsizeofcontenttable}			
-				\textbf{Característica}
+				\textbf{Concepto}
 			\end{minipage}
-		} & 20                                                                    & 21         & 22         & 23         \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Característica}}              & 24                                                                    & 25         & 26         & 27         \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Característica}}           & 32                                                                    & 33         & 34         & 35         \\ \hline
+		} & - & 9 & 10 & 11 \\ \hline
+	
 	\end{tabular}
 	\begin{flushleft}	
-		Fuente: Imágenes de dominio público y elaboración propia.
+		Fuente: Elaboración propia.
 	\end{flushleft}
 \end{mytable}
 
