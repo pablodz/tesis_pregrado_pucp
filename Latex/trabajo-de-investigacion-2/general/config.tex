@@ -100,7 +100,7 @@ heightrounded, % to avoid spurious underfull messages
 % Documentación \captionsetup https://bit.ly/31RjwG3 
 
 % FIGURAS
-\captionsetup[figure]{font={small,singlespacing}} % https://bit.ly/2QOHo6U
+\captionsetup[figure]{font={footnotesize,singlespacing}} % https://bit.ly/2QOHo6U
 \captionsetup[figure]{labelfont={bf}} % Negrita a Tabla X.X
 \captionsetup[figure]{labelsep={endash}} % Punto y espacio luego de Figura X.X. 
 \captionsetup[figure]{width={.75\textwidth}} % Sangría para título de Figura
@@ -112,7 +112,7 @@ heightrounded, % to avoid spurious underfull messages
 \captionsetup[figure]{name=Figura} % Nombre figuras
 
 % TABLAS
-\captionsetup[table]{font={small,singlespacing}} % scriptsize,footnotesize,small,normalsize,larga,Large %stretch=0.8
+\captionsetup[table]{font={footnotesize,singlespacing}} % scriptsize,footnotesize,small,normalsize,larga,Large %stretch=0.8
 \captionsetup[table]{labelfont={bf}} % normalfont,up,it,sl,sc,md,bf,rm,sf,tt
 \captionsetup[table]{labelsep={endash}} % none,colon,period,space,quad,newline,endash 
 \captionsetup[table]{width={.75\textwidth}} % Sangría para título de tabla
@@ -246,14 +246,15 @@ heightrounded, % to avoid spurious underfull messages
 	\renewcommand{\appendixtocname}{Anexos}
 	\renewcommand{\appendixpagename}{Anexos}
 	\renewcommand{\chaptername}{Capítulo}
-	\renewcommand{\tablename}{Tabla}
-	\renewcommand{\figurename}{Figura}
-	\renewcommand{\thechapter}{\Roman{chapter}}
+	\renewcommand{\thetable}{Tabla}	
+	\renewcommand{\thefigure}{Figura}
+	\renewcommand{\thechapter}{Capítulo \Roman{chapter}}
 	\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 	\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 	\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 	\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 }
+
 
 
 \renewcommand{\bibsection}{} % Eliminar "References" título
@@ -290,9 +291,23 @@ heightrounded, % to avoid spurious underfull messages
 \newcommand{\myforthmaxsizeofcontenttable}{4 cm}
 
 \newenvironment{myflushcenter}{%
+	\vspace{-1.5em}
+	\begin{center}
+	}{%
+	\end{center}
+}
+
+\newenvironment{myflushcenterinsidetable}{%
 	\setstretch{0.75}
 	\setlength\topsep{0pt}
 	\setlength\parskip{0pt}
+	\begin{center}
+	}{%
+	\end{center}
+}
+
+\newenvironment{myflushcenteraftertable}{%
+	\vspace{-0.5 em}
 	\begin{center}
 	}{%
 	\end{center}
@@ -302,7 +317,7 @@ heightrounded, % to avoid spurious underfull messages
 \newenvironment{myflushleftportland}{%
 	\vspace{-1.5em}
 	\begin{flushleft} 
-	\small
+	\footnotesize
 	}{%
 	\end{flushleft}
 }
@@ -311,7 +326,7 @@ heightrounded, % to avoid spurious underfull messages
 \newenvironment{myflushleftportland2}{%
 	\vspace{-2.5em}
 	\begin{flushleft} 
-		\small
+	\footnotesize
 	}{%
 	\end{flushleft}
 }
@@ -320,7 +335,7 @@ heightrounded, % to avoid spurious underfull messages
 \newenvironment{myflushleftlandscape}{%
 	\vspace{-3em}
 	\begin{flushleft} 
-	\small
+	\footnotesize
 	}{%
 	\end{flushleft}
 }
@@ -347,7 +362,7 @@ heightrounded, % to avoid spurious underfull messages
 \newenvironment{myequation}{%
 	\vspace{-2.5em}
 	\begin{equation}
-		}{%
+	}{%
 	\end{equation}
 	\vspace{-2.0em}
 }
