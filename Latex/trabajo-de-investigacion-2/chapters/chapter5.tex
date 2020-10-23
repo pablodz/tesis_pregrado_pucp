@@ -48,11 +48,9 @@ Según el proceso de diseño indicado en la norma VDI 2221 que se muestra en la 
 \subsection{Descripción del sistema integral}
 \label{ssec:descripcion del sistema integral}
 
-Respecto al diseño conceptual, existen algunas modificaciones en los tipos de dispositivos por características técnicas detectadas en el desarrollo de ingeniería del sistema: el cambio del servomotor por un mecanismo de motor a pasos con leva-seguidor que disminuye el desgaste por el sentido de giro; la batería ya no es parte del sistema, el operario debe suministrar la energía necesaria; el adicional de una cámara para el seguimiento de la trayectoria de truchas en el mecanismo de distribución; la variación de el uso de un microcontrolador a microprocesador debido a la potencia computacional requerida; el cambio de bombas sumergibles a bombas de agua por la eficiencia y potencia necesaria en el proyecto\footnote{El precio de las bombas sumergibles sube considerablemente correspondiente a la potencia requerida.}; remoción de la reja al inicio accionada por un motor debido al coste de implementación y reemplazo con un tapón de plástico; cambio de nombre del interruptor de tipo hongo a interruptor de suministro de energía.
+Respecto al diseño conceptual, existen algunas modificaciones en los tipos de dispositivos por características técnicas detectadas en el desarrollo de ingeniería del sistema: el cambio del servomotor por un mecanismo de motor a pasos con leva-seguidor que disminuye el desgaste por el sentido de giro; la batería ya no es parte del sistema, el operario debe suministrar la energía necesaria; el adicional de una cámara para el seguimiento de la trayectoria de truchas en el mecanismo de distribución; la variación de el uso de un microcontrolador a microprocesador debido a la potencia computacional requerida; el cambio de bombas sumergibles a bombas de agua por la eficiencia y potencia necesaria en el proyecto\footnote{El precio de las bombas sumergibles sube considerablemente correspondiente a la potencia requerida.}; remoción de la reja al inicio accionada por un motor debido al coste de implementación y reemplazo con un tapón de plástico; cambio de nombre del interruptor de tipo hongo a interruptor de suministro de energía. %\textcolor{blue}{[BORRADOR] INGRESAR AQUÍ CAMBIOS REALIZADOS [/BORRADOR]}\\
 
-La máquina clasificadora y contadora de truchas\footnote{CCT}, y su sistema respectivo tienen como función principal recepcionar truchas mediante una tolva, procesar la clasificación, conteo y distribución hacia tres jaulas flotantes en medio de la Laguna de Paucarcocha.\footnote{\cite{DiazVergara2020}} La máquina se sitúa sobre el agua y es empleada por un operario, que se encarga de extraer truchas con una sacadera telescópica\footnote{También llamada cal-cal.}. En las siguientes páginas se analizan dos puntos generales concernientes al sistema: arquitectura de hardware y la selección de materiales de fabricación por subsistema.
-
-%\textcolor{blue}{[BORRADOR] Explicar cambios importantes respecto a Diseño conceptual sustentando cálculos realizados o algoritmo. Cambios realizados: servomotor -> Leva + Motor a pasos; batería ya no es requerida, el operario se ocupa de suministrar batería; cámara simple agregada mediante stickers de puntos rojos, solo analizamos color rojo de compuertas y filtrar a la trucha. Ya no se realiza diagrama eléctrico, todo será manejo de DC. Potencia computacional requerida aumenta de microcontrolador a microprocesador [/BORRADOR]}\\
+La máquina clasificadora y contadora de truchas (CCT), y su sistema respectivo tienen como función principal recepcionar truchas mediante una tolva, procesar la clasificación, conteo y distribución hacia tres jaulas flotantes en medio de la Laguna de Paucarcocha.\footnote{\cite{DiazVergara2020}} La máquina se sitúa sobre el agua y es empleada por un operario, que se encarga de extraer truchas con una sacadera telescópica\footnote{También llamada cal-cal.}. En las siguientes páginas se analizan dos puntos generales concernientes al sistema: arquitectura de hardware y la selección de materiales de fabricación por subsistema.
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Arquitectura de hardware}
@@ -68,8 +66,6 @@ En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propue
 	\end{myflushcenter}
 	\label{fig:arquitectura de hardware del sistema}
 \end{myfigure}
-
-%\textcolor{blue}{[BORRADOR] Terminar de definir los voltajes que se utilizarán. [/BORRADOR]}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Selección de materiales de fabricación}
@@ -495,11 +491,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 		
 	\item \textbf{Selección de motores a paso}
 	
-	La selección de los motores a pasos depende se da acorde a los cálculos en las subsecciones anteriores, existe una gran variedad en cuanto a este tipo de dispositivos en el mercado internacional.En la Tabla \ref{tab:tabla comparativa de motores a pasos} se muestra una comparación técnica entre tres motores a pasos que cumplen los requisitos mínimos.
-	
-	%Este mecanismo mostrado en la Figura acciona la compuerta presentada en la %Figura \ref{fig:compuerta}. El torque necesario del eje es $T_{max}=X (M*mm)$  %y gracias al mecanismo de engranajes puede reducirse a $T_{max_2}=Y (M*mm)$ 
-	
-	 
+	La selección de los motores a pasos depende se da acorde a los cálculos en las subsecciones anteriores, existe una gran variedad en cuanto a este tipo de dispositivos en el mercado internacional.En la Tabla \ref{tab:tabla comparativa de motores a pasos} se muestra una comparación técnica entre tres motores a pasos que cumplen los requisitos mínimos.	 
 	
 	\begin{mytable}[H]
 		\footnotesize\centering
@@ -596,22 +588,12 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 		\end{myflushcenteraftertable}
 	\end{mytable}
 	
-
 	
 	%\item \textbf{Diseño de juego de compuertas programables}
 	
 	%Descripción.
 	
 \end{itemize}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% NUEVO SUBSECCION X.X.X.X
-%\subsubsection{Selección de reja accionada por motor}
-
-%Esta compuerta puede ser reemplazada por una tapa para la tolva de recepción de truchas. En el presente trabajo se decide optar por eliminar este componente.
-
-%\textcolor{blue}{[BORRADOR] ¿Se puede eliminar este inciso en caso no lo use? [/BORRADOR]} 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diseño de subsistema de traslado de truchas}
@@ -723,7 +705,7 @@ Las tuberías del sistema tienen como propósito abastecer de un flujo de agua c
 		\label{tab:tabla comparativa de electrovalvulas}
 		\begin{tabular}{l|c|c|c|c|}
 			\cline{2-5}
-			\multicolumn{1}{c|}{\textbf{}} & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{2W} & \textbf{CTB010} & \textbf{400P} \\ \hline
+			\multicolumn{1}{c|}{\textbf{}} & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & \textbf{2W} & \textbf{CTB100} & \textbf{400P} \\ \hline
 			\multicolumn{1}{|l|}{\textbf{Figura}}   & -   
 			&
 			\begin{minipage}{\mythirdmaxsizeofcontenttable}
@@ -755,9 +737,9 @@ Las tuberías del sistema tienen como propósito abastecer de un flujo de agua c
 			\multicolumn{1}{|l|}{\textbf{Presión máxima operativa ($kPa$)}} & 550 & - & 4000 & 1400 \\ \hline
 			\multicolumn{1}{|l|}{\textbf{Tipo}} & - & Solenoide & Mariposa & Solenoide \\ \hline
 			\multicolumn{1}{|l|}{\textbf{Certificados}} & - & ISO 9001:2008 & - & - \\ \hline
-			\multicolumn{1}{|l|}{\textbf{Consumo de potencia ($W$)}} & - & 2 & 23 & - \\ \hline
-			\multicolumn{1}{|l|}{\textbf{Temperatura operativa (°$C$)}} & [-10; 40] & - & [-25; 60] & [-20 ; 43] \\ \hline
-			\multicolumn{1}{|l|}{\textbf{Peso aproximado ($kg$)}} & - & - & [2.5; 10] & - \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Consumo de potencia ($W$)}} & - & - & 100 & - \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Temperatura operativa (°$C$)}} & [-10; 40] & [-25; 60] & [-25; 60] & [-20 ; 43] \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Peso aproximado ($kg$)}} & - & - & 12 & - \\ \hline
 			\multicolumn{1}{|l|}{\textbf{Precio ($S/$)}} & - & 244.12 & 287.20 & 642.61 \\ \hline		
 		\end{tabular}	
 		\begin{myflushcenteraftertable}			
@@ -766,7 +748,7 @@ Las tuberías del sistema tienen como propósito abastecer de un flujo de agua c
 		\end{myflushcenteraftertable}
 	\end{mytable}
 
-	Se escoge la válvula del fabricante Xhnotion modelo 2W debido a que si bien su diseño es más simple comparado con las alternativas, y usar Latón, cumple con el objetivo de regular la apertura de la compuerta que impide el paso de caudal de agua. 
+	Se escoge la válvula del fabricante TF modelo CTB100 debido a que cuenta con un control más complejo al modelo 2W, que si bien su diseño es más simple el control se desplaza al microprocesador. Además, esta electroválvula cumple con el objetivo de regular la apertura de la compuerta que impide el paso de caudal de agua.
 	
 	\item \textbf{Selección de sensores de presión}
 	
@@ -2321,20 +2303,20 @@ El cálculo del consumo de energía del sistema es la suma de potencia requerida
 	\label{tab:tabla de consumo de energia del sistema por dispositivo}
 	\begin{tabular}{l|c|c|c|c|c|c|}
 		\cline{2-7}
-		\multicolumn{1}{c|}{\textbf{}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Modelo \\ (Datasheet)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}I max \\ (mA)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}V \\ (Volts)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}P. Unitario \\ (mW)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Cant. \\ (und.)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Pot. tot \\ (W)\end{tabular}} \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Motor a pasos 1 y 2}} & NEMA 34 & 2 & 24 & 53.85 & 2 & 96 \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Driver de motor a pasos}} & DM860H & 7.2 & 24 & 71.8 & 2 & 172.8 \\ \hline
+		\multicolumn{1}{c|}{\textbf{}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Modelo \\ (Datasheet)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}I max \\ ($mA$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}V \\ ($V$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Pot. Unitaria \\ ($W$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Cant. \\ ($und.$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Pot. tot \\ ($W$)\end{tabular}} \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Motor a pasos 1 y 2}} & NEMA 34 & 2000 & 24 & 48 & 2 & 96 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Driver de motor a pasos}} & DM860H & 3.5 & 24 & 86.4 & 2 & 172.8 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Bomba de agua 1}} & A & B & C & D & 1 & F \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Bomba de agua 2}} & A & B & C & D & 1 & F \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Driver de bomba de agua}} & A & B & C & D & 1 & F \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor de presión}} & WNK80MA & 20 & 5 & 43.08 & 4 & 40 \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Electroválvula 1}} & 2W & - & 24 & 244.12 & 1 & $\approx$24 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor de presión}} & WNK80MA & 20 & 12 & 0.24 & 4 & 0.96 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Electroválvula 1}} & CTB100 & - & 24 & 100 & 1 & 100 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Electroválvula 2,3 y 4}} &  & - & - & 4 & E & 72 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor infrarrojo}} & HD-DS25CM-3MM & 20 & 5 & 7 & 1 & 0.10 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Cámara estéreo}} & OAK-D & - & - & 475.41 & 1 & 4.00 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Cámara simple}} & OAK-1 & - & - & 355.41 & 1 & 2.00 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{LEDs de iluminación}} & PSH601A & - & 24 & 17.23 & 2 & 28.80 \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Indicador visual}} & HS-WS812B-16L-b & - & 5 & 12.57 & 3 & 3.80 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Indicador visual}} & HS-WS812B-16L-b & - & 5 & 4.8/7/9 & 3 & 20.8 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Indicador sonoro}} & SE-B40 & - & 12 & 35.9 & 2 & 80.00 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Microprocesador}} & Raspberry Pi 4B & 3 & 5 & 197.45 & 1 & 15.00 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor de iluminación}} & A & B & C & D & 1 & F \\ \hline
@@ -2605,17 +2587,104 @@ Se escoge el componente WMX-DSD24S1220 con WMX-DSD48S520 para convertir voltaje 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diagrama esquemático} 
 
-El diagrama esquemático presentado en la Figura \ref{fig:diagrama esquematico} y \ref{fig:diagrama de flujo2} es correspondiente al sistema de CCT, este ex8uhpone las conexiones de todos los componentes electrónicos utilizados. \textcolor{blue}{[BORRADOR] Explicar conexiones [/BORRADOR]}
+El diagrama esquemático se presenta dependiendo de los componentes en las Figuras \ref{fig:diagrama esquematico de conexiones al microprocesador}, \ref{fig:diagrama esquematico de los drivers de los motores a pasos}, \ref{fig:diagrama esquematico de las camaras}, \ref{fig:diagrama esquemático del generador pwm a partir de i2c}, \ref{fig:diagrama esquematico de los indicadores visuales}, \ref{fig:diagrama esquematico de los sensores de presion e infrarrojo} y \ref{fig:diagrama esquematico de los leds de alta potencia} correspondiente al sistema CCT. Este diagrama expone las conexiones de pines a seguir en la elaboración física de la máquina. En la Figura \ref{fig:diagrama esquematico de conexiones al microprocesador} se muestra las conexiones del microprocesador Raspberry Pi 4B a los actuadores y sensores. Añadir la necesidad de ondas PWM a partir de los pines digitales I2C debido al soporte que brindan.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/diagrama esquematico.pdf}
-	\caption{Diagrama esquemático del sistema}
+	\includegraphics[width=0.65\textwidth]{chapter5/DE-microprocesador.png}
+	\caption{Diagrama esquemático del microprocesador.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
 	\end{myflushcenter}
-	\label{fig:diagrama esquematico}
+	\label{fig:diagrama esquematico de conexiones al microprocesador}
 \end{myfigure}
+
+En la Figura \ref{fig:diagrama esquematico de los drivers de los motores a pasos} se muestra las conexiones de los drivers DM860H a los motores a pasos basados en Nema 34, estos son alimentados con 24 $V$ y posee dos secciones de conexiones: control y actuador. En la sección de control, se conectan DIR+ y PUL+ a pines digitales del microprocesador, mientras que DIR- y PUL- se conectan al voltaje de alimentación. Los motores de paso tienen 4 cables, diferenciados por colores que se conectan como se muestra en el diagrama.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/DE-driver de motor a pasos.png}
+	\caption{Diagrama esquemático de los drivers de los motores a pasos.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquematico de los drivers de los motores a pasos}
+\end{myfigure}
+
+En la Figura \ref{fig:diagrama esquematico de las camaras} se muestra las conexiones de las cámaras al microprocesador. Dichas cámaras están diseñadas para transmitir las imágenes vía USB 3.0 y se alimentan por ese medio. El microprocesador soporta dos conexiones USB 3.0.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/DE-camaras.png}
+	\caption{Diagrama esquemático de las cámaras.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquematico de las camaras}
+\end{myfigure}
+
+En la Figura \ref{fig:diagrama esquemático del generador pwm a partir de i2c} se muestra las conexiones de los pines I2C del microprocesador al generador PWM. Dicha placa genera 6 ondas PWM y es posible de conectar en serie hasta 67 placas similares teniendo en cuenta la corriente necesaria.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/DE-generador pwm con i2c.png}
+	\caption{Diagrama esquemático del generador PWM a partir de I2C.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquemático del generador pwm a partir de i2c}
+\end{myfigure}
+
+En la Figura \ref{fig:diagrama esquematico de los indicadores visuales} se muestra las conexiones del pin digital PWM del microprocesador hacia los indicadores visuales\footnote{El diagrama no representa medidas exactas.}. Como se muestra en el diagrama, el cambio de colores e intensidad cambia igualmente en los tres indicadores. Es posible modificar estas conexiones, agregando una tarjeta de control múltiple de PWM.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=1\textwidth]{chapter5/DE-indicadores visuales.png}
+	\caption{Diagrama esquemático de los indicadores visuales.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquematico de los indicadores visuales}
+\end{myfigure}
+
+En la Figura \ref{fig:diagrama esquematico de los sensores de presion e infrarrojo} se muestra la conexión a los sensores de presión, al emisor y receptor infrarrojo. En el caso de los cuatro sensores de presión, se conectan a los pines digitales al pin I2C del microprocesador, debido al consumo de consumo de corriente, no es necesario agregar alimentadores de voltaje intermedios. Por otro lado, para el sensor infrarrojo, la conexión al microprocesador corresponde al receptor, existe una codificación y secuencia para recopilar la información.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/DE-sensores presion e infrarrojo.png}
+	\caption{Diagrama esquemático de los sensores de presión e infrarrojo.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquematico de los sensores de presion e infrarrojo}
+\end{myfigure}
+
+En la Figura \ref{fig:diagrama esquematico de los leds de alta potencia} se muestra la conexión a los leds de alta potencia que iluminan el subsistema de procesamiento de imágenes. El pin digital PWM activa el suministro a estos LEDs mediante el uso de transistores MOSFET que admiten un voltaje máximo de 40 $V$.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/DE-led de alta potencia.png}
+	\caption{Diagrama esquemático de los leds de alta potencia.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquematico de los leds de alta potencia}
+\end{myfigure}
+
+En la Figura \ref{fig:diagrama esquematico del indicador sonoro} se muestra la conexión PWM saliente de la placa de generación de ondas conectada al MOSFET de activación para emitir sonidos elaborados en la bocina. Al usar PWM se puede generar una alta gama de sonidos a diferentes frecuencias del espectro audible, para ser percibidos por el operario.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter5/DE-indicador sonoro.png}
+	\caption{Diagrama esquemático del indicador sonoro.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
+	\end{myflushcenter}
+	\label{fig:diagrama esquematico del indicador sonoro}
+\end{myfigure}
+
+
+
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Diagrama de flujo}
