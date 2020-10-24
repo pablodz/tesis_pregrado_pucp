@@ -23,6 +23,8 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt,a4paper,oneside]{thesis} % Formato tesis, 12 tamaño de letra
+\setcounter{tocdepth}{4} % Número de indices a indexar en tabla de contenido 2:section 3:subsection 4:subsubsection
+\setcounter{secnumdepth}{4} % Número de indices a indexar en tabla de contenido 2:section 3:subsection 4:subsubsection
 \usepackage[english]{babel} % Asignar idioma por defecto spanish
 %\selectlanguage{spanish} % Idioma por defecto x2
 \usepackage[T1]{fontenc} % Aceptar caracteres con tíldes en el pdf generado
@@ -51,7 +53,7 @@
 \usepackage{comment} % Hacer comentarios en latex
 \usepackage{pslatex} % Tipo de fuente
 \usepackage{apacite} % Citación en APA
-\usepackage{fixltx2e} % Corrige bugs de Latex 3
+%\usepackage{fixltx2e} % Corrige bugs de Latex 3 | No es necesario en builds >2015
 \usepackage{caption} % Objetos flotantes en el documento
 \usepackage[top=2.54cm,
 bottom=2.54cm,
@@ -65,15 +67,20 @@ heightrounded, % to avoid spurious underfull messages
 \usepackage{blindtext}
 \usepackage{pdfpages} % Cargar imagenes en pdf
 \usepackage{datetime} % Fecha
+
 \usepackage{footnote} % Tablas largas y foot note para tablas https://texblog.org/2012/02/03/using-footnote-in-a-table/
 \usepackage{enumitem} % Enumerar letras
 \usepackage[bottom]{footmisc} % Forzar notas de página pegadas hacia abajo https://bit.ly/3fyOA2f
+\usepackage{scrextend} % Cambiar formato nota de página
+\deffootnote[.5in]{.5in}{.195in}{\makebox[.5in][r]{\thefootnotemark.\hspace{.2in}}}  % Cambiar formato nota de página
+% ERROR DE "TITLE ALREADY DEFINED" Pueden omitirlo, no afecta en nada, pueden comentarlo incluso en el archivo.sty
+
 
 \usepackage[paper=portrait,pagesize]{typearea} %PORTRAID-LANDSCAPE 
 
 \usepackage{url} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
 \usepackage{breakurl} % Broken links
-\usepackage{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía
+\usepackage[hyperfootnotes=false]{hyperref} % Evitar enlaces en bibliografía largos & enlazar enlaces de bibliografía ADEMAS, false porque así lo recomienda la libreria footmisc
 \usepackage{natbib}
 \usepackage{etoolbox}
 
@@ -82,13 +89,18 @@ heightrounded, % to avoid spurious underfull messages
 \usepackage{indentfirst} % Agregar indentado de 1cm al inicio de cada párrafo de cada sección
 
 
+
+
+%\usepackage{svg} % Soporte imagenes svg
+% SVG necesita agregar --shel por eso no lo usaremos
+
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION ESPACIADO, TAMAÑO DE LETRA Y RELACIONADOS A FIGURAS, TABLAS
 %----------------------------------------------------------------------------------------
 % Documentación \captionsetup https://bit.ly/31RjwG3 
 
 % FIGURAS
-\captionsetup[figure]{font={small,singlespacing}} % https://bit.ly/2QOHo6U
+\captionsetup[figure]{font={footnotesize,singlespacing}} % https://bit.ly/2QOHo6U
 \captionsetup[figure]{labelfont={bf}} % Negrita a Tabla X.X
 \captionsetup[figure]{labelsep={endash}} % Punto y espacio luego de Figura X.X. 
 \captionsetup[figure]{width={.75\textwidth}} % Sangría para título de Figura
@@ -100,7 +112,7 @@ heightrounded, % to avoid spurious underfull messages
 \captionsetup[figure]{name=Figura} % Nombre figuras
 
 % TABLAS
-\captionsetup[table]{font={small,singlespacing}} % scriptsize,footnotesize,small,normalsize,larga,Large %stretch=0.8
+\captionsetup[table]{font={footnotesize,singlespacing}} % scriptsize,footnotesize,small,normalsize,larga,Large %stretch=0.8
 \captionsetup[table]{labelfont={bf}} % normalfont,up,it,sl,sc,md,bf,rm,sf,tt
 \captionsetup[table]{labelsep={endash}} % none,colon,period,space,quad,newline,endash 
 \captionsetup[table]{width={.75\textwidth}} % Sangría para título de tabla
@@ -234,14 +246,16 @@ heightrounded, % to avoid spurious underfull messages
 	\renewcommand{\appendixtocname}{Anexos}
 	\renewcommand{\appendixpagename}{Anexos}
 	\renewcommand{\chaptername}{Capítulo}
-	\renewcommand{\tablename}{Tabla}
-	\renewcommand{\figurename}{Figura}
-	\renewcommand{\thechapter}{\Roman{chapter}}
+	\renewcommand{\thetable}{Tabla}	
+	\renewcommand{\thefigure}{Figura}
+	\renewcommand{\thechapter}{Capítulo \Roman{chapter}}
 	\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
 	\renewcommand{\thetable}{\arabic{chapter}.\arabic{table}}
 	\renewcommand{\thefigure}{\arabic{chapter}.\arabic{figure}}
 	\renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 }
+
+
 
 \renewcommand{\bibsection}{} % Eliminar "References" título
 
@@ -264,13 +278,28 @@ heightrounded, % to avoid spurious underfull messages
 %----------------------------------------------------------------------------------------
 
 \newcommand{\myarraystrech}{0.75}
+
 \newcommand{\mymaxsizeofcontenttable}{3 cm}
 \newcommand{\mysizeimageinsidetable}{1.5 cm}
+
 \newcommand{\mysecondmaxsizeofcontenttable}{5 cm}
 \newcommand{\mysecondmaxsizeimageinsidetable}{4 cm}
 
+\newcommand{\mythirdmaxsizeofcontenttable}{2.6 cm}
+\newcommand{\mythirdmaxsizeimageinsidetable}{2.4 cm}
+
+\newcommand{\myforthmaxsizeofcontenttable}{4 cm}
+
+\newcommand{\mysizeimageinsidetablelandspace}{0.5 cm}
 
 \newenvironment{myflushcenter}{%
+	\vspace{-1.5em}
+	\begin{center}
+	}{%
+	\end{center}
+}
+
+\newenvironment{myflushcenterinsidetable}{%
 	\setstretch{0.75}
 	\setlength\topsep{0pt}
 	\setlength\parskip{0pt}
@@ -279,11 +308,26 @@ heightrounded, % to avoid spurious underfull messages
 	\end{center}
 }
 
+\newenvironment{myflushcenteraftertable}{%
+	\vspace{-0.5 em}
+	\begin{center}
+	}{%
+	\end{center}
+}
+
+\newenvironment{myflushcenteraftertable_landspace}{%
+	\vspace{-1.5 em}
+	\begin{center}
+	}{%
+	\end{center}
+}
+
+
 % Para datos debajo de imagenes en páginas verticales
 \newenvironment{myflushleftportland}{%
 	\vspace{-1.5em}
 	\begin{flushleft} 
-	\small
+		\footnotesize
 	}{%
 	\end{flushleft}
 }
@@ -292,7 +336,7 @@ heightrounded, % to avoid spurious underfull messages
 \newenvironment{myflushleftportland2}{%
 	\vspace{-2.5em}
 	\begin{flushleft} 
-		\small
+		\footnotesize
 	}{%
 	\end{flushleft}
 }
@@ -301,11 +345,37 @@ heightrounded, % to avoid spurious underfull messages
 \newenvironment{myflushleftlandscape}{%
 	\vspace{-3em}
 	\begin{flushleft} 
-	\small
+		\footnotesize
 	}{%
 	\end{flushleft}
 }
 
+% Para evitar espacios luego de nombre de imagen
+\newenvironment{myfigure}{%
+	\vspace{-1.0em}
+	\begin{figure}
+	}{%
+	\end{figure}
+	\vspace{-1.0em}
+}
+
+% Para evitar espacios luego de la tabla
+\newenvironment{mytable}{%
+	\vspace{-1.0em}
+	\begin{table}
+	}{%
+	\end{table}
+	\vspace{-1.0em}
+}
+
+% Para evitar espacios en ecuaciones
+\newenvironment{myequation}{%
+	\vspace{-2.5em}
+	\begin{equation}
+	}{%
+	\end{equation}
+	\vspace{-2.0em}
+}
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------
@@ -314,3 +384,15 @@ heightrounded, % to avoid spurious underfull messages
 \renewcommand{\BOthers}[1]{et al.\hbox{}}%       et al
 \renewcommand{\BOthersPeriod}[1]{et al.\hbox{}}%  et al.
 % CONTINUA EN BIBLIOGRAPHY.TEX
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION DE MARGENES EN TABLA DE CONTENIDOS, COMENTAR SI QUIERES QUE SALGA CON INDENTADOS
+%----------------------------------------------------------------------------------------
+
+% Será actualizado en la siguiente versión...
+
+%----------------------------------------------------------------------------------------
+%	CONFIGURACION NOTAS DE PAGINA
+%----------------------------------------------------------------------------------------
+
+\setlength{\footskip}{25pt} % Elimina espacios luego de notas de pagina
