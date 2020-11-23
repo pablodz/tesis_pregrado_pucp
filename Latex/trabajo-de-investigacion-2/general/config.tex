@@ -6,8 +6,8 @@
 % Contáctamen en: pablo.diazv@pucp.edu.pe
 % Revisa las últimas actualizaciones en:
 % https://bit.ly/2EV6luX
-% Versión Cofiguraciones: v2.0
-% Fecha: 2020-09-04
+% Versión Cofiguraciones: v2.1
+% Fecha: 2020-11-19
 % Github: https://github.com/ZurMaD/plantilla_tesis_pucp/
 
 % AVISO: No modificar por su cuenta, enviar un correo para arreglar errores!
@@ -104,7 +104,7 @@ heightrounded, % to avoid spurious underfull messages
 \captionsetup[figure]{labelfont={bf}} % Negrita a Tabla X.X
 \captionsetup[figure]{labelsep={endash}} % Punto y espacio luego de Figura X.X. 
 \captionsetup[figure]{width={.75\textwidth}} % Sangría para título de Figura
-\captionsetup[figure]{justification={justified,centerlast}} % Justificado, última linea centrado
+\captionsetup[figure]{justification=centerlast} % Justificado, última linea centrado
 \captionsetup[figure]{aboveskip=7pt} % https://bit.ly/3jIe7HF Foro latex
 \captionsetup[figure]{belowskip=7pt} 
 \captionsetup[figure]{skip=0pt} % Posición figuras
@@ -116,7 +116,7 @@ heightrounded, % to avoid spurious underfull messages
 \captionsetup[table]{labelfont={bf}} % normalfont,up,it,sl,sc,md,bf,rm,sf,tt
 \captionsetup[table]{labelsep={endash}} % none,colon,period,space,quad,newline,endash 
 \captionsetup[table]{width={.75\textwidth}} % Sangría para título de tabla
-\captionsetup[table]{justification={justified,centerlast}} % Justificado, última linea centrado
+\captionsetup[table]{justification=centerlast} % Justificado, última linea centrado
 \captionsetup[table]{aboveskip=7pt} % Espaciado arriba del título
 \captionsetup[table]{belowskip=7pt} % Espaciado abajo del título
 \captionsetup[table]{skip=0pt} % Posición tablas
@@ -306,6 +306,15 @@ heightrounded, % to avoid spurious underfull messages
 	\end{center}
 }
 
+\newenvironment{myflushleftinsidetable}{%
+	\setstretch{0.75}
+	\setlength\topsep{0pt}
+	\setlength\parskip{0pt}
+	\begin{flushleft}
+	}{%
+	\end{flushleft}
+}
+
 \newenvironment{myflushcenteraftertable}{%
 	\vspace{-0.5 em}
 	\begin{center}
@@ -366,6 +375,7 @@ heightrounded, % to avoid spurious underfull messages
 	\end{equation}
 	\vspace{-2.0em}
 }
+
 %----------------------------------------------------------------------------------------
 %	CONFIGURACION BIBLIOGRAFIA
 %----------------------------------------------------------------------------------------

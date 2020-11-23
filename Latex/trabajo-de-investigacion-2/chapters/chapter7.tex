@@ -8,10 +8,31 @@
 \chapter[\quad\quad\quad\quad ----- Estimación de costos]{\\ Estimación de costos}
 \thispagestyle{myportland}
 
+La estimación de costos del sistema en su conjunto se calcula mediante la separación por rubros específicos. Dichos rubros son relacionados al diseño, manufactura, materiales y de uso eléctrico.
+
 %% NUEVA SECCIÓN X.X
 \section{Costos de diseño}
 
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+Este costo está relacionado con la actividad de ingeniería de diseño, se calcula mediante la multiplicación de horas empleadas por el tesista en la redacción, diseño conceptual y diseño de ingeniería con el sueldo mínimo que suele recibir un practicante pre-profesional en el Perú. Las horas empleadas son calculadas por el tesista, el costo es teórico y pretende dar cifras acordes al mercado. En la Tabla \ref{tab:costo de diseno de ingenieria} se detallan los costos asociados mencionados.
+
+\begin{table}[H]
+	\footnotesize\centering
+	\caption{Costo de diseño de ingeniería.}
+	\label{tab:costo de diseno de ingenieria}
+	\begin{tabular}{lc|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Costo de diseño de ingeniería}}  \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Concepto}} & \multicolumn{1}{c|}{\textbf{Horas}} & \multicolumn{1}{c|}{\textbf{Costo/hora (S/)}} & \multicolumn{1}{c|}{\textbf{Subtotal (S/)}} \\ \hline
+		\multicolumn{1}{|l|}{Diseño conceptual del sistema} & 350 & 9.30 & 3255.00 \\ \hline
+		\multicolumn{1}{|l|}{Diseño de ingeniería del sistema} & 350 & 9.30 & 3255.00 \\ \hline
+		\multicolumn{1}{|l|}{Ensamble del sistema} & A & A & A \\ \hline
+		\multicolumn{1}{|l|}{Pruebas del sistema} & A & A & A \\ \hline
+		& & \textbf{Total (S/)} & \textbf{6510.00}  \\ \cline{3-4} 
+	\end{tabular}
+	\begin{myflushcenteraftertable}	
+		Fuente: Elaboración propia.
+	\end{myflushcenteraftertable}
+\end{table}
 
 %% NUEVA SECCIÓN X.X
 \section{Costos de manufactura}
@@ -21,12 +42,89 @@
 %% NUEVA SECCIÓN X.X
 \section{Costos de componentes}
 
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+Los componentes a considerar son los componentes eléctricos y electrónicos que se emplean para el funcionamiento correcto de la máquina. Los dispositivos son de importación por lo que se aplica un impuesto por importación y gastos de envios en 30\%, con dicha cifra se calcula el costo total. En la Tabla \ref{tab:costo de componentes electricos y electronicos} se exponen de forma detallada los costos unitarios de cada componentes y el total después de envíos e impuestos.
+
+\begin{table}[H]
+	\footnotesize\centering
+	\caption{Costo de componentes eléctricos y electrónicos.}
+	\label{tab:costo de componentes electricos y electronicos}
+	\begin{tabular}{llc|c|c|}
+		\hline
+		\multicolumn{5}{|c|}{\textbf{Costo de componentes eléctricos y electrónicos}} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Componente}} & \multicolumn{1}{c|}{\textbf{Modelo}} & \multicolumn{1}{c|}{\textbf{Costo Unitario (S/)}} & \multicolumn{1}{c|}{\textbf{Cantidad}} & \multicolumn{1}{c|}{\textbf{Subtotal (S/)}} \\ \hline
+		\multicolumn{1}{|l|}{Motor a pasos}  & \multicolumn{1}{l|}{NEMA 34} & 78.98 & 2 & 157.96 \\ \hline
+		\multicolumn{1}{|l|}{Driver de motor a pasos}  & \multicolumn{1}{l|}{DM860H} & 71.8 & 2 & 143.6 \\ \hline
+		\multicolumn{1}{|l|}{Bomba de agua} & \multicolumn{1}{l|}{D03U-DK004X4} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{Driver de bomba de agua} & \multicolumn{1}{l|}{B} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{Electroválvula 4''} & \multicolumn{1}{l|}{CTB100} & 287.20 & 1 & 287.20 \\ \hline
+		\multicolumn{1}{|l|}{Sensor de presión}  & \multicolumn{1}{l|}{WNK80MA} & 43.08 & 4 & 172.32 \\ \hline
+		\multicolumn{1}{|l|}{Sensor infrarrojo}  & \multicolumn{1}{l|}{HD-DS25CM-3MM} & 7.00 & 1 & 7.00 \\ \hline
+		\multicolumn{1}{|l|}{Cámara estéreo}  & \multicolumn{1}{l|}{OAK-D} & 475.41 & 1 & 475.41 \\ \hline
+		\multicolumn{1}{|l|}{Cámara simple}  & \multicolumn{1}{l|}{OAK-1}& 355.41 & 1 & 355.41 \\ \hline
+		\multicolumn{1}{|l|}{LED's de iluminación}  & \multicolumn{1}{l|}{PSH601A} & 17.23 & 1 & 17.23 \\ \hline
+		\multicolumn{1}{|l|}{Microprocesador}   & \multicolumn{1}{l|}{Raspberry Pi 4B} & 197.45 & 1 & 197.45 \\ \hline
+		\multicolumn{1}{|l|}{Indicador visual}  & \multicolumn{1}{l|}{HS-WS812B-16L-b} & 12.57 & 3 & 37.71 \\ \hline
+		\multicolumn{1}{|l|}{Indicador sonoro}  & \multicolumn{1}{l|}{SE-B40} & 35.9 & 1 & 35.9 \\ \hline
+		\multicolumn{1}{|l|}{Interruptor de emergencia}  & \multicolumn{1}{l|}{LAY5-JBPN1P} & 21.54 & 1 & 21.54 \\ \hline
+		\multicolumn{1}{|l|}{Sensor de iluminación}  & \multicolumn{1}{l|}{-} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushleftinsidetable}
+					Interruptor de suministro de energía
+		\end{myflushleftinsidetable}\end{minipage}}
+		&
+		\multicolumn{1}{l|}{HEIGHT S/C} & 53.85 & 1 & 53.85 \\ \hline
+		\multicolumn{1}{|l|}{Fuente de alimentación}  & \multicolumn{1}{l|}{BNM-24V-500W} & 80.60 & 1 & 80.60 \\ \hline		
+		\multicolumn{1}{|l|}{\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushleftinsidetable}
+					Convertidor de voltaje de conmutación
+		\end{myflushleftinsidetable}\end{minipage}}
+		&
+		\multicolumn{1}{l|}{\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushleftinsidetable}
+				WMX-DSD24S1220 y WMX-DSD45S520
+		\end{myflushleftinsidetable}\end{minipage}}
+		 & 102.78 & 1 & 102.78 \\ \hline
+		\multicolumn{1}{|l|}{Placa I2C generador PWM}  & \multicolumn{1}{l|}{PCA9685} & 53.67 & 1 & 53.67 \\ \hline
+		\multicolumn{1}{|l|}{Cables} & \multicolumn{1}{l|}{-} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{Activador tipo transistor}  & \multicolumn{1}{l|}{TPN2R304PL} & a & B & B \\ \hline
+		&  &  & \textbf{Subtotal (S/)} & \textbf{2199.63} \\ \cline{4-5} 
+		&  &  & \textbf{Impuestos (30\%)} & \textbf{660.00} \\ \cline{4-5} 
+		&  &  & \textbf{Total (S/)} & \textbf{2859.20} \\ \cline{4-5} 
+	\end{tabular}
+		\begin{myflushcenteraftertable}	
+		Fuente: Elaboración propia. \\
+		Tasa de cambio de USD a PEN: S/ 3.59.
+	\end{myflushcenteraftertable}
+\end{table}
 
 %% NUEVA SECCIÓN X.X
 \section{Costos de materiales}
 
 \textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+
+\begin{table}[H]
+	\footnotesize\centering
+	\caption{Costo de materiales estructurales y tuberías}
+	\label{tab:costo de materiales estructurales y tuberias}
+	\begin{tabular}{llc|c|c|}
+		\hline
+		\multicolumn{5}{|c|}{\textbf{Costo}} \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Material}} & \multicolumn{1}{c|}{\textbf{Descripción}} & \multicolumn{1}{c|}{\textbf{Costo Unitario (S/)}} & \multicolumn{1}{c|}{\textbf{Cantidad}} & \multicolumn{1}{c|}{\textbf{Subtotal}} \\ \hline
+		\multicolumn{1}{|l|}{Acero Inoxidable AISI 316} & \multicolumn{1}{l|}{Tubo perfil cuadrado 20x20x2 mm.} & A & A & A \\ \hline
+		\multicolumn{1}{|l|}{Acero Inoxidable AISI 316} & \multicolumn{1}{l|}{Plancha 1000x1000x1mm} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo 4''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo 3''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo Reductor 4-3''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 145 °C 4''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo Tipo Y 4''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 90 °C 4''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 145 °C 3''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo Tipo Y 3''} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 90 °C 3''} & B & B & B \\ \hline
+		
+		&  &  & \textbf{Total} & \textbf{} \\ \cline{4-5} 
+	\end{tabular}
+	\begin{myflushcenteraftertable}	
+		Fuente: Elaboración propia.
+	\end{myflushcenteraftertable}
+\end{table}
 
 %% NUEVA SECCIÓN X.X
 \section{Costos total del sistema}
