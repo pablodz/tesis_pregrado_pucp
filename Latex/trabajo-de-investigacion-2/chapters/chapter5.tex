@@ -14,53 +14,26 @@
 %%%%%                                                    %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textcolor{blue}{[BORRADOR] Agregar descripción del capítulo [/BORRADOR]} 
+En este capítulo se realiza el diseño de ingeniería del sistema que abarca la selección de componentes, su distribución eléctrica, electrónica y física. Los cálculos y dimensionamiento asociado a las partes del sistema se desarrollan en este capítulo. Además se realiza una comparación técnica de los componentes acorde a los propósitos de la máquina que finaliza con la selección del componente, mecanismo o algoritmo más apropiado.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/diseno integral.png}
-	\caption{Diseño integral.}
+	\includegraphics[width=0.75\textwidth]{chapter5/subensambles/diseno integral final.png}
+	\caption{Diseño integral de la máquina de clasificación y conteo de truchas.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia
 	\end{myflushcenter}
 	\label{fig:diseno integral}
 \end{myfigure}
 
-%% NUEVA SECCIÓN X.X
-\section{Desarrollo de diseño mecatrónico integral}
-\label{sec:desarrollo de diseno mecatronico integral}
-
-En la sección llamada \textit{"Desarrollo del diseño mecatrónico conceptual"} \footnote{\cite{DiazVergara2020}} se analizó el concepto de solución óptimo. En la Figura \ref{fig:estado diseno mecatronico etapa 3} se muestra la etapa final de unir las sub-soluciones para desarrollar una forma viable de implementarlos de una forma integral.
-
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/estado diseno subsoluciones.png}
-	\caption{Estado de diseño mecatrónico: sub-soluciones}
-	\begin{myflushcenter}
-		Fuente: Elaboración propia
-	\end{myflushcenter}
-	\label{fig:estado diseno mecatronico etapa 3}
-\end{myfigure}
-
-Según el proceso de diseño indicado en la norma VDI 2221 que se muestra en la Figura \ref{fig:vdi2221} se parte del diseño conceptual propuesto (5) y se presenta el diseño integral (6)\footnote{\cite{Pahl2007}}, también llamado diseño de ingeniería, que abarca diferentes puntos: dimensionamiento del sistema; cálculos; selección técnica de materiales entorno a su aplicación; selección técnica de sensores; actuadores y dispositivos de control; lógica del control del sistema y su estrategia; planos mecánicos: ensamble y despiece; planos eléctricos y/o electrónicos; simulaciones de la máquina y una estimación de costos.
-
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/vdi2221.png}
-	\caption{Fases de diseño según VDI 2221}
-	\begin{myflushcenter}
-		Fuente: \cite{Pahl2007}
-	\end{myflushcenter}
-	\label{fig:vdi2221}
-\end{myfigure}
-
-
-
 %% NUEVA SECCIÓN X.X.X
 \subsection{Descripción del sistema integral}
 \label{ssec:descripcion del sistema integral}
 
-Respecto al diseño conceptual, existen algunas modificaciones en los tipos de dispositivos por características técnicas detectadas en el desarrollo de ingeniería del sistema: el cambio del servomotor por un mecanismo de motor a pasos con leva-seguidor que disminuye el desgaste por el sentido de giro; la batería ya no es parte del sistema, el operario debe suministrar la energía necesaria; el adicional de una cámara para el seguimiento de la trayectoria de truchas en el mecanismo de distribución; la variación de el uso de un microcontrolador a microprocesador debido a la potencia computacional requerida; el cambio de bombas sumergibles a bombas de agua por la eficiencia y potencia necesaria en el proyecto\footnote{El precio de las bombas sumergibles sube considerablemente correspondiente a la potencia requerida.}; remoción de la reja al inicio accionada por un motor debido al coste de implementación y reemplazo con un tapón de plástico; cambio de nombre del interruptor de tipo hongo a interruptor de suministro de energía.
+En la Figura \ref{fig:diseno integral} se muestra el diseño mecatrónico integral final donde se enumeran subsecciones: 1. subsistema de recepción, distribución y traslado de truchas; 2. subsistema de control e interacción con el usuario y 3. subsistema de procesamiento de imágenes.
+
+Respecto al diseño conceptual, existen algunas modificaciones en los tipos de dispositivos por características técnicas detectadas en el desarrollo de ingeniería del sistema: el cambio del servomotor por un mecanismo de motor a pasos con leva-seguidor que disminuye el desgaste por el sentido de giro; la batería ya no es parte del sistema, el operario debe suministrar la energía necesaria; el adicional de una cámara para el seguimiento de la trayectoria de truchas en el mecanismo de distribución; la variación de el uso de un microcontrolador a microprocesador debido a la potencia computacional requerida; el cambio de bombas sumergibles a bombas de agua por la eficiencia y potencia necesaria en el proyecto\footnote{El precio de las bombas sumergibles sube considerablemente correspondiente a la potencia requerida.}; remoción de la reja al inicio accionada por un motor debido al coste de implementación y reemplazo con un tapón de plástico; cambio de nombre del interruptor de tipo hongo a interruptor de suministro de energía; aumento del máximo peso admisible según requisito a 400 kg. debido al empleo de plataformas flotantes de alta capacidad de flotación en lugar de su uso en botes de 3 metros de largo.
+
 
 %\textcolor{blue}{[BORRADOR] INGRESAR AQUÍ CAMBIOS REALIZADOS [/BORRADOR]}\\
 
@@ -73,7 +46,7 @@ En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propue
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/arquitectura de hardware del sistema.png}
+	\includegraphics[width=0.90\textwidth]{chapter5/arquitectura de hardware del sistema.png}
 	\caption{Arquitectura de hardware del sistema}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -198,25 +171,30 @@ Finalmente, en las Tablas \ref{tab:tabla comparativa de propiedades entre alumin
 \subsection{Planos del sistema}
 \label{ssec:planos del sistema}
 
-Los planos permiten visualizar el sistema de una forma en particular dependiendo del tipo de plano. En el presente trabajo optaremos por incluir dos tipos: planos de ensamble y planos de despiece.
+Los planos permiten visualizar el sistema de una forma en particular dependiendo del tipo de plano. El código asociado a cada plano indica el tipo de plano, su nivel respecto a la estructura general: ensamble, subensamble o despiece, y el tamaño de página usado para dicho plano. En las Tablas \ref{tab:lista de planos de ensamble y subensamble} y \ref{tab:lista de planos de subensamble} se detalla el código junto con la descripción. Dónde: \textit{E} es Ensamble, \textit{SE} es Subensamble, \textit{D} es despiece, los dígitos seguidos son alfanuméricos que van del 0 a la Z y es su agrupación es similar a la organización en cascada, y finalmente el tamaño de página.\footnote{Por ejemplo: D4587-A3 sería un despiece para el componente que pertenece al subensamble 4000, dentro del dispositivo 0500 y 0080. Además de ser el sétimo componente dentro del dispositivo.}
 
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Lista de planos de ensamble}
 
-El plano de ensamble presenta una visión de los diferentes componentes, cómo son las juntas, incluye un listado de componentes y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{\cite{Goetsch2010}} En la Tabla \ref{tab:lista de planos de ensamble} se muestra una lista de planos de ensamble.
-
+El plano de ensamble presenta una visión de los diferentes componentes, cómo son las juntas, incluye un listado de componentes y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{Adaptado de \cite{Goetsch2010}} En la Tabla \ref{tab:lista de planos de ensamble y subensamble} se muestra la lista de planos de ensamble y subensambles. 
 
 \begin{mytable}[H]
 	\footnotesize\centering
-	\caption{Lista de planos de ensamble.}
-	\label{tab:lista de planos de ensamble}
-	\begin{tabular}{|c|c|c|}
+	\caption{Lista de planos de ensamble y subensamble sistema.}
+	\label{tab:lista de planos de ensamble y subensamble}
+	\begin{tabular}{|l|l|}
 		\hline
-		\textbf{Código de Plano} & \textbf{Título} & \textbf{Tamaño de página} \\ \hline
-		\textbf{E01-A4}        & 1              & 2             \\ \hline
-		\textbf{E02-A4}        & 3              & 4             \\ \hline
-		\textbf{E03-A4}        & 5              & 6             \\ \hline
-		\textbf{E04-A4}        & 7              & 8             \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Código de Plano}} & \multicolumn{1}{c|}{\textbf{Descripción}} \\ \hline
+		\textbf{E1000-A0}         & Ensamble total  \\ \hline
+		\textbf{SE1100-A0}        & Subsistema de recepción de truchas  \\ \hline
+		\textbf{SE1200-A0}        & Subsistema de distribución de truchas \\ \hline
+		\textbf{SE1300-A0}        & Subsistema de traslado de truchas \\ \hline
+		\textbf{SE1400-A0}        & Subsistema de procesamiento de imágenes \\ \hline
+		\textbf{SE1500-A0}        & Subsistema de control e interacción con el usuario\\ \hline
+		\textbf{SE1110-A3}        & Tolva de recepción \\ \hline
+		\textbf{SE1210-A3}        & Distribuidora 1:3 \\ \hline
+		\textbf{SE1310-A3}        & Tuberías \\ \hline 
+		\textbf{SE1510-A3}        & Panel de control \\ \hline
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia.
@@ -227,17 +205,73 @@ El plano de ensamble presenta una visión de los diferentes componentes, cómo s
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Plano de despiece}
 
-El plano de despiece presenta las características técnicas de cada pieza. Muestra dimensiones para poder fabricar la pieza. En la Tabla \ref{tab:plano de despiece} se muestra una lista de planos de despiece de cada pieza.
+El plano de despiece presenta las características técnicas de cada pieza: muestra dimensiones para poder fabricar la pieza. En el presente trabajo se administran, además, subensambles con la finalidad de brindar mayor detalle a cada componente. En la Tabla \ref{tab:lista de planos de subensamble} se muestra la lista de planos de despiece. 
 
 \begin{mytable}[H]
 	\footnotesize\centering
-	\caption{Lista de planos de despiece}
-	\label{tab:plano de despiece}
-	\begin{tabular}{|c|c|c|}
+	\caption{Lista de planos de subensamble.}
+	\label{tab:lista de planos de subensamble}
+	\begin{tabular}{|c|l|}
 		\hline
-		\textbf{Código de Plano} & \textbf{Título del Plano} & \textbf{Tamaño de página} \\ \hline
-		\textbf{D01-A2}  & 1 & 2 \\ \hline
-		\textbf{D02-A2}  & 3 & 4 \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Código de Plano}} & \multicolumn{1}{c|}{\textbf{Descripción}} \\ \hline
+		\textbf{D1010-A0}         & Estructura de soporte  \\ \hline
+		\textbf{D1120-A3}         & Tolva de recepción - Borde \\ \hline
+		\textbf{D1130-A3}         & Tolva de recepción - Base de salida \\ \hline
+		\textbf{D1211-A3}         & Distribuidora 1:3 - Pared A \\ \hline
+		\textbf{D1212-A3}         & Distribuidora 1:3 - Pared B \\ \hline
+		\textbf{D1213-A3}         & Distribuidora 1:3 - Tapa de distribuidora \\ \hline
+		\textbf{D1214-A3}         & Distribuidora 1:3 - Leva de distribuidora \\ \hline
+		\textbf{D1215-A3}         & Distribuidora 1:3 - Lengüeta de salida de tubería \\ \hline
+		\textbf{D1216-A3}         & Distribuidora 1:3 - Lengüeta de soporte de servomotor 1 \\ \hline
+		\textbf{D1217-A3}         & Distribuidora 1:3 - Lengüeta de soporte de servomotor 2 \\ \hline 
+		\textbf{D1217-A3}         & Distribuidora 1:3 - Compuerta mecánica \\ \hline 
+		\textbf{D1311-A3}         & Tuberías - Adaptador de entrada de bomba de agua \\ \hline 
+		\textbf{D1312-A3}         & Tuberías - Adaptador de salida de bomba de agua \\ \hline 
+		\textbf{D1313-A3}         & Tuberías - Adaptador de electroválvula\\ \hline
+		\textbf{D1314-A3}         & Tuberías - Reductor de tubería \\ \hline
+		\textbf{D1415-A3}         & Procesamiento de imágenes \\ \hline
+		\textbf{D1416-A3}         & Procesamiento de imágenes - Tubería \\ \hline
+		\textbf{D1417-A3}         & Procesamiento de imágenes - Soporte de cámara estéreo \\ \hline
+		\textbf{D1511-A3}         & Panel de control - Caja de control 1 \\ \hline
+		\textbf{D1512-A3}         & Panel de control - Caja de control 2 \\ \hline
+	\end{tabular}
+	\begin{myflushcenteraftertable}	
+		Fuente: Elaboración propia.
+	\end{myflushcenteraftertable}
+\end{mytable}
+
+%% NUEVA SECCIÓN X.X.X
+\subsection{Repositorios de código fuente}
+
+Los códigos de los sitemas, algoritmos y otros se almacenan de forma ordenada en repositorios que permiten el versionado, descentralización y disponibilidad de la información para poder reproducir, editar y mejorar los resultados por otras personas. En la Tabla
+
+\begin{mytable}[H]
+	\footnotesize\centering
+	\caption{Lista de planos de subensamble.}
+	\label{tab:lista de planos de subensamble}
+	\begin{tabular}{|c|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Código de Plano}} & \multicolumn{1}{c|}{\textbf{Descripción}} \\ \hline
+		\textbf{D1010-A0}         & Estructura de soporte  \\ \hline
+		\textbf{D1120-A3}         & Tolva de recepción - Borde \\ \hline
+		\textbf{D1130-A3}         & Tolva de recepción - Base de salida \\ \hline
+		\textbf{D1211-A3}         & Distribuidora 1:3 - Pared A \\ \hline
+		\textbf{D1212-A3}         & Distribuidora 1:3 - Pared B \\ \hline
+		\textbf{D1213-A3}         & Distribuidora 1:3 - Tapa de distribuidora \\ \hline
+		\textbf{D1214-A3}         & Distribuidora 1:3 - Leva de distribuidora \\ \hline
+		\textbf{D1215-A3}         & Distribuidora 1:3 - Lengüeta de salida de tubería \\ \hline
+		\textbf{D1216-A3}         & Distribuidora 1:3 - Lengüeta de soporte de servomotor 1 \\ \hline
+		\textbf{D1217-A3}         & Distribuidora 1:3 - Lengüeta de soporte de servomotor 2 \\ \hline 
+		\textbf{D1217-A3}         & Distribuidora 1:3 - Compuerta mecánica \\ \hline 
+		\textbf{D1311-A3}         & Tuberías - Adaptador de entrada de bomba de agua \\ \hline 
+		\textbf{D1312-A3}         & Tuberías - Adaptador de salida de bomba de agua \\ \hline 
+		\textbf{D1313-A3}         & Tuberías - Adaptador de electroválvula\\ \hline
+		\textbf{D1314-A3}         & Tuberías - Reductor de tubería \\ \hline
+		\textbf{D1415-A3}         & Procesamiento de imágenes \\ \hline
+		\textbf{D1416-A3}         & Procesamiento de imágenes - Tubería \\ \hline
+		\textbf{D1417-A3}         & Procesamiento de imágenes - Soporte de cámara estéreo \\ \hline
+		\textbf{D1511-A3}         & Panel de control - Caja de control 1 \\ \hline
+		\textbf{D1512-A3}         & Panel de control - Caja de control 2 \\ \hline
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia.
@@ -260,7 +294,7 @@ Este subsistema consiste en encapsular los mecanismos físicos que están en el 
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/recepcion distribucion y traslado isometrico 2.png}
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/recepcion distribucion y traslado isometrico final.png}
 	\caption{Subsistema de recepción, distribución y traslado de truchas}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -330,7 +364,7 @@ Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/mecanismo de distribucion de truchas.png}
+	\includegraphics[width=1\textwidth]{chapter5/mecanismo de distribucion de truchas final.png}
 	\caption{Mecanismo de distribución de truchas}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -864,6 +898,7 @@ Los sensores de presión se usan para medir el caudal de forma indirecta y poder
  		\multicolumn{1}{|l|}{\textbf{Temperatura operativa (°$C$)}} & [-10; 40] & [-40; 85] & [-20; 85] & [-10 ; 80] \\ \hline
  		\multicolumn{1}{|l|}{\textbf{Protección ($IP$)}} & - & $IP65$ & $IP65$ & $IP65$ \\ \hline
  		\multicolumn{1}{|l|}{\textbf{Certificados}} & - & CE RoHS & CE RoHS \& ISO & ECM \\ \hline
+ 		\multicolumn{1}{|l|}{\textbf{Precisión ($Pa$)}} & - & - & 5000 & - \\ \hline
  		\multicolumn{1}{|l|}{\textbf{Presión máxima ($kPa$)}} & 550 & [100; 60000] & [20; 25000] & [20; 25000] \\ \hline
  		\multicolumn{1}{|l|}{\textbf{Peso aproximado ($kg$)}} & - & 0.1 & 0.1 & - \\ \hline
  		\multicolumn{1}{|l|}{\textbf{Precio ($S/$)}} & - & 78.98 & 43.08 & 89.75 \\ \hline		
@@ -889,7 +924,7 @@ Este subsistema consiste obtener una serie de imágenes de una trucha en tránsi
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/procesamiento imagenes.png}
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/procesamiento de imagenes final.png}
 	\caption{Subsistema de procesamiento de imágenes}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -900,17 +935,17 @@ Este subsistema consiste obtener una serie de imágenes de una trucha en tránsi
 %% NUEVO SECCION X.X.
 \section{Selección del sensor infrarrojo}
 
-El sensor infrarrojo tiene como objetivo activar el algoritmo de detección y conteo de truchas por un determinado periodo de tiempo con la finalidad de evitar un sobre uso de los recursos computacionales. El sensor infrarrojo está unos centímetros antes de la parte que la cámara captura y su posición es como se muestra en las Figura \ref{fig:posicion sensor infrarrojo}.
+El sensor infrarrojo tiene como objetivo activar el algoritmo de detección y conteo de truchas por un determinado periodo de tiempo con la finalidad de evitar un sobre uso de los recursos computacionales. El sensor infrarrojo está unos centímetros antes de la parte que la cámara captura y su posición es como se muestra en las Figura \ref{fig:subsistema de procesamiento de imagenes}.
 
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/posicion sensor infrarrojo.png}
-	\caption{Posicionamiento del sensor infrarrojo}
-	\begin{myflushcenter}
-		Fuente: Elaboración propia.
-	\end{myflushcenter}
-	\label{fig:posicion sensor infrarrojo}
-\end{myfigure}
+%\begin{myfigure}[H]
+%	\footnotesize\centering
+%	\includegraphics[width=1\textwidth]{chapter5/posicion sensor infrarrojo.png}
+%	\caption{Posicionamiento del sensor infrarrojo}
+%	\begin{myflushcenter}
+%		Fuente: Elaboración propia.
+%	\end{myflushcenter}
+%	\label{fig:posicion sensor infrarrojo}
+%\end{myfigure}
 
 Ya que los haces de luz cambian de dirección debido a la refracción\footnote{\cite{Hecht2017}.}, cuando varía de un medio a otro, se calcula esta desviación para la adecuada detección de objetos que pasen por la tubería. La representación gráfica de la situación se expone en la Figura \ref{fig:analisis de posicion de luz infrarroja}.
 
@@ -1689,6 +1724,106 @@ En la Tabla \ref{tab:tabla comparativa de leds de alta potencia} se muestra una 
 El modelo escogido es el PSH6012A ya que tiene una presentación menor y cumple con el flujo luminoso, además de presentar protección al agua ($IP68$) y aunque el consumo de potencia es mayor, tiene un menor costo comparado con la adquisición de otras marcas. Finalmente, mencionar que el precio total sería de S/ 170.23, aunque se puede adquirir por metros en el comercio nacional.
 
 %% NUEVO SECCION X.X.
+\section{Selección de sensor de luz}
+
+Al sensar la luz, se establece un espectro de frecuencia a ser medido, en el presente caso se define como requerimiento el sensado de luz digital de un determinado rango en cuanto a la intensidad y frecuencias. En la Tabla \ref{tab:tabla comparativa sensores de iluminación} se comparan dispositivos que cumplen con los requerimientos mínimos.
+
+\begin{savenotes}
+	\begin{mytable}[H]
+		\footnotesize\centering
+		\caption{Tabla comparativa de sensores de iluminación.}
+		\label{tab:tabla comparativa sensores de iluminación}
+		\begin{tabular}{l|c|c|c|c|}
+			\cline{2-5}
+			\multicolumn{1}{c|}{\textbf{}}& \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} & 
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenterinsidetable}
+						\textbf{SI1445}
+				\end{myflushcenterinsidetable}\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenterinsidetable}
+						\textbf{TSL2561}
+				\end{myflushcenterinsidetable}\end{minipage}
+			}&
+			\multicolumn{1}{|l|}{				
+				\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenterinsidetable}
+						\textbf{VCNL4010}
+				\end{myflushcenterinsidetable}\end{minipage}
+			}  \\ \hline
+			\multicolumn{1}{|l|}{\textbf{Figura}} & - 
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/sensor luz 1.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&		  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/sensor luz 2.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}
+			&  
+			\begin{minipage}{\mythirdmaxsizeofcontenttable}
+				\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/sensor luz 3.png} \\ 
+				%\begin{myflushcenter}
+				%	{\footnotesize Nombre imagen}
+				%\end{myflushcenter}
+			\end{minipage}\\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Fabricante}
+				\end{minipage}
+			} & - & Adafruit & Adafruit & Adafruit \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Protocolo de comunicación}
+				\end{minipage}
+			} & - & I2C & I2C & I2C \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Voltaje operativo ($V$)}
+				\end{minipage}
+			} & [0; 5] & [1.71; 3.6] & [2.7; 3.6] & [2.5; 3.6] \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Temperatura operativa (°$C$)}
+				\end{minipage}
+			} & [-10; 40] & [-40; 85] & [-30; 70] & [-25; 85] \\ \hline
+			\multicolumn{1}{|l|}{
+			\begin{minipage}{\myforthmaxsizeofcontenttable}	
+				\textbf{Rango de medición ($lx$)}
+			\end{minipage}
+			} & [0; 20000] & [0; 40000] & [0; 40000] & [0; 45000] \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Resolución ADC ($bit$)}
+				\end{minipage}
+			} & - & 16 & 16 & 16 \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Resolución digital ($lx$)}
+				\end{minipage}
+			} & 100 & 0.10 & 0.11 & 0.25 \\ \hline
+			\multicolumn{1}{|l|}{
+				\begin{minipage}{\myforthmaxsizeofcontenttable}	
+					\textbf{Precio ($S/$)}
+				\end{minipage}
+			} & - & 35.72 & 21.36 & 26.92 \\ \hline
+		\end{tabular}
+		\begin{myflushcenteraftertable}	
+			Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.\\
+			Tasa de cambio de USD a PEN: S/ 3.59.
+		\end{myflushcenteraftertable}
+	\end{mytable}
+\end{savenotes}
+
+Se elige el sensor de luz con código TSL2561 debido a que satisface los requerimientos mínimos y presenta un precio inferior a los contrarios. Además, recalcar que el estudio no requiere un sensor de alta precisión sino uno que permita un adecuado funcionamiento del subsistema de procesamiento de imágenes.
+
+%% NUEVO SECCION X.X.
 \section{Selección de algoritmo de clasificación y conteo}
 \label{sssec:seleccion de algoritmo de clasificacion y conteo}
 
@@ -1731,7 +1866,7 @@ En la Tabla \ref{tab:tabla comparativa de algoritmos} se lista los diez modelos 
 	\end{mytable}
 \end{savenotes}
 
-Como se puede observar, la arquitectura \textit{YOLO} aparece múltiples veces y esto se debe a que la comunidad científica ha aportado de forma desinteresada en su desarrollo: diversos autores han mejorado el modelo simple de la primera versión\footnote{ YOLO \cite{Redmon2016}, YOLO v2.0 \cite{Redmon2017}, YOLO v3.0 \cite{Redmon2018}, YOLO v4.0 \cite{Solawetz2020}, (en desarrollo) YOLO v5.0 \cite{bochkovskiy2020yolov4}.}. En la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} se muestra la arquitectura que obtiene la mayor cantidad de fotogramas manteniendo una precisión relativamente superior. La arquitectura de dos etapas: la primera etapa recibe la imagen y la procesa por redes para obtener características relevantes para luego, en la predicción densa, detecte los objetos en la imagen\footnote{Como se muestra en la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} la red neuronal YOLO se usa junto con más de otras 15 redes neuronales para aumentar el rendimiento.}; en la segunda etapa, predicción escasa, se retiran los objetos que fueron detectados erróneamente y se prioriza los que tienen un porcentaje alto de similitud con los valores entrenados. Los desarrolladores de YOLO v4.0 brindan los pesos de las neuronas entrenadas que se necesita para usar la red neuronal.
+Como se puede observar, la arquitectura \textit{YOLO} aparece múltiples veces y esto se debe a que la comunidad científica ha aportado de forma desinteresada en su desarrollo: diversos autores han mejorado el modelo simple de la primera versión\footnote{YOLO v1.0 \cite{Redmon2016}, YOLO v2.0 \cite{Redmon2017}, YOLO v3.0 \cite{Redmon2018}, YOLO v4.0 \cite{Solawetz2020}, (en desarrollo) YOLO v5.0 \cite{bochkovskiy2020yolov4}.}. En la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} se muestra la arquitectura que obtiene la mayor cantidad de fotogramas manteniendo una precisión relativamente superior. La arquitectura de dos etapas: la primera etapa recibe la imagen y la procesa por redes para obtener características relevantes para luego, en la predicción densa, detecte los objetos en la imagen\footnote{Como se muestra en la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} la red neuronal YOLO se usa junto con más de otras 15 redes neuronales para aumentar el rendimiento.}; en la segunda etapa, predicción escasa, se retiran los objetos que fueron detectados erróneamente y se prioriza los que tienen un porcentaje alto de similitud con los valores entrenados. Los desarrolladores de YOLO v4.0 brindan los pesos de las neuronas entrenadas que se necesita para usar la red neuronal.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -1760,7 +1895,7 @@ El presente subsistema tiene como fin monitorear y controlar los sensores y actu
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.5\textwidth]{chapter5/subensambles/control isometrico.png}
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/control isometrico final.png}
 	\caption{Subsistema de control e interacción con el usuario}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -2271,7 +2406,7 @@ Se escoge el interruptor del fabricante HEIGHT, debido a que soporta una mayor c
 %% NUEVO SECCION X.X.
 \section{Control de los caudales de agua}
 
-Los caudales dentro del sistema es controlada con un lazo cerrado como se muestra en el diagrama de la Figura \ref{fig:diagrama de control caudal}, esto se logra regulando el voltaje de alimentación de la electroválvula solenoide, siendo el voltaje mencionado la variable de control. El objetivo es obtener un caudal con una velocidad determinada en flujo completo dentro de la tubería en la sección de procesamiento de imágenes, por lo que el tiempo de establecimiento no es primordial, sino mantener el caudal apropiado a lo largo del tiempo de uso. Para el control de este mecanismo se escoge un control PID simple. Dicho control será diseñado para tener un cambio suave y encendido extendido con el objetivo de reducir riesgos y prolongar la vida útil de los componentes mecánicos.
+Los caudales dentro del sistema es controlada con un lazo cerrado como se muestra en el diagrama de la Figura \ref{fig:diagrama de control caudal}, esto se logra regulando el voltaje de alimentación de la electroválvula solenoide, siendo el voltaje mencionado la variable de control. El objetivo es obtener un caudal con una velocidad determinada en flujo completo dentro de la tubería en la sección de procesamiento de imágenes, por lo que el tiempo de establecimiento no es primordial, sino mantener el caudal apropiado a lo largo del tiempo de uso. El control mostrado en la Figura \ref{fig:diagrama de control caudal} se realiza dentro del dispositivo a adquirir, por lo que solo se le envían señales eléctricas al dispositivo.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -2283,14 +2418,10 @@ Los caudales dentro del sistema es controlada con un lazo cerrado como se muestr
 	\label{fig:diagrama de control caudal}
 \end{myfigure}
 
-\textcolor{blue}{[BORRADOR] Diagrama de PID [/BORRADOR]}
-
-\textcolor{blue}{[BORRADOR] Calcular PID [/BORRADOR]}
-
 %% NUEVO SECCION X.X.
 \section{Control de iluminación}
 
-La iluminación dentro del subsistema de procesamiento de imágenes se controla mediante un algoritmo sencillo de prendido/apagado que activa/desactiva el voltaje de alimentación, el sensor debería detectar cambios en menos de 1 segundo. En la Figura \ref{fig:diagrama de control iluminacion} se muestra el diagrama de control en lazo cerrado, donde la variable de control es el voltaje de alimentación del LED, con el objetivo de brindar luz blanca.
+La iluminación dentro del subsistema de procesamiento de imágenes se controla mediante un algoritmo sencillo de prendido/apagado que activa/desactiva el voltaje de alimentación. La iluminación es pre-establecida mediante software y según la potencia que se suministre varía la intensidad, mientras que para la frecuencia se usa la señal PWM. En la Figura \ref{fig:diagrama de control iluminacion} se muestra el diagrama de control en lazo cerrado, donde la variable de control es el voltaje de alimentación del LED, con el objetivo de brindar luz blanca.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -2302,7 +2433,6 @@ La iluminación dentro del subsistema de procesamiento de imágenes se controla 
 	\label{fig:diagrama de control iluminacion}
 \end{myfigure}
 
-\textcolor{blue}{[BORRADOR] Diagrama de flujo de iluminación [/BORRADOR]}
 
 %% NUEVO SECCION X.X.
 \section{Control de motor a pasos}
@@ -2352,22 +2482,7 @@ Como se muestra en la Figura \ref{fig:diagrama de control clasificacion y conteo
 %% NUEVO SECCION X.X.
 \section{Diseño frontend de la aplicación móvil}
 
-La aplicación móvil permitirá a un operario visualizar los estados de la máquina, así como tener un registro de la clasificación y conteo de truchas, es decir, extraer los datos luego de ser procesados por la máquina CCT de manera inalámbrica al terminar el proceso. Además, posterior a este trabajo, podría agregarse más características al aplicativo móvil. El framework de desarrollo del aplicativo, que no se desarrollará en el presente trabajo, escogido es Flutter por su paradigma multiplataforma, es decir, escribir un programa que se vea igual en los sistemas operativos Android y iOS \cite{Simone2020}. El diseño frontend escogido para el proyecto y su desarrollo sencillo 
-
-
-\textcolor{blue}{[BORRADOR] 
-	Bibliografía:\\
-	Designing the obvious
-	\cite{Joekman2010} \\
-	Google Flutter Mobile Development Quick Start Guide
-	\cite{PrajyotMainkar2019} \\
-	Mobile Learning Design: Theories and Application
-	\cite{Churchill2016} \\
-	Mobile Design Pattern Gallery: UI Patterns for Mobile Applications
-	\cite{Neil2012}
-	[/BORRADOR]}
-
-https://bit.ly/3ko1nG0
+La aplicación móvil permitirá a un operario visualizar los estados de la máquina, así como tener un registro de la clasificación y conteo de truchas, es decir, extraer los datos luego de ser procesados por la máquina CCT de manera inalámbrica al terminar el proceso. Además, posterior a este trabajo, podría agregarse más características al aplicativo móvil. El framework de desarrollo del aplicativo, que no se desarrollará en el presente trabajo, escogido es Flutter por su paradigma multiplataforma, es decir, escribir un programa que se vea igual en los sistemas operativos Android y iOS \cite{Simone2020}.\footnote{El diseño frontend escogido para el proyecto y su desarrollo simplificado, así como los requerimientos de diversos como los técnicos, usabilidad y de agradables al uso se encuentran referenciados en \cite{Joekman2010}, \cite{PrajyotMainkar2019}, \cite{Churchill2016} y \cite{Neil2012}.} El prototipo propuesto mostrado en la Figura \ref{fig:aplicacion movil login} puede ser probado de forma interactiva directamente haciendo clic en \href{https://bit.ly/3ko1nG0}{https://bit.ly/3ko1nG0}.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -2393,7 +2508,7 @@ El sistema debe suministrar energía a los diversos mecanismos electrónicos, si
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/subensambles/electrico frontal 2.png}
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/electrico frontal 2 final.png}
 	\caption{Subsistema de suministro de energía}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -2774,7 +2889,7 @@ En la Figura \ref{fig:diagrama esquematico de los leds de alta potencia} se mues
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/DE-led de alta potencia.png}
+	\includegraphics[width=0.60\textwidth]{chapter5/DE-led de alta potencia.png}
 	\caption{Diagrama esquemático de los leds de alta potencia.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
@@ -2786,7 +2901,7 @@ En la Figura \ref{fig:diagrama esquematico del indicador sonoro} se muestra la c
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/DE-indicador sonoro.png}
+	\includegraphics[width=0.60\textwidth]{chapter5/DE-indicador sonoro.png}
 	\caption{Diagrama esquemático del indicador sonoro.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
@@ -2836,7 +2951,7 @@ Luego de definir en las secciones anteriores los componentes a utilizar y su int
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/plataforma flotante.png}
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/plataforma flotante final.png}
 	\caption{Subsistema de flotación}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -2847,7 +2962,7 @@ Luego de definir en las secciones anteriores los componentes a utilizar y su int
 %% NUEVO SECCION X.X.
 \section{Cálculo de fuerzas necesarias para mantener a flote el sistema}
 
-\textcolor{blue}{[BORRADOR] Explicar subsección e importancia [/BORRADOR]} 
+La plataforma flotante de 5x5 m. que se muestra en la Figura \ref{fig:subsistema de flotacion} es empleada por las empresas en el sector de crianza de truchas en lagunas por su flotabilidad y área útil que brinda a los operarios. En el caso de la CCT, ocupa un área pequeña de 2.5x1m pero con un peso aproximado de 260 kg. Por lo que, como se muestra en la Figura \ref{fig:refuerzo subsistema de flotacion}, se agregan refuerzos para evitar que la CCT se desplace libremente.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -2856,87 +2971,10 @@ Luego de definir en las secciones anteriores los componentes a utilizar y su int
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
-	\label{fig:calculo de fuerzas necesarias para mantener a flote el sistema}
+	\label{fig:refuerzo subsistema de flotacion}
 \end{myfigure}
 
 \textcolor{blue}{[BORRADOR] Ecuaciones y resultados [/BORRADOR]} 
 
-%% NUEVO SECCION X.X.
-\section{Selección de flotadores}
-
-\textcolor{blue}{[BORRADOR] Introducción [/BORRADOR]} 
-
-\begin{mytable}[H]
-	\footnotesize\centering
-	\caption{Tabla comparativa de flotadores.}
-	\label{tab:tabla comparativa de flotadores}
-	\begin{tabular}{l|c|c|c|c|}
-		\cline{2-5}
-		\multicolumn{1}{c|}{\textbf{}} & \textbf{\begin{tabular}[c]{@{}c@{}}Requisitos\\ mínimos\end{tabular}} &
-		\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenterinsidetable}
-			\textbf{1}
-		\end{myflushcenterinsidetable}\end{minipage} & 
-		\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenterinsidetable}
-			\textbf{2}
-		\end{myflushcenterinsidetable}\end{minipage} &
-		\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushcenterinsidetable}
-			\textbf{3}
-		\end{myflushcenterinsidetable}\end{minipage} \\ \hline
-		\multicolumn{1}{|l|}{\textbf{Figura}}& - &
-		\begin{minipage}{\mythirdmaxsizeofcontenttable}
-			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 1.png} \\ 
-			%\begin{myflushcenter}
-			%	{\footnotesize Nombre imagen}
-			%\end{myflushcenter}
-		\end{minipage}  
-		&
-		\begin{minipage}{\mythirdmaxsizeofcontenttable}
-			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 2.png} \\ 
-			%\begin{myflushcenter}
-			%	{\footnotesize Nombre imagen}
-			%\end{myflushcenter}
-		\end{minipage}
-		&  
-		\begin{minipage}{\mythirdmaxsizeofcontenttable}
-			\centering\includegraphics[width=\mythirdmaxsizeimageinsidetable]{chapter5/tablas comparativas/flotador 3.png} \\ 
-			%\begin{myflushcenter}
-			%	{\footnotesize Nombre imagen}
-			%\end{myflushcenter}
-		\end{minipage}  \\ \hline
-		\multicolumn{1}{|l|}{
-			\begin{minipage}{\myforthmaxsizeofcontenttable}			
-				\textbf{Concepto}
-			\end{minipage}
-		} & - & 9 & 10 & 11 \\ \hline
-		\multicolumn{1}{|l|}{
-			\begin{minipage}{\myforthmaxsizeofcontenttable}			
-				\textbf{Concepto}
-			\end{minipage}
-		} & - & 9 & 10 & 11 \\ \hline
-	
-	\end{tabular}
-	\begin{myflushcenteraftertable}	
-		Fuente: Elaboración propia.
-	\end{myflushcenteraftertable}
-\end{mytable}
-
-\textcolor{blue}{[BORRADOR] Explicar selección [/BORRADOR]} 
-
-%% NUEVO SECCION X.X.
-\section{Diseño de sistema de flotación}
-
-\textcolor{blue}{[BORRADOR] Introducción [/BORRADOR]} 
-
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/calculo de fuerzas necesarias para mantener a flote el sistema.png}
-	\caption{Fuerzas necesarias para mantener a flote el sistema}
-	\begin{myflushcenter}
-		Fuente: Elaboración propia.
-	\end{myflushcenter}
-	\label{fig:calculo de fuerzas necesarias para mantener a flote el sistema}
-\end{myfigure}
-
-\textcolor{blue}{[BORRADOR] Comentario [/BORRADOR]} 
 
 
