@@ -8,8 +8,7 @@
 \chapter[\quad\quad\quad\quad ----- Estimación de costos]{\\ Estimación de costos}
 \thispagestyle{myportland}
 
-La estimación de costos del sistema en su conjunto se calcula mediante la separación por rubros específicos. Dichos rubros son relacionados al diseño, manufactura, materiales y de uso eléctrico.
-
+La estimación de costos del sistema en su conjunto se calcula mediante la separación por rubros específicos. Dichos rubros son relacionados al diseño, manufactura, materiales y dispositivos de uso eléctrico y electrónico.
 %% NUEVA SECCIÓN X.X
 \section{Costos de diseño}
 
@@ -25,8 +24,6 @@ Este costo está relacionado con la actividad de ingeniería de diseño, se calc
 		\multicolumn{1}{|c|}{\textbf{Concepto}} & \multicolumn{1}{c|}{\textbf{Horas}} & \multicolumn{1}{c|}{\textbf{Costo/hora (S/)}} & \multicolumn{1}{c|}{\textbf{Subtotal (S/)}} \\ \hline
 		\multicolumn{1}{|l|}{Diseño conceptual del sistema} & 350 & 9.30 & 3255.00 \\ \hline
 		\multicolumn{1}{|l|}{Diseño de ingeniería del sistema} & 350 & 9.30 & 3255.00 \\ \hline
-		\multicolumn{1}{|l|}{Ensamble del sistema} & A & A & A \\ \hline
-		\multicolumn{1}{|l|}{Pruebas del sistema} & A & A & A \\ \hline
 		& & \textbf{Total (S/)} & \textbf{6510.00}  \\ \cline{3-4} 
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
@@ -34,10 +31,8 @@ Este costo está relacionado con la actividad de ingeniería de diseño, se calc
 	\end{myflushcenteraftertable}
 \end{table}
 
-%% NUEVA SECCIÓN X.X
-\section{Costos de manufactura}
-
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+%\multicolumn{1}{|l|}{Ensamble del sistema} & A & A & A \\ \hline
+%\multicolumn{1}{|l|}{Pruebas del sistema} & A & A & A \\ \hline
 
 %% NUEVA SECCIÓN X.X
 \section{Costos de componentes}
@@ -54,8 +49,7 @@ Los componentes a considerar son los componentes eléctricos y electrónicos que
 		\multicolumn{1}{|c|}{\textbf{Componente}} & \multicolumn{1}{c|}{\textbf{Modelo}} & \multicolumn{1}{c|}{\textbf{Costo Unitario (S/)}} & \multicolumn{1}{c|}{\textbf{Cantidad}} & \multicolumn{1}{c|}{\textbf{Subtotal (S/)}} \\ \hline
 		\multicolumn{1}{|l|}{Motor a pasos}  & \multicolumn{1}{l|}{NEMA 34} & 78.98 & 2 & 157.96 \\ \hline
 		\multicolumn{1}{|l|}{Driver de motor a pasos}  & \multicolumn{1}{l|}{DM860H} & 71.8 & 2 & 143.6 \\ \hline
-		\multicolumn{1}{|l|}{Bomba de agua} & \multicolumn{1}{l|}{D03U-DK004X4} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{Driver de bomba de agua} & \multicolumn{1}{l|}{B} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{Bomba de agua} & \multicolumn{1}{l|}{D03U-DK004X4} & 969.30 & 2 & 1938.6 \\ \hline
 		\multicolumn{1}{|l|}{Electroválvula 4''} & \multicolumn{1}{l|}{CTB100} & 287.20 & 1 & 287.20 \\ \hline
 		\multicolumn{1}{|l|}{Sensor de presión}  & \multicolumn{1}{l|}{WNK80MA} & 43.08 & 4 & 172.32 \\ \hline
 		\multicolumn{1}{|l|}{Sensor infrarrojo}  & \multicolumn{1}{l|}{HD-DS25CM-3MM} & 7.00 & 1 & 7.00 \\ \hline
@@ -66,7 +60,7 @@ Los componentes a considerar son los componentes eléctricos y electrónicos que
 		\multicolumn{1}{|l|}{Indicador visual}  & \multicolumn{1}{l|}{HS-WS812B-16L-b} & 12.57 & 3 & 37.71 \\ \hline
 		\multicolumn{1}{|l|}{Indicador sonoro}  & \multicolumn{1}{l|}{SE-B40} & 35.9 & 1 & 35.9 \\ \hline
 		\multicolumn{1}{|l|}{Interruptor de emergencia}  & \multicolumn{1}{l|}{LAY5-JBPN1P} & 21.54 & 1 & 21.54 \\ \hline
-		\multicolumn{1}{|l|}{Sensor de iluminación}  & \multicolumn{1}{l|}{-} & B & B & B \\ \hline
+		\multicolumn{1}{|l|}{Sensor de iluminación}  & \multicolumn{1}{l|}{-} & 21.36 & 1 & 21.36 \\ \hline
 		\multicolumn{1}{|l|}{\begin{minipage}{\mythirdmaxsizeofcontenttable}\begin{myflushleftinsidetable}
 					Interruptor de suministro de energía
 		\end{myflushleftinsidetable}\end{minipage}}
@@ -82,11 +76,11 @@ Los componentes a considerar son los componentes eléctricos y electrónicos que
 		\end{myflushleftinsidetable}\end{minipage}}
 		 & 102.78 & 1 & 102.78 \\ \hline
 		\multicolumn{1}{|l|}{Placa I2C generador PWM}  & \multicolumn{1}{l|}{PCA9685} & 53.67 & 1 & 53.67 \\ \hline
-		\multicolumn{1}{|l|}{Cables} & \multicolumn{1}{l|}{-} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{Activador tipo transistor}  & \multicolumn{1}{l|}{TPN2R304PL} & a & B & B \\ \hline
-		&  &  & \textbf{Subtotal (S/)} & \textbf{2199.63} \\ \cline{4-5} 
-		&  &  & \textbf{Impuestos (30\%)} & \textbf{660.00} \\ \cline{4-5} 
-		&  &  & \textbf{Total (S/)} & \textbf{2859.20} \\ \cline{4-5} 
+		\multicolumn{1}{|l|}{Cables} & \multicolumn{1}{l|}{-} & 20 & 1 & 20 \\ \hline
+		\multicolumn{1}{|l|}{Activador tipo transistor}  & \multicolumn{1}{l|}{TPN2R304PL} & 0.36 & 4 & 1.44 \\ \hline
+		&  &  & \textbf{Subtotal (S/)} & \textbf{5281.03} \\ \cline{4-5} 
+		&  &  & \textbf{Impuestos (30\%)} & \textbf{1584.31} \\ \cline{4-5} 
+		&  &  & \textbf{Total (S/)} & \textbf{6865.34} \\ \cline{4-5} 
 	\end{tabular}
 		\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia. \\
@@ -94,10 +88,21 @@ Los componentes a considerar son los componentes eléctricos y electrónicos que
 	\end{myflushcenteraftertable}
 \end{table}
 
+
+%\multicolumn{1}{|l|}{Driver de bomba de agua} & \multicolumn{1}{l|}{B} & B & B & B \\ \hline
+
+Entonces, el costo de todos los componentes sin ensamblar es de S/ 6865.34 incluyendo gastos de envío y traslado de la cantidad específicada en la Tabla \ref{tab:costo de componentes electricos y electronicos}. Este total no debe ser comparado con máquinas comerciales debido a que es el costo de producir una sola máquina y no de producir en lotes, además de no haber pasado por la etapa de prototipado que suele disminuir el precio y perfeccionar el sistema disminuyendo el costo.
+
+
+%% NUEVA SECCIÓN X.X
+\section{Costos de manufactura}
+
+\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+
 %% NUEVA SECCIÓN X.X
 \section{Costos de materiales}
 
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+Los materiales abarcan las planchas de metal a doblar, las tuberías de plásticos, los perfiles de metal a soldar, los tornillos y refuerzos del sistema. Dichos materiales son listados con su precio comercial actual en los mercados nacionales en la Tabla \ref{tab:costo de materiales estructurales y tuberias}.
 
 \begin{table}[H]
 	\footnotesize\centering
@@ -107,28 +112,41 @@ Los componentes a considerar son los componentes eléctricos y electrónicos que
 		\hline
 		\multicolumn{5}{|c|}{\textbf{Costo}} \\ \hline
 		\multicolumn{1}{|c|}{\textbf{Material}} & \multicolumn{1}{c|}{\textbf{Descripción}} & \multicolumn{1}{c|}{\textbf{Costo Unitario (S/)}} & \multicolumn{1}{c|}{\textbf{Cantidad}} & \multicolumn{1}{c|}{\textbf{Subtotal}} \\ \hline
-		\multicolumn{1}{|l|}{Acero Inoxidable AISI 316} & \multicolumn{1}{l|}{Tubo perfil cuadrado 20x20x2 mm.} & A & A & A \\ \hline
-		\multicolumn{1}{|l|}{Acero Inoxidable AISI 316} & \multicolumn{1}{l|}{Plancha 1000x1000x1mm} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo 4''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo 3''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo Reductor 4-3''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 145 °C 4''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo Tipo Y 4''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 90 °C 4''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 145 °C 3''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo Tipo Y 3''} & B & B & B \\ \hline
-		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 90 °C 3''} & B & B & B \\ \hline
-		
-		&  &  & \textbf{Total} & \textbf{} \\ \cline{4-5} 
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Tubo perfil cuadrado 20x20x5000 mm. (e=2 mm.)} & A & A & A \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Plancha 1x1220x2440 mm.} & 500 & 2 & 1000 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Plancha 1.5x1220x2440 mm.} & 700 & 1 & 700 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Plancha 2x1220x2440 mm.} & 850 & 1 & 850 \\ \hline		
+		\multicolumn{1}{|l|}{Triplay} & \multicolumn{1}{l|}{Plancha 1x1220x2440 mm.} & 50 & 2 & 100 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo 4''x1000 mm.} & 10 & 1 & 10 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo 3''x1000 mm.} & 10 & 1 & 10 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Tubo Reductor 4-3''} & 5 & 2 & 10 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 145 °C 4''} & 3 & 2 & 6 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo Tipo Y 4''} & 3 & 1 & 3 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 90 °C 4''} & 2 & 8 & 16 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 145 °C 3''} & 2.5 & 2 & 5 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo Tipo Y 3''} & 2.2 & 1 & 2.2 \\ \hline
+		\multicolumn{1}{|l|}{PVC} & \multicolumn{1}{l|}{Codo 90 °C 3''} & 1.8 & 4 & 7.2 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Tornillos M4x20} & 0.15 & 18 & 2.70 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Tornillos M6x60} & 0.20 & 12 & 2.40 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Tornillos M6x18} & 0.20 & 36 & 7.20 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Tornillos M8x20} & 0.50 & 16 & 5 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Tornillos M14x30} & 0.75 & 16 & 12 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Perno en U 3''} & 0.29 & 2 & 0.58 \\ \hline
+		\multicolumn{1}{|l|}{AISI 316} & \multicolumn{1}{l|}{Sujetador sensor infrarrojo} & 3 & 2 & 6 \\ \hline
+		\multicolumn{1}{|l|}{Nylon} & \multicolumn{1}{l|}{Cuerdas de sujeción} & 5 & 1 & 5 \\ \hline		
+		&  &  & \textbf{Total} & \textbf{2760.28} \\ \cline{4-5} 
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia.
 	\end{myflushcenteraftertable}
 \end{table}
 
+El costo total por concepto de materiales se calcula en S/ 2760.28 y no se le agrega costo de envío ya que todos los materiales listados se pueden conseguir en el mercado nacional, entonces no es necesario ningún incremento en su costo total.
+
 %% NUEVA SECCIÓN X.X
 \section{Costos total del sistema}
 
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
+La suma del sistema asciende al monto de S/ 
 
+\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
 
