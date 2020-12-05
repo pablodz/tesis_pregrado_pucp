@@ -176,12 +176,12 @@ Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada 
 	\footnotesize\centering
 	\caption{Lista de planos de subensamble.}
 	\label{tab:lista de repositorios}
-	\begin{tabular}{|c|l|}
+	\begin{tabular}{|l|l|}
 		\hline
 		\multicolumn{1}{|c|}{\textbf{Descripción}} & \multicolumn{1}{c|}{\textbf{Enlace}} \\ \hline
 		\textbf{Plantilla de tesis \LaTeX} & \href{https://github.com/ZurMaD/plantilla_tesis_pucp}{https://github.com/ZurMaD/plantilla\_tesis\_pucp}  \\ \hline
 		\textbf{Presente tesis} & \href{https://github.com/ZurMaD/tesis_pregrado_pucp}{https://github.com/ZurMaD/tesis\_pregrado\_pucp}  \\ \hline
-		\textbf{Datasets de peces} & \href{https://github.com/DZPeru/fish-datasets}{https://github.com/DZPeru/fish-datasets}  \\ \hline
+		\textbf{Datasets de peces ($\approx10GB$)} & \href{https://github.com/DZPeru/fish-datasets}{https://github.com/DZPeru/fish-datasets}  \\ \hline
 		\textbf{Algoritmo de detección y conteo v3} & \href{https://github.com/DZPeru/fishv3}{https://github.com/DZPeru/fishv3}  \\ \hline	
 		\textbf{Prototipo de aplicativo móvil} & \href{https://bit.ly/3ko1nG0}{https://bit.ly/3ko1nG0}  \\ \hline				
 	\end{tabular}
@@ -2909,12 +2909,10 @@ En la Figura \ref{fig:diagrama esquematico del indicador sonoro} se muestra la c
 \end{myfigure}
 
 
-
-
 %% NUEVO SECCION X.X.
 \section{Diagrama de flujo}
 
-El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo} y \ref{fig:diagrama de flujo2} se describe las tareas y decisiones necesarias para completar el proceso de clasificación y conteo de trucha empleando la máquina propuesta en este trabajo.
+El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo} y \ref{fig:diagrama de flujo2} se describe las tareas y decisiones necesarias para completar el proceso de clasificación y conteo de trucha empleando la máquina propuesta en este trabajo. El funcionamiento, como se muestra en la Figura \ref{fig:diagrama de flujo}, se divide en etapas: primero, la verificación del sistema, si tuvo un uso previo, si es posible iniciar el proceso de encendido; segundo, se conecta mediante conexión servidor-cliente vía Wi-Fi al microprocesador, ingresa a la aplicación que detectará la conexión y le permitirá iniciar sesión, luego se puede iniciar el proceso en el aplicativo; tercero, mediante verificaciones en el aplicativo se indica los pasos a seguir y cuando se finaliza se presiona un botón en el aplicativo. El tercer proceso se repite para cada etapa de estado de la máquina, inclusive para realizar el proceso de apagado.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -2925,6 +2923,8 @@ El diagrama de flujo principal, expuesto en la Figura \ref{fig:diagrama de flujo
 	\end{myflushcenter}
 	\label{fig:diagrama de flujo}
 \end{myfigure}
+
+Cabe resaltar que a medida que las etapas del proceso de clasificación y conteo se desarrollan, en la aplicación se muestra una pantalla distinta que debe muestra pasos a seguir que se muestran en la Figura \ref{fig:diagrama de flujo2} y que luego de cumplir con las tareas que se muestran se prosigue con la siguiente etapa. Finalmente en el aplicativo puede visualizar el reporte histórico de todos los procesos de clasificación y conteo realizados. Antes empezar el proceso de apagado, el operario es informado sobre la desconexión respectiva ya que si bien la máquina opera en la plataforma flotante, esta va a ser guardada en un almacén cuando no esté en uso.
 
 \begin{myfigure}[H]
 	\footnotesize\centering

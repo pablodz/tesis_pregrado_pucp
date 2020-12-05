@@ -93,12 +93,6 @@ Los componentes a considerar son los componentes eléctricos y electrónicos que
 
 Entonces, el costo de todos los componentes sin ensamblar es de S/ 6865.34 incluyendo gastos de envío y traslado de la cantidad específicada en la Tabla \ref{tab:costo de componentes electricos y electronicos}. Este total no debe ser comparado con máquinas comerciales debido a que es el costo de producir una sola máquina y no de producir en lotes, además de no haber pasado por la etapa de prototipado que suele disminuir el precio y perfeccionar el sistema disminuyendo el costo.
 
-
-%% NUEVA SECCIÓN X.X
-\section{Costos de manufactura}
-
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
-
 %% NUEVA SECCIÓN X.X
 \section{Costos de materiales}
 
@@ -144,9 +138,49 @@ Los materiales abarcan las planchas de metal a doblar, las tuberías de plástic
 El costo total por concepto de materiales se calcula en S/ 2760.28 y no se le agrega costo de envío ya que todos los materiales listados se pueden conseguir en el mercado nacional, entonces no es necesario ningún incremento en su costo total.
 
 %% NUEVA SECCIÓN X.X
+\section{Costos de manufactura}
+
+Los costos de manufactura contemplados en esta sección abarcan únicamente los costos directos de mano de obra, los costos directos de los materiales fueron considerados en la anterior sección y los gastos generales de manufactura están considerados dentro del costo de mano de obra que se presenta en la Tabla debido a que se realiza los servicios por una empresa que brinda los servicios por separado.
+
+\begin{table}[H]
+	\footnotesize\centering
+	\caption{Costo de manufactura.}
+	\label{tab:costo de manufactura}
+	\begin{tabular}{l|c|}
+		\hline
+		\multicolumn{2}{|c|}{\textbf{Costo de mano obra}}  \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Concepto}} & \multicolumn{1}{c|}{\textbf{Subtotal (S/)}} \\ \hline
+		\multicolumn{1}{|l|}{Servicio de soldadura} & 200.00 \\ \hline
+		\multicolumn{1}{|l|}{Servicio de corte láser} & 500.00 \\ \hline
+		\multicolumn{1}{|l|}{Servicio de plegado} & 200.00 \\ \hline
+		\multicolumn{1}{|l|}{Servicio de mecanizado} & 500.00 \\ \hline
+		\multicolumn{1}{|l|}{\textbf{Total (S/)}} &  1400.00 \\ \hline
+	\end{tabular}
+	\begin{myflushcenteraftertable}	
+		Fuente: Elaboración propia.
+	\end{myflushcenteraftertable}
+\end{table}
+
+%% NUEVA SECCIÓN X.X
 \section{Costos total del sistema}
 
-La suma del sistema asciende al monto de S/ 
+La suma de costos del sistema con las características que se explican en cada sección se calcula alrededor de S/17600.00 ($\approx$\$ 4900.00) que incluye costos de diseño y ensamblaje, componentes eléctricos y electrónicos, materiales y manufactura de un sistema de clasificación y conteo de truchas.
 
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. [/BORRADOR]} 
-
+\begin{table}[H]
+	\footnotesize\centering
+	\caption{Costo total del sistema.}
+	\label{tab:costo total del sistema}
+	\begin{tabular}{lc|c|c|}
+		\hline
+		\multicolumn{4}{|c|}{\textbf{Costo del sistema}}  \\ \hline
+		\multicolumn{1}{|c|}{\textbf{Concepto}} & \multicolumn{1}{c|}{\textbf{Costo (S/)}} & \multicolumn{1}{c|}{\textbf{Impuestos+Envío (S/)}} & \multicolumn{1}{c|}{\textbf{Subtotal (S/)}} \\ \hline
+		\multicolumn{1}{|l|}{Costo de diseño y ensamblaje} & 6510.00 & -- & 6510.00 \\ \hline
+		\multicolumn{1}{|l|}{Costo de componentes} & 5281.03 & 1584.31 & 6865.34 \\ \hline
+		\multicolumn{1}{|l|}{Costo de materiales} & 2760.28 & -- & 2760.28 \\ \hline
+		\multicolumn{1}{|l|}{Costo de manufactura} & 1400.00 & -- & 1400.00 \\ \hline
+		& & \textbf{Total (S/)} & \textbf{17535.62}  \\ \cline{3-4} 
+	\end{tabular}
+	\begin{myflushcenteraftertable}	
+		Fuente: Elaboración propia.
+	\end{myflushcenteraftertable}
+\end{table}
