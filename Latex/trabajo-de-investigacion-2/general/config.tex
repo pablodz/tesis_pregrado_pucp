@@ -237,6 +237,7 @@ heightrounded, % to avoid spurious underfull messages
 {\normalfont\bfseries\filright}{\thesubsubsection}{1em}{}
 
 % Dentro del siguiente código no usar comentarios
+% ENUMERACIÓN arabic Arabic Roman roman
 \addto\captionsenglish{
 	\renewcommand{\contentsname}{Índice}
 	\renewcommand{\listfigurename}{Índice de figuras}
@@ -256,8 +257,7 @@ heightrounded, % to avoid spurious underfull messages
 }
 
 
-
-\renewcommand{\bibsection}{} % Eliminar "References" título
+\renewcommand{\bibsection}{} % Eliminar "References" como título de lista de bibliografía
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -351,7 +351,7 @@ heightrounded, % to avoid spurious underfull messages
 
 % Para evitar espacios luego de nombre de imagen
 \newenvironment{myfigure}{%
-	\vspace{-1.0em}
+	\vspace{-0.10em}
 	\begin{figure}
 	}{%
 	\end{figure}

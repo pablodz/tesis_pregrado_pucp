@@ -18,19 +18,20 @@ En este capítulo se realiza el diseño de ingeniería del sistema que abarca la
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/subensambles/diseno integral final.png}
+	\includegraphics[width=0.65\textwidth]{chapter5/subensambles/diseno integral final.png}
 	\caption{Diseño integral de la máquina de clasificación y conteo de truchas.}
 	\begin{myflushcenter}
+		Leyenda: (1) subsistema de recepción, distribución y traslado de truchas; (2) subsistema de control e interacción con el usuario; (3) subsistema de procesamiento de imágenes.\\
 		Fuente: Elaboración propia
 	\end{myflushcenter}
 	\label{fig:diseno integral}
 \end{myfigure}
 
+\vspace{-2.0em}
+
 %% NUEVA SECCIÓN X.X.X
 \subsection{Descripción del sistema integral}
 \label{ssec:descripcion del sistema integral}
-
-En la Figura \ref{fig:diseno integral} se muestra el diseño mecatrónico integral final donde se enumeran subsecciones: 1. subsistema de recepción, distribución y traslado de truchas; 2. subsistema de control e interacción con el usuario y 3. subsistema de procesamiento de imágenes.
 
 Respecto al diseño conceptual, existen algunas modificaciones en los tipos de dispositivos por características técnicas detectadas en el desarrollo de ingeniería del sistema: el cambio del servomotor por un mecanismo de motor a pasos con leva-seguidor que disminuye el desgaste por el sentido de giro; la batería ya no es parte del sistema, el operario debe suministrar la energía necesaria; el adicional de una cámara para el seguimiento de la trayectoria de truchas en el mecanismo de distribución; la variación de el uso de un microcontrolador a microprocesador debido a la potencia computacional requerida; el cambio de bombas sumergibles a bombas de agua por la eficiencia y potencia necesaria en el proyecto\footnote{El precio de las bombas sumergibles sube considerablemente correspondiente a la potencia requerida.}; remoción de la reja al inicio accionada por un motor debido al coste de implementación y reemplazo con un tapón de plástico; cambio de nombre del interruptor de tipo hongo a interruptor de suministro de energía; aumento del máximo peso admisible según requisito a 400 kg. debido al empleo de plataformas flotantes de alta capacidad de flotación en lugar de su uso en botes de 3 metros de largo.
 
@@ -58,88 +59,89 @@ En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propue
 \subsubsection{Selección de materiales de fabricación}
 \label{sssec:seleccion de materiales de fabricacion}
 
-Cada subsistema posee mecanismos que se rigen por un material en general, esto incluye a las partes principales del subsistema. Sin embargo, no considera el material de tornillos, ajustes o dispositivos similares. Existen así mismos requisitos que se pueden generalizar para todos los subsistemas por el entorno de trabajo a la que estará sometida la máquina detallados en la \textit{"Lista de requerimientos"} \footnote{\cite{DiazVergara2020}.}. Basado en dichas demandas, cada subsistema es analizado y presentado con dos alternativas posibles de materiales. Consecuentemente, se elige un material decisivo para ser empleado bajo el sustento técnico que se explicará en los siguientes párrafos.
+Cada subsistema posee mecanismos que se rigen por un material en general, esto incluye a las partes principales del subsistema. Sin embargo, no considera el material de tornillos, ajustes o dispositivos similares. Existen así mismos requisitos que se pueden generalizar para todos los subsistemas por el entorno de trabajo a la que estará sometida la máquina detallados en la \textit{"Lista de requerimientos"} \footnote{\cite{DiazVergara2020}.}. Basado en dichas demandas, cada subsistema es analizado y presentado con dos alternativas posibles de materiales. Consecuentemente, se elige un material decisivo para ser empleado bajo el sustento técnico que se explicará en los siguientes párrafos.\\
 
-\begin{itemize}
-	\item \textbf{Subsistema de recepción y traslado de truchas:} Cuenta con dos mecanismos; recepción de truchas y tuberías de traslado. El primero debe recepcionar a las truchas y dirigirlas al mecanismo de tuberías. El segundo debe trasladar a las truchas de un punto a otro de la máquina mediante las tuberías. En la Tabla \ref{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable} se comparan técnicamente las propiedades mecánicas, térmicas y ópticas de dos materiales.
-	
-	\begin{mytable}[H]
-		\footnotesize\centering
-		\caption{Tabla comparativa de propiedades entre $Aluminio$ vs $Acero \quad Inoxidable$}
-		\label{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable}
-		\begin{tabular}{|l|c|c|}
-			\hline
-			\multicolumn{1}{|c|}{\textbf{Propiedad}} & \textbf{Aluminio} & \textbf{Acero Inoxidable} \\ \hline
-			Módulo de Young ($GPa$) & 69 & 200 \\ \hline
-			Esfuerzo de fatiga $Y$ ($MPa$) & 58-110 & 210-430 \\ \hline
-			Resistencia a la tracción ($MPa$) & 130-410 & 520-1180 \\ \hline
-			Temperatura máxima mecánica (°$C$) & 650 & 590 \\ \hline
-			Conductividad térmica ($W/m-K$) & 170 & 15 \\ \hline
-			Expansión térmica (${\mu}m/m-K$) & 24 & 16 \\ \hline
-			Conductividad eléctrica ($\%$) & 43 & 2.3 \\ \hline
-			Densidad ($g/cm^3$) & 2.7 & 7.9 \\ \hline
-		\end{tabular}
-		\begin{myflushcenteraftertable}
-			*Terminología técnica de los materiales: Aluminio 6061, Acero Inoxidable AISI 306 .\\		
-			Fuente: \cite{MakeItFrom2020}.
-		\end{myflushcenteraftertable}
-	\end{mytable}
+%\begin{itemize}[\null]
 
-	El material escogido es Aluminio 6061 por tener una densidad menor, facilidad de realizar juntas de soldadura, y aunque tenga menor resistencia mecánica cumple con los requerimientos mínimos asociados al subsistema mencionado.
-	
-	\item \textbf{Subsistema de procesamiento de imágenes:} Cuenta con los mecanismos de tuberías y juego de espejos. El primero debe brindar a la cámara suficiente transparencia para obtener una fotografía adecuada. El segundo debe brindar a la cámara más perfiles del cuerpo que es trasladado por la tubería. En la Tabla \ref{tab:tabla comparativa de propiedades entre pmma vs pvdf vs petg} se compara técnicamente las propiedades mecánicas, térmicas y ópticas de tres materiales.
-	
-	\begin{mytable}[H]
-		\footnotesize\centering
-		\caption{Tabla comparativa de propiedades entre $PMMA$, $PVDF$ y $PETG$}
-		\label{tab:tabla comparativa de propiedades entre pmma vs pvdf vs petg}
-		\begin{tabular}{|l|c|c|c|}
-			\hline
-			\multicolumn{1}{|c|}{\textbf{Propiedad}} & \multicolumn{1}{c|}{\textbf{PMMA}} & \textbf{PVDF}& \textbf{PETG} \\ \hline
-			Resistencia al impacto: con muescas ($J/m$) & 74 & 180 & 77  \\ \hline
-			Expansión térmica (${\mu}m/m-K$)  & 76 & 120 & 68 \\ \hline
-			Densidad ($g/cm^3$) & 1.2 & 1.8  & 1.3 \\ \hline
-			Resistencia al peso  & 32 & 20 & 25 \\ \hline
-			Alargamiento a la rotura ($ \% $) & 4 & 49 & 53 \\ \hline
-			Incidencia de luz trasmitida ($ \% $) & 92 & - & - \\ \hline
-			Índice de refracción & 1.5 & 1.4 & 1.6\\ \hline			
-		\end{tabular}
-		\begin{myflushcenteraftertable}
-			*Terminología técnica de los materiales: Polimetilmetacrilato (Acrílico)(PMMA), Fluoruro de polivinilideno (PVDF), Tereftalato de polietileno modificado con glicol (PETG).\\		
-			Fuente: \cite{Brydson1999,Berins1991,Harper2000,MakeItFrom2020}.
-		\end{myflushcenteraftertable}
-	\end{mytable}
+\textbf{Subsistema de recepción y traslado de truchas:} Cuenta con dos mecanismos; recepción de truchas y tuberías de traslado. El primero debe recepcionar a las truchas y dirigirlas al mecanismo de tuberías. El segundo debe trasladar a las truchas de un punto a otro de la máquina mediante las tuberías. En la Tabla \ref{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable} se comparan técnicamente las propiedades mecánicas, térmicas y ópticas de dos materiales.
 
-	Tanto el PMMA como el PETG tienen menores propiedades mecánicas que PVDF, pero en cuanto a densidad los materiales mencionados son más livianos comparados con el PVDF. En cuanto a las propiedades ópticas, el PMMA tiene un índice de refracción mayor que el PVDF pero menor que el PETG. Sin embargo, la el PMMA es el material más usado en propósitos ópticos comparado con los otros materiales mencionados. El PMMA transparente se puede encontrar en el mercado nacional e internacional por lo que se opta por este material para el subsistema mencionado. En el caso del juego de espejos, las propiedades ópticas son primordiales, por lo que se escoge PMMA.
-	
-	\item \textbf{Subsistema de procesamiento de suministro de energía y subsistema de control e interacción con el usuario:} Los materiales son propios de los dispositivos electrónicos comerciales dependientes de la tecnología que se selecciona, por lo que se omite una clasificación de materiales en estos subsistemas.
-	
-	%\item \textbf{:} Los materiales son propios de los dispositivos que serán adquiridos.
-	
-	\item \textbf{Subsistema de flotación:} Cuenta con dos mecanismos; armadura y flotadores. El primero debe funcionar como esqueleto para los otros subsistemas y del mismo. El segundo debe mantener el sistema a flote. En la Tabla \ref{tab:tabla comparativa de propiedades entre hdpe vs pvcu} se compara técnicamente las propiedades mecánicas, térmicas y ópticas de dos materiales.
-	
-	\begin{mytable}[H]
-		\footnotesize\centering
-		\caption{Tabla comparativa de propiedades entre $HDPE$ vs $PVC-U$}
-		\label{tab:tabla comparativa de propiedades entre hdpe vs pvcu}
-		\begin{tabular}{|l|c|c|}
-			\hline
-			\multicolumn{1}{|c|}{\textbf{Propiedad}} & \textbf{HDPE} & \textbf{PVC-U} \\ \hline
-			Densidad ($g/cm^3$) & 1.0-1.3 & 1.4 \\ \hline
-			Elongación a rotura ($\%$) & 2.5-100 & 58 \\ \hline
-			Resistencia al impacto ($J/m$) & 50-260 & 360 \\ \hline
-			Resistencia al peso: Flexión & 19-32 & 20 \\ \hline
-			Resistencia a la tracción ($MPa$) & 24-80 & 47 \\ \hline
-		\end{tabular}
-		\begin{myflushcenteraftertable}
-			*Terminología técnica de los materiales: Polietileno de alta densidad (HDPE), Cloruro de polivinilo no plastificado (Rígido) (uPVC, PVC-U)\\		
-			Fuente: \cite{Brydson1999,Berins1991,Harper2000,MakeItFrom2020}.
-		\end{myflushcenteraftertable}
-	\end{mytable}
-	
-	En los flotadores es crucial las propiedades mecánicas, ya que en caso de falla puede hundir todo el sistema. La búsqueda de un material con baja densidad, alta resistencia a la tracción, impacto y al peso determinan el material escogido como HDPE. Además dicho material es comercializado nacionalmente e internacionalmente. De forma similar, la armadura debe poseer buenas propiedades mecánicas y por eso se selecciona Acero Inoxidable.
-	
-\end{itemize}
+\begin{mytable}[H]
+	\footnotesize\centering
+	\caption{Tabla comparativa de propiedades entre $Aluminio$ vs $Acero \quad Inoxidable$}
+	\label{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Propiedad}} & \textbf{Aluminio} & \textbf{Acero Inoxidable} \\ \hline
+		Módulo de Young ($GPa$) & 69 & 200 \\ \hline
+		Esfuerzo de fatiga $Y$ ($MPa$) & 58-110 & 210-430 \\ \hline
+		Resistencia a la tracción ($MPa$) & 130-410 & 520-1180 \\ \hline
+		Temperatura máxima mecánica (°$C$) & 650 & 590 \\ \hline
+		Conductividad térmica ($W/m-K$) & 170 & 15 \\ \hline
+		Expansión térmica (${\mu}m/m-K$) & 24 & 16 \\ \hline
+		Conductividad eléctrica ($\%$) & 43 & 2.3 \\ \hline
+		Densidad ($g/cm^3$) & 2.7 & 7.9 \\ \hline
+	\end{tabular}
+	\begin{myflushcenteraftertable}
+		*Terminología técnica de los materiales: Aluminio 6061, Acero Inoxidable AISI 306 .\\		
+		Fuente: \cite{MakeItFrom2020}.
+	\end{myflushcenteraftertable}
+\end{mytable}
+
+El material escogido es Aluminio 6061 por tener una densidad menor, facilidad de realizar juntas de soldadura, y aunque tenga menor resistencia mecánica cumple con los requerimientos mínimos asociados al subsistema mencionado.\\
+
+\textbf{Subsistema de procesamiento de imágenes:} Cuenta con los mecanismos de tuberías y juego de espejos. El primero debe brindar a la cámara suficiente transparencia para obtener una fotografía adecuada. El segundo debe brindar a la cámara más perfiles del cuerpo que es trasladado por la tubería. En la Tabla \ref{tab:tabla comparativa de propiedades entre pmma vs pvdf vs petg} se compara técnicamente las propiedades mecánicas, térmicas y ópticas de tres materiales.
+
+\begin{mytable}[H]
+	\footnotesize\centering
+	\caption{Tabla comparativa de propiedades entre $PMMA$, $PVDF$ y $PETG$}
+	\label{tab:tabla comparativa de propiedades entre pmma vs pvdf vs petg}
+	\begin{tabular}{|l|c|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Propiedad}} & \multicolumn{1}{c|}{\textbf{PMMA}} & \textbf{PVDF}& \textbf{PETG} \\ \hline
+		Resistencia al impacto: con muescas ($J/m$) & 74 & 180 & 77  \\ \hline
+		Expansión térmica (${\mu}m/m-K$)  & 76 & 120 & 68 \\ \hline
+		Densidad ($g/cm^3$) & 1.2 & 1.8  & 1.3 \\ \hline
+		Resistencia al peso  & 32 & 20 & 25 \\ \hline
+		Alargamiento a la rotura ($ \% $) & 4 & 49 & 53 \\ \hline
+		Incidencia de luz trasmitida ($ \% $) & 92 & - & - \\ \hline
+		Índice de refracción & 1.5 & 1.4 & 1.6\\ \hline			
+	\end{tabular}
+	\begin{myflushcenteraftertable}
+		*Terminología técnica de los materiales: Polimetilmetacrilato (Acrílico)(PMMA), Fluoruro de polivinilideno (PVDF), Tereftalato de polietileno modificado con glicol (PETG).\\		
+		Fuente: \cite{Brydson1999,Berins1991,Harper2000,MakeItFrom2020}.
+	\end{myflushcenteraftertable}
+\end{mytable}
+
+Tanto el PMMA como el PETG tienen menores propiedades mecánicas que PVDF, pero en cuanto a densidad los materiales mencionados son más livianos comparados con el PVDF. En cuanto a las propiedades ópticas, el PMMA tiene un índice de refracción mayor que el PVDF pero menor que el PETG. Sin embargo, la el PMMA es el material más usado en propósitos ópticos comparado con los otros materiales mencionados. El PMMA transparente se puede encontrar en el mercado nacional e internacional por lo que se opta por este material para el subsistema mencionado. En el caso del juego de espejos, las propiedades ópticas son primordiales, por lo que se escoge PMMA.\\
+
+\textbf{Subsistema de procesamiento de suministro de energía y subsistema de control e interacción con el usuario:} Los materiales son propios de los dispositivos electrónicos comerciales dependientes de la tecnología que se selecciona, por lo que se omite una clasificación de materiales en estos subsistemas.\\
+
+%\textbf{:} Los materiales son propios de los dispositivos que serán adquiridos.
+
+\textbf{Subsistema de flotación:} Cuenta con dos mecanismos; armadura y flotadores. El primero debe funcionar como esqueleto para los otros subsistemas y del mismo. El segundo debe mantener el sistema a flote. En la Tabla \ref{tab:tabla comparativa de propiedades entre hdpe vs pvcu} se compara técnicamente las propiedades mecánicas, térmicas y ópticas de dos materiales.
+
+\begin{mytable}[H]
+	\footnotesize\centering
+	\caption{Tabla comparativa de propiedades entre $HDPE$ vs $PVC-U$}
+	\label{tab:tabla comparativa de propiedades entre hdpe vs pvcu}
+	\begin{tabular}{|l|c|c|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Propiedad}} & \textbf{HDPE} & \textbf{PVC-U} \\ \hline
+		Densidad ($g/cm^3$) & 1.0-1.3 & 1.4 \\ \hline
+		Elongación a rotura ($\%$) & 2.5-100 & 58 \\ \hline
+		Resistencia al impacto ($J/m$) & 50-260 & 360 \\ \hline
+		Resistencia al peso: Flexión & 19-32 & 20 \\ \hline
+		Resistencia a la tracción ($MPa$) & 24-80 & 47 \\ \hline
+	\end{tabular}
+	\begin{myflushcenteraftertable}
+		*Terminología técnica de los materiales: Polietileno de alta densidad (HDPE), Cloruro de polivinilo no plastificado (Rígido) (uPVC, PVC-U)\\		
+		Fuente: \cite{Brydson1999,Berins1991,Harper2000,MakeItFrom2020}.
+	\end{myflushcenteraftertable}
+\end{mytable}
+
+En los flotadores es crucial las propiedades mecánicas, ya que en caso de falla puede hundir todo el sistema. La búsqueda de un material con baja densidad, alta resistencia a la tracción, impacto y al peso determinan el material escogido como HDPE. Además dicho material es comercializado nacionalmente e internacionalmente. De forma similar, la armadura debe poseer buenas propiedades mecánicas y por eso se selecciona Acero Inoxidable.\\
+
+%\end{itemize}
 
 Finalmente, en las Tablas \ref{tab:tabla comparativa de propiedades entre aluminio vs acero inoxidable}, \ref{tab:tabla comparativa de propiedades entre pmma vs pvdf vs petg} y \ref{tab:tabla comparativa de propiedades entre hdpe vs pvcu} se comparan diversos materiales para el correspondiente subsistema. Los materiales de fabricación finales para cada subsistema se muestran en la Tabla \ref{tab:materiales de fabricacion por subsistema}, fueron seleccionados por su superioridad en las propiedades técnicas que son valoradas en este proyecto. 
 
@@ -176,20 +178,23 @@ Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada 
 	\footnotesize\centering
 	\caption{Lista de planos de subensamble.}
 	\label{tab:lista de repositorios}
-	\begin{tabular}{|l|l|}
+	\begin{tabular}{|l|l|l|}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Descripción}} & \multicolumn{1}{c|}{\textbf{Enlace}} \\ \hline
-		\textbf{Plantilla de tesis \LaTeX} & \href{https://github.com/ZurMaD/plantilla_tesis_pucp}{https://github.com/ZurMaD/plantilla\_tesis\_pucp}  \\ \hline
-		\textbf{Presente tesis pregrado} & \href{https://github.com/ZurMaD/tesis_pregrado_pucp}{https://github.com/ZurMaD/tesis\_pregrado\_pucp}  \\ \hline
-		\textbf{Datasets de peces ($\approx$10GB)} & \href{https://github.com/DZPeru/fish-datasets}{https://github.com/DZPeru/fish-datasets}  \\ \hline
-		\textbf{Algoritmo de detección y conteo v3} & \href{https://github.com/DZPeru/fishv3}{https://github.com/DZPeru/fishv3}  \\ \hline 
-		\textbf{Prototipo de aplicativo móvil} & \href{https://bit.ly/3ko1nG0}{https://bit.ly/3ko1nG0}  \\ \hline
-		\textbf{Simulaciones estructurales} & \href{https://bit.ly/3ohX3ui}{https://bit.ly/3ohX3ui}  \\ \hline		
+		\multicolumn{1}{|c|}{\textbf{Descripción}} & \multicolumn{1}{c|}{\textbf{Enlace}} & \multicolumn{1}{c|}{\textbf{Demo}} \\ \hline
+		\textbf{Plantilla de tesis \LaTeX} & \href{https://github.com/ZurMaD/plantilla_tesis_pucp}{Github} & \href{https://github.com/ZurMaD/plantilla_tesis_pucp/blob/master/plantilla/main.pdf}{PDF} \\ \hline
+		\textbf{Presente tesis de pregrado} & \href{https://github.com/ZurMaD/tesis_pregrado_pucp}{Github} & \href{https://github.com/ZurMaD/tesis_pregrado_pucp/blob/master/Latex/trabajo-de-investigacion-2/main.pdf}{PDF}  \\ \hline
+		\textbf{Datasets de peces ($\approx$10GB)} & \href{https://github.com/DZPeru/fish-datasets}{Github} & -- \\ \hline
+		\textbf{Algoritmo de detección y conteo basado en YOLOv3} & \href{https://github.com/DZPeru/fishv3}{Github-Fishv3} & \href{https://fishv3.herokuapp.com/}{Demo-Web} \\ \hline 
+		\textbf{Algoritmo de detección y conteo basado en YOLOv4} & \href{https://github.com/DZPeru/fishv4}{Github-Fishv4} & \href{https://fishv4.herokuapp.com/}{Demo-Web}\\ \hline 
+		\textbf{Prototipo de aplicativo móvil} & -- & \href{https://bit.ly/3ko1nG0}{FigmaDemo}\\ \hline
+		\textbf{Simulaciones estructurales} & \href{https://bit.ly/3ohX3ui}{Github} & -- \\ \hline		
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia.
 	\end{myflushcenteraftertable}
 \end{mytable}
+
+\vspace{-2.0em}
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Planos del sistema}
@@ -279,20 +284,40 @@ El plano de despiece presenta las características técnicas de cada pieza: mues
 
 \label{ssec:diseno de subsistema de recepcion, distribucion y traslado de truchas}
 
-Este subsistema consiste en encapsular los mecanismos físicos que están en el ciclo que sigue una trucha dentro de la máquina: tolva, tuberías, bomba de agua, distribución física por mecanismos, caudales apropiados y el control respectivo. Los puntos mencionados se detallan en las siguientes páginas. En la Figura \ref{fig:subsistema de recepción, distribución y traslado de truchas} se muestran los tres sistemas: 1. recepción, 2. distribución y lo restante 3. distribución.
+Este subsistema consiste en encapsular los mecanismos físicos que están en el ciclo que sigue una trucha dentro de la máquina: tolva, tuberías, bomba de agua, distribución física por mecanismos, caudales apropiados y el control respectivo. Los puntos mencionados se detallan en las siguientes páginas. % En la Figura \ref{fig:subsistema de recepción, distribución y traslado de truchas} se muestran los tres sistemas: 
 
 \begin{myfigure}[H]
 	\footnotesize\centering
 	\includegraphics[width=1\textwidth]{chapter5/subensambles/recepcion distribucion y traslado isometrico final.png}
 	\caption{Subsistema de recepción, distribución y traslado de truchas}
 	\begin{myflushcenter}
+		Leyenda: Subsistemas de (1) recepción; (2) distribución; (3) distribución.\\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de recepción, distribución y traslado de truchas}
 \end{myfigure}
 
-%% NUEVO SECCION X.X.X.X
+\vspace{-2.0em}
+
+%% NUEVO SECCION X.X.
 \section{Diseño del subsistema de recepción de truchas}
+
+BORRADOR
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/subsistema recepcion final.png}
+	\caption{Mecanismo de distribución de truchas}
+	\begin{myflushcenter}
+		Leyenda: ... \\
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:subsistema de recepcion}
+\end{myfigure}
+\vspace{-2.0em}
+
+%% NUEVO SECCION X.X.X
+\subsection{Cálculos dimensiones del subsistema de recepción de truchas}
 
 El diseño implica un análisis sobre las situaciones que suceden cuando se realiza el proceso de depositar las truchas. En la Figura \ref{fig:calculo de dimensiones y angulo de la tolva} se analiza dicha situación con la finalidad de escoger un ángulo de elevación de la tolva ($\beta$) adecuado. Respecto a la tolva, se designan los siguientes valores iniciales: $A_{min},B_{min}=200 mm.$; $\beta \in [0;45] ^\circ$; ${tolva}=150 mm.$. Además, debe cumplirse que $A_{max}>B_{max}$ orientado hacia el operario que depositará la trucha.
 
@@ -346,20 +371,25 @@ Para disminuir el impacto de la trucha sobre la tolva o sobre las tuberías inte
 	\label{fig:grafico angulo de tolva vs aceleracion}
 \end{myfigure}
 
+\vspace{-2.0em}
+
 %% NUEVO SECCION X.X.
 \section{Diseño de subsistema de distribución de truchas}
 
-Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo de clasificación indica al sistema la trayectoria que debe seguir la trucha en tránsito y es accionado por el mecanismo de distribución, mostrado en la Figura \ref{fig:mecanismo de distribucion de truchas}. En la Figura \ref{fig:mecanismo de distribucion de truchas} se enumera sus componentes principales: 1. placa tipo tapa; 2. pared a de la distribuidora; 3. pared b de la distribuidora; 4. placa intermedia; 5. mecanismo de compuerta\footnote{La leva no se muestra adecuadamente en esta vista.}. Dicho mecanismo recibe a la trucha por una única entrada y redirige mediante un juego de compuertas a tres salidas. Finalmente, las truchas son impulsadas al ingresar a tuberías con caudal de agua constante que las transporta hasta las jaulas flotantes correspondientes.
+Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo de clasificación indica al sistema la trayectoria que debe seguir la trucha en tránsito y es accionado por el mecanismo de distribución, mostrado en la Figura \ref{fig:mecanismo de distribucion de truchas}. Dicho mecanismo recibe a la trucha por una única entrada y redirige mediante un juego de compuertas a tres salidas. Finalmente, las truchas son impulsadas al ingresar a tuberías con caudal de agua constante que las transporta hasta las jaulas flotantes correspondientes.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/mecanismo de distribucion de truchas final.png}
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/subsistema de distribucion final.png}
 	\caption{Mecanismo de distribución de truchas}
 	\begin{myflushcenter}
+		Leyenda: (1) placa tipo tapa; (2) pared a de la distribuidora; (3) pared b de la distribuidora; (4) placa intermedia; (5) mecanismo de compuerta\footnote{La leva no se muestra adecuadamente en esta vista.} \\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:mecanismo de distribucion de truchas}
 \end{myfigure}
+
+\vspace{-2.0em}
 
 %% NUEVO SECCION X.X.X.
 \subsection{Selección de mecanismo que acciona la compuerta}
@@ -695,6 +725,18 @@ Debido a las características únicas de cada servomotor, los fabricantes de cad
 
 Las tuberías del sistema tienen como propósito abastecer de un flujo de agua constante a la máquina mientras está en funcionamiento. Cuatro canales de tuberías se abastecen de un flujo mediante este subsistema, accionado por bombas de agua y controlados por electroválvulas y sensores de caudal. Esto permite un correcto abastecimiento que no perjudique a las truchas. En las siguientes subsecciones se detalla el dimensionamiento de las tuberías, cálculo de caudales apropiados, selección de electroválvulas, su control asociado y selección de bombas de agua.
 
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/subsistema traslado final.png}
+	\caption{Mecanismo de distribución de truchas}
+	\begin{myflushcenter}
+		Leyenda: ... \\
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:subsistema de traslado}
+\end{myfigure}
+\vspace{-2.0em}
+
 %% NUEVO SECCION X.X.X.
 \subsection{Diseño de tuberías}
 	
@@ -909,17 +951,20 @@ El sensor de presión WNK80MA de la empresa manufacturera WNK es escogido porque
 \chapter[\quad\quad\quad\quad ----- Diseño de subsistema de procesamiento de imágenes]{\\ Diseño de subsistema de procesamiento de imágenes}
 \thispagestyle{myportland}
 
-Este subsistema consiste obtener una serie de imágenes de una trucha en tránsito e indicar al sistema a dónde debería dirigirse una trucha determinada. El subsistema debe clasificar y contar truchas, con dicha finalidad necesita de la selección de una cámara y generar el ambiente adecuado para obtener las imágenes. Explicado los objetivos del subsistema, en las siguientes líneas se detalla: la selección del sensor infrarrojo, la selección de cámara estéreo, la selección de iluminación adecuada y la selección de algoritmos. En la Figura \ref{fig:subsistema de procesamiento de imagenes} se enumera los principales componentes: 1. sensor de presión; 2. reductor de tubería; 3. sensor infrarrojo; 4. adaptador y sensor infrarrojo; 5. cámara estéreo a cierta distancia perpendicular; 6. juego de espejos; 7. tubo transparente.
+Este subsistema consiste obtener una serie de imágenes de una trucha en tránsito e indicar al sistema a dónde debería dirigirse una trucha determinada. El subsistema debe clasificar y contar truchas, con dicha finalidad necesita de la selección de una cámara y generar el ambiente adecuado para obtener las imágenes. Explicado los objetivos del subsistema, en las siguientes líneas se detalla: la selección del sensor infrarrojo, la selección de cámara estéreo, la selección de iluminación adecuada y la selección de algoritmos. %En la Figura \ref{fig:subsistema de procesamiento de imagenes} se enumera los principales componentes: 
 
 \begin{myfigure}[H]
 	\footnotesize\centering
 	\includegraphics[width=1\textwidth]{chapter5/subensambles/procesamiento de imagenes final.png}
 	\caption{Subsistema de procesamiento de imágenes}
 	\begin{myflushcenter}
+		Leyenda: (1) sensor de presión; (2) reductor de tubería; (3) sensor infrarrojo; (4) adaptador y sensor infrarrojo; (5) cámara estéreo a cierta distancia perpendicular; (6) juego de espejos; (7) tubo transparente.\\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de procesamiento de imagenes}
 \end{myfigure}
+
+\vspace{-2.0em}
  
 %% NUEVO SECCION X.X.
 \section{Selección del sensor infrarrojo}
@@ -1887,17 +1932,20 @@ La implementación de YOLO v4.0 en el sistema de CCT, en la etapa de desarrollo,
 \thispagestyle{myportland}
 \label{ssec:diseno de subsistema de control e interaccion con el usuario}
 
-El presente subsistema tiene como fin monitorear y controlar los sensores y actuadores, establecer comunicación con los dispositivos de interacción con el usuario tal como un celular o una computadora portátil. Consecuentemente, en las siguientes subsecciones se detalla: la selección de componentes, el cálculo de consumo de energía del sistema, diagrama de flujo de los procesadores de datos y finalmente el diseño frontend de la aplicación móvil. En la Figura \ref{fig:subsistema de control e interaccion con el usuario} se enumera sus componentes principales: 1. panel frontal; 2. indicador sonoro; 3. indicador visual; 4. caja de control; 5. caja de encendido/apagado.
+El presente subsistema tiene como fin monitorear y controlar los sensores y actuadores, establecer comunicación con los dispositivos de interacción con el usuario tal como un celular o una computadora portátil. Consecuentemente, en las siguientes subsecciones se detalla: la selección de componentes, el cálculo de consumo de energía del sistema, diagrama de flujo de los procesadores de datos y finalmente el diseño frontend de la aplicación móvil. %En la Figura \ref{fig:subsistema de control e interaccion con el usuario} se enumera sus componentes principales: 
 
 \begin{myfigure}[H]
 	\footnotesize\centering
 	\includegraphics[width=0.90\textwidth]{chapter5/subensambles/control isometrico final.png}
 	\caption{Subsistema de control e interacción con el usuario}
 	\begin{myflushcenter}
+		Leyenda: (1) panel frontal; (2) indicador sonoro; (3) indicador visual; (4) caja de control; (5) caja de encendido/apagado.\\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de control e interaccion con el usuario}
 \end{myfigure}
+
+\vspace{-2.0em}
 
 %% NUEVO SECCION X.X.
 \section{Selección de microprocesador}
@@ -2500,18 +2548,20 @@ La aplicación móvil permitirá a un operario visualizar los estados de la máq
 \thispagestyle{myportland}
 \label{ssec:diseno de subsistema de suministro de energia}
 
-El sistema debe suministrar energía a los diversos mecanismos electrónicos, sistemas de control y actuadores necesarios para que la máquina funcione de manera apropiada. Este subsistema debe cumplir diversos requerimientos que son detallados en las sub-secciones correspondientes. En los siguientes párrafos se analizaran a detalle: la selección de la batería, la selección de la fuente de alimentación, la selección de transformadores, la selección de fuentes switching, el diagrama esquemático y el diagrama eléctrico. En la Figura \ref{fig:subsistema de suministro de energia} se enumeran los componentes principales: 1. Conversor de voltaje conmutado; 2. Driver de servomotor; 3. Generador PWM a partir de I2C; 4. Fuente switching 24V; 5. Raspberry Pi 4B.
+El sistema debe suministrar energía a los diversos mecanismos electrónicos, sistemas de control y actuadores necesarios para que la máquina funcione de manera apropiada. Este subsistema debe cumplir diversos requerimientos que son detallados en las sub-secciones correspondientes. En los siguientes párrafos se analizaran a detalle: la selección de la batería, la selección de la fuente de alimentación, la selección de transformadores, la selección de fuentes switching, el diagrama esquemático y el diagrama eléctrico. % En la Figura \ref{fig:subsistema de suministro de energia} se enumeran los componentes principales:
 
 \begin{myfigure}[H]
 	\footnotesize\centering
 	\includegraphics[width=0.85\textwidth]{chapter5/subensambles/electrico frontal 2 final.png}
 	\caption{Subsistema de suministro de energía}
 	\begin{myflushcenter}
+		 Leyenda: (1) conversor de voltaje conmutado; (2) driver de servomotor; (3) generador PWM a partir de I2C; (4) Fuente switching 24V; (5) Raspberry Pi 4B.\\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de suministro de energia}
 \end{myfigure}
 
+\vspace{-2.0em}
 
 %% NUEVO SECCION X.X.
 \section{Cálculo del consumo de energía del sistema} 
@@ -2523,16 +2573,16 @@ El cálculo del consumo de energía del sistema es la suma de potencia requerida
 	\footnotesize\centering
 	\caption{Tabla de consumo de energía del sistema por dispositivo.}
 	\label{tab:tabla de consumo de energia del sistema por dispositivo}
-	\begin{tabular}{l|c|c|c|c|c|c|}
+	\begin{tabular}{lcccc|c|c|}
 		\cline{2-7}
-		\multicolumn{1}{c|}{\textbf{}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Modelo \\ (Datasheet)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}I max \\ ($mA$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}V \\ ($V$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Pot. Unitaria \\ ($W$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Cant. \\ ($und.$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Pot. tot \\ ($W$)\end{tabular}} \\ \hline
+		\multicolumn{1}{c|}{\textbf{}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c|]{@{}c@{}}Modelo \\ (Datasheet)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c|]{@{}c@{}}I max \\ ($mA$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c|]{@{}c@{}}V \\ ($V$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c|]{@{}c@{}}Pot. Unitaria \\ ($W$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c|]{@{}c@{}}Cant. \\ ($und.$)\end{tabular}} & \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c|]{@{}c@{}}Pot. tot \\ ($W$)\end{tabular}} \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Motor a pasos 1 y 2}} & NEMA 34 & 2000 & 24 & 48 & 2 & 96 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Driver de motor a pasos}} & DM860H & 3.5 & 24 & 86.4 & 2 & 172.8 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Bomba de agua 1}} & D03U-SHN-DK004X4 & - & 220 & 1000 & 1 & 1000 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Bomba de agua 2}} & D03U-SHN-DK004X4 & - & 220 & 1000 & 1 & 1000 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor de presión}} & WNK80MA & 20 & 12 & 0.24 & 4 & 0.96 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Electroválvula 1}} & CTB100 & - & 24 & 100 & 1 & 100 \\ \hline
-		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Electroválvula 2,3 y 4}} &  & - & - & 4 & E & 72 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Electroválvula 2,3 y 4}} &  & - & - & 4 & 18 & 72 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor infrarrojo}} & HD-DS25CM-3MM & 20 & 5 & 7 & 1 & 0.10 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Cámara estéreo}} & OAK-D & - & - & 475.41 & 1 & 4.00 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Cámara simple}} & OAK-1 & - & - & 355.41 & 1 & 2.00 \\ \hline
@@ -2544,6 +2594,7 @@ El cálculo del consumo de energía del sistema es la suma de potencia requerida
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Sensor de presión}} & WNK80MA & - & - & 1 & 4 & 4 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Generador PWM de I2C}} & PCA9685 & - & - & 2 & 1 & 2 \\ \hline
 		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}\textbf{Conversores de voltajes}} & WMX & - & - & 2 & 1 & 2 \\ \hline
+		&  &  &  &  &  \textbf{Total} & \textbf{2602.46} \\ \cline{6-7} 
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Imágenes de dominio público y elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
@@ -2947,17 +2998,20 @@ Cabe resaltar que a medida que las etapas del proceso de clasificación y conteo
 \thispagestyle{myportland}
 \label{ssec:diseno de subsistema de flotacion}
 
-Luego de definir en las secciones anteriores los componentes a utilizar y su interacción con el sistema, es momento de calcular las dimensiones de la máquina para analizar la flotabilidad y seleccionar flotadores adecuados. En las siguientes subsecciones se analizan los cálculos, selección y diseño del sistema de flotación. En la Figura \ref{fig:subsistema de flotacion} se enumera los componentes principales: 1. armadura de cilindro de flotación; 2. superficie de madera y marco de metal interior; 3. cilindro de flotación.
+Luego de definir en las secciones anteriores los componentes a utilizar y su interacción con el sistema, es momento de calcular las dimensiones de la máquina para analizar la flotabilidad y seleccionar flotadores adecuados. En las siguientes subsecciones se analizan los cálculos, selección y diseño del sistema de flotación.% En la Figura \ref{fig:subsistema de flotacion} se enumera los componentes principales: 
 
 \begin{myfigure}[H]
 	\footnotesize\centering
 	\includegraphics[width=1\textwidth]{chapter5/subensambles/plataforma flotante final.png}
 	\caption{Subsistema de flotación}
 	\begin{myflushcenter}
+	    Leyenda: (1) armadura de cilindro de flotación; (2) superficie de madera y marco de metal interior; (3) cilindro de flotación.\\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de flotacion}
 \end{myfigure}
+
+\vspace{-2.0em}
 
 %% NUEVO SECCION X.X.
 \section{Sistema para mantener a flote el sistema}
