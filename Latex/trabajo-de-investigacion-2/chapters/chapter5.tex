@@ -171,6 +171,7 @@ Finalmente, en las Tablas \ref{tab:tabla comparativa de propiedades entre alumin
 
 %% NUEVA SECCIÓN X.X.X
 \subsection{Repositorios de código fuente}
+\label{ssec:repositorio de codigo fuente}
 
 Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada en repositorios que permiten el versionado, descentralización y disponibilidad de la información para poder reproducir, editar y mejorar los resultados por otras personas. En la Tabla
 
@@ -186,6 +187,8 @@ Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada 
 		\textbf{Datasets de peces ($\approx$10GB)} & \href{https://github.com/DZPeru/fish-datasets}{Github} & -- \\ \hline
 		\textbf{Algoritmo de detección y conteo basado en YOLOv3} & \href{https://github.com/DZPeru/fishv3}{Github-Fishv3} & \href{https://fishv3.herokuapp.com/}{Demo-Web} \\ \hline 
 		\textbf{Algoritmo de detección y conteo basado en YOLOv4} & \href{https://github.com/DZPeru/fishv4}{Github-Fishv4} & \href{https://fishv4.herokuapp.com/}{Demo-Web}\\ \hline 
+		\textbf{Visualización de capas de YOLOv3} & -- & \href{https://netron.app/?url=https://raw.githubusercontent.com/DZPeru/fishv3/master/fishv3/fish_test.cfg}{Visualizador}\\ \hline 
+		\textbf{Visualización de capas de YOLOv4} & -- & \href{https://netron.app/?url=https://raw.githubusercontent.com/DZPeru/fishv4/main/fishv4/fish_test.cfg}{Visualizador}\\ \hline 
 		\textbf{Prototipo de aplicativo móvil} & -- & \href{https://bit.ly/3ko1nG0}{FigmaDemo}\\ \hline
 		\textbf{Simulaciones estructurales} & \href{https://bit.ly/3ohX3ui}{Github} & -- \\ \hline		
 	\end{tabular}
@@ -205,7 +208,7 @@ Los planos permiten visualizar el sistema de una forma en particular dependiendo
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Lista de planos de ensamble}
 
-El plano de ensamble presenta una visión de los diferentes componentes, cómo son las juntas, incluye un listado de componentes y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{Adaptado de \cite{Goetsch2010}} En la Tabla \ref{tab:lista de planos de ensamble y subensamble} se muestra la lista de planos de ensamble y subensambles. 
+El plano de ensamble presenta una visión de los diferentes componentes, cómo son las juntas, incluye un listado de componentes y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{Adaptado de \cite{Goetsch2010}} En la Tabla \ref{tab:lista de planos de ensamble y subensamble} se muestra la lista de planos de ensamble, subensambles y subsubensambles.
 
 \begin{mytable}[H]
 	\footnotesize\centering
@@ -219,18 +222,19 @@ El plano de ensamble presenta una visión de los diferentes componentes, cómo s
 		\textbf{SE1200-A2}        & Subsistema de distribución de truchas \\ \hline
 		\textbf{SE1300-A0}        & Subsistema de traslado de truchas \\ \hline
 		\textbf{SE1400-A0}        & Subsistema de procesamiento de imágenes \\ \hline
-		\textbf{SE1500-A0}        & Subsistema de control e interacción con el usuario\\ \hline
-		\textbf{SE1110-A3}        & Tolva de recepción \\ \hline
-		\textbf{SE1210-A3}        & Distribuidora 1:3 \\ \hline
-		\textbf{SE1310-A3}        & Tuberías \\ \hline 
-		\textbf{SE1510-A3}        & Panel de control \\ \hline
+		\textbf{SE1500-A2}        & Subsistema de control e interacción con el usuario\\ \hline
+		\textbf{SSE1110-A3}        & Tolva de recepción \\ \hline
+		\textbf{SSE1210-A3}        & Distribuidora 1:3 \\ \hline
+		\textbf{SSE1310-A3}        & Tuberías \\ \hline 
+		\textbf{SSE1510-A3}        & Panel de control - Caja de control 1\\ \hline
+		\textbf{SSE1520-A3}        & Panel de control - Caja de control 2\\ \hline
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia.
 	\end{myflushcenteraftertable}
 \end{mytable}
 
-\vspace{-1.0 em}
+\vspace{-2.0 em}
 %% NUEVO SUBSECCION X.X.X.X
 \subsubsection{Plano de despiece}
 
@@ -253,17 +257,15 @@ El plano de despiece presenta las características técnicas de cada pieza: mues
 		\textbf{D1215-A3}         & Distribuidora 1:3 - Lengüeta de salida de tubería \\ \hline
 		\textbf{D1216-A3}         & Distribuidora 1:3 - Lengüeta de soporte de servomotor 1 \\ \hline
 		\textbf{D1217-A3}         & Distribuidora 1:3 - Lengüeta de soporte de servomotor 2 \\ \hline 
-		\textbf{D1217-A3}         & Distribuidora 1:3 - Compuerta mecánica \\ \hline 
+		\textbf{D1218-A3}         & Distribuidora 1:3 - Compuerta mecánica \\ \hline 
 		\textbf{D1311-A3}         & Tuberías - Adaptador de entrada de bomba de agua \\ \hline 
 		\textbf{D1312-A3}         & Tuberías - Adaptador de salida de bomba de agua \\ \hline 
 		\textbf{D1313-A3}         & Tuberías - Adaptador de electroválvula\\ \hline
-		\textbf{D1314-A3}         & Tuberías - Reductor de tubería \\ \hline
-		\textbf{D1415-A3}         & Procesamiento de imágenes \\ \hline
-		\textbf{D1416-A3}         & Procesamiento de imágenes - Tubería \\ \hline
-		\textbf{D1417-A3}         & Procesamiento de imágenes - Soporte de cámara estéreo \\ \hline
-		\textbf{D1511-A3}         & Panel de control - Caja de control 1 \\ \hline
-		\textbf{D1512-A3}         & Panel de control - Caja de control 2 \\ \hline
-		\textbf{D1513-A3}         & Panel de control - Soporte \\ \hline
+		\textbf{D1411-A3}         & Procesamiento de imágenes \\ \hline
+		\textbf{D1412-A3}         & Procesamiento de imágenes - Tubería \\ \hline
+		\textbf{D1413-A3}         & Procesamiento de imágenes - Soporte de cámara estéreo \\ \hline
+		\textbf{D1414-A2}         & Procesamiento de imágenes - Soporte de espejos \\ \hline
+		\textbf{D1501-A3}         & Panel de control - Soporte \\ \hline
 	\end{tabular}
 	\begin{myflushcenteraftertable}	
 		Fuente: Elaboración propia.
@@ -1889,7 +1891,6 @@ En la Tabla \ref{tab:tabla comparativa de algoritmos} se lista los diez modelos 
 			{\color[HTML]{000000} \textbf{4}} & {\color[HTML]{000000} TTFNet} & {\color[HTML]{000000} 35.1} & {\color[HTML]{000000} 54.4} & {\color[HTML]{000000} 18.4} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}Training-Time-Friendly Network\\  for Real-Time Object Detection\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/training-time-friendly-network-for-real-time}{P} \href{https://paperswithcode.com/paper/training-time-friendly-network-for-real-time#code}{C}} & {\color[HTML]{000000} 2019} \\ \hline
 			{\color[HTML]{000000} \textbf{5}} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}CenterNet \\ HarDNet-85\end{tabular}} & {\color[HTML]{000000} 43.6} & {\color[HTML]{000000} 45} & {\color[HTML]{000000} 22} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}HarDNet: A Low Memory Traffic\\  Network\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network}{P} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network#code}{C}} & {\color[HTML]{000000} 2019} \\ \hline
 			{\color[HTML]{000000} \textbf{6}} & {\color[HTML]{000000} YOLOv3-320} & {\color[HTML]{000000} -} & {\color[HTML]{000000} 45} & {\color[HTML]{000000} 22} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}YOLOv3: An Incremental \\ Improvement\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/yolov3-an-incremental-improvement}{P} \href{https://paperswithcode.com/paper/yolov3-an-incremental-improvement#code}{C}} & {\color[HTML]{000000} 2018} \\ \hline
-			{\color[HTML]{000000} \textbf{7}} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}SSD512-\\ HarDNet85\end{tabular}} & {\color[HTML]{000000} 35.1} & {\color[HTML]{000000} 39} & {\color[HTML]{000000} 25} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}HarDNet: A Low Memory \\ Traffic Network\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network}{P} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network#code}{C}} & {\color[HTML]{000000} 2019} \\ \hline
 		\end{tabular}
 		\begin{myflushcenteraftertable}	
 			Fuente: Recopilación de \cite{PapersWithCode2020}.
@@ -1897,6 +1898,9 @@ En la Tabla \ref{tab:tabla comparativa de algoritmos} se lista los diez modelos 
 	\end{mytable}
 \end{savenotes}
 
+
+
+% {\color[HTML]{000000} \textbf{7}} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}SSD512-\\ HarDNet85\end{tabular}} & {\color[HTML]{000000} 35.1} & {\color[HTML]{000000} 39} & {\color[HTML]{000000} 25} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}HarDNet: A Low Memory \\ Traffic Network\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network}{P} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network#code}{C}} & {\color[HTML]{000000} 2019} \\ \hline
 
 %{\color[HTML]{000000} \textbf{7}} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}SSD512-\\ HarDNet85\end{tabular}} & {\color[HTML]{000000} 35.1} & {\color[HTML]{000000} 39} & {\color[HTML]{000000} 25} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}HarDNet: A Low Memory \\ Traffic Network\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network}{P} \href{https://paperswithcode.com/paper/hardnet-a-low-memory-traffic-network#code}{C}} & {\color[HTML]{000000} 2019} \\ \hline
 
@@ -1907,7 +1911,7 @@ En la Tabla \ref{tab:tabla comparativa de algoritmos} se lista los diez modelos 
 
 %{\color[HTML]{000000} \textbf{10}} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}CornerNet-\\ Squeeze\end{tabular}} & {\color[HTML]{000000} 34.4} & {\color[HTML]{000000} 33} & {\color[HTML]{000000} 30} & {\color[HTML]{000000} \begin{tabular}[c]{@{}l@{}}CornerNet-Lite: Efficient \\ Keypoint Based Object \\ Detection\end{tabular}} & {\color[HTML]{000000} \href{https://paperswithcode.com/paper/190408900}{P} \href{https://paperswithcode.com/paper/190408900#code}{C}} & {\color[HTML]{000000} 2019} \\ \hline
 
-Como se puede observar, la arquitectura \textit{YOLO} aparece múltiples veces y esto se debe a que la comunidad científica ha aportado de forma desinteresada en su desarrollo: diversos autores han mejorado el modelo simple de la primera versión\footnote{YOLO v1.0 \cite{Redmon2016}, YOLO v2.0 \cite{Redmon2017}, YOLO v3.0 \cite{Redmon2018}, YOLO v4.0 \cite{Solawetz2020}, (en desarrollo) YOLO v5.0 \cite{bochkovskiy2020yolov4}.}. En la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} se muestra la arquitectura que obtiene la mayor cantidad de fotogramas manteniendo una precisión relativamente superior. La arquitectura de dos etapas: la primera etapa recibe la imagen y la procesa por redes para obtener características relevantes para luego, en la predicción densa, detecte los objetos en la imagen\footnote{Como se muestra en la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} la red neuronal YOLO se usa junto con más de otras 15 redes neuronales para aumentar el rendimiento.}; en la segunda etapa, predicción escasa, se retiran los objetos que fueron detectados erróneamente y se prioriza los que tienen un porcentaje alto de similitud con los valores entrenados. Los desarrolladores de YOLO v4.0 brindan los pesos de las neuronas entrenadas que se necesita para usar la red neuronal.
+Como se puede observar, la arquitectura \textit{YOLO} aparece múltiples veces y esto se debe a que la comunidad científica ha aportado de forma desinteresada en su desarrollo: diversos autores han mejorado el modelo simple de la primera versión\footnote{YOLO v1.0 \cite{Redmon2016}, YOLO v2.0 \cite{Redmon2017}, YOLO v3.0 \cite{Redmon2018}, YOLO v4.0 \cite{Solawetz2020}, (en desarrollo) YOLO v5.0 \cite{bochkovskiy2020yolov4}.}. En la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} se muestra la arquitectura que obtiene la mayor cantidad de fotogramas manteniendo una precisión relativamente superior. La arquitectura de dos etapas: la primera etapa recibe la imagen y la procesa por redes para obtener características relevantes para luego, en la predicción densa, detecte los objetos en la imagen\footnote{Como se muestra en la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512} la red neuronal YOLO se usa junto con más de otras 15 redes neuronales para aumentar el rendimiento.}; en la segunda etapa, predicción escasa, se retiran los objetos que fueron detectados erróneamente y se prioriza los que tienen un porcentaje alto de similitud con los valores entrenados. Los desarrolladores de YOLO v4.0 (Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv4-512}) brindan los pesos de las neuronas entrenadas que se necesita para usar la red neuronal.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -1921,6 +1925,32 @@ Como se puede observar, la arquitectura \textit{YOLO} aparece múltiples veces y
 
 La implementación de YOLO v4.0 en el sistema de CCT, en la etapa de desarrollo, está presente en un repositorio de Github\footnote{ Código fuente en \href{https://github.com/DZPeru/cct1-development}{https://github.com/DZPeru/cct1-development}}. Dicho desarrollo emplea prácticas y software de integración y entrega contínua (CI/CD\footnote{\textit{Integración Contínua/ Entrega contínua}. Conceptos de desarrollo de software.}) que disminuyen drásticamente el tiempo de desarrollo para ser probados en el menor tiempo posible. Además de esto, mencionar que los modelos pueden ser probados por cualquier persona con conexión a Internet debido al uso de containers\footnote{\href{https://www.docker.com/resources/what-container}{Docker} menciona que un container es "una unidad estándar de software que empaqueta el código y todas sus dependencias para que la aplicación se ejecute de forma rápida y confiable de un entorno informático a otro".}. En la etapa de producción sin embargo, para obtener un mejor rendimiento, se realizaría una transcripción del código del lenguaje de programación Python a uno de bajo nivel como lo es el lenguaje C o C++. 
 
+Además de esto, en la Figura \ref{fig:arquitectura de deteccion de objetos de YOLOv3-512} se muestra las capas de la arquitectura de YOLOv3, y aunque es una red de menor rendimiento que ha sido superado por las versiones mostradas, es ampliamente usada en la industria debido a que las iteraciones de versiones de este tipo de algoritmos se dan en menos de un año.\footnote{La visualización de las capas de las redes neuronales son listadas en la sección \ref{ssec:repositorio de codigo fuente}.}
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.40\textwidth]{chapter5/arquitectura yolo 3.png}
+	\caption{Arquitectura de detección de objetos de YOLOv3-512}
+	\begin{myflushcenter}
+		Fuente: \cite{Redmon2018}
+	\end{myflushcenter}
+	\label{fig:arquitectura de deteccion de objetos de YOLOv3-512}
+\end{myfigure}
+
+%% NUEVO SECCION X.X.
+\section{Recopilación y etiquetado de imágenes}
+
+La recopilación de imágenes se realiza buscando bases de datos existentes sobre el término \textit{salmon}, se verifican las imágenes y luego se procede a la etapa de etiquetado\footnote{Proceso comúnmente manual que consiste en encerrar en rectángulos el objeto asignándole una etiqueta. \textit{Labelling}} para finalmente ser usado en el entrenamiento, testeo y validación de modelos de detección de objetos basados en redes neuronales. En total, se recopilaron y etiquetaron 1000 imágenes (Figura \ref{fig:porcion de base de datos de imagenes recolectada}) que se escala a 2400\footnote{Se le asignó el código FISH9003, revise la sección \ref{ssec:repositorio de codigo fuente} para más información.} mediante algoritmos de aumento de datos\footnote{\textit{Data augmentation}: aumentar imágenes mediante rotación, recorte, variación de brillo, variación de exposición, etc.}, en este caso se empleó rotación de 90°, recorte y brillo debido a las condiciones se estima tendrá el prototipo al momento de capturar imágenes. Las condiciones del sistema previsto son menos rigurosas que para el modelo que se preparó el conjunto de datos, es decir, se resuelve un problema más complejo para brindar una solución más robusta. De las 2400 imágenes (100\%) se reparten en tres secciones independientes: 2100 son para entrenamiento (70\%), 200 para validación (20\%) y 100 para testeo (10\%). 
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.95\textwidth]{chapter5/database.png}
+	\caption{Porción de base de datos de imágenes recolectada FISH9003.}
+	\begin{myflushcenter}
+		Fuente: Imágenes de dominio público.
+	\end{myflushcenter}
+	\label{fig:porcion de base de datos de imagenes recolectada}
+\end{myfigure}
 
 %----------------------------------------------------------------------------------------
 %	Capítulo 5 
