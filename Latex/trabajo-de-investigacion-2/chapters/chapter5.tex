@@ -29,8 +29,8 @@ En este capítulo se realiza el diseño de ingeniería del sistema que abarca la
 
 \vspace{-2.0em}
 
-%% NUEVA SECCIÓN X.X.X
-\subsection{Descripción del sistema integral}
+%% NUEVA SECCIÓN X.X
+\section{Descripción del sistema integral}
 \label{ssec:descripcion del sistema integral}
 
 Respecto al diseño conceptual, existen algunas modificaciones en los tipos de dispositivos por características técnicas detectadas en el desarrollo de ingeniería del sistema: el cambio del servomotor por un mecanismo de motor a pasos con leva-seguidor que disminuye el desgaste por el sentido de giro; la batería ya no es parte del sistema, el operario debe suministrar la energía necesaria; el adicional de una cámara para el seguimiento de la trayectoria de truchas en el mecanismo de distribución; la variación de el uso de un microcontrolador a microprocesador debido a la potencia computacional requerida; el cambio de bombas sumergibles a bombas de agua por la eficiencia y potencia necesaria en el proyecto\footnote{El precio de las bombas sumergibles sube considerablemente correspondiente a la potencia requerida.}; remoción de la reja al inicio accionada por un motor debido al coste de implementación y reemplazo con un tapón de plástico; cambio de nombre del interruptor de tipo hongo a interruptor de suministro de energía; aumento del máximo peso admisible según requisito a 400 kg. debido al empleo de plataformas flotantes de alta capacidad de flotación en lugar de su uso en botes de 3 metros de largo.
@@ -40,8 +40,8 @@ Respecto al diseño conceptual, existen algunas modificaciones en los tipos de d
 
 La máquina clasificadora y contadora de truchas (CCT), y su sistema respectivo tienen como función principal recepcionar truchas mediante una tolva, procesar la clasificación, conteo y distribución hacia tres jaulas flotantes en medio de la Laguna de Paucarcocha.\footnote{\cite{DiazVergara2020}} La máquina se sitúa sobre el agua y es empleada por un operario, que se encarga de extraer truchas con una sacadera telescópica\footnote{También llamada cal-cal.}. En las siguientes páginas se analizan dos puntos generales concernientes al sistema: arquitectura de hardware y la selección de materiales de fabricación por subsistema.
 
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Arquitectura de hardware}
+%% NUEVO SUBSECCION X.X.X
+\subsection{Arquitectura de hardware}
 
 En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propuesta de arquitectura de hardware. Esta arquitectura muestra las entradas de energía del sistema, su redistribución a cada componente, el control asociado a cada pieza mediante el subsistema de control y los protocolos o energía asociado a cada par de bloques. Además, el tipo de conexión se detalla en la leyenda. 
 
@@ -55,8 +55,8 @@ En la Figura \ref{fig:arquitectura de hardware del sistema} se muestra la propue
 	\label{fig:arquitectura de hardware del sistema}
 \end{myfigure}
 
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Selección de materiales de fabricación}
+%% NUEVO SUBSECCION X.X.X
+\subsection{Selección de materiales de fabricación}
 \label{sssec:seleccion de materiales de fabricacion}
 
 Cada subsistema posee mecanismos que se rigen por un material en general, esto incluye a las partes principales del subsistema. Sin embargo, no considera el material de tornillos, ajustes o dispositivos similares. Existen así mismos requisitos que se pueden generalizar para todos los subsistemas por el entorno de trabajo a la que estará sometida la máquina detallados en la \textit{"Lista de requerimientos"} \footnote{\cite{DiazVergara2020}.}. Basado en dichas demandas, cada subsistema es analizado y presentado con dos alternativas posibles de materiales. Consecuentemente, se elige un material decisivo para ser empleado bajo el sustento técnico que se explicará en los siguientes párrafos.\\
@@ -169,8 +169,8 @@ Finalmente, en las Tablas \ref{tab:tabla comparativa de propiedades entre alumin
 	\end{mytable}
 \end{savenotes}
 
-%% NUEVA SECCIÓN X.X.X
-\subsection{Repositorios de código fuente}
+%% NUEVA SECCIÓN X.X
+\section{Repositorios de código fuente}
 \label{ssec:repositorio de codigo fuente}
 
 Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada en repositorios que permiten el versionado, descentralización y disponibilidad de la información para poder reproducir, editar y mejorar los resultados por otras personas. En la Tabla
@@ -199,14 +199,15 @@ Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada 
 
 \vspace{-2.0em}
 
-%% NUEVA SECCIÓN X.X.X
-\subsection{Planos del sistema}
+%% NUEVA SECCIÓN X.X
+\section{Planos del sistema}
 \label{ssec:planos del sistema}
 
 Los planos permiten visualizar el sistema de una forma en particular dependiendo del tipo de plano. El código asociado a cada plano indica el tipo de plano, su nivel respecto a la estructura general: ensamble, subensamble o despiece, y el tamaño de página usado para dicho plano. En las Tablas \ref{tab:lista de planos de ensamble y subensamble} y \ref{tab:lista de planos de subensamble} se detalla el código junto con la descripción. Dónde: \textit{E} es Ensamble, \textit{SE} es Subensamble, \textit{D} es despiece, los dígitos seguidos son alfanuméricos que van del 0 a la Z y es su agrupación es similar a la organización en cascada, y finalmente el tamaño de página.\footnote{Por ejemplo: D4587-A3 sería un despiece para el componente que pertenece al subensamble 4000, dentro del dispositivo 0500 y 0080. Además de ser el sétimo componente dentro del dispositivo.}
 
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Lista de planos de ensamble}
+\vspace{-2.0 em}
+%% NUEVO SUBSECCION X.X.X
+\subsection{Lista de planos de ensamble}
 
 El plano de ensamble presenta una visión de los diferentes componentes, cómo son las juntas, incluye un listado de componentes y se proporcionan características técnicas como el  tipo de material y cantidad de componentes similares.\footnote{Adaptado de \cite{Goetsch2010}} En la Tabla \ref{tab:lista de planos de ensamble y subensamble} se muestra la lista de planos de ensamble, subensambles y subsubensambles.
 
@@ -235,8 +236,8 @@ El plano de ensamble presenta una visión de los diferentes componentes, cómo s
 \end{mytable}
 
 \vspace{-2.0 em}
-%% NUEVO SUBSECCION X.X.X.X
-\subsubsection{Plano de despiece}
+%% NUEVO SUBSECCION X.X.X
+\subsection{Plano de despiece}
 
 El plano de despiece presenta las características técnicas de cada pieza: muestra dimensiones para poder fabricar la pieza. En el presente trabajo se administran, además, subensambles con la finalidad de brindar mayor detalle a cada componente. En la Tabla \ref{tab:lista de planos de subensamble} se muestra la lista de planos de despiece. 
 
@@ -272,6 +273,54 @@ El plano de despiece presenta las características técnicas de cada pieza: mues
 	\end{myflushcenteraftertable}
 \end{mytable}
 
+\vspace{-2.0 em}
+
+%----------------------------------------------------------------------------------------
+%	Capítulo 5 
+%----------------------------------------------------------------------------------------
+%\pagestyle{myportland}
+%\pagenumbering{arabic}
+%\doublespacing
+%\chapter[\quad\quad\quad\quad ----- Diseño de subsistema de flotación]{\\ Diseño de subsistema de flotación}
+%\thispagestyle{myportland}
+%\label{ssec:diseno de subsistema de flotacion}
+
+\section{Subsistema de flotación}
+
+Luego de definir en las secciones anteriores los componentes a utilizar y su interacción con el sistema, es momento de calcular las dimensiones de la máquina para analizar la flotabilidad y seleccionar flotadores adecuados. En las siguientes subsecciones se analizan los cálculos, selección y diseño del sistema de flotación.% En la Figura \ref{fig:subsistema de flotacion} se enumera los componentes principales: 
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/plataforma flotante final.png}
+	\caption{Subsistema de flotación}
+	\begin{myflushcenter}
+		Leyenda: (1) armadura de cilindro de flotación; (2) superficie de madera y marco de metal interior; (3) cilindro de flotación.\\
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:subsistema de flotacion}
+\end{myfigure}
+
+\vspace{-2.0em}
+
+%% NUEVO SECCION X.X.
+\section{Sistema para mantener a flote el sistema}
+
+La plataforma flotante de 5x5 m. que se muestra en la Figura \ref{fig:subsistema de flotacion} es empleada por las empresas en el sector de crianza de truchas en lagunas por su flotabilidad y área útil que brinda a los operarios. En el caso de la CCT, ocupa un área pequeña de 2.5x1m pero con un peso aproximado de 260 kg. Por lo que, como se muestra en la Figura \ref{fig:refuerzo subsistema de flotacion}, se agregan refuerzos para evitar que la CCT se desplace libremente.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=1\textwidth]{chapter5/subensambles/refuerzo sistema de flotacion final.png}
+	\caption{Fuerzas necesarias para mantener a flote el sistema}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:refuerzo subsistema de flotacion}
+\end{myfigure}
+
+En la Figura \ref{fig:refuerzo subsistema de flotacion} se enumeran los principales elementos: 1. Máquina CCT; 2. Plataforma de madera con refuerzo de marco de acero interior; 3. cilindros con armazón que sirven de flotación; 4. Lugares de refuerzo para fijación a la plataforma de madera. Cabe resaltar que en el presente trabajo no se considera el sistema de flotación dentro del presupuesto, sino que sirve de manera expositiva sobre cómo es que funciona y de qué materiales usualmente está hecho, esto se expone debido a que la problemática se desarrolla en la Laguna de Paucarcocha y usualmente las empresas de producción acuícola poseen este tipo de plataformas que les sirve para otros procesos como los de repartir comida o realizar procesos manuales.
+
+
+
 
 
 %----------------------------------------------------------------------------------------
@@ -304,14 +353,14 @@ Este subsistema consiste en encapsular los mecanismos físicos que están en el 
 %% NUEVO SECCION X.X.
 \section{Diseño del subsistema de recepción de truchas}
 
-BORRADOR
+El subsistema de recepción de truchas se encarga de únicamente a recopilar las truchas mediante una tolva como se muestra en la Figura \ref{fig:subsistema de recepcion}.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
 	\includegraphics[width=1\textwidth]{chapter5/subensambles/subsistema recepcion final.png}
 	\caption{Mecanismo de distribución de truchas}
 	\begin{myflushcenter}
-		Leyenda: ... \\
+		Leyenda: (1) borde de tolva; (2) base de tolva. \\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de recepcion}
@@ -378,17 +427,29 @@ Para disminuir el impacto de la trucha sobre la tolva o sobre las tuberías inte
 %% NUEVO SECCION X.X.
 \section{Diseño de subsistema de distribución de truchas}
 
-Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo de clasificación indica al sistema la trayectoria que debe seguir la trucha en tránsito y es accionado por el mecanismo de distribución, mostrado en la Figura \ref{fig:mecanismo de distribucion de truchas}. Dicho mecanismo recibe a la trucha por una única entrada y redirige mediante un juego de compuertas a tres salidas. Finalmente, las truchas son impulsadas al ingresar a tuberías con caudal de agua constante que las transporta hasta las jaulas flotantes correspondientes.
+Luego del proceso de procesamiento de imágenes el sistema mediante el algoritmo de clasificación indica al sistema la trayectoria que debe seguir la trucha en tránsito y es accionado por el mecanismo de distribución, mostrado en las Figuras \ref{fig:mecanismo de distribucion de truchas} y \ref{fig:mecanismo de distribucion de truchas2}. Dicho mecanismo recibe a la trucha por una única entrada y redirige mediante un juego de compuertas a tres salidas. Finalmente, las truchas son impulsadas al ingresar a tuberías con caudal de agua constante que las transporta hasta las jaulas flotantes correspondientes.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/subsistema de distribucion final.png}
-	\caption{Mecanismo de distribución de truchas}
+	\includegraphics[width=0.9\textwidth]{chapter5/subensambles/subsistema de distribucion 2 final.png}
+	\caption{Mecanismo de distribución de truchas - Vista isométrica}
 	\begin{myflushcenter}
 		Leyenda: (1) placa tipo tapa; (2) pared a de la distribuidora; (3) pared b de la distribuidora; (4) placa intermedia; (5) mecanismo de compuerta\footnote{La leva no se muestra adecuadamente en esta vista.} \\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:mecanismo de distribucion de truchas}
+\end{myfigure}
+
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.9\textwidth]{chapter5/subensambles/subsistema de distribucion 3 final.png}
+	\caption{Mecanismo de distribución de truchas - Vista isométrica opuesta}
+	\begin{myflushcenter}
+		Leyenda: (1) lengüeta de salida; (2) lengüeta de servomotor 2; (3) lengüeta de servomotor 1; (4) placa tipo tapa; (5) servomotor; (6) leva.\\
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:mecanismo de distribucion de truchas2}
 \end{myfigure}
 
 \vspace{-2.0em}
@@ -509,7 +570,7 @@ El torque necesario para abrir y cerrar la compuerta se aplica sobre el eje de l
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/dlc leva compuerta.png}
+	\includegraphics[width=0.9\textwidth]{chapter5/dlc leva compuerta.png}
 	\caption[Diagrama de cuerpo libre del mecanismo de la compuerta]{(a) DLC del disco de leva. (b) DLC de la compuerta.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -732,7 +793,7 @@ Las tuberías del sistema tienen como propósito abastecer de un flujo de agua c
 	\includegraphics[width=1\textwidth]{chapter5/subensambles/subsistema traslado final.png}
 	\caption{Mecanismo de distribución de truchas}
 	\begin{myflushcenter}
-		Leyenda: ... \\
+		Leyenda: (1) tubería secundaria; (2) sensores de presión; (3) bombas de agua; (4) distribuidora 1:3; (5) drenador de agua; (6) tubo transparente; (7) adaptador de entrada para bomba de agua; (8) adaptador de salida para bomba de agua; (9) sensor infrarrojo; (10) tubería principal; (11) electroválvula; (12) adaptador electroválvula. \\
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
 	\label{fig:subsistema de traslado}
@@ -757,7 +818,7 @@ En el diseño de las tuberías se toma en cuenta los siguientes parámetros: cau
 	\end{split}		
 \end{myequation}
 
-Donde: $\rho$ es la densidad del agua a 10 °C ($kg/m^3$), $v$ es la velocidad del fluido ($m/s$), $D_{int}$ es el diámetro interior de la tubería escogida ($m$), $\mu$ es la viscosidad dinámica del fluido a 10° C ($N*s/m^2$) y el número de Reynolds es adimensional. Luego, con $Re\approx1.4x10^5$ y sabiendo que la rugosidad de una tubería circular de PVC ($\varepsilon$) es $0.015 mm.$ podemos calcular el valor de rugosidad relativa ($\varepsilon/d=0.01687$) y el valor del coeficiente de rozamiento ($\lambda$) como se muestra en la Figura \ref{fig:diagrama de moody} empleando el diagrama de Moody.
+Donde: $\rho$ es la densidad del agua a 10 °C ($kg/m^3$), $v$ es la velocidad del fluido ($m/s$), $D_{int}$ es el diámetro interior de la tubería escogida ($m$), $\mu$ es la viscosidad dinámica del fluido a 10° C ($N*s/m^2$) y el número de Reynolds es adimensional. En la Figura \ref{fig:diagrama de moody} se muestra el diagrama de Moody.
 	
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -768,6 +829,8 @@ Donde: $\rho$ es la densidad del agua a 10 °C ($kg/m^3$), $v$ es la velocidad d
 	\end{myflushcenter}
 	\label{fig:diagrama de moody}
 \end{myfigure}
+
+Luego, con $Re\approx1.4x10^5$ y sabiendo que la rugosidad de una tubería circular de PVC ($\varepsilon$) es $0.015 mm.$ podemos calcular el valor de rugosidad relativa ($\varepsilon/d=0.01687$) y el valor del coeficiente de rozamiento ($\lambda$).
 
 Consecuentemente, el valor hallado para $\lambda$ es $\approx 0.046$. Sin embargo, para flujos turbulentos se emplea la ecuación de Colebrook–White, con la cual podemos hallarla con mayor precisión como se muestra en la Ecuación \ref{eq:calculo de coeficiente de fricción}.
 
@@ -3017,47 +3080,3 @@ Cabe resaltar que a medida que las etapas del proceso de clasificación y conteo
 	\end{myflushcenter}
 	\label{fig:diagrama de flujo2}
 \end{myfigure}
-
-%----------------------------------------------------------------------------------------
-%	Capítulo 5 
-%----------------------------------------------------------------------------------------
-\pagestyle{myportland}
-%\pagenumbering{arabic}
-\doublespacing
-\chapter[\quad\quad\quad\quad ----- Diseño de subsistema de flotación]{\\ Diseño de subsistema de flotación}
-\thispagestyle{myportland}
-\label{ssec:diseno de subsistema de flotacion}
-
-Luego de definir en las secciones anteriores los componentes a utilizar y su interacción con el sistema, es momento de calcular las dimensiones de la máquina para analizar la flotabilidad y seleccionar flotadores adecuados. En las siguientes subsecciones se analizan los cálculos, selección y diseño del sistema de flotación.% En la Figura \ref{fig:subsistema de flotacion} se enumera los componentes principales: 
-
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/plataforma flotante final.png}
-	\caption{Subsistema de flotación}
-	\begin{myflushcenter}
-	    Leyenda: (1) armadura de cilindro de flotación; (2) superficie de madera y marco de metal interior; (3) cilindro de flotación.\\
-		Fuente: Elaboración propia.
-	\end{myflushcenter}
-	\label{fig:subsistema de flotacion}
-\end{myfigure}
-
-\vspace{-2.0em}
-
-%% NUEVO SECCION X.X.
-\section{Sistema para mantener a flote el sistema}
-
-La plataforma flotante de 5x5 m. que se muestra en la Figura \ref{fig:subsistema de flotacion} es empleada por las empresas en el sector de crianza de truchas en lagunas por su flotabilidad y área útil que brinda a los operarios. En el caso de la CCT, ocupa un área pequeña de 2.5x1m pero con un peso aproximado de 260 kg. Por lo que, como se muestra en la Figura \ref{fig:refuerzo subsistema de flotacion}, se agregan refuerzos para evitar que la CCT se desplace libremente.
-
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter5/subensambles/refuerzo sistema de flotacion final.png}
-	\caption{Fuerzas necesarias para mantener a flote el sistema}
-	\begin{myflushcenter}
-		Fuente: Elaboración propia.
-	\end{myflushcenter}
-	\label{fig:refuerzo subsistema de flotacion}
-\end{myfigure}
-
-En la Figura \ref{fig:refuerzo subsistema de flotacion} se enumeran los principales elementos: 1. Máquina CCT; 2. Plataforma de madera con refuerzo de marco de acero interior; 3. cilindros con armazón que sirven de flotación; 4. Lugares de refuerzo para fijación a la plataforma de madera. Cabe resaltar que en el presente trabajo no se considera el sistema de flotación dentro del presupuesto, sino que sirve de manera expositiva sobre cómo es que funciona y de qué materiales usualmente está hecho, esto se expone debido a que la problemática se desarrolla en la Laguna de Paucarcocha y usualmente las empresas de producción acuícola poseen este tipo de plataformas que les sirve para otros procesos como los de repartir comida o realizar procesos manuales.
-
-

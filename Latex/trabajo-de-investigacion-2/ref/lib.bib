@@ -290,15 +290,6 @@
 	title = {{Google Flutter Mobile Development Quick Start Guide}},
 	year = {2019}
 }
-@article{Redmon2018,
-	abstract = {We present some updates to YOLO! We made a bunch of little design changes to make it better. We also trained this new network that's pretty swell. It's a little bigger than last time but more accurate. It's still fast though, don't worry. At 320 × 320 YOLOv3 runs in 22 ms at 28.2 mAP, as accurate as SSD but three times faster. When we look at the old .5 IOU mAP detection metric YOLOv3 is quite good. It achieves 57.9 AP 50 in 51 ms on a Titan X, compared to 57.5 AP 50 in 198 ms by RetinaNet, similar performance but 3.8× faster. As always, all the code is online at https://pjreddie.com/yolo/.},
-	author = {Redmon, Joseph and Farhadi, Ali},
-	file = {:C$\backslash$:/Users/Usuario/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Redmon, Farhadi - 2018 - YOLO v3.0 An Incremental Improvement.pdf:pdf},
-	journal = {Tech report},
-	mendeley-groups = {Thesis,Thesis/Thesis 2},
-	title = {{YOLO v3.0: An Incremental Improvement}},
-	year = {2018}
-}
 @article{Redmon2017,
 	abstract = {We introduce YOLO9000, a state-of-the-art, real-time object detection system that can detect over 9000 object categories. First we propose various improvements to the YOLO detection method, both novel and drawn from prior work. The improved model, YOLOv2, is state-of-the-art on standard detection tasks like PASCAL VOC and COCO. Us-ing a novel, multi-scale training method the same YOLOv2 model can run at varying sizes, offering an easy tradeoff between speed and accuracy. At 67 FPS, YOLOv2 gets 76.8 mAP on VOC 2007. At 40 FPS, YOLOv2 gets 78.6 mAP, outperforming state-of-the-art methods like Faster R-CNN with ResNet and SSD while still running significantly faster. Finally we propose a method to jointly train on ob-ject detection and classification. Using this method we train YOLO9000 simultaneously on the COCO detection dataset and the ImageNet classification dataset. Our joint training allows YOLO9000 to predict detections for object classes that don't have labelled detection data. We validate our approach on the ImageNet detection task. YOLO9000 gets 19.7 mAP on the ImageNet detection validation set despite only having detection data for 44 of the 200 classes. On the 156 classes not in COCO, YOLO9000 gets 16.0 mAP. YOLO9000 predicts detections for more than 9000 different object categories, all in real-time.},
 	archivePrefix = {arXiv},
@@ -317,6 +308,15 @@
 	url = {https://pjreddie.com/media/files/papers/YOLO9000.pdf},
 	year = {2017}
 }
+@article{Redmon2018,
+	abstract = {We present some updates to YOLO! We made a bunch of little design changes to make it better. We also trained this new network that's pretty swell. It's a little bigger than last time but more accurate. It's still fast though, don't worry. At 320 × 320 YOLOv3 runs in 22 ms at 28.2 mAP, as accurate as SSD but three times faster. When we look at the old .5 IOU mAP detection metric YOLOv3 is quite good. It achieves 57.9 AP 50 in 51 ms on a Titan X, compared to 57.5 AP 50 in 198 ms by RetinaNet, similar performance but 3.8× faster. As always, all the code is online at https://pjreddie.com/yolo/.},
+	author = {Redmon, Joseph and Farhadi, Ali},
+	file = {:C$\backslash$:/Users/Usuario/AppData/Local/Mendeley Ltd./Mendeley Desktop/Downloaded/Redmon, Farhadi - 2018 - YOLO v3.0 An Incremental Improvement.pdf:pdf},
+	journal = {Tech report},
+	mendeley-groups = {Thesis,Thesis/Thesis 2},
+	title = {{YOLO v3.0: An Incremental Improvement}},
+	year = {2018}
+}
 @article{Redmon2016,
 	abstract = {We present YOLO, a new approach to object detection. Prior work on object detection repurposes classifiers to per- form detection. Instead, we frame object detection as a re- gression problem to spatially separated bounding boxes and associated class probabilities. A single neural network pre- dicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance. Our unified architecture is extremely fast. Our base YOLO model processes images in real-time at 45 frames per second. A smaller version of the network, Fast YOLO, processes an astounding 155 frames per second while still achieving double the mAP of other real-time detec- tors. Compared to state-of-the-art detection systems, YOLO makes more localization errors but is less likely to predict false positives on background. Finally, YOLO learns very general representations ofobjects. It outperforms other de- tection methods, including DPM and R-CNN, when gener- alizing from natural images to other domains like artwork.},
 	archivePrefix = {arXiv},
@@ -333,6 +333,21 @@
 	title = {{YOLO: You Only Look Once - Unified, Real-Time Object Detecion}},
 	year = {2016}
 }
+@inproceedings{Rezatofighi2019,
+	abstract = {Intersection over Union (IoU) is the most popular evaluation metric used in the object detection benchmarks. However, there is a gap between optimizing the commonly used distance losses for regressing the parameters of a bounding box and maximizing this metric value. The optimal objective for a metric is the metric itself. In the case of axis-aligned 2D bounding boxes, it can be shown that IoU can be directly used as a regression loss. However, IoU has a plateau making it infeasible to optimize in the case of non-overlapping bounding boxes. In this paper, we address the this weakness by introducing a generalized version of IoU as both a new loss and a new metric. By incorporating this generalized IoU ( GIoU) as a loss into the state-of-the art object detection frameworks, we show a consistent improvement on their performance using both the standard, IoU based, and new, GIoU based, performance measures on popular object detection benchmarks such as PASCAL VOC and MS COCO.},
+	archivePrefix = {arXiv},
+	arxivId = {1902.09630},
+	author = {Rezatofighi, Hamid and Tsoi, Nathan and Gwak, Junyoung and Sadeghian, Amir and Reid, Ian and Savarese, Silvio},
+	booktitle = {Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+	doi = {10.1109/CVPR.2019.00075},
+	eprint = {1902.09630},
+	isbn = {9781728132938},
+	issn = {10636919},
+	keywords = {Categorization,Deep Learning,Recognition: Detection,Retrieval},
+	mendeley-groups = {Thesis/Thesis 2},
+	title = {{Generalized intersection over union: A metric and a loss for bounding box regression}},
+	year = {2019}
+}
 @misc{Rice2018,
 	abstract = {A stepper motor divides a full rotation into a number of equal steps, important for many industrial motor and motion control applications.},
 	author = {Rice, Eric},
@@ -344,6 +359,17 @@
 	title = {{Stepper motor torque basics}},
 	url = {https://www.controleng.com/articles/stepper-motor-torque-basics/},
 	year = {2018}
+}
+@inproceedings{Rother2004,
+	abstract = {The problem of efficient, interactive foreground/background segmentation in still images is of great practical importance in image editing. Classical image segmentation tools use either texture (colour) information, e.g. Magic Wand, or edge (contrast) information, e.g. Intelligent Scissors. Recently, an approach based on optimization by graph-cut has been developed which successfully combines both types of information. In this paper we extend the graph-cut approach in three respects. First, we have developed a more powerful, iterative version of the optimisation. Secondly, the power of the iterative algorithm is used to simplify substantially the user interaction needed for a given quality of result. Thirdly, a robust algorithm for "border matting" has been developed to estimate simultaneously the alpha-matte around an object boundary and the colours of foreground pixels. We show that for moderately difficult examples the proposed method outperforms competitive tools. Copyright {\textcopyright} 2004 ACM.},
+	author = {Rother, Carsten and Kolmogorov, Vladimir and Blake, Andrew},
+	booktitle = {ACM SIGGRAPH 2004 Papers, SIGGRAPH 2004},
+	doi = {10.1145/1186562.1015720},
+	issn = {0730-0301},
+	keywords = {Alpha matting,Foreground extraction,Graph cuts,Image editing,Interactive image segmentation},
+	mendeley-groups = {Thesis,Thesis/Thesis 2},
+	title = {{GrabCut - Interactive foreground extraction using iterated graph cuts}},
+	year = {2004}
 }
 @book{Ryer1997,
 	abstract = {Electromagnetic Wave Theory Light is just one portion of the various electromagnetic waves flying through space. The electromagnetic spectrum covers an extremely broad range, from radio waves with wavelengths of a meter or more, down to x-rays with wavelengths of less than a billionth of a meter. Optical radiation lies between radio waves and x-rays on the spectrum, exhibiting a unique mix of ray, wave, and quantum properties},

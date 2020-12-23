@@ -8,19 +8,106 @@
 \chapter[\quad\quad\quad\quad ----- Pruebas y resultados]{\\ Pruebas y resultados}
 \thispagestyle{myportland}
 
-Este capítulo está enfocado en mostrar simulaciones o pruebas obtenidas en los algoritmos o mecanismos empleados en el sistema. Además desarrolla de manera técnica los resultados con la finalidad de ser comparables con resultados de otros autores de otras máquinas.
-
-
-
-
-
+Este capítulo está enfocado en mostrar simulaciones, pruebas obtenidas de los algoritmos empleados en el sistema. Además desarrolla de manera técnica los resultados con la finalidad de ser comparables con resultados de otros autores de otras máquinas.
 
 %% NUEVA SECCIÓN X.X
 \section{Algoritmos de clasificación y conteo de truchas}
 
-Los algoritmos seleccionados para realizar las pruebas son YOLOv3 y YOLOv4\footnote{Se puede probar las demos listadas en la sección \ref{ssec:repositorio de codigo fuente}.}. Las bases de datos empleadas en las pruebas para entrenar los algoritmos son la FISH9002 y FISH9003 de elaboración propia que contienen 723 y 2400 imágenes respectivamente. Sin embargo, se muestra únicamente resultados de la base de datos de imágenes FISH9003 ya que es esperable que brinde mejores resultados.
+Con el fin de realizar la clasificación y conteo se plantea una solución de 4 etapas: detectar, contar, segmentar y medir. Para la primera y segunda etapa, los algoritmos seleccionados para realizar las pruebas son YOLOv3 y YOLOv4\footnote{Se puede probar las demos listadas en la sección \ref{ssec:repositorio de codigo fuente}.} mientras que el conteo se basa en el conteo de truchas detectadas que sobrepasen un umbral mínimo de fiabilidad de (30\%). Para la tercera etapa, se aplica el algoritmo de segmentación llamado GrabCut\footnote{Algoritmo GrabCut: extracción interactiva de primer plano mediante cortes de gráficos iterados \cite{Rother2004}.} que permite quitar el fondo del objeto. Para la cuarta etapa, se usa un objeto referencial con medidas conocidas que permite la medición de la trucha en largo y ancho.
 
-Con la versión 3 de esta arquitectura que sigue bajo desarrollo actualmente para mejorar el rendimiento. Las inferencias permiten detectar objetos para los cuales la red es entrenada mediante una gran cantidad de imágenes que contienen el objeto de interés. Para el procesamiento básicamente se realiza un redimensionamiento de la imagen antes de procesarla, luego diferentes arquitecturas de redes neuronales dentro de la arquitectura logran detectar el objeto. Luego de detectado el objeto se procede a segmentarlo mediante técnicas de enmascarado de objetos. Finalmente cada objeto detectado en la imagen es contabilizado dentro del programa. En la Figura \ref{fig:pruebas algoritmo} se muestra en el lado izquierdo la imagen que se ingresa al algoritmo y a la derecha el pez segmentado para ser contabilizado.
+Las bases de datos empleadas en las pruebas para entrenar los algoritmos son la FISH9002 y FISH9003 de elaboración propia que contienen 723 y 2400 imágenes respectivamente. Sin embargo, se muestra únicamente resultados de la base de datos de imágenes FISH9003 ya que es esperable que brinde mejores resultados al brindar una mayor cantidad de imágenes.
+
+
+% NUEVA SECCIÓN X.X.X.X
+\subsubsection{Definición de criterios de clasificación}
+
+En la Tabla \ref{tab:matriz de confusion} se muestra la matriz de confusión sobre la cuál se presentan diversas métricas evaluadas en el entrenamiento de los modelos. Los términos técnicos usados son citados de \cite{Everingham2010} y representan métricas para medir el rendimiento, confiabilidad y precisión de los modelos.
+
+\begin{mytable}[H]
+	\footnotesize\centering
+	\caption{Matriz de confusión.}
+	\label{tab:matriz de confusion}
+	\begin{tabular}{c|c|c|}
+		\cline{2-3}
+		& Real Positivo & Real Positivo \\ \hline
+		\multicolumn{1}{|c|}{Predecido Positivo} & TP            & FP            \\ \hline
+		\multicolumn{1}{|c|}{Predecido Negativo} & FN            & TN            \\ \hline
+	\end{tabular}
+	\begin{myflushcenteraftertable}	
+		Dónde: TP es \textit{True Positive}; FP es \textit{False Positive}; FN es \textit{False Negative}; TN es \textit{True Negative}.
+		Fuente: Elaboración propia.
+	\end{myflushcenteraftertable}
+\end{mytable}
+
+En base a la Tabla \ref{tab:matriz de confusion} se muestran las Ecuaciones \ref{eq:accuracy}, \ref{eq:precision}, \ref{eq:recall}, \ref{eq:f1} y \ref{eq:ap} que son comúnmente usadas para calcular métricas de los modelos. En la siguiente subsección se muestran resultados basados en estas métricas, aunque ninguna es excluyente de otra, aunque la F1 mostrada en la Ecuación \ref{eq:f1} suele ser la principal variable a tomar en cuenta junto con el  map.
+
+\begin{myequation}\label{eq:accuracy}
+	\begin{split}
+		Accuracy&=\frac{True_{positive}+True_{negative}}{True_{positive}+True_{negative}+False_{positive}+False_{negative}}
+	\end{split}
+\end{myequation}
+
+\begin{myequation}\label{eq:precision}
+	\begin{split}
+		Precision&=\frac{True_{positive}}{True_{positive}+False_{positive}}
+	\end{split}
+\end{myequation}
+
+\begin{myequation}\label{eq:recall}
+	\begin{split}
+		Recall&=\frac{True_{positive}}{True_{positive}+False_{negative}}
+	\end{split}
+\end{myequation}
+
+\begin{myequation}\label{eq:f1}
+	\begin{split}
+		F1&=\frac{2*precision*recall}{precision+recall}
+	\end{split}
+\end{myequation}
+
+\begin{myequation}\label{eq:ap}
+	\begin{split}
+		Average Precision&=\int_{0}^{1}p(r)dr
+	\end{split}
+\end{myequation}
+
+%\vspace{-2.0 em}
+
+% NUEVA SECCIÓN X.X.X.X
+\subsubsection{Resultados YOLOv3}
+
+En la Figura \ref{fig:resultados yolo 3} se muestra los resultados de entrenamiento del modelo YOLOv3. Dónde: \textit{GIoU} es una métrica que nos permite segmentar mejor la imagen y que conviene se disminuya en el entrenamiento ya que el rectángulo de etiquetado se acerca más al real; \textit{Objectness} es una métrica que nos indica si el modelo detecta correctamente intersecciones, por eso es bueno que disminuya; \textit{Precision} es el ratio entre TP y la suma de TP con FP, que nos indica las veces que el modelo ha detectado bien la cantidad de truchas sobre una imagen; \textit{Recall} es una métrica para medir la capacidad del modelo de detectar TP, mientras es mayor, mientras mayor mejor; \textit{val} se refiere a las métricas en etapa de validación; \textit{mAP@0.5} es la precisión media con mínimo de confiabilidad de 0.5; \textit{F1} es una métrica basada en en el \textit{Recall} y \textit{Precision} que es usado comúnmente junto con la Precision para brindar un balance real de si el modelo funciona correctamente con una precisión adecuada. Como se muestra en la Figura \ref{fig:resultados yolo 3} el modelo tiene una alta precisión pero un score F1 de alrededor de 0.4, esto quiere decir que el modelo logra reconocer truchas pero no de forma esperada.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.85\textwidth]{chapter6/resultados yolo 3.png}
+	\caption{Resultados del entrenamiento de YOLOv3.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:resultados yolo 3}
+\end{myfigure}
+
+% NUEVA SECCIÓN X.X.X.X
+\subsubsection{Resultados YOLOv4}
+
+En la Figura \ref{fig:resultados yolo 4} se muestra los resultados del entrenamiento del modelo YOLOv4-tiny. En esta arquitectura se cambió los parámetros de validación al \textit{loss} y \textit{map} \footnote{map: mean average precision, en el caso map@0.5 significa precisión promedio con threshold 0.5.} por lo que se presenta únicamente los dos parámetros que disminuyen el tiempo de entrenamiento.
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=0.75\textwidth]{chapter6/resultados yolo 4.png}
+	\caption{Resultados del entrenamiento de YOLOv4.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:resultados yolo 4}
+\end{myfigure}
+
+
+% NUEVA SECCIÓN X.X.X
+\subsection{Resultados del algoritmo de detección}
+
+Luego de detectado el objeto se procede a segmentarlo mediante técnicas de enmascarado de objetos. Finalmente cada objeto detectado en la imagen es contabilizado dentro del programa. En la Figura \ref{fig:pruebas algoritmo} se muestra en el lado izquierdo la imagen que se ingresa al algoritmo y a la derecha el pez segmentado contabilizado.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -35,41 +122,20 @@ Con la versión 3 de esta arquitectura que sigue bajo desarrollo actualmente par
 En el caso de la clasificación el sistema debe ser calibrado acorde al entorno, por lo que su etapa de desarrollo luego de la detección se da en la etapa de prototipado y producción. Sin embargo, el conteo es realizado sin ningún problema.
 
 
-
-
-
 % NUEVA SECCIÓN X.X.X
-\subsection{Definición de criterios de clasificación}
+\subsection{Tiempos de ejecución y detección}
 
-\footnote{Los términos técnicos usados son citados de \cite{Everingham2010}.}
-
+De los algoritmos propuestos, YOLOv3 se entrenó en Google Colab\footnote{Servicio gratuito de google para deep learning. Brinda GPUs de forma gratuita.} con una GPU Tesla T4 como se muestra en la Figura \ref{fig:colab}. En cuánto a la versión 3 del algoritmo, en el entrenamiento el algoritmo procesó alrededor de 12 horas los pesos de la red. Por el contrario, con la versión 4 del algoritmo con modificación de escalamiento llamado tiny, el proceso demoró alrededor de una hora brindando resultados excelentes que se muestran en la subsección anterior.\footnote{Los códigos usados para entrenar los modelos se encuentran listados en la sección de \ref{ssec:repositorio de codigo fuente}.}
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter6/resultados yolo 3.png}
-	\caption{Resultados del entrenamiento de YOLOv3.}
+	\includegraphics[width=0.75\textwidth]{chapter6/colab.png}
+	\caption{Tarjeta gráfica (GPU) usada en el entrenamiento de YOLOv3 y YOLOv4.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
 	\end{myflushcenter}
-	\label{fig:resultados yolo 3}
+	\label{fig:colab}
 \end{myfigure}
-
-
-
-% NUEVA SECCIÓN X.X.X
-\subsection{Resultados del entrenamiento de los algoritmos}
-
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac. [/BORRADOR]} 
-
-% NUEVA SECCIÓN X.X.X
-\subsection{Análisis de tiempo de ejecución del algoritmo}
-
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac. [/BORRADOR]} 
-
-% NUEVA SECCIÓN X.X.X
-\subsection{Errores detectados en la simulación de conteo de truchas}
-
-\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac. [/BORRADOR]} 
 
 %\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac. [/BORRADOR]} 
 
@@ -112,19 +178,17 @@ Un componente clave a pesar de no estar dentro del diseño directo del sistema e
 
 
 %% NUEVA SECCIÓN X.X.X
-\subsection{Distribuidora de truchas}
-
-La distribuidora de truchas se elabora principalmente con procesos de plegado de metales, en este caso acero inoxidable AISI 316 y una placa de PMMA. La distribuidora no está sujeta a tensiones, compresiones o esfuerzos considerables, la única carga que posee es la de la trucha en tránsito. Por lo que se estudia la carga de la trucha dentro de sus compartimentos. En la Figura \ref{fig:simulacion distribuidora} se muestra un mapa de calor que muestra el factor de seguridad según la zona de la armadura.
-
-\begin{myfigure}[H]
-	\footnotesize\centering
-	\includegraphics[width=1\textwidth]{chapter6/simulacion distribuidora.png}
-	\caption{Cálculo de factor de seguridad en la distribuidora de truchas.}
-	\begin{myflushcenter}
-		Fuente: Elaboración propia.
-	\end{myflushcenter}
-	\label{fig:simulacion distribuidora}
-\end{myfigure}
+%\subsection{Distribuidora de truchas}
 
 
+%La distribuidora de truchas se elabora principalmente con procesos de plegado de metales, en este caso acero inoxidable AISI 316 y una placa de PMMA. La distribuidora no está sujeta a tensiones, compresiones o esfuerzos considerables, la única carga que posee es la de la trucha en tránsito. Por lo que se estudia la carga de la trucha dentro de sus compartimentos. En la Figura \ref{fig:simulacion distribuidora} se muestra un mapa de calor que muestra el factor de seguridad según la zona de la armadura.
 
+%\begin{myfigure}[H]
+%	\footnotesize\centering
+%	\includegraphics[width=1\textwidth]{chapter6/simulacion distribuidora.png}
+%	\caption{Cálculo de factor de seguridad en la distribuidora de truchas.}
+%	\begin{myflushcenter}
+%		Fuente: Elaboración propia.
+%	\end{myflushcenter}
+%	\label{fig:simulacion distribuidora}
+%\end{myfigure}
