@@ -91,11 +91,11 @@ En la Figura \ref{fig:resultados yolo 3} se muestra los resultados de entrenamie
 % NUEVA SECCIÓN X.X.X
 \subsection{Resultados YOLOv4}
 
-En la Figura \ref{fig:resultados yolo 4} se muestra los resultados del entrenamiento del modelo YOLOv4-tiny. En el entrenamiento se registra el \textit{loss} y el \textit{mAP@0.5} \footnote{map: mean average precision, en el caso map@0.5 significa precisión promedio con threshold 0.5.}. 
+En la Figura \ref{fig:resultados yolo 4} se muestra los resultados del entrenamiento del modelo YOLOv4-tiny. En el entrenamiento se registra el \textit{loss} y el \textit{mAP@0.5} \footnote{map: mean average precision, en el caso map@0.5 significa precisión promedio con threshold 0.5.}. El mAP máximo obtenido luego de 2000 iteraciones es de alrededor de 60\% con un score F1 mejor que el obtenido por YOLOv3. Este algoritmo es superior tanto en tiempo de entrenamiento, como en robustez y en tamaño de los pesos de la red (alrededor de 25 MB\footnote{YOLOv3 alrededor de 250 MB.})por lo que se escoge para ser empleado en el sistema.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter6/resultados yolo 4.png}
+	\includegraphics[width=1\textwidth]{chapter6/resultados yolo 4.png}
 	\caption{Resultados del entrenamiento de YOLOv4.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia.
@@ -137,8 +137,21 @@ De los algoritmos propuestos, YOLOv3 se entrenó en Google Colab\footnote{Servic
 	\label{fig:colab}
 \end{myfigure}
 
-%\textcolor{blue}{[BORRADOR] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus sed turpis tincidunt id aliquet. Nunc aliquet bibendum enim facilisis gravida neque convallis a. Ut tellus elementum sagittis vitae et leo duis ut diam. Dolor sit amet consectetur adipiscing elit ut aliquam purus sit. Dolor sed viverra ipsum nunc aliquet bibendum. Euismod in pellentesque massa placerat. Et malesuada fames ac turpis egestas sed tempus urna. Euismod elementum nisi quis eleifend quam adipiscing vitae proin. Ornare suspendisse sed nisi lacus sed. Mollis aliquam ut porttitor leo a diam. Varius morbi enim nunc faucibus. Sit amet purus gravida quis blandit turpis cursus in hac. [/BORRADOR]} 
+%% NUEVA SECCIÓN X.X
+\section{Algoritmo de medición}
 
+
+El algoritmo de medición se calibra digitalmente mediante un objeto dentro de la imagen.\footnote{Autor del algoritmo: PyImageSearch} En la Figura \ref{fig:medicion} se muestra la dimensión del sol peruano y la dimensión de la trucha en base a esa dimensión de la moneda. El algoritmo aplica filtros para diferenciar el fondo de los objetos, luego detecta el objeto más a la izquierda y le brinda las medidas que se brinda mediante línea de código\footnote{Más información en el repositorio listado en la sección \ref{ssec:repositorio de codigo fuente}.}, luego encierra los objetos con las dimensiones calculadas en rectángulos. Finalmente, se muestran las dimensiones sobre la imagen como se muestra en la Figura \ref{fig:medicion}.\footnote{La tabla de clasificación de truchas en base a su tamaño se citan en \cite{DiazVergara2020}.}
+
+\begin{myfigure}[H]
+	\footnotesize\centering
+	\includegraphics[width=1\textwidth]{chapter6/medicion truchas.png}
+	\caption{Medición digital de una trucha referenciada dimensionalmente con una moneda de 1 sol peruano.}
+	\begin{myflushcenter}
+		Fuente: Elaboración propia.
+	\end{myflushcenter}
+	\label{fig:medicion}
+\end{myfigure}
 
 %% NUEVA SECCIÓN X.X
 \section{Simulación estructural}

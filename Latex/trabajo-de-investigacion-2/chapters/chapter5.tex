@@ -184,7 +184,8 @@ Los códigos de los sistemas, algoritmos y otros se almacenan de forma ordenada 
 		\multicolumn{1}{|c|}{\textbf{Descripción}} & \multicolumn{1}{c|}{\textbf{Enlace}} & \multicolumn{1}{c|}{\textbf{Demo}} \\ \hline
 		\textbf{Plantilla de tesis \LaTeX} & \href{https://github.com/ZurMaD/plantilla_tesis_pucp}{Github} & \href{https://github.com/ZurMaD/plantilla_tesis_pucp/blob/master/plantilla/main.pdf}{PDF} \\ \hline
 		\textbf{Presente tesis de pregrado} & \href{https://github.com/ZurMaD/tesis_pregrado_pucp}{Github} & \href{https://github.com/ZurMaD/tesis_pregrado_pucp/blob/master/Latex/trabajo-de-investigacion-2/main.pdf}{PDF}  \\ \hline
-		\textbf{Datasets de peces ($\approx$10GB)} & \href{https://github.com/DZPeru/fish-datasets}{Github} & -- \\ \hline
+		\textbf{Datasets de peces ($\approx$10GB)} & \href{https://github.com/DZPeru/fish-datasets}{Github} & -- \\ \hline		
+		\textbf{Algoritmo de medición} & \href{https://github.com/DZPeru/fish-classifier}{Github} & --\\ \hline
 		\textbf{Algoritmo de detección y conteo basado en YOLOv3} & \href{https://github.com/DZPeru/fishv3}{Github-Fishv3} & \href{https://fishv3.herokuapp.com/}{Demo-Web} \\ \hline 
 		\textbf{Algoritmo de detección y conteo basado en YOLOv4} & \href{https://github.com/DZPeru/fishv4}{Github-Fishv4} & \href{https://fishv4.herokuapp.com/}{Demo-Web}\\ \hline 
 		\textbf{Visualización de capas de YOLOv3} & -- & \href{https://netron.app/?url=https://raw.githubusercontent.com/DZPeru/fishv3/master/fishv3/fish_test.cfg}{Visualizador}\\ \hline 
@@ -2973,7 +2974,7 @@ En la Figura \ref{fig:diagrama esquematico de los drivers de los motores a pasos
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/DE-driver de motor a pasos.png}
+	\includegraphics[width=0.70\textwidth]{chapter5/DE-driver de motor a pasos.png}
 	\caption{Diagrama esquemático de los drivers de los motores a pasos.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
@@ -2997,7 +2998,7 @@ En la Figura \ref{fig:diagrama esquemático del generador pwm a partir de i2c} s
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.75\textwidth]{chapter5/DE-generador pwm con i2c.png}
+	\includegraphics[width=0.55\textwidth]{chapter5/DE-generador pwm con i2c.png}
 	\caption{Diagrama esquemático del generador PWM a partir de I2C.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
@@ -3017,7 +3018,7 @@ En la Figura \ref{fig:diagrama esquematico de los indicadores visuales} se muest
 	\label{fig:diagrama esquematico de los indicadores visuales}
 \end{myfigure}
 
-En la Figura \ref{fig:diagrama esquematico de los sensores de presion e infrarrojo} se muestra la conexión a los sensores de presión, al emisor y receptor infrarrojo. En el caso de los cuatro sensores de presión, se conectan a los pines digitales al pin I2C del microprocesador, debido al consumo de consumo de corriente, no es necesario agregar alimentadores de voltaje intermedios. Por otro lado, para el sensor infrarrojo, la conexión al microprocesador corresponde al receptor, existe una codificación y secuencia para recopilar la información.
+En la Figura \ref{fig:diagrama esquematico de los sensores de presion e infrarrojo} se muestra la conexión a los sensores de presión, al emisor y receptor infrarrojo. En el caso de los cuatro sensores de presión, se conectan a los pines digitales al pin I2C del microprocesador, debido al consumo de consumo de corriente, no es necesario agregar alimentadores de voltaje intermedios.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -3029,11 +3030,13 @@ En la Figura \ref{fig:diagrama esquematico de los sensores de presion e infrarro
 	\label{fig:diagrama esquematico de los sensores de presion e infrarrojo}
 \end{myfigure}
 
+Por otro lado, para el sensor infrarrojo, la conexión al microprocesador corresponde al receptor, existe una codificación y secuencia para recopilar la información.
+
 En la Figura \ref{fig:diagrama esquematico de los leds de alta potencia} se muestra la conexión a los leds de alta potencia que iluminan el subsistema de procesamiento de imágenes. El pin digital PWM activa el suministro a estos LEDs mediante el uso de transistores MOSFET que admiten un voltaje máximo de 40 $V$.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.60\textwidth]{chapter5/DE-led de alta potencia.png}
+	\includegraphics[width=1\textwidth]{chapter5/DE-led de alta potencia.png}
 	\caption{Diagrama esquemático de los leds de alta potencia.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
@@ -3045,7 +3048,7 @@ En la Figura \ref{fig:diagrama esquematico del indicador sonoro} se muestra la c
 
 \begin{myfigure}[H]
 	\footnotesize\centering
-	\includegraphics[width=0.60\textwidth]{chapter5/DE-indicador sonoro.png}
+	\includegraphics[width=0.80\textwidth]{chapter5/DE-indicador sonoro.png}
 	\caption{Diagrama esquemático del indicador sonoro.}
 	\begin{myflushcenter}
 		Fuente: Elaboración propia. Hoja de datos técnica (\textit{Datasheet}) en el Anexo.
