@@ -18,8 +18,8 @@ Con el fin de realizar la clasificación y conteo se plantea una solución de 4 
 Las bases de datos empleadas en las pruebas para entrenar los algoritmos son la FISH9002 y FISH9003 de elaboración propia que contienen 723 y 2400 imágenes respectivamente. Sin embargo, se muestra únicamente resultados de la base de datos de imágenes FISH9003 ya que es esperable que brinde mejores resultados al brindar una mayor cantidad de imágenes.
 
 
-% NUEVA SECCIÓN X.X.X.X
-\subsubsection{Definición de criterios de clasificación}
+% NUEVA SECCIÓN X.X.X
+\subsection{Definición de criterios de clasificación}
 
 En la Tabla \ref{tab:matriz de confusion} se muestra la matriz de confusión sobre la cuál se presentan diversas métricas evaluadas en el entrenamiento de los modelos. Los términos técnicos usados son citados de \cite{Everingham2010} y representan métricas para medir el rendimiento, confiabilidad y precisión de los modelos.
 
@@ -73,8 +73,8 @@ En base a la Tabla \ref{tab:matriz de confusion} se muestran las Ecuaciones \ref
 
 %\vspace{-2.0 em}
 
-% NUEVA SECCIÓN X.X.X.X
-\subsubsection{Resultados YOLOv3}
+% NUEVA SECCIÓN X.X.X
+\subsection{Resultados YOLOv3}
 
 En la Figura \ref{fig:resultados yolo 3} se muestra los resultados de entrenamiento del modelo YOLOv3. Dónde: \textit{GIoU} es una métrica que nos permite segmentar mejor la imagen y que conviene se disminuya en el entrenamiento ya que el rectángulo de etiquetado se acerca más al real; \textit{Objectness} es una métrica que nos indica si el modelo detecta correctamente intersecciones, por eso es bueno que disminuya; \textit{Precision} es el ratio entre TP y la suma de TP con FP, que nos indica las veces que el modelo ha detectado bien la cantidad de truchas sobre una imagen; \textit{Recall} es una métrica para medir la capacidad del modelo de detectar TP, mientras es mayor, mientras mayor mejor; \textit{val} se refiere a las métricas en etapa de validación; \textit{mAP@0.5} es la precisión media con mínimo de confiabilidad de 0.5; \textit{F1} es una métrica basada en en el \textit{Recall} y \textit{Precision} que es usado comúnmente junto con la Precision para brindar un balance real de si el modelo funciona correctamente con una precisión adecuada. Como se muestra en la Figura \ref{fig:resultados yolo 3} el modelo tiene una alta precisión pero un score F1 de alrededor de 0.4, esto quiere decir que el modelo logra reconocer truchas pero no de forma esperada.
 
@@ -88,10 +88,10 @@ En la Figura \ref{fig:resultados yolo 3} se muestra los resultados de entrenamie
 	\label{fig:resultados yolo 3}
 \end{myfigure}
 
-% NUEVA SECCIÓN X.X.X.X
-\subsubsection{Resultados YOLOv4}
+% NUEVA SECCIÓN X.X.X
+\subsection{Resultados YOLOv4}
 
-En la Figura \ref{fig:resultados yolo 4} se muestra los resultados del entrenamiento del modelo YOLOv4-tiny. En esta arquitectura se cambió los parámetros de validación al \textit{loss} y \textit{map} \footnote{map: mean average precision, en el caso map@0.5 significa precisión promedio con threshold 0.5.} por lo que se presenta únicamente los dos parámetros que disminuyen el tiempo de entrenamiento.
+En la Figura \ref{fig:resultados yolo 4} se muestra los resultados del entrenamiento del modelo YOLOv4-tiny. En el entrenamiento se registra el \textit{loss} y el \textit{mAP@0.5} \footnote{map: mean average precision, en el caso map@0.5 significa precisión promedio con threshold 0.5.}. 
 
 \begin{myfigure}[H]
 	\footnotesize\centering
@@ -125,7 +125,7 @@ En el caso de la clasificación el sistema debe ser calibrado acorde al entorno,
 % NUEVA SECCIÓN X.X.X
 \subsection{Tiempos de ejecución y detección}
 
-De los algoritmos propuestos, YOLOv3 se entrenó en Google Colab\footnote{Servicio gratuito de google para deep learning. Brinda GPUs de forma gratuita.} con una GPU Tesla T4 como se muestra en la Figura \ref{fig:colab}. En cuánto a la versión 3 del algoritmo, en el entrenamiento el algoritmo procesó alrededor de 12 horas los pesos de la red. Por el contrario, con la versión 4 del algoritmo con modificación de escalamiento llamado tiny, el proceso demoró alrededor de una hora brindando resultados excelentes que se muestran en la subsección anterior.\footnote{Los códigos usados para entrenar los modelos se encuentran listados en la sección de \ref{ssec:repositorio de codigo fuente}.}
+De los algoritmos propuestos, YOLOv3 se entrenó en Google Colab\footnote{Servicio gratuito de google para deep learning. Brinda GPUs de forma gratuita.} con una GPU Tesla T4 como se muestra en la Figura \ref{fig:colab}. En cuánto a la versión 3 del algoritmo, en el entrenamiento el algoritmo procesó alrededor de 12 horas los pesos de la red. Por el contrario, con la versión 4 del algoritmo con modificación de escalamiento llamado tiny, el proceso demoró alrededor de una hora brindando resultados excelentes que se muestran en la subsección anterior.\footnote{Los códigos usados para entrenar los modelos se encuentran listados en la sección de \ref{ssec:repositorio de codigo fuente}.} El tiempo de inferencia es el tiempo que requiere procesar cada capa dentro de la arquitectura de red neuronal de cada algoritmo, mientras más capas posee la arquitectura, suele tomar mayor tiempo de inferencia. Sin embargo, hay mecanismos que permiten optimizar el tiempo de inferencia, estos mecanismos son aplicados en YOLOv3 y YOLOv4 respecto a YOLOv1 que hacen que el tiempo de inferencia para imágenes de 416x416 pixeles sea mucho menor. En el caso de YOLOv3 el $t_{inf}=0.06 s$, mientras que para YOLOv3 el $t_{inf}=0.0083 s$. Con el último modelo se puede conseguir hasta 120 fps de procesamiento en un video con 3 canales de color, si esto se reduce únicamente al canal B/N\footnote{B/N: Blanco y negro.} decrementa aún más.\footnote{Investigaciones recientes no publicadas muestran resultados de hasta 320 fps.}.
 
 \begin{myfigure}[H]
 	\footnotesize\centering
